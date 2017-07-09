@@ -31,9 +31,10 @@ print content
 
 # globals()和local()
 # reload() 重新导入之前导入过的模块
-import de
-
 
 print Money
 addMoney()
 print Money
+
+import demo91
+demo91.printS("import")
