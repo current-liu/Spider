@@ -48,6 +48,17 @@ str = fo.read()
 print str
 
 # 文件定位
+fo.seek(0, 0)
 print "position:", fo.tell()
 str = fo.read(1)
 print "the string readed:", str
+
+# 重命名和删除文件
+# http://elporfirio.com:1017/  http://idea.imsxm.com/
+fo.close()
+import os
+os.renames("foo.txt", "goo.txt")
+# os.remove()
+
+# 目录
+# os.mkdir() os.chdir() os.rmdir()
