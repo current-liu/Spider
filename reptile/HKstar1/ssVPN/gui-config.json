@@ -1,0 +1,39 @@
+{
+"configs" : [
+  {
+"server" : "sg1.yingsuo.club",
+"server_port" : 51755,
+"password" : "02989162877",
+"method" : "aes-256-cfb",
+"remarks" : "新加坡"}
+,
+  {
+"server" : "hk4.yingsuo.club",
+"server_port" : 51755,
+"password" : "02989162877",
+"method" : "aes-256-cfb",
+"remarks" : "香港4"}
+,
+  {
+"server" : "hk7.yingsuo.club",
+"server_port" : 51755,
+"password" : "02989162877",
+"method" : "aes-256-cfb",
+"remarks" : "香港7"}
+,
+  {
+"server" : "tw1.yingsuo.club",
+"server_port" : 51755,
+"password" : "02989162877",
+"method" : "aes-256-cfb",
+"remarks" : "台湾1"}
+
+],
+"index" : 3,
+"global" : true,
+"enabled" : true,
+"shareOverLan" : false,
+"isDefault" : false,
+"localPort" : 1081,
+"pacUrl" : null,
+"useOnlinePac" : false}

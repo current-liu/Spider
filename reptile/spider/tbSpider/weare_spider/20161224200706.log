@@ -1,0 +1,2 @@
+Sat, 24 Dec 2016 20:07:28 Download.py[line:176] ERROR 获取 http://weare.hk/bbs/viewthread.php?tid=438343&extra=page%3D1&page=1 页时发生其他异常
+Sat, 24 Dec 2016 20:07:28 Download.py[line:177] ERROR bad operand type for unary +: 'str'

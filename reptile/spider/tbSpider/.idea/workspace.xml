@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a05c6aa6-cfaa-478d-938d-ff74f3aa1562" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/copy.old/facebookCrawler.rar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/facebookCrawler" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/facebookCrawler2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/newaccess_token.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/ssVPN/Shadowsocks-win-2.3.1.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/ssVPN/Shadowsocks.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/.idea/HKstar.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/memeCrawler/.idea/crawler.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/memeCrawler/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/memeCrawler/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/memeCrawler/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/memeCrawler/mimi/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/memeCrawler/mimi/html_downloader.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/memeCrawler/mimi/meme_comments.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/memeCrawler/mimi/meme_message.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/memeCrawler/mimi/meme_update.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/memeCrawler/mimi/test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/memeCrawler/mimi/text.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/ssVPN/gui-config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/ssVPN/hk4.yingsuo.club.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/ssVPN/hk7.yingsuo.club.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/ssVPN/sg1.yingsuo.club.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/ssVPN/tw1.yingsuo.club.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/twitterCrawler/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/twitterCrawler/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/twitterCrawler/.idea/star.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/twitterCrawler/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/twitterCrawler/comments.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/twitterCrawler/tweets.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../HKstar1/twitterCrawler/twitter_update.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Spider.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weare_spider/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weare_spider/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weare_spider/.idea/weare_spider.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weare_spider/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weare_spider/1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weare_spider/20161224200706.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weare_spider/20161224200813.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weare_spider/Download.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weare_spider/Output.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weare_spider/Parser.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weare_spider/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weare_spider/page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weare_spider/weare_main.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiaozu_spider/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiaozu_spider/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiaozu_spider/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiaozu_spider/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiaozu_spider/.idea/xiaozu_spider.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiaozu_spider/20161224201157.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiaozu_spider/47.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiaozu_spider/74.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiaozu_spider/Download.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiaozu_spider/Output.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiaozu_spider/Parser.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiaozu_spider/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiaozu_spider/page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiaozu_spider/xiaozu_main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../myPython1/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../../myPython1/.idea/workspace.xml" />
+    </list>
+    <ignored path="tbSpider.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Spider$xiaozu_main.coverage" NAME="xiaozu_main Coverage Results" MODIFIED="1482581517278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xiaozu_spider" />
+    <SUITE FILE_PATH="coverage/Spider$cookie.coverage" NAME="cookie Coverage Results" MODIFIED="1479461692597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qsbkspider" />
+    <SUITE FILE_PATH="coverage/Spider$udpserver.coverage" NAME="udpserver Coverage Results" MODIFIED="1482843781610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/statementTest" />
+    <SUITE FILE_PATH="coverage/Spider$ThreadLocal.coverage" NAME="ThreadLocal Coverage Results" MODIFIED="1478356163619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pro_and_th" />
+    <SUITE FILE_PATH="coverage/Spider$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1478871295385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_cma_cn" />
+    <SUITE FILE_PATH="coverage/tbSpider$spider_main.coverage" NAME="spider_main Coverage Results" MODIFIED="1478002656078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tbspider" />
+    <SUITE FILE_PATH="coverage/Spider$monismtp.coverage" NAME="monismtp Coverage Results" MODIFIED="1478318516395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/emailtest" />
+    <SUITE FILE_PATH="coverage/tbSpider$addCode.coverage" NAME="addCode Coverage Results" MODIFIED="1478166688148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jwmanager" />
+    <SUITE FILE_PATH="coverage/tbSpider$monilogin.coverage" NAME="monilogin Coverage Results" MODIFIED="1478162856518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selfservice" />
+    <SUITE FILE_PATH="coverage/Spider$thread_sysc.coverage" NAME="thread_sysc Coverage Results" MODIFIED="1478355069639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pro_and_th" />
+    <SUITE FILE_PATH="coverage/Spider$spider_main__1_.coverage" NAME="spider_main (1) Coverage Results" MODIFIED="1482286809201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weare_spider" />
+    <SUITE FILE_PATH="coverage/Spider$tcpclient.coverage" NAME="tcpclient Coverage Results" MODIFIED="1482844183689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/statementTest" />
+    <SUITE FILE_PATH="coverage/Spider$weare_main.coverage" NAME="weare_main Coverage Results" MODIFIED="1486451705171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weare_spider" />
+    <SUITE FILE_PATH="coverage/tbSpider$cookie.coverage" NAME="cookie Coverage Results" MODIFIED="1477964715323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qsbkspider" />
+    <SUITE FILE_PATH="coverage/Spider$stationspyder.coverage" NAME="stationspyder Coverage Results" MODIFIED="1479465466967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_cma_cn" />
+    <SUITE FILE_PATH="coverage/Spider$main.coverage" NAME="main Coverage Results" MODIFIED="1479785606683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cma_data_spider" />
+    <SUITE FILE_PATH="coverage/Spider$process_one.coverage" NAME="process_one Coverage Results" MODIFIED="1478354311315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pro_and_th" />
+    <SUITE FILE_PATH="coverage/Spider$encodetest.coverage" NAME="encodetest Coverage Results" MODIFIED="1482415412398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/statementTest" />
+    <SUITE FILE_PATH="coverage/Spider$tcpserver.coverage" NAME="tcpserver Coverage Results" MODIFIED="1482844180372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/statementTest" />
+    <SUITE FILE_PATH="coverage/Spider$cookietesst.coverage" NAME="cookietesst Coverage Results" MODIFIED="1479466030274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_cma_cn" />
+    <SUITE FILE_PATH="coverage/Spider$commu_pro.coverage" NAME="commu_pro Coverage Results" MODIFIED="1478354049846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pro_and_th" />
+    <SUITE FILE_PATH="coverage/Spider$sqltest.coverage" NAME="sqltest Coverage Results" MODIFIED="1479038358439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_cma_cn" />
+    <SUITE FILE_PATH="coverage/tbSpider$bstest.coverage" NAME="bstest Coverage Results" MODIFIED="1477659509350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qsbkspider" />
+    <SUITE FILE_PATH="coverage/Spider$addCode.coverage" NAME="addCode Coverage Results" MODIFIED="1479463622411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jwmanager" />
+    <SUITE FILE_PATH="coverage/tbSpider$jyspider.coverage" NAME="jyspider Coverage Results" MODIFIED="1478163403070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jwmanager" />
+    <SUITE FILE_PATH="coverage/Spider$spider_main.coverage" NAME="spider_main Coverage Results" MODIFIED="1483691676500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cma_data_spider" />
+    <SUITE FILE_PATH="coverage/Spider$thread_one.coverage" NAME="thread_one Coverage Results" MODIFIED="1478354703687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pro_and_th" />
+    <SUITE FILE_PATH="coverage/Spider$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1482569669229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/statementTest" />
+    <SUITE FILE_PATH="coverage/Spider$udpclient.coverage" NAME="udpclient Coverage Results" MODIFIED="1482843837807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/statementTest" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="tbSpider" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weare_spider/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Download.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weare_spider/Download.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1599">
+              <caret line="143" column="59" lean-forward="true" selection-start-line="143" selection-start-column="59" selection-end-line="143" selection-end-column="59" />
+              <folding>
+                <element signature="e#24#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parser.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weare_spider/Parser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1701">
+              <caret line="67" column="23" lean-forward="false" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="weare_main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weare_spider/weare_main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Output.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/weare_spider/Output.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+              <folding>
+                <marker date="1499757154921" expanded="true" signature="335:482" ph="insert into title... " />
+                <marker date="1499757154921" expanded="true" signature="801:850" ph="insert into reply... " />
+                <marker date="1499757154921" expanded="true" signature="1094:1128" ph="select * fro... title" />
+                <marker date="1499757154921" expanded="true" signature="1414:1448" ph="select * fro... reply" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/tbspider/UrlManager.py" />
+        <option value="$PROJECT_DIR$/tbspider/spider_main.py" />
+        <option value="$PROJECT_DIR$/tbspider/HttpDownloader.py" />
+        <option value="$PROJECT_DIR$/qsbkspider/bstest.py" />
+        <option value="$PROJECT_DIR$/selfservice/monilogin.py" />
+        <option value="$PROJECT_DIR$/jwmanager/jyspider.py" />
+        <option value="$PROJECT_DIR$/emailtest/monismtp.py" />
+        <option value="$PROJECT_DIR$/pro_and_th/process_one.py" />
+        <option value="$PROJECT_DIR$/pro_and_th/commu_pro.py" />
+        <option value="$PROJECT_DIR$/pro_and_th/thread_one.py" />
+        <option value="$PROJECT_DIR$/pro_and_th/thread_sysc.py" />
+        <option value="$PROJECT_DIR$/pro_and_th/ThreadLocal.py" />
+        <option value="$PROJECT_DIR$/jwmanager/addCode.py" />
+        <option value="$PROJECT_DIR$/tbspider/HttpOutputer.py" />
+        <option value="$PROJECT_DIR$/data_cma_cn/sqltest.py" />
+        <option value="$PROJECT_DIR$/data_cma_cn/stationspyder.py" />
+        <option value="$PROJECT_DIR$/data_cma_cn/test1.py" />
+        <option value="$PROJECT_DIR$/tbspider/HttpParser.py" />
+        <option value="$PROJECT_DIR$/qsbkspider/cookie.py" />
+        <option value="$PROJECT_DIR$/data_cma_cn/cookietesst.py" />
+        <option value="$PROJECT_DIR$/cma_data_spider/main.py" />
+        <option value="$PROJECT_DIR$/cma_data_spider/__init__.py" />
+        <option value="$PROJECT_DIR$/cma_data_spider/Output.py" />
+        <option value="$PROJECT_DIR$/cma_data_spider/Download.py" />
+        <option value="$PROJECT_DIR$/cma_data_spider/Parser.py" />
+        <option value="$PROJECT_DIR$/weare_spider/MyObj.py" />
+        <option value="$PROJECT_DIR$/weare_spider/spider_main.py" />
+        <option value="$PROJECT_DIR$/statementTest/encodetest.py" />
+        <option value="$PROJECT_DIR$/xiaozu_spider/Parser.py" />
+        <option value="$PROJECT_DIR$/xiaozu_spider/Download.py" />
+        <option value="$PROJECT_DIR$/statementTest/test2.py" />
+        <option value="$PROJECT_DIR$/statementTest/tcpclient.py" />
+        <option value="$PROJECT_DIR$/statementTest/udpserver.py" />
+        <option value="$PROJECT_DIR$/statementTest/udpclient.py" />
+        <option value="$PROJECT_DIR$/statementTest/tcpserver.py" />
+        <option value="$PROJECT_DIR$/cma_data_spider/spider_main.py" />
+        <option value="$PROJECT_DIR$/xiaozu_spider/xiaozu_main.py" />
+        <option value="$PROJECT_DIR$/xiaozu_spider/Output.py" />
+        <option value="$PROJECT_DIR$/weare_spider/Download.py" />
+        <option value="$PROJECT_DIR$/weare_spider/Parser.py" />
+        <option value="$PROJECT_DIR$/weare_spider/weare_main.py" />
+        <option value="$PROJECT_DIR$/weare_spider/Output.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="960" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Spider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tbSpider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Spider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tbSpider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weare_spider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\jdk1.8\workspace\tbSpider\xiaozu_spider" />
+      <recent name="D:\java\jdk1.8\workspace\tbSpider\weare_spider" />
+      <recent name="D:\java\jdk1.8\workspace\tbSpider\qsbkspider" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.weare_main">
+    <configuration default="false" name="spider_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cma_data_spider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Spider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cma_data_spider/spider_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="tcpserver" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/statementTest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Spider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/statementTest/tcpserver.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="tcpclient" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/statementTest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Spider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/statementTest/tcpclient.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="weare_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="D:\Python\python.exe" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Python\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/weare_spider" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Spider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/weare_spider/weare_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="xiaozu_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/xiaozu_spider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Spider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/xiaozu_spider/xiaozu_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tbSpider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tbSpider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tbSpider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tbSpider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="Spider" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Spider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Spider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Spider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Spider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.spider_main" />
+      <item index="1" class="java.lang.String" itemvalue="Python.tcpserver" />
+      <item index="2" class="java.lang.String" itemvalue="Python.tcpclient" />
+      <item index="3" class="java.lang.String" itemvalue="Python.weare_main" />
+      <item index="4" class="java.lang.String" itemvalue="Python.xiaozu_main" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.xiaozu_main" />
+        <item index="1" class="java.lang.String" itemvalue="Python.weare_main" />
+        <item index="2" class="java.lang.String" itemvalue="Python.spider_main" />
+        <item index="3" class="java.lang.String" itemvalue="Python.tcpclient" />
+        <item index="4" class="java.lang.String" itemvalue="Python.tcpserver" />
+      </list>
+    </recent_temporary>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Spider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a05c6aa6-cfaa-478d-938d-ff74f3aa1562" name="Default" comment="" />
+      <created>1477536770813</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1477536770813</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19915254" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27032736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/weare_spider/Output.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/xiaozu_spider/xiaozu_main.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="30" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="staion" />
+        <watch expression="data_response" />
+        <watch expression="response" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://D:/Program Files (x86)/python/Lib/site-packages/bs4/element.py" />
+    <entry file="file://$PROJECT_DIR$/data_cma_cn/sqltest.py" />
+    <entry file="file://$PROJECT_DIR$/qsbkspider/cookie.py" />
+    <entry file="file://$PROJECT_DIR$/jwmanager/image.jpg" />
+    <entry file="file://$PROJECT_DIR$/data_cma_cn/stationspyder.py" />
+    <entry file="file://$PROJECT_DIR$/jwmanager/addCode.py" />
+    <entry file="file://$PROJECT_DIR$/data_cma_cn/cookietesst.py" />
+    <entry file="file://$PROJECT_DIR$/cma_data_spider/main.py" />
+    <entry file="file://$USER_HOME$/.PyCharm2016.2/system/python_stubs/633835329/builtins.py" />
+    <entry file="file://D:/Program Files (x86)/python/Lib/http/client.py" />
+    <entry file="file://$PROJECT_DIR$/cma_data_spider/__init__.py" />
+    <entry file="file://D:/Program Files (x86)/python/Lib/sre_compile.py" />
+    <entry file="file://D:/Program Files (x86)/python/Lib/re.py" />
+    <entry file="file://D:/Program Files (x86)/python/Lib/urllib/parse.py" />
+    <entry file="file://$PROJECT_DIR$/selfservice/monilogin.py" />
+    <entry file="file://$PROJECT_DIR$/pro_and_th/commu_pro.py" />
+    <entry file="file://D:/Program Files (x86)/python/Lib/urllib/request.py" />
+    <entry file="file://$PROJECT_DIR$/jwmanager/jyspider.py" />
+    <entry file="file://$PROJECT_DIR$/weare_spider/MyObj.py" />
+    <entry file="file://$PROJECT_DIR$/weare_spider/20161221210702.log" />
+    <entry file="file://$PROJECT_DIR$/cma_data_spider/Parser.py" />
+    <entry file="file://D:/Program Files (x86)/python/Lib/site-packages/mysql/connector/network.py" />
+    <entry file="file://$PROJECT_DIR$/statementTest/encodetest.py" />
+    <entry file="file://D:/Program Files (x86)/python/Lib/site-packages/bs4/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/cma_data_spider/Download.py" />
+    <entry file="file://$PROJECT_DIR$/data_cma_cn/test1.py" />
+    <entry file="file://$PROJECT_DIR$/xiaozu_spider/Parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="124" column="25" lean-forward="false" selection-start-line="115" selection-start-column="8" selection-end-line="124" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files (x86)/python/Lib/site-packages/mysql/connector/connection.py" />
+    <entry file="file://D:/Program Files (x86)/python/Lib/site-packages/mysql/connector/cursor.py" />
+    <entry file="file://D:/Program Files (x86)/python/Lib/codecs.py" />
+    <entry file="file://$PROJECT_DIR$/statementTest/test2.py" />
+    <entry file="file://D:/Program Files (x86)/python/Lib/socket.py" />
+    <entry file="file://$PROJECT_DIR$/statementTest/tcpserver.py" />
+    <entry file="file://$PROJECT_DIR$/statementTest/tcpclient.py" />
+    <entry file="file://$PROJECT_DIR$/statementTest/udpclient.py" />
+    <entry file="file://$PROJECT_DIR$/statementTest/udpserver.py" />
+    <entry file="file://$PROJECT_DIR$/cma_data_spider/Output.py" />
+    <entry file="file://$PROJECT_DIR$/cma_data_spider/spider_main.py" />
+    <entry file="file://$PROJECT_DIR$/xiaozu_spider/20161224201157.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaozu_spider/47.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1368">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaozu_spider/page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6726">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaozu_spider/Output.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="68" lean-forward="false" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaozu_spider/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaozu_spider/Download.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="126" column="65" lean-forward="false" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaozu_spider/xiaozu_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="27" column="40" lean-forward="false" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weare_spider/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weare_spider/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weare_spider/Download.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1599">
+          <caret line="143" column="59" lean-forward="true" selection-start-line="143" selection-start-column="59" selection-end-line="143" selection-end-column="59" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weare_spider/Parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1701">
+          <caret line="67" column="23" lean-forward="false" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weare_spider/weare_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weare_spider/Output.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+          <folding>
+            <marker date="1499757154921" expanded="true" signature="335:482" ph="insert into title... " />
+            <marker date="1499757154921" expanded="true" signature="801:850" ph="insert into reply... " />
+            <marker date="1499757154921" expanded="true" signature="1094:1128" ph="select * fro... title" />
+            <marker date="1499757154921" expanded="true" signature="1414:1448" ph="select * fro... reply" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
