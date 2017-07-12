@@ -2,77 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="179a0096-b667-40a6-a2bb-81939a54f749" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/copy.old/facebookCrawler.rar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/newaccess_token.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/ssVPN/Shadowsocks-win-2.3.1.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/ssVPN/Shadowsocks.exe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/getjpg.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/.idea/HKstar.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/memeCrawler/.idea/crawler.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/memeCrawler/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/memeCrawler/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/memeCrawler/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/memeCrawler/mimi/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/memeCrawler/mimi/html_downloader.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/memeCrawler/mimi/meme_comments.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/memeCrawler/mimi/meme_message.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/memeCrawler/mimi/meme_update.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/memeCrawler/mimi/test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/memeCrawler/mimi/text.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/ssVPN/gui-config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/ssVPN/hk4.yingsuo.club.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/ssVPN/hk7.yingsuo.club.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/ssVPN/sg1.yingsuo.club.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/ssVPN/tw1.yingsuo.club.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/twitterCrawler/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/twitterCrawler/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/twitterCrawler/.idea/star.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/twitterCrawler/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/twitterCrawler/comments.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/twitterCrawler/tweets.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/HKstar1/twitterCrawler/twitter_update.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/.idea/Spider.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/weare_spider/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/weare_spider/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/weare_spider/.idea/weare_spider.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/weare_spider/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/weare_spider/1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/weare_spider/20161224200706.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/weare_spider/20161224200813.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/weare_spider/Download.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/weare_spider/Output.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/weare_spider/Parser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/weare_spider/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/weare_spider/page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/weare_spider/weare_main.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/xiaozu_spider/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/xiaozu_spider/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/xiaozu_spider/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/xiaozu_spider/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/xiaozu_spider/.idea/xiaozu_spider.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/xiaozu_spider/20161224201157.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/xiaozu_spider/47.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/xiaozu_spider/74.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/xiaozu_spider/Download.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/xiaozu_spider/Output.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/xiaozu_spider/Parser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/xiaozu_spider/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/xiaozu_spider/page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reptile/spider/tbSpider/xiaozu_spider/xiaozu_main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../myPython1/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../myPython1/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../baidu_spider/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../baike-python-master/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler" afterPath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler2" afterPath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/getjpg.py" afterPath="$PROJECT_DIR$/src/getjpg.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -82,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/getJpg$getjpg.coverage" NAME="getjpg Coverage Results" MODIFIED="1499765880206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/getJpg$getjpg.coverage" NAME="getjpg Coverage Results" MODIFIED="1499821662490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -90,10 +25,10 @@
       <file leaf-file-name="getjpg.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/getjpg.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+            <state relative-caret-position="345">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
-                <element signature="e#15#24#0" expanded="true" />
+                <element signature="e#29#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,10 +60,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -148,8 +81,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -161,10 +94,6 @@
               <option name="myItemId" value="getJpg" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -172,6 +101,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../baike-python-master" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -302,6 +232,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -370,26 +306,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32346722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855567" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -406,10 +342,30 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/getjpg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#15#24#0" expanded="true" />
+            <element signature="e#29#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/getjpg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#29#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/getjpg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#29#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
