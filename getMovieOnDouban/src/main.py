@@ -59,16 +59,21 @@ def main():
     info = []
     while url:
         doc = download_page(url)
-        movie, star, level_num, info_list, url = get_li(doc)
-        name = name + movie
+        movie, star, level_num, info_list, url = get_li(doc)  # 函数返回多个参数
+        name = name + movie  # 两个列表List相加，get_li()返回的几个参数都是列表，方便了这里代码的处理
+        print name
         star_con = star_con + star
         score = score + level_num
         info = info + info_list
     for (i, m, o, p) in zip(name, star_con, score, info):
-        col_A = 'A%s' % (name.index(i) + 1)
-        col_B = 'B%s' % (name.index(i) + 1)
-        col_C = 'C%s' % (name.index(i) + 1)
-        col_D = 'D%s' % (name.index(i) + 1)
+        print i, m, o, p
+        index = name.index(i) + 1
+        print index
+        col_A = 'A%s' % index
+        col_B = 'B%s' % index
+        col_C = 'C%s' % index
+        col_D = 'D%s' % index
+        print col_A, col_B, col_C, col_D
         ws1[col_A] = i
         ws1[col_B] = m
         ws1[col_C] = o

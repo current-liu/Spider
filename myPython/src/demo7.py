@@ -8,7 +8,9 @@ list1 = ['physics', 1997, 1984]
 list2 = ['physics', 1997, 1984]
 print list1[0]
 print list1[1:3]
-
+n = 100
+list2 + n
+print list2
 """
 更新List
 """

@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/getJpg.iml" filepath="$PROJECT_DIR$/.idea/getJpg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../getMovieOnDouban/.idea/getMovieOnDouban.iml" filepath="$PROJECT_DIR$/../getMovieOnDouban/.idea/getMovieOnDouban.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../myPython/.idea/myPython.iml" filepath="$PROJECT_DIR$/../myPython/.idea/myPython.iml" />
     </modules>
   </component>
 </project>
