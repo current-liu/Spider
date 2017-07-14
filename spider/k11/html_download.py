@@ -2,9 +2,10 @@
 
 import requests
 
+import pip
+# print(pip.pep425tags.get_supported())
 
 
-
-def download_page(url):
+def downloadPage(url):
     data = requests.get(url).content
     return data
