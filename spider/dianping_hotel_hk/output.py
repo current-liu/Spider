@@ -9,16 +9,13 @@ data = cursor.fetchone()
 print data
 
 
-def insert(p, e, c, ct, l, r):
+def insert(i, n, d, a, w, t, p, s, r):
     try:
-        sql = """INSERT INTO user_voice(
-                     headPic,userName,creatTime,content,label,reply)
-                     VALUES ('%s', '%s', '%s', '%s', '%s', '%s')""" % (p, e, c, ct, l, r)
+        sql = """INSERT INTO dianping_hotel_hk_liuchao(
+                     id, name, detail_url, addr, walk, tags, price, star, review_num)
+                     VALUES ('%d', '%s', '%s', '%s', '%s', '%s', '%d', '%s', '%d')""" % (i, n, d, a, w, t, p, s, r)
 
         cursor.execute(sql)
-        # 获取自增id
-        new_id = cursor.lastrowid
-        print new_id
         db.commit()
     except BaseException, e:
         db.rollback()
