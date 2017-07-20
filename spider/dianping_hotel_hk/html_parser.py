@@ -123,3 +123,8 @@ def htmlParser(doc):
             print "parse complete"
 
     return ids, names, detail_urls, addrs, walks, tags, prices, stars, review_nums
+
+
+def shopParser(doc):
+    soup = BeautifulSoup(doc, "lxml")
+

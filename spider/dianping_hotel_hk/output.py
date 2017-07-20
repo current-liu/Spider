@@ -21,3 +21,17 @@ def insert(i, n, d, a, w, t, p, s, r):
         db.rollback()
         print e
 
+def downloadShopUrl():
+    results = []
+    try:
+        sql = """SELECT detail_url
+                    FROM dianping_hotel_hk_liuchao"""
+        cursor.execute(sql)
+        results = cursor.fetchall()
+
+    except BaseException, e:
+        db.rollback()
+        print e
+
+    return results
+

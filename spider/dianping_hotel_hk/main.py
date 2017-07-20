@@ -46,5 +46,21 @@ def main():
         output.insert(i, n, d, a, w, tags, p, s, r)
 
 
+def crawling_shop():
+    print "crawling_shop()"
+    shop_urls = output.downloadShopUrl()
+    url_manager.add_new_shop_urls(shop_urls)
+
+    while(url_manager.has_new_shop_url()):
+        # url = url_manager.get_new_shop_url()
+        url = "http://www.dianping.com/shop/3715216"
+
+        doc = html_download.downloadPage(url)
+
+    url = "http://www.dianping.com/shop/3715216"
+    doc = html_download.downloadPage(url)
+        
+
+
 if __name__ == "__main__":
     main()
