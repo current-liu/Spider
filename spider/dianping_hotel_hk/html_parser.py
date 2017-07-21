@@ -128,3 +128,95 @@ def htmlParser(doc):
 def shopParser(doc):
     soup = BeautifulSoup(doc, "lxml")
 
+    # 爬取房型信息
+    rooms = crawling_room(soup)
+
+    base = soup.find("div", class_="base-info")
+    addr = base.find("span", class_="hotel-address").get_text() + " " + base.find("span",
+                                                                                  class_="hotel-metro").get_text()
+    # tel = base.find("span", class_="call-number").get_text()
+    hotel_info_ul_lis = soup.find("div", class_="hotel-info").find("ul", class_="list-info").find_all("li")
+
+    index = 1
+    for li in hotel_info_ul_lis:
+        value = (li.find("div", class_="info-value"))
+        if index == 1:
+            tel = value.get_text()
+        elif index == 2:
+            openTime = value.get_text()
+        elif index == 3:
+            checkTime = value.get_text()
+
+        elif index == 4:
+            facs = []
+            for span in value.find_all("span"):
+                facs.append(span.get_text().strip())
+        elif index == 5:
+            services = []
+            for span in value.find_all("span"):
+                services.append(span.get_text().strip())
+        elif index == 6:
+            room_facs = []
+            for span in value.find_all("span"):
+                room_facs.append(span.get_text().strip())
+        elif index == 7:
+            info = value.get_text()
+        index += 1
+
+    # tel_ = hotel_info_ul.find("div", text="联系方式：")
+    # tel = tel_.next_sibling.next_sibling.get_text()
+    #
+    # openTime_ = hotel_info_ul.find("div", text="开业装修时间: ")
+    # # openTime = openTime_.next_sibling.get_text()
+    #
+    # checkTime_ = hotel_info_ul.find("div", text="入离店时间: ")
+    # # checkTime = checkTime_.next_sibling.get_text()
+    #
+    # facs_ = hotel_info_ul.find("div", text="酒店设施: ")
+    # facs = []
+    # for span in facs_.next_sibling.find_all("span"):
+    #     facs.append(span.get_text().strip())
+    #
+    # room_facs_ = hotel_info_ul.find("div", text="房间设施: ")
+    # room_facs = []
+    # for span in room_facs_.next_sibling.find_all("span"):
+    #     room_facs.append(span.get_text().strip())
+    #
+    # services_ = hotel_info_ul.find("div", text="酒店服务: ")
+    # services = []
+    # for span in services_.next_sibling.find_all("span"):
+    #     services.append(span.get_text().strip())
+    #
+    # info_ = hotel_info_ul.find("div", text="酒店简介: ")
+    # info = info_.next_sibling.get_text()
+
+    return addr, tel, openTime, checkTime, facs, room_facs, services, info
+
+def crawling_room(soup):
+
+    print "crawling_room()"
+    rooms = []
+    beds = []
+    breakfasts = []
+    nets = []
+    cancels = []
+    prices = []
+
+    # 此处信息是异步加载的，获取不到
+    room_list = soup.find("ul", class_="room-type-list").find_all("li")
+    print room_list
+    for li in room_list:
+        # 每个li是一个房型
+        room_style = li.find("div", class_="title").find("h3").get_text()
+        print room_style
+        for r in li.find("div", class_="roomlist").find_all("div", class_="room"):
+            room = room_style
+            rooms.append(room)
+            bed = r.find("div", class_="dph-col dph-col2").get_text()
+            breakfast = r.find("div", class_="dph-col dph-col3").get_text()
+            net = r.find("div", class_="dph-col dph-col4").get_text()
+            cancel = r.find("div", class_="dph-col dph-col5").get_text()
+            price = r.find("div", class_="dph-col dph-col6").get_text()
+            prices.append(price)
+
+

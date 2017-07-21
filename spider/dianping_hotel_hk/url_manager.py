@@ -18,7 +18,7 @@ def add_new_urls(urls):
     if urls is None or len(urls) == 0:
         return
     for url in urls:
-        new_urls.add_new_url(url)
+        new_urls.add(url)
 
 
 def has_new_url():
@@ -42,7 +42,7 @@ def add_new_shop_urls(urls):
     if urls is None or len(urls) == 0:
         return
     for url in urls:
-        new_shop_urls.add_new_shop_url(url)
+        new_shop_urls.add(url)
 
 
 def has_new_shop_url():

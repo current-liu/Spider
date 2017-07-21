@@ -21,10 +21,11 @@ def insert(i, n, d, a, w, t, p, s, r):
         db.rollback()
         print e
 
+
 def downloadShopUrl():
     results = []
     try:
-        sql = """SELECT detail_url
+        sql = """SELECT id
                     FROM dianping_hotel_hk_liuchao"""
         cursor.execute(sql)
         results = cursor.fetchall()
@@ -35,3 +36,33 @@ def downloadShopUrl():
 
     return results
 
+
+def insert_hotel_shops():
+    """
+    从dianping_hotel_hk_liuchao中把数据更新到hotel_shops中，
+    要在每次准备爬取新的shop前调用一次
+    :return:
+    """
+
+    sql = """INSERT INTO hotel_shops (
+              shopId,shopName,area,walk,star,tag)
+              SELECT id,name,addr,walk,star,tags
+              FROM dianping_hotel_hk_liuchao d
+              WHERE d.id NOT IN (SELECT shopId FROM hotel_shops)"""
+    try:
+        cursor.execute(sql)
+        db.commit()
+    except BaseException, e:
+        db.rollback()
+        print e
+
+
+def update_hotel_shops(shopId, addr, tel, openTime, checkTime, facs, room_facs, services, info):
+    sql = """UPDATE hotel_shops SET addr = '%s',tel = '%s',openTime = '%s',checkTime = '%s',facilities = '%s',roomFac = '%s', service = '%s',info = '%s' WHERE hotel_shops.shopId = '%d'""" % (
+        addr, tel, openTime, checkTime, facs, room_facs, services, info, shopId)
+    try:
+        cursor.execute(sql)
+        db.commit()
+    except BaseException, e:
+        db.rollback()
+        print e

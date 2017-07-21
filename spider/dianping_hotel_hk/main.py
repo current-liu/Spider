@@ -3,7 +3,9 @@ import html_parser
 import html_download
 import url_manager
 import output
-
+import urlparse
+import re
+from bs4 import BeautifulSoup
 
 def main():
     print "begin"
@@ -22,7 +24,6 @@ def main():
     prices = []
     stars = []
     review_nums = []
-
 
     while (url_manager.has_new_url()):
         url = url_manager.get_new_url()
@@ -47,20 +48,103 @@ def main():
 
 
 def crawling_shop():
-    print "crawling_shop()"
-    shop_urls = output.downloadShopUrl()
-    url_manager.add_new_shop_urls(shop_urls)
+    output.insert_hotel_shops()
 
-    while(url_manager.has_new_shop_url()):
-        # url = url_manager.get_new_shop_url()
-        url = "http://www.dianping.com/shop/3715216"
+    print "crawling_shop()"
+
+    SHOP_URL = "http://www.dianping.com/shop/3715216"
+    # shop_id_list = output.downloadShopUrl()
+    # for shop_id in shop_id_list:
+    #     i = str(shop_id)
+    #     s = re.sub(r'\D', "", i)
+    #     new_url = urlparse.urljoin(SHOP_URL, s)
+    #     url_manager.add_new_shop_url(new_url)
+
+    init_url_list(SHOP_URL)
+
+    shopIds = []
+    addrs = []
+    tels = []
+    openTimes = []
+    checkTimes = []
+    facss = []
+    room_facss = []
+    servicess = []
+    infos = []
+    while (url_manager.has_new_shop_url()):
+
+        url = url_manager.get_new_shop_url()
+        shopId = int(re.sub(r'\D', "", url))
 
         doc = html_download.downloadPage(url)
 
-    url = "http://www.dianping.com/shop/3715216"
-    doc = html_download.downloadPage(url)
-        
+        addr, tel, openTime, checkTime, facs, room_facs, services, info = html_parser.shopParser(doc)
+
+        shopIds.append(shopId)
+        addrs.append(addr)
+        tels.append(tel)
+        openTimes.append(openTime)
+        checkTimes.append(checkTime)
+        facss.append(facs)
+        room_facss.append(room_facs)
+        servicess.append(services)
+        infos.append(info)
+
+        print shopId
+
+    # url = url_manager.get_new_shop_url()
+    # shopId = int(re.sub(r'\D', "", url))
+    # doc = html_download.downloadPage(url)
+    # addr, tel, openTime, checkTime, facs, services, info = html_parser.shopParser(doc)
+    #
+    # shopIds.append(shopId)
+    # addrs.append(addr)
+    # tels.append(tel)
+    # openTimes.append(openTime)
+    # checkTimes.append(checkTime)
+    # facss.append(facs)
+    # servicess.append(services)
+    # infos.append(info)
+    #
+    # print shopId
+
+    for (s, a, t, o, c, f, rf, ss, i) in zip(shopIds, addrs, tels, openTimes, checkTimes, facss, room_facss, servicess,
+                                             infos):
+        fac = " ".join(f)
+        room_facs = " ".join(rf)
+        service = " ".join(ss)
+        output.update_hotel_shops(s, a, t, o, c, fac, room_facs, service, i)
+        pass
+
+
+# def crawling_room():
+#     print "crawling_room()"
+#     SHOP_URL = "http://www.dianping.com/shop/3715216"
+#     init_url_list(SHOP_URL)
+#
+#     while (url_manager.has_new_shop_url()):
+#         url = url_manager.get_new_shop_url()
+#         shopId = int(re.sub(r'\D', "", url))
+#         doc = html_download.downloadPage(url)
+
+
+def init_url_list(goal_url):
+    shop_id_list = output.downloadShopUrl()
+    for shop_id in shop_id_list:
+        i = str(shop_id)
+        s = re.sub(r'\D', "", i)
+        new_url = urlparse.urljoin(goal_url, s)
+        url_manager.add_new_shop_url(new_url)
 
 
 if __name__ == "__main__":
-    main()
+    # 酒店列表
+    # main()
+
+    # 酒店详情
+    # crawling_shop()
+
+    url = "http://www.dianping.com/shop/3715216"
+    doc = html_download.downloadPage(url)
+    soup = BeautifulSoup(doc, "lxml")
+    html_parser.crawling_room(soup)
