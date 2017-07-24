@@ -58,6 +58,7 @@ def insert_hotel_shops():
 
 
 def update_hotel_shops(shopId, addr, tel, openTime, checkTime, facs, room_facs, services, info):
+    """hotel_shop的部分信息已经由insert_hotel_shops插入，剩下的信息在这里补全"""
     sql = """UPDATE hotel_shops SET addr = '%s',tel = '%s',openTime = '%s',checkTime = '%s',facilities = '%s',roomFac = '%s', service = '%s',info = '%s' WHERE hotel_shops.shopId = '%d'""" % (
         addr, tel, openTime, checkTime, facs, room_facs, services, info, shopId)
     try:
@@ -66,3 +67,25 @@ def update_hotel_shops(shopId, addr, tel, openTime, checkTime, facs, room_facs, 
     except BaseException, e:
         db.rollback()
         print e
+
+
+def insert_hotel_goods(shopIds, roomIds, titles, bedTypes, breakfasts, netTypes, cancelRules, prices):
+
+    # 清空原表
+    try:
+        cursor.execute("truncate hotel_room")
+        db.commit()
+    except BaseException, e:
+        db.rollback()
+        print e
+
+
+    for (s, r, t, b, bf, n, c, p) in zip(shopIds, roomIds, titles, bedTypes, breakfasts, netTypes, cancelRules, prices):
+        sql = """INSERT INTO hotel_room (shopId,roomType,bedType,breakfastInfo,internet,cancelRules,roomPrice)
+                  VALUES('%d', '%s', '%s', '%s', '%s', '%s', '%d')""" % (s, t, b, bf, n, c, p)
+        try:
+            cursor.execute(sql)
+            db.commit()
+        except BaseException, e:
+            db.rollback()
+            print e

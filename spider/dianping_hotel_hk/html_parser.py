@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import re
 import url_manager
 import urlparse
+import json
 
 
 def htmlParser(doc):
@@ -128,9 +129,6 @@ def htmlParser(doc):
 def shopParser(doc):
     soup = BeautifulSoup(doc, "lxml")
 
-    # 爬取房型信息
-    rooms = crawling_room(soup)
-
     base = soup.find("div", class_="base-info")
     addr = base.find("span", class_="hotel-address").get_text() + " " + base.find("span",
                                                                                   class_="hotel-metro").get_text()
@@ -192,31 +190,90 @@ def shopParser(doc):
 
     return addr, tel, openTime, checkTime, facs, room_facs, services, info
 
-def crawling_room(soup):
 
-    print "crawling_room()"
-    rooms = []
-    beds = []
+# def crawling_room(soup):
+#     print "crawling_room()"
+#     rooms = []
+#     beds = []
+#     breakfasts = []
+#     nets = []
+#     cancels = []
+#     prices = []
+#
+#     # 此处信息是异步加载的，获取不到
+#     room_list = soup.find("ul", class_="room-type-list").find_all("li")
+#     print room_list
+#     for li in room_list:
+#         # 每个li是一个房型
+#         room_style = li.find("div", class_="title").find("h3").get_text()
+#         print room_style
+#         for r in li.find("div", class_="roomlist").find_all("div", class_="room"):
+#             room = room_style
+#             rooms.append(room)
+#             bed = r.find("div", class_="dph-col dph-col2").get_text()
+#             breakfast = r.find("div", class_="dph-col dph-col3").get_text()
+#             net = r.find("div", class_="dph-col dph-col4").get_text()
+#             cancel = r.find("div", class_="dph-col dph-col5").get_text()
+#             price = r.find("div", class_="dph-col dph-col6").get_text()
+#             prices.append(price)
+
+
+def get_room(doc, shopId):
+    """获取每个酒店房型的详细信息"""
+    shopIds = []
+    roomIds = []
+    titles = []
+    bedTypes = []
     breakfasts = []
-    nets = []
-    cancels = []
+    netTypes = []
+    cancelRules = []
     prices = []
 
-    # 此处信息是异步加载的，获取不到
-    room_list = soup.find("ul", class_="room-type-list").find_all("li")
-    print room_list
-    for li in room_list:
-        # 每个li是一个房型
-        room_style = li.find("div", class_="title").find("h3").get_text()
-        print room_style
-        for r in li.find("div", class_="roomlist").find_all("div", class_="room"):
-            room = room_style
-            rooms.append(room)
-            bed = r.find("div", class_="dph-col dph-col2").get_text()
-            breakfast = r.find("div", class_="dph-col dph-col3").get_text()
-            net = r.find("div", class_="dph-col dph-col4").get_text()
-            cancel = r.find("div", class_="dph-col dph-col5").get_text()
-            price = r.find("div", class_="dph-col dph-col6").get_text()
-            prices.append(price)
+    try:
+        room_list = json.loads(doc)["data"]["hotelGoodsList"]["roomList"]
+    except BaseException, e:
+        print e
+        print "获取酒店房型详情失败"
+    else:
+        n = room_list.__len__()
+        if (n == 0):
+            print "房型信息为空"
+        else:
+            print "成功获取房型"
+            for room in room_list:
+
+                roomId = room["roomId"]
+                title = room["title"]
+                print roomId, title
+                for good in room["goodsList"]:
+                    bedType = good["bedType"]
+                    breakfast = good["breakfast"]
+                    netType = good["netType"]
+                    cancelRule = good["cancelRule"]
+                    price = good["price"]
+
+                    shopIds.append(shopId)
+                    roomIds.append(roomId)
+                    titles.append(title)
+                    bedTypes.append(bedType)
+                    breakfasts.append(breakfast)
+                    netTypes.append(netType)
+                    cancelRules.append(cancelRule)
+                    prices.append(price)
+
+                    print bedType, breakfast, netType, cancelRule, price
+
+    return shopIds, roomIds, titles, bedTypes, breakfasts, netTypes, cancelRules, prices
 
 
+def get_review(doc, shopId):
+    soup = BeautifulSoup(doc, "lxml")
+    comment_list = soup.find("div", class_="comment-list").find("ul").find_all("li")
+    for li in comment_list:
+        review_id = li["data-id"]
+        pic = li.find("div", class_="pic")
+        user_id = pic.find("a")["user-id"]
+        content = li.find("div", class_="content")
+        star = content.find("div", class_="user-info").find("span")["title"]
+        if(star):
+            pass
