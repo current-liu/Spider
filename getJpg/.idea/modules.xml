@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/getJpg.iml" filepath="$PROJECT_DIR$/.idea/getJpg.iml" />
       <module fileurl="file://$PROJECT_DIR$/../getMovieOnDouban/.idea/getMovieOnDouban.iml" filepath="$PROJECT_DIR$/../getMovieOnDouban/.idea/getMovieOnDouban.iml" />
       <module fileurl="file://$PROJECT_DIR$/../myPython/.idea/myPython.iml" filepath="$PROJECT_DIR$/../myPython/.idea/myPython.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../myPython1/.idea/myPython1.iml" filepath="$PROJECT_DIR$/../myPython1/.idea/myPython1.iml" />
       <module fileurl="file://$PROJECT_DIR$/../reptile/.idea/reptile.iml" filepath="$PROJECT_DIR$/../reptile/.idea/reptile.iml" />
       <module fileurl="file://$PROJECT_DIR$/../spider/.idea/spider.iml" filepath="$PROJECT_DIR$/../spider/.idea/spider.iml" />
     </modules>
