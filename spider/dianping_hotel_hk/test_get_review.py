@@ -8,6 +8,6 @@ class TestGet_review(TestCase):
         REVIEW_URL = "http://www.dianping.com/shop/3715216/review_more"
         shopId = 3715216
         doc = html_download.downloadPage(REVIEW_URL)
-        print doc
+        # print doc
 
-        # soup = html_parser.get_review(doc, shopId)
+        soup = html_parser.get_review(doc, shopId)

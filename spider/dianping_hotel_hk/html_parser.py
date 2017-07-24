@@ -275,5 +275,18 @@ def get_review(doc, shopId):
         user_id = pic.find("a")["user-id"]
         content = li.find("div", class_="content")
         star = content.find("div", class_="user-info").find("span")["title"]
-        if(star):
+        s = star.encode('unicode-escape').decode('string_escape')
+        reviewStar = 0
+        if ("非常好" == star):
+            reviewStar = 5
             pass
+        elif ("很好" == star):
+            reviewStar = 4
+        elif ("好" == star):
+            reviewStar = 3
+        elif ("一般" == star):
+            reviewStar = 2
+        elif ("很差" == star):
+            reviewStar = 1
+        i = reviewStar
+
