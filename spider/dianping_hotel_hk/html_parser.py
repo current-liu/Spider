@@ -5,6 +5,8 @@ import re
 import url_manager
 import urlparse
 import json
+import datetime
+import traceback
 
 
 def htmlParser(doc):
@@ -266,27 +268,134 @@ def get_room(doc, shopId):
     return shopIds, roomIds, titles, bedTypes, breakfasts, netTypes, cancelRules, prices
 
 
-def get_review(doc, shopId):
-    soup = BeautifulSoup(doc, "lxml")
-    comment_list = soup.find("div", class_="comment-list").find("ul").find_all("li")
-    for li in comment_list:
-        review_id = li["data-id"]
-        pic = li.find("div", class_="pic")
-        user_id = pic.find("a")["user-id"]
-        content = li.find("div", class_="content")
-        star = content.find("div", class_="user-info").find("span")["title"]
-        s = star.encode('unicode-escape').decode('string_escape')
-        reviewStar = 0
-        if ("非常好" == star):
-            reviewStar = 5
-            pass
-        elif ("很好" == star):
-            reviewStar = 4
-        elif ("好" == star):
-            reviewStar = 3
-        elif ("一般" == star):
-            reviewStar = 2
-        elif ("很差" == star):
-            reviewStar = 1
-        i = reviewStar
+def get_review(doc, url):
+    url_mini = url.split("?")[0]
+    shopId = int(re.sub(r'\D', "", url_mini))
+    shopIds = []
+    review_ids = []
+    user_ids = []
+    reviewStars = []
+    rooms = []
+    locs = []
+    services = []
+    healths = []
+    facs = []
+    comment_txts = []
+    create_times = []
+    likes = []
+    reply_nums = []
 
+    soup = BeautifulSoup(doc, "lxml")
+
+
+    # nextpage_full = "http://www.dianping.com/shop/3715216/review_more?pageno=210"
+    try:
+        nextpage = soup.find("div", class_="Pages").find("a", class_="NextPage")['href']
+    except BaseException, e:
+        print e
+        print "shopId '%d'已到末页" % shopId
+    else:
+        nextpage = urlparse.urljoin(url, nextpage)
+        url_manager.add_new_review_url(nextpage)
+
+    comment_list = soup.find("div", class_="comment-list").find("ul").find_all("li", recursive=False)
+    for li in comment_list:
+        try:
+            review_id = int(li["data-id"])
+            pic = li.find("div", class_="pic")
+            user_id = int(pic.find("a")["user-id"])
+            content = li.find("div", class_="content")
+            star = content.find("div", class_="user-info").find("span")["title"]
+            star1 = star
+            reviewStar = -1
+            star = star.encode("utf-8")
+            if (u"非常好" == star1):
+                reviewStar = 5
+                pass
+            elif ("很好" == star):
+                reviewStar = 4
+            elif ("好" == star):
+                reviewStar = 3
+            elif ("一般" == star):
+                reviewStar = 2
+            elif ("很差" == star):
+                reviewStar = 1
+
+            # 非常好4 很好3 好2 一般1 很差0
+            comment_rst = content.find("div", class_="comment-rst").find_all("span")
+            rsts = {"房间": None, "位置": None, "服务": None, "卫生": None, "设施": None}
+            for rst in comment_rst:
+                c = rst.get_text()
+                value = int(re.sub(r'\D', "", c))
+                key = re.sub(r'\d', "", c).split("(")[0].encode("utf-8")
+                list = ["房间", "位置", "服务", "卫生", "设施"]
+                if key not in list:
+                    print "key not in list!!!!!!!!!!!!!!!!!!!!!", key
+
+                rsts[key] = value
+
+            room = -1
+            loc = -1
+            service = -1
+            health = -1
+            fac = -1
+            if(rsts["房间"] != None):
+                room = rsts["房间"]
+            if (rsts["位置"] != None):
+                loc = rsts["位置"]
+            if (rsts["服务"] != None):
+                service = rsts["服务"]
+            if (rsts["卫生"] != None):
+                health = rsts["卫生"]
+            if (rsts["设施"] != None):
+                fac = rsts["设施"]
+
+            comment_txt = content.find("div", class_="comment-txt").find("div", class_="J_brief-cont").get_text().strip()
+            misc_info = content.find("div", class_="misc-info")
+            review_time = misc_info.find("span", class_="time").get_text()[0:8]
+            r_time = review_time.split(u"更")[0].strip()
+
+            l = r_time.__len__()
+            y = datetime.date.today().strftime("%Y")
+            century = "20"
+            if l == 5:
+                r_time = y + "-" + r_time
+            elif l == 8:
+                r_time = century + r_time
+            create_time = datetime.datetime.strptime(r_time, '%Y-%m-%d')
+
+            countWrapper = misc_info.find("span", class_="col-right").find("span", class_="countWrapper")
+            heart = countWrapper.find("a").find("span", class_="heart-num")
+            like = -1
+            if heart != None:
+                like = int(re.sub(r'\D', "", heart.get_text()))
+
+            reply = (countWrapper.next_sibling.next_sibling.find("span", class_="J_rtl"))
+            reply_num = -1
+            if reply != None:
+                reply_num = int(reply.get_text())
+
+        except BaseException, e:
+            print e
+            print traceback.format_exc()
+            print url
+            print "shopId", shopId
+            print "reviewId", review_id
+
+        shopIds.append(shopId)
+        review_ids.append(review_id)
+        user_ids.append(user_id)
+        reviewStars.append(reviewStar)
+        rooms.append(room)
+        locs.append(loc)
+        services.append(service)
+        healths.append(health)
+        facs.append(fac)
+        comment_txts.append(comment_txt)
+        create_times.append(create_time)
+        likes.append(like)
+        reply_nums.append(reply_num)
+
+        result = [shopIds, review_ids, user_ids, reviewStars, rooms, locs, services, healths, facs, comment_txts,
+                  create_times, likes, reply_nums]
+    return result

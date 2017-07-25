@@ -7,6 +7,7 @@ import urlparse
 import re
 from bs4 import BeautifulSoup
 import datetime
+import result_manager
 
 
 def hotel_list():
@@ -163,12 +164,17 @@ def crawling_room():
 def crawling_review():
     print "crawling_shop()"
     REVIEW_URL = "http://www.dianping.com/shop/3715216/review_more"
-    init_review_url_list(REVIEW_URL)
+    # init_review_url_list(REVIEW_URL)
+    url_manager.new_review_urls = set()
+    url_manager.add_new_review_url(REVIEW_URL)
 
     while (url_manager.has_new_review_url()):
-        shopId = int(re.sub(r'\D', "", url))
         url = url_manager.get_new_review_url()
+        print url
         doc = html_download.downloadPage(url)
+        result = html_parser.get_review(doc, url)
+        result_manager.add_new_result(result)
+        output.insert_hotel_review()
 
 
 def init_shop_url_list(goal_url):
@@ -221,8 +227,10 @@ if __name__ == "__main__":
     # crawling_room()
 
 
-    # crawling_review()
-    doc = html_download.downloadPage("http://www.dianping.com/shop/3715216/review_more")
-    soup = html_parser.get_review(doc,3715216)
-    print doc
-    pass
+    crawling_review()
+    # doc = html_download.downloadPage("http://www.dianping.com/shop/3715216/review_more")
+    # result = html_parser.get_review(doc, 3715216)
+    # result_manager.add_new_result(result)
+    # output.insert_hotel_review()
+    # # print doc
+    # pass
