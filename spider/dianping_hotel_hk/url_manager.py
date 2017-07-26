@@ -1,5 +1,7 @@
 # coding=utf-8
 
+import output
+
 new_urls = set()
 old_urls = set()
 
@@ -133,4 +135,5 @@ def has_new_review_url():
 def get_new_review_url():
     new_review_url = new_review_urls.pop()
     old_review_urls.add(new_review_url)
+    output.add_review_url_crawled(new_review_url)
     return new_review_url

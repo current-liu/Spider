@@ -2,12 +2,19 @@
 
 import pymysql
 import result_manager
+import url_manager
+import re
+import sys
+
+reload(sys)
+sys.setdefaultencoding("utf8")
 
 db = pymysql.connect("192.168.1.166", "root", "keystone", "k11data", charset="utf8mb4")
 cursor = db.cursor()
 cursor.execute("select version()")
 data = cursor.fetchone()
 print data
+print pymysql.paramstyle
 
 
 def insert(i, n, d, a, w, t, p, s, r):
@@ -110,12 +117,63 @@ def insert_hotel_review():
         sql = """INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
               facilities,content,creatTime,likes,reply)
               values('%d','%d','%d','%d','%d','%d','%d','%d','%d','%s','%s','%d','%d')""" % \
-              (review_id, user_id, shopId, reviewStar, room, loc, service, health, fac, comment_txt, create_time, like, reply_num,)
+              (review_id, user_id, shopId, reviewStar, room, loc, service, health, fac, comment_txt, create_time, like,
+               reply_num,)
+        sql1 = """INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values(?,?,?,?,?,?,?,?,?,?,?,?,?)"""
+        sql2 = """INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')"""
+        data = (review_id, user_id, shopId, reviewStar, room, loc, service, health, fac,
+                comment_txt.replace("'", "").replace('"', ""),
+                create_time, like,
+                reply_num)
         try:
-            cursor.execute(sql)
+            cursor.execute(sql2 % data)
             db.commit()
         except BaseException, e:
             db.rollback()
             print e
             print "review_id", review_id
             print sql
+
+
+def add_review_url_crawled(url):
+    sql = """INSERT INTO hotel_review_url_crawled (shopId,reviewUrl) VALUES('%s','%s')"""
+    u = url
+    url_mini = url.split("?")[0]
+    shopId = int(re.sub(r'\D', "", url_mini))
+
+    d = (shopId, url)
+    try:
+        cursor.execute(sql % d)
+        db.commit()
+    except BaseException, e:
+        db.rollback()
+        print e
+
+def init_old_review_urls():
+    sql = """SELECT reviewUrl FROM hotel_review_url_crawled"""
+    try:
+        cursor.execute(sql)
+        results = cursor.fetchall()
+    except BaseException, e:
+        db.rollback()
+        print e
+    url_manager.old_review_urls = set(results)
+
+def get_last_old_review_urls():
+    sql = """select reviewUrl from hotel_review_url_crawled a
+              where not exists
+              (select * from hotel_review_url_crawled where shopId=a.shopId and reviewUrl>a.reviewUrl)
+              ORDER BY shopId"""
+    try:
+        cursor.execute(sql)
+        results = cursor.fetchall()
+        return results
+    except BaseException, e:
+        db.rollback()
+        print e
+        return
+    # url_manager.old_review_urls = set(results)

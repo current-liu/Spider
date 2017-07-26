@@ -2,6 +2,8 @@
 
 results = []
 
+a = 1
+
 
 def get_new_result():
     new_res = results.pop()
@@ -13,8 +15,9 @@ def has_new_result():
 
 
 def add_new_result(res):
-    # results += res
-    # 为啥错了
+
+    # results = results + res
+    # 为啥错了 新声明的局部变量覆盖了全局变量，而还没有初始化的时候无法引用
     pass
 
     shopIds = res[0]

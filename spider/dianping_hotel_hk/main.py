@@ -163,18 +163,44 @@ def crawling_room():
 
 def crawling_review():
     print "crawling_shop()"
-    REVIEW_URL = "http://www.dianping.com/shop/3715216/review_more"
-    # init_review_url_list(REVIEW_URL)
-    url_manager.new_review_urls = set()
-    url_manager.add_new_review_url(REVIEW_URL)
+
+    # 从数据库中读取已爬过的review_url
+    init_old_review_urls()
+
+    # 根据shopId初始化new_review_urls
+    init_review_url_list()
+
+    # REVIEW_URL = "http://www.dianping.com/shop/15869165/review_more"
+
+
+    # url_manager.new_review_urls = set()
+    # url_manager.add_new_review_url(REVIEW_URL)
 
     while (url_manager.has_new_review_url()):
-        url = url_manager.get_new_review_url()
+        identify_url = url_manager.get_new_review_url()
+        url = "http://www.dianping.com/shop" + identify_url
         print url
+
         doc = html_download.downloadPage(url)
         result = html_parser.get_review(doc, url)
-        result_manager.add_new_result(result)
-        output.insert_hotel_review()
+        if result:
+            result_manager.add_new_result(result)
+            output.insert_hotel_review()
+
+
+def init_old_review_urls():
+    """#从数据库中读取已爬过的review_url"""
+    message = raw_input("是否从数据库中读取已爬过的review_url？y/n")
+    if message == 'y':
+        output.init_old_review_urls()
+        print "将从数据库中读取已爬过的review_url"
+        u = url_manager.old_review_urls
+        print u
+    elif message == 'n':
+        print "您选择了No"
+    else:
+        print "输入有误"
+        init_old_review_urls()
 
 
 def init_shop_url_list(goal_url):
@@ -206,14 +232,28 @@ def init_room_url_list(goal_url):
         url_manager.add_new_room_url(new_url)
 
 
-def init_review_url_list(goal_url):
-    shop_id_list = output.downloadShopUrl()
-    for shop_id in shop_id_list:
-        i = str(shop_id)
-        s = re.sub(r'\D', "", i)
-        new_url = urlparse.urljoin(goal_url, s)
-        url_manager.add_new_review_url(new_url)
-
+def init_review_url_list():
+    message = raw_input("是否根据shopId初始化new_review_urls？选择否将根据数据库中各shopId最后爬过的url初始化y/n")
+    if message == 'y':
+        print "您选择了Yes"
+        shop_id_list = output.downloadShopUrl()
+        for shop_id in shop_id_list:
+            i = str(shop_id)
+            s = re.sub(r'\D', "", i)
+            new_url = "/" + s + "/review_more"
+            url_manager.add_new_review_url(new_url)
+    elif message == 'n':
+        print "您选择了No，将根据数据库中各shopId最后爬过的url初始化new_review_urls"
+        r = output.get_last_old_review_urls()
+        if r:
+            url_manager.new_review_urls = set(r)
+            print "根据数据库中各shopId最后爬过的url初始化new_review_urls，done"
+        else:
+            print "根据数据库中各shopId最后爬过的url初始化new_review_urls，失败"
+            raise Exception
+    else:
+        print "输入有误"
+        init_review_url_list()
 
 if __name__ == "__main__":
     # 酒店列表
@@ -233,4 +273,8 @@ if __name__ == "__main__":
     # result_manager.add_new_result(result)
     # output.insert_hotel_review()
     # # print doc
-    # pass
+
+    pass
+
+
+

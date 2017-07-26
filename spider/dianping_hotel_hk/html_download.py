@@ -38,7 +38,7 @@ headers_review = {
 
 
 def downloadPage(url):
-    data = requests.get(url, headers=headers).content
+    data = requests.get(url, headers=headers1).content
 
     # data = re.sub(r'\n', '', data)
     return data

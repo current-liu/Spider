@@ -8,6 +8,8 @@ import json
 import datetime
 import traceback
 
+shopId_num = 0
+
 
 def htmlParser(doc):
     URL_FULL = "http://www.dianping.com/shop/3715216"
@@ -287,18 +289,24 @@ def get_review(doc, url):
 
     soup = BeautifulSoup(doc, "lxml")
 
-
     # nextpage_full = "http://www.dianping.com/shop/3715216/review_more?pageno=210"
     try:
         nextpage = soup.find("div", class_="Pages").find("a", class_="NextPage")['href']
     except BaseException, e:
         print e
-        print "shopId '%d'已到末页" % shopId
+        global shopId_num
+        shopId_num += 1
+        print "第'%d'shopId '%d'已到末页" % (shopId_num, shopId)
     else:
         nextpage = urlparse.urljoin(url, nextpage)
-        url_manager.add_new_review_url(nextpage)
+        indentify_url = nextpage.split("shop")[1]
+        url_manager.add_new_review_url(indentify_url)
 
-    comment_list = soup.find("div", class_="comment-list").find("ul").find_all("li", recursive=False)
+    try:
+        comment_list = soup.find("div", class_="comment-list").find("ul").find_all("li", recursive=False)
+    except BaseException, e:
+        print e
+        return
     for li in comment_list:
         try:
             review_id = int(li["data-id"])
@@ -339,7 +347,7 @@ def get_review(doc, url):
             service = -1
             health = -1
             fac = -1
-            if(rsts["房间"] != None):
+            if (rsts["房间"] != None):
                 room = rsts["房间"]
             if (rsts["位置"] != None):
                 loc = rsts["位置"]
@@ -350,7 +358,8 @@ def get_review(doc, url):
             if (rsts["设施"] != None):
                 fac = rsts["设施"]
 
-            comment_txt = content.find("div", class_="comment-txt").find("div", class_="J_brief-cont").get_text().strip()
+            comment_txt = content.find("div", class_="comment-txt").find("div",
+                                                                         class_="J_brief-cont").get_text().strip()
             misc_info = content.find("div", class_="misc-info")
             review_time = misc_info.find("span", class_="time").get_text()[0:8]
             r_time = review_time.split(u"更")[0].strip()
@@ -382,6 +391,9 @@ def get_review(doc, url):
             print "shopId", shopId
             print "reviewId", review_id
 
+            reviewStar = room = loc = service = health = fac = like = reply_num = -2
+            comment_txt = "此条评论信息未完整获取"
+            create_time = ""
         shopIds.append(shopId)
         review_ids.append(review_id)
         user_ids.append(user_id)
