@@ -1,6 +1,6 @@
 # coding=utf-8
 from unittest import TestCase
-import html_parser
+import h_parser
 import html_download
 from bs4 import BeautifulSoup
 import json

@@ -116,9 +116,17 @@ def get_new_room_url():
 
 def add_new_review_url(url):
     if url is None:
+        print url
+        u = url
+        print u
         return
     if url not in new_review_urls and url not in old_review_urls:
         new_review_urls.add(url)
+        print "woqu"
+        u2 = new_review_urls
+        pass
+        x = new_review_urls
+        print  u2
 
 
 def add_new_review_urls(urls):
@@ -133,7 +141,13 @@ def has_new_review_url():
 
 
 def get_new_review_url():
+    urls = new_review_urls
     new_review_url = new_review_urls.pop()
-    old_review_urls.add(new_review_url)
-    output.add_review_url_crawled(new_review_url)
-    return new_review_url
+    url = str(new_review_url)
+    old_review_urls.add(url)
+    output.add_review_url_crawled(url)
+    return url
+
+def print_new_review_url():
+    for url in new_review_urls:
+        print url

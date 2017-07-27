@@ -1,6 +1,6 @@
 from unittest import TestCase
 import html_download
-import html_parser
+import h_parser
 
 
 class TestGet_review(TestCase):
@@ -10,4 +10,4 @@ class TestGet_review(TestCase):
         doc = html_download.downloadPage(REVIEW_URL)
         # print doc
 
-        soup = html_parser.get_review(doc, shopId)
+        soup = h_parser.get_review(doc, shopId)

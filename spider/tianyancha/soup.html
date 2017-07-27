@@ -1,0 +1,1008 @@
+<!DOCTYPE doctype html>
+
+<html>
+<head>
+    <script charset="utf-8" id="allmobilize"
+            src="http://a.yunshipei.com/5e379b82adb8c285693e8cc1180b45a0/allmobilize.min.js"></script>
+    <meta content="no-siteapp" http-equiv="Cache-Control"/>
+    <link href="#" media="handheld" rel="alternate"/>
+    <meta content="UL9rO4nUH5" name="baidu-site-verification"/>
+    <meta charset="utf-8"/>
+    <title>K11 - 意见</title>
+    <!--
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /> -->
+    <meta content="K11是全球首个品牌率先把艺术·人文·自然三大核心元素融合，将艺术欣赏、人文体验、自然环保完美结合和互动，带出无限创意、自由及个性化的生活品牌，并为大众带来前所未有的感官体验。"
+          name="keywords">
+    <meta content="K11是全球首个品牌率先把艺术·人文·自然三大核心元素融合，将艺术欣赏、人文体验、自然环保完美结合和互动，带出无限创意、自由及个性化的生活品牌，并为大众带来前所未有的感官体验。"
+          name="description"/>
+    <meta content="IE=edge;IE=11;IE=10;IE=9; IE=8; IE=7" http-equiv="X-UA-Compatible"/>
+    <meta content="webkit" name="renderer"/>
+    <link href="http://www.shanghaik11.com/statics/css/style_v2.css" rel="stylesheet" type="text/css"/>
+    <link href="http://www.shanghaik11.com/statics/css/style_phone.css" rel="stylesheet" type="text/css"/>
+    <script src="http://www.shanghaik11.com/statics/js/jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $(".vlb_choose").click(function () {
+                if ($(this).hasClass("vlb_choose_on")) {
+                    $(this).removeClass("vlb_choose_on");
+                } else {
+                    $(this).addClass("vlb_choose_on");
+                }
+            });
+
+            $(".mt_a").hover(function () {
+                $('.mt_a>span').hide();
+                var id = $(this).attr('id');
+                var src = $('.menu_' + id + '>ul>li:eq(1)>a>span>img').attr('src');
+                var href = $('.menu_' + id + '>ul>li:eq(1)>a').attr('href');
+                $('.menu_' + id + '>ul>li:eq(0)>a>img').attr('src', src);
+                $('.menu_' + id + '>ul>li:eq(0)>a').attr('href', href);
+                $('.menu_' + id).show();
+            }, function () {
+                $('.mt_a>span').hide();
+                var id = $(this).attr('id');
+                $('.menu_' + id).hide();
+            });
+
+            $(".menu_box").hover(function () {
+                $(this).show();
+            }, function () {
+                $(this).hide();
+            });
+
+            $('.menu_list>a').hover(function () {
+                var href = $(this).attr('href');
+                var src = $(this).find('img').attr('src');
+                var id = $(this).attr('id');
+                $('#' + id + '_img').attr('src', src);
+                $('#' + id + '_img').parent().attr('href', href);
+            }, function () {
+
+            });
+
+            /*  $(".mt_a").hover(function(){
+             $('.mt_a>span').hide();
+             var id = $(this).attr('id');
+             var imgsrc = $(this).find('span').attr('id');
+             if(imgsrc){
+             //$('.menu_'+id+'>ul>li:eq(0)>a>img').attr('src',imgsrc);
+             }
+             $(this).find('span').show();
+
+             $('.menu_'+id).show();
+             },function(){
+             $('.mt_a>span').hide();
+             var id = $(this).attr('id');
+             $('.menu_'+id).hide();
+             });*/
+            /*  $('.menu_box').hover(function(){
+             var id = $(this).attr('id').substring(1);
+             $('#'+id+'>span').show();
+
+             $(this).show();
+             },function(){
+             var id = $(this).attr('id').substring(1);
+             $('#'+id+'>span').hide();
+             $(this).hide();
+             });
+             $('.menu_text>a').hover(function(){
+             var href = $(this).attr('href');
+             $('.menu_banner>a').attr('href',href);
+             },function(){
+
+             });
+             $('.menu_list>a').hover(function(){
+             var href = $(this).attr('href');
+             var img = $(this).find('span>img').attr('src');
+             var id = $(this).attr('id');
+             $('.menu_banner>a').attr('href',href);
+             $('#'+id+'_img').attr('src',img);
+             },function(){
+             var imgsrc = $(this).attr('value');
+             var id = $(this).attr('id');
+             $('#'+id+'_img').attr('src',imgsrc);
+             });
+             */
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 10) {
+                    $("#back-to-top").stop();
+                    $("#back-to-top").show();
+                } else {
+                    $("#back-to-top").stop();
+                    $("#back-to-top").hide();
+                }
+            });
+            $("#back-to-top").on('click', function () {
+                $('body,html').animate({
+                    'scrollTop': '0'
+                }, 1000);
+                return false;
+            });
+            //一进来先隐藏掉返回顶部
+            $("#back-to-top").hide();
+
+            $(".btn_login_1214").click(function () {
+                $(".light_login_box_1214").fadeIn();
+                $(".login_box_1214").show();
+            });
+            $(".btn_sigin_1214").click(function () {
+                $(".light_login_box_1214").fadeIn();
+                $(".sigin_box_1214").show();
+            });
+            $(".btn_closed_bg").click(function () {
+                $(".light_login_box_1214").fadeOut();
+                $(".sigin_box_1214").hide();
+                $(".login_box_1214").hide();
+            });
+        });
+
+        $(function () {
+
+
+            if ('') {
+                $(".phl_like").click(function () {
+                    $(this).toggleClass("phl_like_hover");
+                });
+
+                $(".sp_video_player dd .icon-love").click(function () {
+                    $(this).toggleClass("icon-love_hover");
+                });
+
+                $(".sp_talent_good dd .icon-love").click(function () {
+                    $(this).toggleClass("icon-love_hover");
+                });
+
+                $(".sp_talent_icon .icon-love").click(function () {
+                    $(this).toggleClass("icon-love_hover");
+                });
+
+                $(".ftbt_like>a").click(function () {
+                    $(this).toggleClass("ftbt_like_ahover");
+                });
+
+                $(".icbtrl_btn").click(function () {
+                    $(this).toggleClass("icbtrl_btn_hover");
+                });
+
+                $(".btn_z").click(function () {
+                    $(this).toggleClass("btn_z_hover");
+                });
+
+                $(".video_like").click(function () {
+                    var this_fav_icon = $(this).find("img").attr("src");
+                    if (this_fav_icon == 'http://www.shanghaik11.com/statics/images/icon_like.png') {
+                        $(this).find("img").attr("src", 'http://www.shanghaik11.com/statics/images/icon_like_hover.png');
+                    } else {
+                        $(this).find("img").attr("src", 'http://www.shanghaik11.com/statics/images/icon_like.png');
+                    }
+                });
+
+                $(".wrbl_hover b a").click(function () {
+                    var this_fav_icon = $(this).find("img").attr("src");
+                    if (this_fav_icon == 'http://www.shanghaik11.com/statics/images/icon/love_21x20.png') {
+                        $(this).find("img").attr("src", 'http://www.shanghaik11.com/statics/images/icon/love_21x20_hover.png');
+                    } else {
+                        $(this).find("img").attr("src", 'http://www.shanghaik11.com/statics/images/icon/love_21x20.png');
+                    }
+
+                });
+
+                $(".dvhr_like a").click(function () {
+                    var this_commentid = $(this).attr('id');
+                    var this_commentid_arr = this_commentid.split("_");
+                    var this_id = this_commentid_arr[1];
+                    var this_catid_arr = this_id.split("-");
+                    var this_catid = this_catid_arr[1];
+                    var this_favtype = $('#' + this_catid + '_favtype').val();
+                    if (this_favtype == 1) {
+                        $('#' + this_catid + '_favtype').val('0');
+                    } else {
+                        $('#' + this_catid + '_favtype').val('1');
+                    }
+                    var this_fav_icon = $(this).find("img").attr("src");
+                    if (this_fav_icon == 'http://www.shanghaik11.com/statics/images/icon/love_21x20.png') {
+                        $(this).find("img").attr("src", 'http://www.shanghaik11.com/statics/images/icon/love_21x20_hover.png');
+                    } else {
+                        $(this).find("img").attr("src", 'http://www.shanghaik11.com/statics/images/icon/love_21x20.png');
+                    }
+
+                });
+            }
+
+
+        });
+
+    </script>
+    <style type="text/css">
+        .menu_banner > a > img {
+            width: 240px;
+            height: 130px;
+        }
+    </style>
+    <!-- 百度统计 -->
+    <script>
+        //shanghaik11
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?6f3565c8354503741a20726b0b004a0e";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <!--
+    <script>
+    // 139
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?5578d7c1e4effa4d2d76604d233c0ce9";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>-->
+    </meta></head>
+<body>
+<div class="light_login_box_1214" style="display:none;">
+    <div class="login_box lb_pt lb_height login_box_1214">
+        <a class="lbb_close" href="###" id="lbb_close" onclick="$('.light_login_box_1214').fadeOut(300)"
+           style="border:0px;top:50%;left:50%;margin-left:230px;margin-top:-310px;z-index:9999;"></a>
+        <iframe class="lb_box" id="lb_box" src="/index.php?m=member&amp;c=index&amp;a=ilogin"></iframe>
+    </div>
+    <div class="login_box lb_pt lb_height sigin_box_1214">注册哟</div>
+</div>
+<div class="remind_box" style="display:none;">
+    <div class="remind_div"><p class="remind_info"></p>
+        <a onclick="$('.remind_box').hide()">点击返回</a>
+    </div>
+</div>
+<!---------------------- head ---------------------------->
+<div class="head">
+    <div class="all_width">
+        <a class="logo" href="http://www.shanghaik11.com/" style="z-index:9999;"><img
+                src="http://www.shanghaik11.com/statics/images/logo_head.png"/></a>
+        <ul class="menu">
+            <li class="login_box">
+                <a class="no_border" href="http://www.shanghaik11.com/index.php?m=member&amp;c=index&amp;a=login">登
+                    录</a>
+                <a href="http://www.shanghaik11.com/index.php?m=member&amp;c=index&amp;a=register">注 册</a>
+            </li>
+            <li class="menu_text">
+                <a class="mt_a" href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=14" id="art">艺 术
+                    <span id=""><img src="http://www.shanghaik11.com/statics/images/icon_menu.png"/></span>
+                </a>
+                <a class="mt_a" href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=9" id="shopping">购 物
+                    <span id=""><img src="http://www.shanghaik11.com/statics/images/icon_menu.png"/></span>
+                </a>
+                <a class="mt_a" href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=8" id="dinning">食 味
+                    <span id=""><img src="http://www.shanghaik11.com/statics/images/icon_menu.png"/></span>
+                </a>
+                <a class="mt_a" href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=36" id="forum">社 区
+                    <span id="http://www.shanghaik11.com/uploadfile/2016/0125/20160125092758207.jpg"><img
+                            src="http://www.shanghaik11.com/statics/images/icon_menu.png"/></span>
+                </a>
+                <a class="mt_a" href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=31" id="activity">活 动
+                    <span><img src="http://www.shanghaik11.com/statics/images/icon_menu.png"/></span>
+                </a>
+                <a class="mt_b" href="http://klub11.shanghaik11.com" id="club">Klub11
+                    <span><img src="http://www.shanghaik11.com/statics/images/icon_menu.png"/></span>
+                </a>
+                <!-- <a id="kuriosity" class="mt_b" href="https://www.k11kuriosity.com">Kuriosity
+                                        <span><img src="http://www.shanghaik11.com/statics/images/icon_menu.png" /></span>
+                                    </a> -->
+                <div class="menu_art menu_box" id="_art">
+                    <ul>
+                        <li class="menu_banner" style="margin-left:0px !important;">
+                            <a href="###">
+                                <img id="list_a_14_img" src=""/>
+                            </a>
+                        </li>
+                        <li class="menu_list">
+                            <a href="http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=show&amp;catid=17&amp;id=82"
+                               id="list_a_14" value="">FantasyAccessCode/Creator <span><img
+                                    src="http://www.shanghaik11.com/uploadfile/2017/0613/20170613121712603.jpg"/></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu_shopping menu_box" id="_shopping">
+                    <ul>
+                        <li class="menu_banner" style="margin-left:105px !important;">
+                            <a href="###">
+                                <img id="list_a_9_img" src=""/>
+                            </a>
+                        </li>
+                        <li class="menu_list">
+                            <a href="http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=10"
+                               id="list_a_9" value="">风尚白皮书 <span><img
+                                    src="http://www.shanghaik11.com/uploadfile/2016/0201/20160201022851655.jpg"/></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu_dinning menu_box" id="_dinning">
+                    <ul>
+                        <li class="menu_banner" style="margin-left:210px !important;">
+                            <a href="/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=83">
+                                <img id="list_a_8_img" src=""/>
+                            </a>
+                        </li>
+                        <li class="menu_list">
+                            <a href="http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=83"
+                               id="list_a_8" value="">食味K11 <span><img
+                                    src="http://www.shanghaik11.com/uploadfile/2016/0122/20160122042920596.jpg"/></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu_forum menu_box" id="_forum">
+                    <ul>
+                        <li class="menu_banner" style="margin-left:315px !important;">
+                            <a href="###">
+                                <img id="list_a_36_img"
+                                     src="http://www.shanghaik11.com/uploadfile/2016/0125/20160125092758207.jpg"/>
+                            </a>
+                        </li>
+                        <li class="menu_list">
+                            <a href="http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=54"
+                               id="list_a_36"
+                               value="http://www.shanghaik11.com/uploadfile/2016/0125/20160125092758207.jpg">创意星人 <span><img
+                                    src="http://www.shanghaik11.com/uploadfile/2016/0128/20160128075537611.jpg"/></span>
+                            </a>
+                            <a href="http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=59"
+                               id="list_a_36"
+                               value="http://www.shanghaik11.com/uploadfile/2016/0125/20160125092758207.jpg">今日最热 <span><img
+                                    src="http://www.shanghaik11.com/uploadfile/2016/0105/20160105033809587.jpg"/></span>
+                            </a>
+                            <a href="http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=88"
+                               id="list_a_36"
+                               value="http://www.shanghaik11.com/uploadfile/2016/0125/20160125092758207.jpg">印象 K11
+                                <span><img src="http://www.shanghaik11.com/uploadfile/2016/0426/20160426043954192.jpg"/></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu_activity menu_box" id="_activity">
+                    <ul>
+                        <li class="menu_banner" style="margin-left:315px !important;">
+                            <a href="###">
+                                <img id="list_a_7_img"
+                                     src="http://www.shanghaik11.com/uploadfile/2016/0302/20160302112111246.jpg"/>
+                            </a>
+                        </li>
+                        <li class="menu_list">
+                            <a href="http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=show&amp;catid=17&amp;id=103"
+                               id="list_a_7"
+                               value="http://www.shanghaik11.com/uploadfile/2016/0302/20160302112111246.jpg">最新活动 <span><img
+                                    src="http://www.shanghaik11.com/uploadfile/2017/0602/20170602051523363.jpg"/></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--<div class="menu_club menu_box"  id="_club">
+                                        <ul>
+                                            <li class="menu_banner"><img src="http://www.shanghaik11.com/statics/images/head_banner.jpg"></li>
+                                            <li class="menu_list">
+                                                <a href="###">6达利展</a>
+                                                <a href="###">K11工作坊</a>
+                                                <a href="###">艺游</a>
+                                            </li>
+                                        </ul>
+                                    </div>-->
+            </li>
+        </ul>
+    </div>
+</div>
+<a href="###" id="back-to-top"
+   style="width:55px; height:55px; display:block; position:fixed; bottom:0; right:0; background:url(http://www.shanghaik11.com/statics/images/bt_top.jpg) no-repeat center; background-size:55px 55px; z-index:999;"></a>
+<div class="video_box" style="top:0px;">
+    <div>
+        <a class="vb_close" onclick="$('.video_box').fadeOut(300);$('#video_iframe').attr('src','');">
+            <img src="http://www.shanghaik11.com/statics/images/icon_close.png"/>
+        </a>
+        <div class="vb_play" style="width:100%;height:100%;background:black;">
+            <iframe allowfullscreen="" frameborder="0" height="100%" id="video_iframe" src="" width="100%"></iframe>
+        </div>
+    </div>
+</div>
+<script charset="utf-8" id="allmobilize"
+        src="http://a.yunshipei.com/5e379b82adb8c285693e8cc1180b45a0/allmobilize.min.js"></script>
+<meta content="no-siteapp" http-equiv="Cache-Control">
+<link href="#" media="handheld" rel="alternate">
+<link href="http://www.shanghaik11.com/statics/css/style_voc.css" rel="stylesheet"/>
+<link href="http://www.shanghaik11.com/emoji/emoji.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+    .emoji_name {
+        display: inline-block !important;
+        width: 84px !important;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .emoji_name > span {
+        width: 20px;
+    }
+
+</style>
+<script type="text/javascript">
+    $(function () {
+        $(".sharewb").on('click', function () {
+
+            var title = $(this).attr('titlt');
+            var pic = $(this).attr('pic');
+            var url = 'http://v.t.sina.com.cn/share/share.php?url=' + encodeURIComponent(location.href) + '&appkey=&title=' + encodeURIComponent(title) + '&searchPic=false' + '&pic=' + encodeURIComponent(pic);
+            window.open(url);
+        });
+        $(".shareqq").on('click', function () {
+            var title = $(this).attr('titlt');
+            var url = 'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=' + encodeURIComponent(location.href) + '&title=' + encodeURIComponent(title);
+            window.open(url);
+        });
+    })
+</script>
+<!---------------------  center_1  ------------------------>
+<div class="big_box iris_box" style="top: 109px;">
+    <div class="clear_h50"></div>
+    <div class="all_width center_1">
+        <ul>
+            <li class="c1_left_1 c1_left_iris">
+                <div class="ideas_tit">
+                    <span style="font-size: 36px;margin-bottom: 20px;">VOICE 11</span>
+                    <span style="font-size: 24px;">K11用户声音</span>
+                    <div class="clear_h40"></div>
+                    <div class="topic_box_iris">
+                        <span onclick="window.location.href='http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=90&amp;page=1&amp;tag=公共设施'">#公共设施(28)</span>
+                        <span onclick="window.location.href='http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=90&amp;page=1&amp;tag=商品'">#商品(3)</span>
+                        <span onclick="window.location.href='http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=90&amp;page=1&amp;tag=展览'">#展览(14)</span>
+                        <span class="no_margin"
+                              onclick="window.location.href='http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=90&amp;page=1&amp;tag=服务'">#服务(4)</span>
+                        <span onclick="window.location.href='http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=90&amp;page=1&amp;tag=活动'">#活动(12)</span>
+                        <span onclick="window.location.href='http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=90&amp;page=1&amp;tag=硬件设备'">#硬件设备(2)</span>
+                    </div>
+                    <div class="time_rank time_rank_bg" style="background:url();"><a
+                            href="http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=90&amp;page=1&amp;orderby=date&amp;tag="
+                            style="display: inline;"><img src="http://www.shanghaik11.com/statics/images/time_icon2.png"
+                                                          style="display: inline;height: 11px;padding-right: 4px;">按时间排序</img>
+                    </a></div>
+                </div>
+                <ul class="ideas_list">
+                    <li>
+                        <img alt="" class="ideas_head_pic"
+                             src="http://wx.qlogo.cn/mmopen/mhKPwpAeicGTXxlvjKXdXKlMlf9t5g7l7Z29Z0BCJRpgI0lfLZ4MdFgFI4hojWjic6YkmSRDRPCm1lA4yficNBDa4xds6FpROHic/0"/>
+                        <div class="ideas_con_iris">
+<span style="display:inline;"><span class="emoji_name">Amy</span>
+<label>06月08日 20:41:55                                    <span class="shareicon" style="display:inline;">
+<img alt="" src="http://www.shanghaik11.com/statics/images/ideashare_icon1.png" style="width:16px;"/>
+<img alt="" class="sharewb" pic="http://wechat.shanghaik11.com/wp-content/uploads/2016/04/shangpin2.jpg"
+     src="http://www.shanghaik11.com/statics/images/ideawb_icon.png" style="cursor:pointer;display:none;"
+     titlt="六月八号我在百丽买的包积分没积进去"/>
+<img alt="" class="shareqq" pic="http://wechat.shanghaik11.com/wp-content/uploads/2016/04/shangpin2.jpg"
+     src="http://www.shanghaik11.com/statics/images/ideakj_icon.png" style="cursor:pointer;display:none;"
+     titlt="六月八号我在百丽买的包积分没积进去"/>
+</span>
+</label></span>
+                            <div class="ideas_con_detail" id="ideas_con_iris1"><span>六月八号我在百丽买的包积分没积进去</span>
+                                <input class="all_title" type="hidden" value="六月八号我在百丽买的包积分没积进去 "/>
+                                <input class="s_title" type="hidden" value="六月八号我在百丽买的包积分没积进去 "/>
+                            </div>
+                            <div class="topic_label">
+                                #商品 
+                            </div>
+                            <div class="k11_reply">
+                                <span style="margin-bottom: 5px">K11客服回复 : </span>
+                                <div class="k11_reply_con">
+                                    感谢您的提醒。您是否有保留消费小票，若有小票在身，可以直接使用我们微信上的自助积分，消费起七日之内都可以有效积分；倘若您对微信端积分操作不熟悉，可以电话咨询我们服务人员，或者直接携带小票前往B2服务台，让客服人员帮您操作。电话：23103188或63876688。
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <img alt="" class="ideas_head_pic"
+                             src="http://wx.qlogo.cn/mmopen/ajNVdqHZLLBHtsmXkpuADtETviaTs5DnBYBczBzbQ9fMMXvJ1CVUwjcmul6eNC3LQn85ciaNrxRibLN43kiaD3B9HQ/0"/>
+                        <div class="ideas_con_iris">
+<span style="display:inline;"><span class="emoji_name">小蝴蝶</span>
+<label>06月01日 10:06:32                                    <span class="shareicon" style="display:inline;">
+<img alt="" src="http://www.shanghaik11.com/statics/images/ideashare_icon1.png" style="width:16px;"/>
+<img alt="" class="sharewb" pic="http://wechat.shanghaik11.com/wp-content/uploads/2016/04/huodong4.jpg"
+     src="http://www.shanghaik11.com/statics/images/ideawb_icon.png" style="cursor:pointer;display:none;"
+     titlt="楼下展览还有吗? 撤了?? "/>
+<img alt="" class="shareqq" pic="http://wechat.shanghaik11.com/wp-content/uploads/2016/04/huodong4.jpg"
+     src="http://www.shanghaik11.com/statics/images/ideakj_icon.png" style="cursor:pointer;display:none;"
+     titlt="楼下展览还有吗? 撤了?? "/>
+</span>
+</label></span>
+                            <div class="ideas_con_detail" id="ideas_con_iris1"><span>楼下展览还有吗? 撤了?? </span>
+                                <input class="all_title" type="hidden" value="楼下展览还有吗? 撤了??  "/>
+                                <input class="s_title" type="hidden" value="楼下展览还有吗? 撤了??  "/>
+                            </div>
+                            <div class="topic_label">
+                                #活动 
+                            </div>
+                            <div class="k11_reply">
+                                <span style="margin-bottom: 5px">K11客服回复 : </span>
+                                <div class="k11_reply_con">
+                                    当前正在举办的展览是《After us》，该展览是与纽约新美术馆开启在华的首次重要展览，本次展览有雕塑、装置、摄影作品、现场表演、录像和融合虚拟现实的作品，
+                                    探究了艺术家让其赋予生命的原始角色，即将当前社会和情绪条件扩大化并猜测未来潜在状态的角色。展览原定于2017年5月31日结束。由于收到众多艺术支持者的喜欢，于是将其延期至2017年6月5日，欢迎前去参观。新展预告：《通往奇幻世界的密码》、《女女——当代女性的自我和他我》，更多展览详情请关注K11官方微信。
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <img alt="" class="ideas_head_pic"
+                             src="http://wx.qlogo.cn/mmopen/ajNVdqHZLLBHtsmXkpuADtETviaTs5DnBYBczBzbQ9fMMXvJ1CVUwjcmul6eNC3LQn85ciaNrxRibLN43kiaD3B9HQ/0"/>
+                        <div class="ideas_con_iris">
+<span style="display:inline;"><span class="emoji_name">小蝴蝶</span>
+<label>04月28日 14:22:19                                    <span class="shareicon" style="display:inline;">
+<img alt="" src="http://www.shanghaik11.com/statics/images/ideashare_icon1.png" style="width:16px;"/>
+<img alt="" class="sharewb" pic="http://wechat.shanghaik11.com/wp-content/uploads/2016/04/sheshi1.jpg"
+     src="http://www.shanghaik11.com/statics/images/ideawb_icon.png" style="cursor:pointer;display:none;"
+     titlt="有的店铺有自己音乐，商场也有自己音乐，还忽大忽小，有点嘈杂"/>
+<img alt="" class="shareqq" pic="http://wechat.shanghaik11.com/wp-content/uploads/2016/04/sheshi1.jpg"
+     src="http://www.shanghaik11.com/statics/images/ideakj_icon.png" style="cursor:pointer;display:none;"
+     titlt="有的店铺有自己音乐，商场也有自己音乐，还忽大忽小，有点嘈杂"/>
+</span>
+</label></span>
+                            <div class="ideas_con_detail" id="ideas_con_iris1">
+                                <span>有的店铺有自己音乐，商场也有自己音乐，还忽大忽小，有点嘈杂</span>
+                                <input class="all_title" type="hidden" value="有的店铺有自己音乐，商场也有自己音乐，还忽大忽小，有点嘈杂 "/>
+                                <input class="s_title" type="hidden" value="有的店铺有自己音乐，商场也有自己音乐，还忽大忽小，有点嘈杂 "/>
+                            </div>
+                            <div class="topic_label">
+                                #公共设施 
+                            </div>
+                            <div class="k11_reply">
+                                <span style="margin-bottom: 5px">K11客服回复 : </span>
+                                <div class="k11_reply_con">
+                                    感谢您的宝贵意见。音响问题我们会立即处理，创造舒心宜人的购物环境。与店铺的背景音乐重合问题，我们会积极地尽快地协调，再次感谢您的意见，欢迎您在K11度过愉快的一天。
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <img alt="" class="ideas_head_pic"
+                             src="http://wx.qlogo.cn/mmopen/ajNVdqHZLLBHtsmXkpuADtETviaTs5DnBYBczBzbQ9fMMXvJ1CVUwjcmul6eNC3LQn85ciaNrxRibLN43kiaD3B9HQ/0"/>
+                        <div class="ideas_con_iris">
+<span style="display:inline;"><span class="emoji_name">小蝴蝶</span>
+<label>04月17日 09:15:55                                    <span class="shareicon" style="display:inline;">
+<img alt="" src="http://www.shanghaik11.com/statics/images/ideashare_icon1.png" style="width:16px;"/>
+<img alt="" class="sharewb" pic="http://wechat.shanghaik11.com/wp-content/uploads/2016/04/sheshi2.jpg"
+     src="http://www.shanghaik11.com/statics/images/ideawb_icon.png" style="cursor:pointer;display:none;"
+     titlt="WiFi连接不上  快修修"/>
+<img alt="" class="shareqq" pic="http://wechat.shanghaik11.com/wp-content/uploads/2016/04/sheshi2.jpg"
+     src="http://www.shanghaik11.com/statics/images/ideakj_icon.png" style="cursor:pointer;display:none;"
+     titlt="WiFi连接不上  快修修"/>
+</span>
+</label></span>
+                            <div class="ideas_con_detail" id="ideas_con_iris1"><span>WiFi连接不上  快修修</span>
+                                <input class="all_title" type="hidden" value="WiFi连接不上  快修修 "/>
+                                <input class="s_title" type="hidden" value="WiFi连接不上  快修修 "/>
+                            </div>
+                            <div class="topic_label">
+                                #公共设施 
+                            </div>
+                            <div class="k11_reply">
+                                <span style="margin-bottom: 5px">K11客服回复 : </span>
+                                <div class="k11_reply_con">
+                                    感谢您的提醒，我们会尽快联系工作人员修复网络情况，积极为您创造一个轻松且极速外联的购物环境。
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <img alt="" class="ideas_head_pic"
+                             src="http://wx.qlogo.cn/mmopen/ajNVdqHZLLBHtsmXkpuADtETviaTs5DnBYBczBzbQ9fMMXvJ1CVUwjcmul6eNC3LQn85ciaNrxRibLN43kiaD3B9HQ/0"/>
+                        <div class="ideas_con_iris">
+<span style="display:inline;"><span class="emoji_name">小蝴蝶</span>
+<label>04月06日 14:11:07                                    <span class="shareicon" style="display:inline;">
+<img alt="" src="http://www.shanghaik11.com/statics/images/ideashare_icon1.png" style="width:16px;"/>
+<img alt="" class="sharewb" pic="http://wechat.shanghaik11.com/wp-content/uploads/2016/04/sheshi5.jpg"
+     src="http://www.shanghaik11.com/statics/images/ideawb_icon.png" style="cursor:pointer;display:none;"
+     titlt="鸿星荟四楼电梯到了之后没有光标提示，很麻烦"/>
+<img alt="" class="shareqq" pic="http://wechat.shanghaik11.com/wp-content/uploads/2016/04/sheshi5.jpg"
+     src="http://www.shanghaik11.com/statics/images/ideakj_icon.png" style="cursor:pointer;display:none;"
+     titlt="鸿星荟四楼电梯到了之后没有光标提示，很麻烦"/>
+</span>
+</label></span>
+                            <div class="ideas_con_detail" id="ideas_con_iris1"><span>鸿星荟四楼电梯到了之后没有光标提示，很麻烦</span>
+                                <input class="all_title" type="hidden" value="鸿星荟四楼电梯到了之后没有光标提示，很麻烦 "/>
+                                <input class="s_title" type="hidden" value="鸿星荟四楼电梯到了之后没有光标提示，很麻烦 "/>
+                            </div>
+                            <div class="topic_label">
+                                #公共设施 
+                            </div>
+                            <div class="k11_reply">
+                                <span style="margin-bottom: 5px">K11客服回复 : </span>
+                                <div class="k11_reply_con">
+                                    感谢您的宝贵意见，我们会尽快处理此问题，尽力为您提供最人性化的服务。
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <img alt="" class="ideas_head_pic"
+                             src="http://wx.qlogo.cn/mmopen/ajNVdqHZLLBHtsmXkpuADtETviaTs5DnBYBczBzbQ9fMMXvJ1CVUwjcmul6eNC3LQn85ciaNrxRibLN43kiaD3B9HQ/0"/>
+                        <div class="ideas_con_iris">
+<span style="display:inline;"><span class="emoji_name">小蝴蝶</span>
+<label>03月22日 10:29:31                                    <span class="shareicon" style="display:inline;">
+<img alt="" src="http://www.shanghaik11.com/statics/images/ideashare_icon1.png" style="width:16px;"/>
+<img alt="" class="sharewb" pic="http://wechat.shanghaik11.com/wp-content/uploads/2016/04/fuwu2.jpg"
+     src="http://www.shanghaik11.com/statics/images/ideawb_icon.png" style="cursor:pointer;display:none;"
+     titlt="另茶排队太久，挡住了路"/>
+<img alt="" class="shareqq" pic="http://wechat.shanghaik11.com/wp-content/uploads/2016/04/fuwu2.jpg"
+     src="http://www.shanghaik11.com/statics/images/ideakj_icon.png" style="cursor:pointer;display:none;"
+     titlt="另茶排队太久，挡住了路"/>
+</span>
+</label></span>
+                            <div class="ideas_con_detail" id="ideas_con_iris1"><span>另茶排队太久，挡住了路</span>
+                                <input class="all_title" type="hidden" value="另茶排队太久，挡住了路 "/>
+                                <input class="s_title" type="hidden" value="另茶排队太久，挡住了路 "/>
+                            </div>
+                            <div class="topic_label">
+                                #服务 
+                            </div>
+                            <div class="k11_reply">
+                                <span style="margin-bottom: 5px">K11客服回复 : </span>
+                                <div class="k11_reply_con">
+                                    感谢您的宝贵意见，我们会为排队提前做好准备，安排好队伍的流水线，希望您能在K11度过愉快的一天。
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <img alt="" class="ideas_head_pic"
+                             src="http://wx.qlogo.cn/mmopen/ajNVdqHZLLBHtsmXkpuADtETviaTs5DnBYBczBzbQ9fMMXvJ1CVUwjcmul6eNC3LQn85ciaNrxRibLN43kiaD3B9HQ/0"/>
+                        <div class="ideas_con_iris">
+<span style="display:inline;"><span class="emoji_name">小蝴蝶</span>
+<label>03月09日 14:09:10                                    <span class="shareicon" style="display:inline;">
+<img alt="" src="http://www.shanghaik11.com/statics/images/ideashare_icon1.png" style="width:16px;"/>
+<img alt="" class="sharewb" pic="http://wechat.shanghaik11.com/wp-content/uploads/2016/04/huodong5.jpg"
+     src="http://www.shanghaik11.com/statics/images/ideawb_icon.png" style="cursor:pointer;display:none;"
+     titlt="期待中庭新活动，千纸鹤走了觉得1楼也空荡荡的，怪冷清的"/>
+<img alt="" class="shareqq" pic="http://wechat.shanghaik11.com/wp-content/uploads/2016/04/huodong5.jpg"
+     src="http://www.shanghaik11.com/statics/images/ideakj_icon.png" style="cursor:pointer;display:none;"
+     titlt="期待中庭新活动，千纸鹤走了觉得1楼也空荡荡的，怪冷清的"/>
+</span>
+</label></span>
+                            <div class="ideas_con_detail" id="ideas_con_iris1"><span>期待中庭新活动，千纸鹤走了觉得1楼也空荡荡的，怪冷清的</span>
+                                <input class="all_title" type="hidden" value="期待中庭新活动，千纸鹤走了觉得1楼也空荡荡的，怪冷清的 "/>
+                                <input class="s_title" type="hidden" value="期待中庭新活动，千纸鹤走了觉得1楼也空荡荡的，怪冷清的 "/>
+                            </div>
+                            <div class="topic_label">
+                                #活动 
+                            </div>
+                            <div class="k11_reply">
+                                <span style="margin-bottom: 5px">K11客服回复 : </span>
+                                <div class="k11_reply_con">
+                                    感谢您的宝贵意见，每次来K11都会认识一个新的K11，B3新展即将开幕，最新的pop up也在紧锣密鼓当中，再给我们一点点的时间，马上为您呈现一个活力新鲜的K11！
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <img alt="" class="ideas_head_pic"
+                             src="http://wx.qlogo.cn/mmopen/ajNVdqHZLLBHtsmXkpuADtETviaTs5DnBYBczBzbQ9fMMXvJ1CVUwjcmul6eNC3LQn85ciaNrxRibLN43kiaD3B9HQ/0"/>
+                        <div class="ideas_con_iris">
+<span style="display:inline;"><span class="emoji_name">小蝴蝶</span>
+<label>02月23日 11:08:00                                    <span class="shareicon" style="display:inline;">
+<img alt="" src="http://www.shanghaik11.com/statics/images/ideashare_icon1.png" style="width:16px;"/>
+<img alt="" class="sharewb" pic="http://wechat.shanghaik11.com/wp-content/uploads/2016/04/zhanlan5.jpg"
+     src="http://www.shanghaik11.com/statics/images/ideawb_icon.png" style="cursor:pointer;display:none;"
+     titlt="什么时候会有新展呀"/>
+<img alt="" class="shareqq" pic="http://wechat.shanghaik11.com/wp-content/uploads/2016/04/zhanlan5.jpg"
+     src="http://www.shanghaik11.com/statics/images/ideakj_icon.png" style="cursor:pointer;display:none;"
+     titlt="什么时候会有新展呀"/>
+</span>
+</label></span>
+                            <div class="ideas_con_detail" id="ideas_con_iris1"><span>什么时候会有新展呀</span>
+                                <input class="all_title" type="hidden" value="什么时候会有新展呀 "/>
+                                <input class="s_title" type="hidden" value="什么时候会有新展呀 "/>
+                            </div>
+                            <div class="topic_label">
+                                #展览 
+                            </div>
+                            <div class="k11_reply">
+                                <span style="margin-bottom: 5px">K11客服回复 : </span>
+                                <div class="k11_reply_con">
+                                    感谢您的宝贵意见。关于最新的展览信息可以持续关注K11微信、微博、商场等渠道的相关宣传。感谢您对K11艺术展的支持。
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <img alt="" class="ideas_head_pic"
+                             src="http://wx.qlogo.cn/mmopen/ops7TUrOUFpiaFoLtpxA365dcNraekE1hfraK10KldoGHugR54P8ZSEiaAVETG4RfN1EVEZiaz7qMsJRGgsgzkia1CUJRmfIT39V/0"/>
+                        <div class="ideas_con_iris">
+<span style="display:inline;"><span class="emoji_name">李向群</span>
+<label>01月25日 10:01:34                                    <span class="shareicon" style="display:inline;">
+<img alt="" src="http://www.shanghaik11.com/statics/images/ideashare_icon1.png" style="width:16px;"/>
+<img alt="" class="sharewb" pic="http://wechat.shanghaik11.com/wp-content/uploads/2016/04/sheshi1.jpg"
+     src="http://www.shanghaik11.com/statics/images/ideawb_icon.png" style="cursor:pointer;display:none;"
+     titlt="喜欢你们的艺术购物氛围。"/>
+<img alt="" class="shareqq" pic="http://wechat.shanghaik11.com/wp-content/uploads/2016/04/sheshi1.jpg"
+     src="http://www.shanghaik11.com/statics/images/ideakj_icon.png" style="cursor:pointer;display:none;"
+     titlt="喜欢你们的艺术购物氛围。"/>
+</span>
+</label></span>
+                            <div class="ideas_con_detail" id="ideas_con_iris1"><span>喜欢你们的艺术购物氛围。</span>
+                                <input class="all_title" type="hidden" value="喜欢你们的艺术购物氛围。 "/>
+                                <input class="s_title" type="hidden" value="喜欢你们的艺术购物氛围。 "/>
+                            </div>
+                            <div class="topic_label">
+                                #公共设施 
+                            </div>
+                            <div class="k11_reply">
+                                <span style="margin-bottom: 5px">K11客服回复 : </span>
+                                <div class="k11_reply_con">
+                                    感谢您的喜爱，新的一年我们会将艺术融入更多的空间，K11在此预祝您新年快乐，顺颂商祺!
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <img alt="" class="ideas_head_pic"
+                             src="http://wx.qlogo.cn/mmopen/Q3auHgzwzM5Ff9bq45SVZI81KF2eoGqRtuNRricibHABlhR6EcI9GYd6jf0LZcYicPTS91LiaAniaDz8tbgiaqCRRtfeHUaefE3L5E5dCka6iaicR7c/0"/>
+                        <div class="ideas_con_iris">
+<span style="display:inline;"><span class="emoji_name">Daphne</span>
+<label>01月19日 11:12:32                                    <span class="shareicon" style="display:inline;">
+<img alt="" src="http://www.shanghaik11.com/statics/images/ideashare_icon1.png" style="width:16px;"/>
+<img alt="" class="sharewb" pic="http://wechat.shanghaik11.com/wp-content/uploads/2016/04/sheshi3.jpg"
+     src="http://www.shanghaik11.com/statics/images/ideawb_icon.png" style="cursor:pointer;display:none;"
+     titlt="经常会带宝宝逛k11，看看展览拍拍照，但是可以带宝宝逛的店铺或者活动比较少，希望可以多增加些亲子体验的活动或者店铺"/>
+<img alt="" class="shareqq" pic="http://wechat.shanghaik11.com/wp-content/uploads/2016/04/sheshi3.jpg"
+     src="http://www.shanghaik11.com/statics/images/ideakj_icon.png" style="cursor:pointer;display:none;"
+     titlt="经常会带宝宝逛k11，看看展览拍拍照，但是可以带宝宝逛的店铺或者活动比较少，希望可以多增加些亲子体验的活动或者店铺"/>
+</span>
+</label></span>
+                            <div class="ideas_con_detail" id="ideas_con_iris1"><span>经常会带宝宝逛k11，看看展览拍拍照，但是可以带宝宝逛的店铺或者活动比较少，希望可以多增加些亲子体验的活动或者店铺</span>
+                                <input class="all_title" type="hidden"
+                                       value="经常会带宝宝逛k11，看看展览拍拍照，但是可以带宝宝逛的店铺或者活动比较少，希望可以多增加些亲子体验的活动或者店铺 "/>
+                                <input class="s_title" type="hidden"
+                                       value="经常会带宝宝逛k11，看看展览拍拍照，但是可以带宝宝逛的店铺或者活动比较少，希望可以多增加些亲子体验的活动或者店铺 "/>
+                            </div>
+                            <div class="topic_label">
+                                #公共设施 
+                            </div>
+                            <div class="k11_reply">
+                                <span style="margin-bottom: 5px">K11客服回复 : </span>
+                                <div class="k11_reply_con">
+                                    感谢您的宝贵意见，我们即将会有新的店铺开张，亲子DIY店铺Tomata Art将在4月开业哦，期待您的光临！预祝新年快乐，顺颂商祺！
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                </ul>
+                <script type="text/javascript">
+                    $('.shareicon').hover(function () {
+                        $(this).children().eq(0).hide();
+                        $(this).children().eq(1).show();
+                        $(this).children().eq(2).show();
+                    }, function () {
+                        $(this).children().eq(0).show();
+                        $(this).children().eq(1).hide();
+                        $(this).children().eq(2).hide();
+                    });
+                </script>
+                <script type="text/javascript">
+                    $(function () {
+                        $('.voice_drop_iris').on('click', function () {
+                            $(this).hide();
+                            $(this).parent().children().eq(4).show();
+                            var s_title = $(this).parent().children().eq(1).val();
+                            $(this).parent().children().eq(0).html(s_title);
+                        });
+                        $('.voice_top_iris').on('click', function () {
+                            $(this).hide();
+                            $(this).parent().children().eq(3).show();
+                            var s_title = $(this).parent().children().eq(2).val();
+                            $(this).parent().children().eq(0).html(s_title);
+                        });
+                    })
+                </script>
+                <div class="page_box_iris" style="text-align: left;margin-left: 130px;">
+                    <span onclick='window.location.href="http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=90&amp;page=1&amp;orderby=&amp;tag="'
+                          style="cursor:pointer">首页</span></div>
+            </li>
+        </ul>
+    </div>
+</div>
+</link></meta></body>
+</html>
+<span onclick='window.location.href="http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=90&amp;page=1&amp;orderby=&amp;tag="'
+      style="cursor:pointer">上一页</span>
+<span onclick='window.location.href="http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=90&amp;page=1&amp;orderby="'
+      style="cursor:pointer;background:rgb(154,129,91);color:white;">1</span>
+<span onclick='window.location.href="http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=90&amp;page=2&amp;orderby="'
+      style="cursor:pointer">2</span>
+<span onclick='window.location.href="http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=90&amp;page=3&amp;orderby="'
+      style="cursor:pointer">3</span>
+<span onclick='window.location.href="http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=90&amp;page=4&amp;orderby="'
+      style="cursor:pointer">4</span>
+<span onclick='window.location.href="http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=90&amp;page=5&amp;orderby="'
+      style="cursor:pointer">5</span>
+<span onclick='window.location.href="http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=90&amp;page=6&amp;orderby="'
+      style="cursor:pointer">6</span>
+<span onclick='window.location.href="http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=90&amp;page=7&amp;orderby="'
+      style="cursor:pointer">7</span>
+<span onclick='window.location.href="http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=90&amp;page=2&amp;orderby="'
+      style="cursor:pointer">下一页&gt;</span>
+<span class="no_margin"
+      onclick='window.location.href="http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=90&amp;page=7&amp;orderby=&amp;tag="'
+      style="cursor:pointer">末页</span>
+
+
+<li class="c1_right_1 c1_right_iris" style="  margin-top: 244px;">
+    <div class="ph_box">
+        <div class="ph_title">
+            <strong style="margin-right: 10px;color: #be3042">NEW VOICE</strong> TOP5
+        </div>
+        <ul class="ideas_list">
+            <li>
+                <span class="ideas_list_num">1</span>
+                <img alt="" class="ideas_head_pic"
+                     src="http://wx.qlogo.cn/mmopen/mhKPwpAeicGTXxlvjKXdXKlMlf9t5g7l7Z29Z0BCJRpgI0lfLZ4MdFgFI4hojWjic6YkmSRDRPCm1lA4yficNBDa4xds6FpROHic/0"/>
+                <div class="ideas_con_iris">
+                    <span style="margin-bottom: 2px;"><span class="emoji_name" style="height: 20px;line-height: 20px;">Amy</span><label
+                            style="line-height: 20px;">06月08日</label></span>
+                    <div class="ideas_con_detail left_detail">
+                        <a>六月八号我在百丽买的包积分没积进去</a>
+                        <input type="hidden" value="六月八号我在百丽买的包积分没积进去"/>
+                        <input type="hidden" value="六月八号我在百丽买的包积分没积进去"/>
+                    </div>
+                    <div class="topic_label">
+
+                        #商品 
+                    </div>
+                    <div class="k11_reply">
+                        <span>K11客服回复 : </span>
+                        <div class="k11_reply_con">
+                            感谢您的提醒。您是否有保留消费小票，若有小票在身，可以直接使用我们微信上的自助积分，消费起七日之内都可以有效积分；倘若您对微信端积分操作不熟悉，可以电话咨询我们服务人员，或者直接携带小票前往B2服务台，让客服人员帮您操作。电话：23103188或63876688。
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </li>
+            <li>
+                <span class="ideas_list_num">2</span>
+                <img alt="" class="ideas_head_pic"
+                     src="http://wx.qlogo.cn/mmopen/ajNVdqHZLLBHtsmXkpuADtETviaTs5DnBYBczBzbQ9fMMXvJ1CVUwjcmul6eNC3LQn85ciaNrxRibLN43kiaD3B9HQ/0"/>
+                <div class="ideas_con_iris">
+                    <span style="margin-bottom: 2px;"><span class="emoji_name" style="height: 20px;line-height: 20px;">小蝴蝶</span><label
+                            style="line-height: 20px;">12月30日</label></span>
+                    <div class="ideas_con_detail left_detail">
+                        <a>新元素这边商场音乐太大声，耳朵不舒服，希望...</a>
+                        <input type="hidden" value="新元素这边商场音乐太大声，耳朵不舒服，希望改善"/>
+                        <input type="hidden" value="新元素这边商场音乐太大声，耳朵不舒服，希望..."/>
+                    </div>
+                    <div class="topic_label">
+
+                        #公共设施 
+                    </div>
+                    <div class="k11_reply">
+                        <span>K11客服回复 : </span>
+                        <div class="k11_reply_con">
+                            感谢您的宝贵意见，我们会尽快改善音响问题，为您创建一个更加温馨的购物环境。您的意见对我们很重要，再次感谢！
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </li>
+            <li>
+                <span class="ideas_list_num">3</span>
+                <img alt="" class="ideas_head_pic"
+                     src="http://wx.qlogo.cn/mmopen/Q3auHgzwzM5Pu48bomum1u5j191eQldzykog8tDyc1EOtzRBic4LMQriaH0LgBcFV7UxeRTt3icSmicQzpoGRvyLGQ/0"/>
+                <div class="ideas_con_iris">
+                    <span style="margin-bottom: 2px;"><span class="emoji_name"
+                                                            style="height: 20px;line-height: 20px;"><span
+                            class="emoji emoji1f334"></span>sara<span class="emoji emoji1f34d"></span><span
+                            class="emoji emoji1f412"></span></span><label
+                            style="line-height: 20px;">12月13日</label></span>
+                    <div class="ideas_con_detail left_detail">
+                        <a>购买的薇薇安维斯特伍德的展览门票几时可以寄...</a>
+                        <input type="hidden" value="购买的薇薇安维斯特伍德的展览门票几时可以寄出，没有任何通知或者界面可以查询"/>
+                        <input type="hidden" value="购买的薇薇安维斯特伍德的展览门票几时可以寄..."/>
+                    </div>
+                    <div class="topic_label">
+
+                        #展览 
+                    </div>
+                    <div class="k11_reply">
+                        <span>K11客服回复 : </span>
+                        <div class="k11_reply_con">
+                            感谢您对我们艺术事业的支持。微信购买门票是需要线下到K11来兑换的，凭借您的微信购买记录以及短信验证码，于2016年12月20日之后至chi
+                            K11美术馆前台（B3前台）兑换门票。非常抱歉这么晚才回复您，希望薇薇安维斯特伍德的展览会给您带来惊喜，感谢！
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </li>
+            <li>
+                <span class="ideas_list_num">4</span>
+                <img alt="" class="ideas_head_pic"
+                     src="http://wx.qlogo.cn/mmopen/ajNVdqHZLLBsPcRia3JsnfLb1HU1Q17c0OKxsVYkGBEFdsaTSn0ibqReh9FGOmv0jdk5upG7mhsPYKGtrLDaucyQ/0"/>
+                <div class="ideas_con_iris">
+                    <span style="margin-bottom: 2px;"><span class="emoji_name" style="height: 20px;line-height: 20px;">77</span><label
+                            style="line-height: 20px;">11月23日</label></span>
+                    <div class="ideas_con_detail left_detail">
+                        <a>格局可以更多元化，注入一些新的元素，这样可...</a>
+                        <input type="hidden" value="格局可以更多元化，注入一些新的元素，这样可以更吸引人，艺术空间有些缺乏！"/>
+                        <input type="hidden" value="格局可以更多元化，注入一些新的元素，这样可..."/>
+                    </div>
+                    <div class="topic_label">
+
+                        #商品 
+                    </div>
+                    <div class="k11_reply">
+                        <span>K11客服回复 : </span>
+                        <div class="k11_reply_con">
+                            感谢您的宝贵意见，艺术创新一直是K11最重要的元素之一，我们会尝试做各种各样的突破，增加各类的元素，努力让每一个来到K11的客人，可以在繁华喧闹的大都市中找到一个会让内心平和的地方。感谢您的建议，我们会积极采纳和改善，再次感谢。
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </li>
+            <li>
+                <span class="ideas_list_num">5</span>
+                <img alt="" class="ideas_head_pic"
+                     src="http://wx.qlogo.cn/mmopen/ajNVdqHZLLBHtsmXkpuADtETviaTs5DnBYBczBzbQ9fMMXvJ1CVUwjcmul6eNC3LQn85ciaNrxRibLN43kiaD3B9HQ/0"/>
+                <div class="ideas_con_iris">
+                    <span style="margin-bottom: 2px;"><span class="emoji_name" style="height: 20px;line-height: 20px;">小蝴蝶</span><label
+                            style="line-height: 20px;">11月18日</label></span>
+                    <div class="ideas_con_detail left_detail">
+                        <a>虽然我自己k11来挺多次挺熟的，但是今天在k11...</a>
+                        <input type="hidden" value="虽然我自己k11来挺多次挺熟的，但是今天在k11，听到两次有人问路厕所在哪里，觉得设计的不够舒适"/>
+                        <input type="hidden" value="虽然我自己k11来挺多次挺熟的，但是今天在k11..."/>
+                    </div>
+                    <div class="topic_label">
+
+                        #公共设施 
+                    </div>
+                    <div class="k11_reply">
+                        <span>K11客服回复 : </span>
+                        <div class="k11_reply_con">
+                            感谢您的宝贵意见，可以收到您对商场的改善意见，我们非常开心，我们会尽快增加公共设施的标识，以便引导大家找到方向。感谢您对K11的支持，希望可以继续喜欢和光临K11。
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </li>
+            <script type="text/javascript">
+                $(function () {
+                    $('.left_detail').hover(function () {
+                        var title = $(this).children().eq(1).val();
+                        $(this).children().eq(0).html(title);
+                    }, function () {
+                        var title = $(this).children().eq(2).val();
+                        $(this).children().eq(0).html(title);
+                    });
+                })
+            </script>
+            <!-- <li class="no_border">
+                                            <a class="ph_more" href="http://www.shanghaik11.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=90">+ More</a>
+                                          </li> -->
+            <!-- <div class="clear_h50"></div> -->
+        </ul>
+    </div>
+    <div class="clear"></div>
+</li>
+<li class="clear_h40"></li>
+
+
+
+
+

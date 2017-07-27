@@ -271,8 +271,17 @@ def get_room(doc, shopId):
 
 
 def get_review(doc, url):
-    url_mini = url.split("?")[0]
-    shopId = int(re.sub(r'\D', "", url_mini))
+    try:
+        url_mini = url.split("?")[0]
+        shopId = int(re.sub(r'\D', "", url_mini))
+    except BaseException,e:
+        print e
+        print traceback.format_exc()
+        print "get_review()  --------------------------------------- url:",url
+        shopId = 0
+    # url_mini = url.split("?")[0]
+    # shopId = int(re.sub(r'\D', "", url_mini))
+
     shopIds = []
     review_ids = []
     user_ids = []
@@ -288,13 +297,15 @@ def get_review(doc, url):
     reply_nums = []
 
     soup = BeautifulSoup(doc, "lxml")
-
+    u = url_manager.new_review_urls
     # nextpage_full = "http://www.dianping.com/shop/3715216/review_more?pageno=210"
     try:
-        nextpage = soup.find("div", class_="Pages").find("a", class_="NextPage")['href']
+        next = soup.find("div", class_="Pages")
+        nextpage = next.find("a", class_="NextPage")['href']
     except BaseException, e:
         print e
         global shopId_num
+
         shopId_num += 1
         print "第'%d'shopId '%d'已到末页" % (shopId_num, shopId)
     else:

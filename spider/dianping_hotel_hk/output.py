@@ -5,6 +5,7 @@ import result_manager
 import url_manager
 import re
 import sys
+import traceback
 
 reload(sys)
 sys.setdefaultencoding("utf8")
@@ -135,15 +136,21 @@ def insert_hotel_review():
         except BaseException, e:
             db.rollback()
             print e
-            print "review_id", review_id
-            print sql
+            # print "review_id", review_id
+            # print sql
 
 
 def add_review_url_crawled(url):
     sql = """INSERT INTO hotel_review_url_crawled (shopId,reviewUrl) VALUES('%s','%s')"""
     u = url
     url_mini = url.split("?")[0]
-    shopId = int(re.sub(r'\D', "", url_mini))
+    try:
+        shopId = int(re.sub(r'\D', "", url_mini))
+    except BaseException, e:
+        print e
+        print traceback.format_exc()
+        print "add_review_url_crawled(url) ----------------------------------- url:",url
+        return
 
     d = (shopId, url)
     try:
@@ -153,6 +160,7 @@ def add_review_url_crawled(url):
         db.rollback()
         print e
 
+
 def init_old_review_urls():
     sql = """SELECT reviewUrl FROM hotel_review_url_crawled"""
     try:
@@ -161,12 +169,15 @@ def init_old_review_urls():
     except BaseException, e:
         db.rollback()
         print e
-    url_manager.old_review_urls = set(results)
+    urls = set(results)
+    url_manager.old_review_urls = urls
+
 
 def get_last_old_review_urls():
     sql = """select reviewUrl from hotel_review_url_crawled a
               where not exists
               (select * from hotel_review_url_crawled where shopId=a.shopId and reviewUrl>a.reviewUrl)
+              GROUP BY shopId              
               ORDER BY shopId"""
     try:
         cursor.execute(sql)
@@ -176,4 +187,4 @@ def get_last_old_review_urls():
         db.rollback()
         print e
         return
-    # url_manager.old_review_urls = set(results)
+        # url_manager.old_review_urls = set(results)

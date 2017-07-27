@@ -1,5 +1,5 @@
 # coding=utf-8
-import html_parser
+import h_parser
 import html_download
 import url_manager
 import output
@@ -32,7 +32,7 @@ def hotel_list():
         url = url_manager.get_new_url()
         print url
         doc = html_download.downloadPage(url)
-        shop_id, name, detail_url, addr, walk, tag, price, star, review_num = html_parser.htmlParser(doc)
+        shop_id, name, detail_url, addr, walk, tag, price, star, review_num = h_parser.htmlParser(doc)
         # print content
         ids += shop_id
         names += name
@@ -80,7 +80,7 @@ def crawling_shop():
 
         doc = html_download.downloadPage(url)
 
-        addr, tel, openTime, checkTime, facs, room_facs, services, info = html_parser.shopParser(doc)
+        addr, tel, openTime, checkTime, facs, room_facs, services, info = h_parser.shopParser(doc)
 
         shopIds.append(shopId)
         addrs.append(addr)
@@ -144,8 +144,8 @@ def crawling_room():
         shopId = int(re.sub(r'\D', "", s))
 
         doc = html_download.downloadPage(url)
-        shopIds, roomIds, titles, bedTypes, breakfasts, netTypes, cancelRules, prices = html_parser.get_room(doc,
-                                                                                                             shopId)
+        shopIds, roomIds, titles, bedTypes, breakfasts, netTypes, cancelRules, prices = h_parser.get_room(doc,
+                                                                                                          shopId)
 
         shopIds_total += shopIds
         roomIds_total += roomIds
@@ -165,24 +165,31 @@ def crawling_review():
     print "crawling_shop()"
 
     # 从数据库中读取已爬过的review_url
-    init_old_review_urls()
+    # init_old_review_urls()
 
-    # 根据shopId初始化new_review_urls
-    init_review_url_list()
-
-    # REVIEW_URL = "http://www.dianping.com/shop/15869165/review_more"
+    # 初始化new_review_urls
+    # init_review_url_list()
 
 
-    # url_manager.new_review_urls = set()
-    # url_manager.add_new_review_url(REVIEW_URL)
+    # 打印All new_review
+    # url_manager.print_new_review_url()
+    print "hhh"
+
+    REVIEW_URL = "/3715216/review_more"
+    url_manager.new_review_urls = set()
+    url_manager.add_new_review_url(REVIEW_URL)
 
     while (url_manager.has_new_review_url()):
         identify_url = url_manager.get_new_review_url()
-        url = "http://www.dianping.com/shop" + identify_url
-        print url
+        if identify_url:
+            url = "http://www.dianping.com/shop" + identify_url
+            print url
+        else:
+            print identify_url
+            raise BaseException
 
         doc = html_download.downloadPage(url)
-        result = html_parser.get_review(doc, url)
+        result = h_parser.get_review(doc, url)
         if result:
             result_manager.add_new_result(result)
             output.insert_hotel_review()
@@ -245,8 +252,13 @@ def init_review_url_list():
     elif message == 'n':
         print "您选择了No，将根据数据库中各shopId最后爬过的url初始化new_review_urls"
         r = output.get_last_old_review_urls()
+        l = []
         if r:
-            url_manager.new_review_urls = set(r)
+            for url in r:
+                x = url[0]
+                l.append(str(x))
+            urls = set(r)
+            url_manager.new_review_urls = urls
             print "根据数据库中各shopId最后爬过的url初始化new_review_urls，done"
         else:
             print "根据数据库中各shopId最后爬过的url初始化new_review_urls，失败"
@@ -268,8 +280,9 @@ if __name__ == "__main__":
 
 
     crawling_review()
-    # doc = html_download.downloadPage("http://www.dianping.com/shop/3715216/review_more")
-    # result = html_parser.get_review(doc, 3715216)
+    # url = "http://www.dianping.com/shop/3715216/review_more"
+    # doc = html_download.downloadPage(url)
+    # result = h_parser.get_review(doc, 3715216)
     # result_manager.add_new_result(result)
     # output.insert_hotel_review()
     # # print doc

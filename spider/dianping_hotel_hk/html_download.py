@@ -2,7 +2,7 @@
 
 import requests
 import re
-
+import random
 import pip
 
 # print(pip.pep425tags.get_supported())
@@ -36,9 +36,11 @@ headers_review = {
 
 }
 
+header_list = [headers, headers1, headers_review]
+
 
 def downloadPage(url):
-    data = requests.get(url, headers=headers1).content
+    data = requests.get(url, headers=random.choice(header_list)).content
 
     # data = re.sub(r'\n', '', data)
     return data
