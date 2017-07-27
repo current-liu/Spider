@@ -19,3 +19,5 @@ def get_new_url():
     new_url = new_urls.pop()
     old_urls.add(new_url)
     return new_url
+
+

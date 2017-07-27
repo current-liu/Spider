@@ -8,4 +8,5 @@ import pip
 
 def downloadPage(url):
     data = requests.get(url).content
+
     return data
