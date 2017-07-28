@@ -16,7 +16,7 @@ def htmlParser(doc):
         url_manager.add_new_url(n_p_url)
     except BaseException, e:
         print e, "htmlParser(doc)"
-        traceback.format_exc()
+        print traceback.format_exc()
 
     ul = soup.find("div", class_="b-c-white search_result_container")
     company_urls = []
@@ -38,7 +38,7 @@ def company_html_parser(doc):
     contact_infos = company_header.find("div", class_="f14 new-c3 mt10").find_all("span")
     contact = ""
     for span in contact_infos:
-        contact + contact + "_" + span.get_text().strip()
+        contact = contact + "_" + span.get_text().strip()
     company_info_table = soup.find("table", class_="table companyInfo-table text-center f14")
     company_human = company_info_table.find("div",
                                             class_="company-human-box position-rel in-block vertical-top text-left float-left point").get_text()
@@ -47,8 +47,8 @@ def company_html_parser(doc):
     company_human_s = company_human.encode("utf-8").replace("\n", "").replace(" ", "")
     details_s = details.encode("utf-8").replace("\n", "").replace(" ", "")
     contact_s = contact
-    print company_name
-    print contact_s
-    print company_human_s
-    print details_s
+    # print company_name
+    # print contact_s
+    # print company_human_s
+    # print details_s
     return company_name, contact_s, company_human_s, details_s

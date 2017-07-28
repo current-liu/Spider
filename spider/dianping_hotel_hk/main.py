@@ -2,12 +2,15 @@
 import h_parser
 import html_download
 import url_manager
-import output
+import dao
 import urlparse
 import re
 from bs4 import BeautifulSoup
 import datetime
 import result_manager
+import time
+import random
+import traceback
 
 
 def hotel_list():
@@ -27,12 +30,12 @@ def hotel_list():
     prices = []
     stars = []
     review_nums = []
-
+    picUrls = []
     while (url_manager.has_new_url()):
         url = url_manager.get_new_url()
         print url
         doc = html_download.downloadPage(url)
-        shop_id, name, detail_url, addr, walk, tag, price, star, review_num = h_parser.htmlParser(doc)
+        shop_id, name, detail_url, addr, walk, tag, price, star, review_num, picUrl = h_parser.htmlParser(doc)
         # print content
         ids += shop_id
         names += name
@@ -43,15 +46,17 @@ def hotel_list():
         prices += price
         stars += star
         review_nums += review_num
-
-    for (i, n, d, a, w, t, p, s, r) in zip(ids, names, detail_urls, addrs, walks, tags, prices, stars, review_nums):
-        print i, n, d, a, w, t, p, s, r
+        picUrls += picUrl
+    for (i, n, d, a, w, t, p, s, r, pu) in zip(ids, names, detail_urls, addrs, walks, tags, prices, stars, review_nums, picUrls):
+        print i, n, d, a, w, t, p, s, r, pu
         tags = " ".join(t)
-        output.insert(i, n, d, a, w, tags, p, s, r)
+
+        # 修改
+        dao.insert(i, n, d, a, w, tags, p, s, r, pu)
 
 
 def crawling_shop():
-    output.insert_hotel_shops()
+    dao.insert_hotel_shops()
 
     print "crawling_shop()"
 
@@ -115,7 +120,7 @@ def crawling_shop():
         fac = " ".join(f)
         room_facs = " ".join(rf)
         service = " ".join(ss)
-        output.update_hotel_shops(s, a, t, o, c, fac, room_facs, service, i)
+        dao.update_hotel_shops(s, a, t, o, c, fac, room_facs, service, i)
         pass
 
 
@@ -157,8 +162,8 @@ def crawling_room():
         prices_total += prices
 
     print "爬取完毕，开始插入数据"
-    output.insert_hotel_goods(shopIds_total, roomIds_total, titles_total, bedTypes_total, breakfasts_total,
-                              netTypes_total, cancelRules_total, prices_total)
+    dao.insert_hotel_goods(shopIds_total, roomIds_total, titles_total, bedTypes_total, breakfasts_total,
+                           netTypes_total, cancelRules_total, prices_total)
 
 
 def crawling_review():
@@ -168,50 +173,68 @@ def crawling_review():
     # init_old_review_urls()
 
     # 初始化new_review_urls
-    # init_review_url_list()
-
+    init_review_url_list()
 
     # 打印All new_review
-    # url_manager.print_new_review_url()
+    url_manager.print_new_review_url()
     print "hhh"
 
-    REVIEW_URL = "/3715216/review_more"
-    url_manager.new_review_urls = set()
-    url_manager.add_new_review_url(REVIEW_URL)
+    # REVIEW_URL = "/3715216/review_more"
+    # url_manager.new_review_urls = set()
+    # url_manager.add_new_review_url(REVIEW_URL)
 
-    while (url_manager.has_new_review_url()):
-        identify_url = url_manager.get_new_review_url()
-        if identify_url:
-            url = "http://www.dianping.com/shop" + identify_url
-            print url
-        else:
-            print identify_url
-            raise BaseException
+    try:
+        while (url_manager.has_new_review_url()):
 
-        doc = html_download.downloadPage(url)
-        result = h_parser.get_review(doc, url)
-        if result:
-            result_manager.add_new_result(result)
-            output.insert_hotel_review()
+            time.sleep(random.uniform(0.001, 0.02))
+
+            identify_url = url_manager.get_new_review_url()
+            if identify_url:
+                url = "http://www.dianping.com/shop" + identify_url
+
+                print url
+            else:
+                print identify_url
+                raise BaseException
+
+            doc = html_download.downloadPage(url)
+            if doc == "error":
+                url_manager.add_new_review_url(identify_url)
+                print "download error"
+                continue
+            elif doc == "403":
+                url_manager.add_new_review_url(identify_url)
+                print "403"
+                continue
+            else:
+                result = h_parser.get_review(doc, url)
+
+            if result:
+                result_manager.add_new_result(result)
+                dao.insert_hotel_review()
+    except BaseException, e:
+        print e
+        print traceback.format_exc()
 
 
-def init_old_review_urls():
-    """#从数据库中读取已爬过的review_url"""
-    message = raw_input("是否从数据库中读取已爬过的review_url？y/n")
-    if message == 'y':
-        output.init_old_review_urls()
-        print "将从数据库中读取已爬过的review_url"
-        u = url_manager.old_review_urls
-        print u
-    elif message == 'n':
-        print "您选择了No"
-    else:
-        print "输入有误"
-        init_old_review_urls()
+
+# def init_old_review_urls():
+#     """#从数据库中读取已爬过的review_url"""
+#     message = raw_input("是否从数据库中读取new_review_url？y/n")
+#     if message == 'y':
+#         dao.init_old_review_urls()
+#         print "将从数据库中读取new_review_url"
+#         u = url_manager.old_review_urls
+#         print u
+#     elif message == 'n':
+#         print "您选择了No"
+#     else:
+#         print "输入有误"
+#         init_old_review_urls()
 
 
 def init_shop_url_list(goal_url):
-    shop_id_list = output.downloadShopUrl()
+    shop_id_list = dao.downloadShopUrl()
     for shop_id in shop_id_list:
         i = str(shop_id)
         s = re.sub(r'\D', "", i)
@@ -224,7 +247,7 @@ def init_room_url_list(goal_url):
     tomorrow = today + datetime.timedelta(days=1)
     checkinDate = today.strftime("%Y-%m-%d")
     checkoutDate = tomorrow.strftime("%Y-%m-%d")
-    shop_id_list = output.downloadShopUrl()
+    shop_id_list = dao.downloadShopUrl()
 
     for shop_id in shop_id_list:
         i = str(shop_id)
@@ -240,36 +263,39 @@ def init_room_url_list(goal_url):
 
 
 def init_review_url_list():
-    message = raw_input("是否根据shopId初始化new_review_urls？选择否将根据数据库中各shopId最后爬过的url初始化y/n")
+    message = raw_input("是否根据shopId初始化new_review_urls？选择否将根据数据库new_review_url初始化?:y/n")
     if message == 'y':
         print "您选择了Yes"
-        shop_id_list = output.downloadShopUrl()
+        shop_id_list = dao.downloadShopUrl()
         for shop_id in shop_id_list:
             i = str(shop_id)
             s = re.sub(r'\D', "", i)
             new_url = "/" + s + "/review_more"
             url_manager.add_new_review_url(new_url)
     elif message == 'n':
-        print "您选择了No，将根据数据库中各shopId最后爬过的url初始化new_review_urls"
-        r = output.get_last_old_review_urls()
-        l = []
-        if r:
-            for url in r:
-                x = url[0]
-                l.append(str(x))
-            urls = set(r)
-            url_manager.new_review_urls = urls
-            print "根据数据库中各shopId最后爬过的url初始化new_review_urls，done"
+        print "您选择了No，将根据数据库中的表hotel_new_review_url初始化new_review_urls"
+        r = dao.select_new_review_urls()
+        l = list(r)
+        # if r:
+        #     for url in r:
+        #         x = url[0]
+        #         l.append(str(x))
+        #
+        try:
+            url_manager.add_new_review_urls(l)
+        except BaseException, e:
+            print "根据数据库中的表hotel_new_review_url初始化new_review_urls，失败"
         else:
-            print "根据数据库中各shopId最后爬过的url初始化new_review_urls，失败"
-            raise Exception
+            print "根据数据库中的表hotel_new_review_url初始化new_review_urls，done"
+
     else:
         print "输入有误"
         init_review_url_list()
 
+
 if __name__ == "__main__":
     # 酒店列表
-    # hotel_list()
+    hotel_list()
 
     # 酒店详情
     # crawling_shop()
@@ -279,15 +305,17 @@ if __name__ == "__main__":
     # crawling_room()
 
 
-    crawling_review()
+    # try:
+    #     crawling_review()
+    # except BaseException, e:
+    #     url_manager.insert_new_review_url_into_db()
+
     # url = "http://www.dianping.com/shop/3715216/review_more"
     # doc = html_download.downloadPage(url)
     # result = h_parser.get_review(doc, 3715216)
     # result_manager.add_new_result(result)
     # output.insert_hotel_review()
     # # print doc
-
+    # url = "http://www.baidu.com"
+    # html_download.downloadPage(url)
     pass
-
-
-

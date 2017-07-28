@@ -1,6 +1,6 @@
 # coding=utf-8
 
-import output
+import dao
 
 new_urls = set()
 old_urls = set()
@@ -62,6 +62,7 @@ def get_new_shop_url():
     old_shop_urls.add(new_shop_url)
     return new_shop_url
 
+
 def add_new_shop_url(url):
     if url is None:
         return
@@ -122,11 +123,11 @@ def add_new_review_url(url):
         return
     if url not in new_review_urls and url not in old_review_urls:
         new_review_urls.add(url)
-        print "woqu"
+        print "new review_url add"
         u2 = new_review_urls
         pass
         x = new_review_urls
-        print  u2
+        print u2
 
 
 def add_new_review_urls(urls):
@@ -145,9 +146,14 @@ def get_new_review_url():
     new_review_url = new_review_urls.pop()
     url = str(new_review_url)
     old_review_urls.add(url)
-    output.add_review_url_crawled(url)
+    # dao.add_review_url_crawled(url)
     return url
+
 
 def print_new_review_url():
     for url in new_review_urls:
         print url
+
+
+def insert_new_review_url_into_db():
+    dao.insert_new_review_url(new_review_urls)

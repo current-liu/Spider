@@ -3,6 +3,7 @@
 import requests
 
 import pip
+import random
 
 
 # print(pip.pep425tags.get_supported())
@@ -21,7 +22,7 @@ def downloadPage(url):
         "Accept - Language": "zh - CN, zh; q = 0.8",
         "Cookie": "ssuid=9316319424; jsid=SEM-SOUGOU-PP-SY-000099; _pk_ref.6835.e431=%5B%22%22%2C%22%22%2C1498800876%2C%22https%3A%2F%2Fwww.sogou.com%2Flink%3Furl%3DDSOYnZeCC_qbhB5TwFUHrSv1MbFsrL0IBuo9pqAzDXqP8HWkNU_zKtm8N1pmsKgK%26query%3D%E5%87%AF%E7%9F%B3%E9%80%9A%22%5D; _pk_ref.1.e431=%5B%22%22%2C%22%22%2C1498800876%2C%22https%3A%2F%2Fwww.sogou.com%2Flink%3Furl%3DDSOYnZeCC_qbhB5TwFUHrSv1MbFsrL0IBuo9pqAzDXqP8HWkNU_zKtm8N1pmsKgK%26query%3D%E5%87%AF%E7%9F%B3%E9%80%9A%22%5D; _pk_id.6835.e431=4506091f68130793.1497342237.10.1498800896.1498800876.; _pk_id.1.e431=66a8c05821cb6b5a.1497342237.10.1498800897.1498800876.; aliyungf_tc=AQAAABtL5x8slgYASLWPccdhvZ7ucdar; csrfToken=i0I-RfJAJAy8zqCM75VBslgO; TYCID=5957f6b072ba11e78a0105670635d82b; uccid=0adec762c1cc7ffe51c566d571c8694f; tyc-user-info=%257B%2522new%2522%253A%25221%2522%252C%2522token%2522%253A%2522eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTcwMDczMzE5NyIsImlhdCI6MTUwMTE1OTEzNiwiZXhwIjoxNTE2NzExMTM2fQ.0giWG2H6LGP_7xKwIaiLvFRezL5TM74hY1zjuUimNIvgg2dnDot8V-dLprd_oCRVVmABBdYrL1z6kusr6Z-K4Q%2522%252C%2522integrity%2522%253A%25220%2525%2522%252C%2522state%2522%253A%25220%2522%252C%2522vnum%2522%253A%25220%2522%252C%2522onum%2522%253A%25220%2522%252C%2522mobile%2522%253A%252215700733197%2522%257D; auth_token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTcwMDczMzE5NyIsImlhdCI6MTUwMTE1OTEzNiwiZXhwIjoxNTE2NzExMTM2fQ.0giWG2H6LGP_7xKwIaiLvFRezL5TM74hY1zjuUimNIvgg2dnDot8V-dLprd_oCRVVmABBdYrL1z6kusr6Z-K4Q; _csrf=gdG0D24jOPeOpmIYwXnI8g==; OA=MehB8UJnQba9MKzQq9kEaonMBa6mhI3BLYtnGiR9PelCw891fLMl4eP5cxP3lfUwdeBuWvVie1706nJqBFPtWKYohCUs/vd4HTDHnCatnsoFA2MRwM8k0SDv9mxBMkri; _csrf_bk=c94b7006415251e185344ea5bf420282; Hm_lvt_e92c8d65d92d534b0fc290df538b4758=1498800875,1501153035; Hm_lpvt_e92c8d65d92d534b0fc290df538b4758=1501171190"
 
-        }
+    }
 
     headers1 = {
 
@@ -36,9 +37,6 @@ def downloadPage(url):
         "Cookie": "ssuid=9316319424; jsid=SEM-SOUGOU-PP-SY-000099; _pk_ref.6835.e431=%5B%22%22%2C%22%22%2C1498800876%2C%22https%3A%2F%2Fwww.sogou.com%2Flink%3Furl%3DDSOYnZeCC_qbhB5TwFUHrSv1MbFsrL0IBuo9pqAzDXqP8HWkNU_zKtm8N1pmsKgK%26query%3D%E5%87%AF%E7%9F%B3%E9%80%9A%22%5D; _pk_ref.1.e431=%5B%22%22%2C%22%22%2C1498800876%2C%22https%3A%2F%2Fwww.sogou.com%2Flink%3Furl%3DDSOYnZeCC_qbhB5TwFUHrSv1MbFsrL0IBuo9pqAzDXqP8HWkNU_zKtm8N1pmsKgK%26query%3D%E5%87%AF%E7%9F%B3%E9%80%9A%22%5D; _pk_id.6835.e431=4506091f68130793.1497342237.10.1498800896.1498800876.; _pk_id.1.e431=66a8c05821cb6b5a.1497342237.10.1498800897.1498800876.; aliyungf_tc=AQAAABtL5x8slgYASLWPccdhvZ7ucdar; csrfToken=i0I-RfJAJAy8zqCM75VBslgO; TYCID=5957f6b072ba11e78a0105670635d82b; uccid=0adec762c1cc7ffe51c566d571c8694f; tyc-user-info=%257B%2522new%2522%253A%25221%2522%252C%2522token%2522%253A%2522eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTcwMDczMzE5NyIsImlhdCI6MTUwMTE1OTEzNiwiZXhwIjoxNTE2NzExMTM2fQ.0giWG2H6LGP_7xKwIaiLvFRezL5TM74hY1zjuUimNIvgg2dnDot8V-dLprd_oCRVVmABBdYrL1z6kusr6Z-K4Q%2522%252C%2522integrity%2522%253A%25220%2525%2522%252C%2522state%2522%253A%25220%2522%252C%2522vnum%2522%253A%25220%2522%252C%2522onum%2522%253A%25220%2522%252C%2522mobile%2522%253A%252215700733197%2522%257D; auth_token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTcwMDczMzE5NyIsImlhdCI6MTUwMTE1OTEzNiwiZXhwIjoxNTE2NzExMTM2fQ.0giWG2H6LGP_7xKwIaiLvFRezL5TM74hY1zjuUimNIvgg2dnDot8V-dLprd_oCRVVmABBdYrL1z6kusr6Z-K4Q; _csrf=gdG0D24jOPeOpmIYwXnI8g==; OA=MehB8UJnQba9MKzQq9kEaonMBa6mhI3BLYtnGiR9PelCw891fLMl4eP5cxP3lfUwdeBuWvVie1706nJqBFPtWKYohCUs/vd4HTDHnCatnsoFA2MRwM8k0SDv9mxBMkri; _csrf_bk=c94b7006415251e185344ea5bf420282; Hm_lvt_e92c8d65d92d534b0fc290df538b4758=1498800875,1501153035; Hm_lpvt_e92c8d65d92d534b0fc290df538b4758=1501171190"
 
     }
-
-
-
 
     # data = requests.get(url, headers=headers).content
 
@@ -7221,8 +7219,6 @@ def downloadPage(url):
     return doc
 
 
-
-
 def downloadPage1(url):
     headers = {
 
@@ -7245,14 +7241,20 @@ def downloadPage1(url):
         "Upgrade - Insecure - Requests": "1",
         "User - Agent": "Mozilla / 5.0(WindowsNT6.1;Win64;x64) AppleWebKit / 537.36(KHTML, like Gecko) Chrome / 59.0.3064.0 Safari / 537.36",
         "Accept": "text / html, application / xhtml + xml, application / xml;q = 0.9, image / webp, image / apng, * / *;q = 0.8.",
-        "Referer": "https: // www.tianyancha.com / search / t100?key = % E6 % 96 % B9 % E5 % BE % 97",
+        "Referer": "https://www.tianyancha.com/search?key=%E6%96%B9%E5%BE%97&checkFrom=searchBox&rnd=",
         "Accept - Encoding": "gzip, deflate, br",
         "Accept - Language": "zh - CN, zh; q = 0.8",
-        "Cookie": "ssuid=9316319424; jsid=SEM-SOUGOU-PP-SY-000099; _pk_ref.6835.e431=%5B%22%22%2C%22%22%2C1498800876%2C%22https%3A%2F%2Fwww.sogou.com%2Flink%3Furl%3DDSOYnZeCC_qbhB5TwFUHrSv1MbFsrL0IBuo9pqAzDXqP8HWkNU_zKtm8N1pmsKgK%26query%3D%E5%87%AF%E7%9F%B3%E9%80%9A%22%5D; _pk_ref.1.e431=%5B%22%22%2C%22%22%2C1498800876%2C%22https%3A%2F%2Fwww.sogou.com%2Flink%3Furl%3DDSOYnZeCC_qbhB5TwFUHrSv1MbFsrL0IBuo9pqAzDXqP8HWkNU_zKtm8N1pmsKgK%26query%3D%E5%87%AF%E7%9F%B3%E9%80%9A%22%5D; _pk_id.6835.e431=4506091f68130793.1497342237.10.1498800896.1498800876.; _pk_id.1.e431=66a8c05821cb6b5a.1497342237.10.1498800897.1498800876.; aliyungf_tc=AQAAABtL5x8slgYASLWPccdhvZ7ucdar; csrfToken=i0I-RfJAJAy8zqCM75VBslgO; TYCID=5957f6b072ba11e78a0105670635d82b; uccid=0adec762c1cc7ffe51c566d571c8694f; tyc-user-info=%257B%2522new%2522%253A%25221%2522%252C%2522token%2522%253A%2522eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTcwMDczMzE5NyIsImlhdCI6MTUwMTE1OTEzNiwiZXhwIjoxNTE2NzExMTM2fQ.0giWG2H6LGP_7xKwIaiLvFRezL5TM74hY1zjuUimNIvgg2dnDot8V-dLprd_oCRVVmABBdYrL1z6kusr6Z-K4Q%2522%252C%2522integrity%2522%253A%25220%2525%2522%252C%2522state%2522%253A%25220%2522%252C%2522vnum%2522%253A%25220%2522%252C%2522onum%2522%253A%25220%2522%252C%2522mobile%2522%253A%252215700733197%2522%257D; auth_token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTcwMDczMzE5NyIsImlhdCI6MTUwMTE1OTEzNiwiZXhwIjoxNTE2NzExMTM2fQ.0giWG2H6LGP_7xKwIaiLvFRezL5TM74hY1zjuUimNIvgg2dnDot8V-dLprd_oCRVVmABBdYrL1z6kusr6Z-K4Q; _csrf=gdG0D24jOPeOpmIYwXnI8g==; OA=MehB8UJnQba9MKzQq9kEaonMBa6mhI3BLYtnGiR9PelCw891fLMl4eP5cxP3lfUwdeBuWvVie1706nJqBFPtWKYohCUs/vd4HTDHnCatnsoFA2MRwM8k0SDv9mxBMkri; _csrf_bk=c94b7006415251e185344ea5bf420282; Hm_lvt_e92c8d65d92d534b0fc290df538b4758=1498800875,1501153035; Hm_lpvt_e92c8d65d92d534b0fc290df538b4758=1501171190"
+        "Cookie": "TYCID=eb41187072ad11e794d959bc1f358b03; uccid=45e8b92cfffcf8f914b15ee6976e9a0b; ssuid=1470323413; aliyungf_tc=AQAAANhZEBNpEAoAVr+Lcc5BIvHvoOGy; csrfToken=NNn6BsEA0FY26ptlArCRD6pZ; tyc-user-info=%257B%2522token%2522%253A%2522eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTcwMDczMzE5NyIsImlhdCI6MTUwMTIwMjQyNywiZXhwIjoxNTE2NzU0NDI3fQ.aO5S8FDMvCx1s0QR_jjjPB14fwvKzpX-wBvvr6q4lI8sRJ1lS9UxIpMrPixwoygo5OnNnvLEDAyBrs3OTxu7pw%2522%252C%2522integrity%2522%253A%25220%2525%2522%252C%2522state%2522%253A%25220%2522%252C%2522vnum%2522%253A%25220%2522%252C%2522onum%2522%253A%25220%2522%252C%2522mobile%2522%253A%252215700733197%2522%257D; auth_token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTcwMDczMzE5NyIsImlhdCI6MTUwMTIwMjQyNywiZXhwIjoxNTE2NzU0NDI3fQ.aO5S8FDMvCx1s0QR_jjjPB14fwvKzpX-wBvvr6q4lI8sRJ1lS9UxIpMrPixwoygo5OnNnvLEDAyBrs3OTxu7pw; OA=+HDtBpoyOpsuUJlxrnPT6WrSdEna3Yaxu6FIjwfjzW2szviXZd5IBx8uOoivwdOXh37ZPm0fnRd+NrHeUrWa9yHaOXMLzm70axtnmzLgzrU=; _csrf=ZSa3qzQR6U8HHLHGU6LLKw==; _csrf_bk=64cdb1081b528dc57f36ecca173cbd51; Hm_lvt_e92c8d65d92d534b0fc290df538b4758=1501147666,1501148708,1501202172; Hm_lpvt_e92c8d65d92d534b0fc290df538b4758=1501202600"
 
     }
 
-    data = requests.get(url, headers=headers1).content
+    headers2 = {'User-agent': 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:22.0) Gecko/20100101 Firefox/22.0'}
+    headers3 = {'User-agent': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) ; Maxthon/3.0)'}
+    headers4 = {'User-agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.55.3 (KHTML, like Gecko) Version/5.1.5 Safari/534.55.3'}
+    headers5 = {'User-agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.2) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.2.149.27 Safari/525.13 '}
+    h_total = [headers2, headers3, headers4, headers5]
+    h = random.choice(h_total)
+    data = requests.get(url, headers=h).content
 
     doc = """<!DOCTYPE html>
     <html>
@@ -14431,4 +14433,3 @@ def downloadPage1(url):
     </body>
     </html>"""
     return data
-

@@ -4,6 +4,8 @@ import requests
 import re
 import random
 import pip
+import ip_proxy
+import url_manager
 
 # print(pip.pep425tags.get_supported())
 headers = {
@@ -36,11 +38,39 @@ headers_review = {
 
 }
 
-header_list = [headers, headers1, headers_review]
+headers2 = {'User-agent': 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:22.0) Gecko/20100101 Firefox/22.0'}
+headers3 = {
+    'User-agent': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) ; Maxthon/3.0)'}
+headers4 = {
+    'User-agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.55.3 (KHTML, like Gecko) Version/5.1.5 Safari/534.55.3'}
+headers5 = {
+    'User-agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.2) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.2.149.27 Safari/525.13 '}
+h_total = [headers2, headers3, headers4, headers5]
+h = random.choice(h_total)
+ip_list = ip_proxy.get_ips()
+
 
 
 def downloadPage(url):
-    data = requests.get(url, headers=random.choice(header_list)).content
 
-    # data = re.sub(r'\n', '', data)
-    return data
+    data = random.choice(ip_list)
+    ip = data[0]
+    port = data[1]
+    ip_port = ip + ":" + str(port)
+    print ip_port
+    # global ip_port
+    proxies = {'http': ip_port}
+
+    try:
+        doc = requests.get(url, headers=h).content
+        pass
+    except BaseException, e:
+        print e
+        ip_list.remove(data)
+        return "error"
+    else:
+        if doc.__contains__("403 Forbidden"):
+            ip_list.remove(data)
+            return "403"
+        else:
+            return doc

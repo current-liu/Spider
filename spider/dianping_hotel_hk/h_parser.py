@@ -26,6 +26,7 @@ def htmlParser(doc):
     prices = []
     stars = []
     review_nums = []
+    picUrls = []
 
     for li in hotel_list.find_all("li", class_=" hotel-block J_hotel-block"):
         # print li.get_text()
@@ -37,6 +38,9 @@ def htmlParser(doc):
         # title = "香港丽思卡尔顿酒店" > 香港丽思卡尔顿酒店 < / a >
         # < a class ="ibook" href="/shop/3715216" target="_blank" > < / a >
 
+        pics = li.find("ul", class_="J_hotel-pics").find("li")
+        picUrl = pics.find("a")
+        pppp = picUrl['data-lazyload']
         hotel_info_ctn = li.find("div", class_="hotel-info-ctn")
 
         hotel_info_main = hotel_info_ctn.find("div", class_="hotel-info-main")
@@ -101,6 +105,7 @@ def htmlParser(doc):
         addrs.append(addr.strip().replace("\n", ""))
         walks.append(walk.strip().replace("\n", ""))
         tags.append(tag_list)
+        picUrls.append(picUrl)
         # 需要将 price unicode转str
         p_str = price.encode('utf-8')
         # print p_str
@@ -274,10 +279,10 @@ def get_review(doc, url):
     try:
         url_mini = url.split("?")[0]
         shopId = int(re.sub(r'\D', "", url_mini))
-    except BaseException,e:
+    except BaseException, e:
         print e
         print traceback.format_exc()
-        print "get_review()  --------------------------------------- url:",url
+        print "get_review()  ---shopId解析失败---------- url:", url
         shopId = 0
     # url_mini = url.split("?")[0]
     # shopId = int(re.sub(r'\D', "", url_mini))
@@ -303,7 +308,7 @@ def get_review(doc, url):
         next = soup.find("div", class_="Pages")
         nextpage = next.find("a", class_="NextPage")['href']
     except BaseException, e:
-        print e
+        print "find nextpage faile"
         global shopId_num
 
         shopId_num += 1

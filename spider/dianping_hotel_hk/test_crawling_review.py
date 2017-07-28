@@ -2,7 +2,7 @@ from unittest import TestCase
 import h_parser
 import html_download
 import result_manager
-import output
+import dao
 
 
 class TestCrawling_review(TestCase):
@@ -14,4 +14,4 @@ class TestCrawling_review(TestCase):
         result = h_parser.get_review(doc, url1)
         if result:
             result_manager.add_new_result(result)
-            output.insert_hotel_review()
+            dao.insert_hotel_review()

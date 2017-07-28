@@ -18,11 +18,11 @@ print data
 print pymysql.paramstyle
 
 
-def insert(i, n, d, a, w, t, p, s, r):
+def insert(i, n, d, a, w, t, p, s, r, pu):
     try:
         sql = """INSERT INTO dianping_hotel_hk_liuchao(
-                     id, name, detail_url, addr, walk, tags, price, star, review_num)
-                     VALUES ('%d', '%s', '%s', '%s', '%s', '%s', '%d', '%s', '%d')""" % (i, n, d, a, w, t, p, s, r)
+                     id, name, detail_url, addr, walk, tags, price, star, review_num, picUrl)
+                     VALUES ('%d', '%s', '%s', '%s', '%s', '%s', '%d', '%s', '%d', '%s')""" % (i, n, d, a, w, t, p, s, r, pu)
 
         cursor.execute(sql)
         db.commit()
@@ -140,45 +140,41 @@ def insert_hotel_review():
             # print sql
 
 
-def add_review_url_crawled(url):
-    sql = """INSERT INTO hotel_review_url_crawled (shopId,reviewUrl) VALUES('%s','%s')"""
-    u = url
-    url_mini = url.split("?")[0]
-    try:
-        shopId = int(re.sub(r'\D', "", url_mini))
-    except BaseException, e:
-        print e
-        print traceback.format_exc()
-        print "add_review_url_crawled(url) ----------------------------------- url:",url
-        return
+def insert_new_review_url(urls):
+    sql = """INSERT INTO hotel_new_review_url (shopId,reviewUrl) VALUES('%s','%s')"""
+    for u in urls:
+        url_mini = u.split("?")[0]
+        try:
+            shopId = int(re.sub(r'\D', "", url_mini))
+        except BaseException, e:
+            print e
+            print traceback.format_exc()
 
-    d = (shopId, url)
-    try:
-        cursor.execute(sql % d)
-        db.commit()
-    except BaseException, e:
-        db.rollback()
-        print e
+            return
 
-
-def init_old_review_urls():
-    sql = """SELECT reviewUrl FROM hotel_review_url_crawled"""
-    try:
-        cursor.execute(sql)
-        results = cursor.fetchall()
-    except BaseException, e:
-        db.rollback()
-        print e
-    urls = set(results)
-    url_manager.old_review_urls = urls
+        d = (shopId, u)
+        try:
+            cursor.execute(sql % d)
+            db.commit()
+        except BaseException, e:
+            db.rollback()
+            print e
 
 
-def get_last_old_review_urls():
-    sql = """select reviewUrl from hotel_review_url_crawled a
-              where not exists
-              (select * from hotel_review_url_crawled where shopId=a.shopId and reviewUrl>a.reviewUrl)
-              GROUP BY shopId              
-              ORDER BY shopId"""
+# def init_old_review_urls():
+#     sql = """SELECT reviewUrl FROM hotel_new_review_url"""
+#     try:
+#         cursor.execute(sql)
+#         results = cursor.fetchall()
+#     except BaseException, e:
+#         db.rollback()
+#         print e
+#     urls = set(results)
+#     url_manager.old_review_urls = urls
+
+
+def select_new_review_urls():
+    sql = """SELECT reviewUrl FROM hotel_new_review_url"""
     try:
         cursor.execute(sql)
         results = cursor.fetchall()
@@ -188,3 +184,32 @@ def get_last_old_review_urls():
         print e
         return
         # url_manager.old_review_urls = set(results)
+
+
+def insert_ip(data):
+    sql = """INSERT INTO ip (country,Ipaddress,post)
+            VALUES
+            ('lc','%s','%s')"""
+    try:
+        ip = data[0]
+        port = data[1]
+        cursor.execute(sql % (ip, port))
+        db.commit()
+    except BaseException, e:
+        db.rollback()
+        print e
+
+
+def select_ip():
+    sql = """SELECT Ipaddress,post
+              FROM ip
+              WHERE country = 'lc' """
+
+    try:
+        cursor.execute(sql)
+        results = cursor.fetchall()
+        return results
+    except BaseException, e:
+        db.rollback()
+        print e
+        return
