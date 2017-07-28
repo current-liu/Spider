@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="179a0096-b667-40a6-a2bb-81939a54f749" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/tianyancha/company_html.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/tianyancha/h_parser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/tianyancha/test_company_html_parser.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../spider/tianyancha/html_parser.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../myPython1/demo/demo02.py" afterPath="$PROJECT_DIR$/../myPython1/demo/demo02.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/k11/html_download.py" afterPath="$PROJECT_DIR$/../spider/k11/html_download.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/k11/url_manager.py" afterPath="$PROJECT_DIR$/../spider/k11/url_manager.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/tianyancha/html_download.py" afterPath="$PROJECT_DIR$/../spider/tianyancha/html_download.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/tianyancha/main.py" afterPath="$PROJECT_DIR$/../spider/tianyancha/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/tianyancha/output.py" afterPath="$PROJECT_DIR$/../spider/tianyancha/output.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/tianyancha/url_manager.py" afterPath="$PROJECT_DIR$/../spider/tianyancha/url_manager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../myPython1/demo/demo01.py" afterPath="$PROJECT_DIR$/../myPython1/demo/demo01.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,28 +46,9 @@
       <file leaf-file-name="html_download.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../spider/tianyancha/html_download.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="7220" column="14" lean-forward="true" selection-start-line="7220" selection-start-column="14" selection-end-line="7220" selection-end-column="14" />
-              <folding>
-                <element signature="e#125#2461#0" expanded="false" />
-                <element signature="e#2478#4860#0" expanded="false" />
-                <element signature="e#4932#292373#0" expanded="false" />
-                <element signature="e#292431#294763#0" expanded="false" />
-                <element signature="e#294780#297162#0" expanded="false" />
-                <element signature="e#297230#584671#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="h_parser.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/tianyancha/h_parser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
-              <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="30" />
-              <folding>
-                <element signature="e#16#45#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="216480">
+              <caret line="7218" column="14" lean-forward="false" selection-start-line="7218" selection-start-column="14" selection-end-line="7218" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,64 +56,84 @@
       <file leaf-file-name="h_parser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-32">
-              <caret line="278" column="14" lean-forward="false" selection-start-line="278" selection-start-column="14" selection-end-line="278" selection-end-column="36" />
+            <state relative-caret-position="-5034">
+              <caret line="156" column="40" lean-forward="false" selection-start-line="156" selection-start-column="40" selection-end-line="156" selection-end-column="40" />
               <folding>
-                <element signature="e#16#45#0" expanded="true" />
+                <element signature="e#16#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_company_html_parser.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/tianyancha/test_company_html_parser.py">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
-              <caret line="12" column="21" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="12" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="company_html.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/tianyancha/company_html.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
-              <caret line="2173" column="7" lean-forward="false" selection-start-line="2173" selection-start-column="7" selection-end-line="2173" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="url_manager.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/url_manager.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="52" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="url_manager.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/tianyancha/url_manager.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
-              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../spider/tianyancha/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+            <state relative-caret-position="175">
+              <caret line="196" column="17" lean-forward="true" selection-start-line="196" selection-start-column="17" selection-end-line="196" selection-end-column="17" />
               <folding>
                 <element signature="e#15#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="d.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../myPython1/demo/demo01/d.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="html_download.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="758">
+              <caret line="58" column="17" lean-forward="false" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../spider/tianyancha/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="56" column="10" lean-forward="false" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="machine_learning.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../myPython1/demo/machine_learning.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../myPython1/demo/demo01/demo">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo01.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../myPython1/demo/demo01.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+              <folding>
+                <element signature="e#16#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,21 +142,9 @@
       <file leaf-file-name="openrices.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../spider/openrice/openrices.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-32">
+            <state relative-caret-position="480">
               <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="output.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/tianyancha/output.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
-              <caret line="6" column="36" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding>
-                <marker date="1501153833326" expanded="true" signature="292:453" ph="INSERT INTO user_voice... " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -190,6 +172,10 @@
       <find>time</find>
       <find>next</find>
       <find>def</find>
+      <find>d</find>
+      <find>de</find>
+      <find>der</find>
+      <find>ders</find>
     </findStrings>
     <replaceStrings>
       <replace>index</replace>
@@ -214,7 +200,6 @@
         <option value="$PROJECT_DIR$/../spider/k11/parser.py" />
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/url_manager.py" />
         <option value="$PROJECT_DIR$/../spider/k11/main.py" />
-        <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py" />
         <option value="$PROJECT_DIR$/../myPython1/src/demo08.py" />
         <option value="$PROJECT_DIR$/../myPython1/src/test.py" />
         <option value="$PROJECT_DIR$/../myPython1/src/Test.py" />
@@ -224,7 +209,6 @@
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/test_get_review.py" />
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/output.py" />
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/html_parser.py" />
-        <option value="$PROJECT_DIR$/../myPython1/demo/demo01.py" />
         <option value="$PROJECT_DIR$/../myPython1/demo/RandomUserAgentMiddleware.py" />
         <option value="$PROJECT_DIR$/../spider/tianyancha/output.py" />
         <option value="$PROJECT_DIR$/../myPython1/demo/demo02.py" />
@@ -237,6 +221,12 @@
         <option value="$PROJECT_DIR$/../spider/tianyancha/h_parser.py" />
         <option value="$PROJECT_DIR$/../spider/tianyancha/html_download.py" />
         <option value="$PROJECT_DIR$/../spider/tianyancha/main.py" />
+        <option value="$PROJECT_DIR$/../myPython1/demo/machine_learning.py" />
+        <option value="$PROJECT_DIR$/../myPython1/demo/demo01.py" />
+        <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py" />
+        <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py" />
+        <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py" />
+        <option value="$PROJECT_DIR$/../myPython1/demo/demo01/d.py" />
       </list>
     </option>
   </component>
@@ -271,7 +261,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -283,8 +272,14 @@
               <option name="myItemId" value="spider" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tianyancha" />
+              <option name="myItemId" value="getJpg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myPython1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -294,18 +289,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spider" />
+              <option name="myItemId" value="myPython1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="getJpg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myPython1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo01" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../myPython1" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -574,6 +593,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="179a0096-b667-40a6-a2bb-81939a54f749" name="Default" comment="" />
@@ -627,16 +649,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33055976" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277311" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14402619" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44517186" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27609682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28139183" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5040917" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -644,8 +669,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -722,22 +745,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/tianyancha/main.py</url>
-          <line>27</line>
+          <line>34</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/tianyancha/main.py</url>
-          <line>41</line>
+          <line>69</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/tianyancha/main.py</url>
-          <line>43</line>
+          <line>71</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/tianyancha/main.py</url>
-          <line>36</line>
+          <line>57</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
@@ -748,39 +771,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../spider/k11/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../myPython/src/demo5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../myPython/src/demo6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../myPython/src/demo7.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../myPython/src/demo8.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -928,7 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -948,35 +942,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28260">
           <caret line="962" column="0" lean-forward="false" selection-start-line="962" selection-start-column="0" selection-end-line="962" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/html_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9660">
-          <caret line="328" column="0" lean-forward="false" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/html_parser.py" />
     <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/output.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="16" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
-          <folding>
-            <marker date="1501152221564" expanded="true" signature="6015:6063" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../myPython1/demo/demo01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#29#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -984,25 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="252" column="62" lean-forward="true" selection-start-line="252" selection-start-column="22" selection-end-line="252" selection-end-column="62" />
-          <folding>
-            <marker date="1501152221564" expanded="false" signature="15:23" ph="import ..." />
-            <marker date="1501152221564" expanded="true" signature="8248:8377" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1033,8 +987,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/url_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="52" selection-end-column="30" />
+        <state relative-caret-position="1440">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1043,13 +997,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../spider/tianyancha/company_html.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
+        <state relative-caret-position="65190">
           <caret line="2173" column="7" lean-forward="false" selection-start-line="2173" selection-start-column="7" selection-end-line="2173" selection-end-column="7" />
           <folding />
         </state>
@@ -1057,7 +1010,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../spider/tianyancha/test_company_html_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
+        <state relative-caret-position="360">
           <caret line="12" column="21" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="12" selection-end-column="21" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
@@ -1073,19 +1026,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="278" column="14" lean-forward="false" selection-start-line="278" selection-start-column="14" selection-end-line="278" selection-end-column="36" />
-          <folding>
-            <element signature="e#16#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../spider/tianyancha/url_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
+        <state relative-caret-position="1650">
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
@@ -1093,7 +1036,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../spider/tianyancha/output.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
+        <state relative-caret-position="180">
           <caret line="6" column="36" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <marker date="1501153833326" expanded="true" signature="292:453" ph="INSERT INTO user_voice... " />
@@ -1103,17 +1046,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../spider/tianyancha/h_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="450">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           <folding>
             <element signature="e#16#45#0" expanded="true" />
+            <marker date="1501241272732" expanded="true" signature="114:418" ph="..." />
+            <marker date="1501241272732" expanded="true" signature="374:418" ph="..." />
+            <marker date="1501241272732" expanded="true" signature="1928:2007" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../spider/openrice/openrices.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
+        <state relative-caret-position="480">
           <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
           <folding />
         </state>
@@ -1121,28 +1067,104 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../spider/tianyancha/html_download.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="7220" column="14" lean-forward="true" selection-start-line="7220" selection-start-column="14" selection-end-line="7220" selection-end-column="14" />
-          <folding>
-            <element signature="e#125#2461#0" expanded="false" />
-            <element signature="e#2478#4860#0" expanded="false" />
-            <element signature="e#4932#292373#0" expanded="false" />
-            <element signature="e#292431#294763#0" expanded="false" />
-            <element signature="e#294780#297162#0" expanded="false" />
-            <element signature="e#297230#584671#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="216480">
+          <caret line="7218" column="14" lean-forward="false" selection-start-line="7218" selection-start-column="14" selection-end-line="7218" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../spider/tianyancha/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+        <state relative-caret-position="292">
+          <caret line="56" column="10" lean-forward="false" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../myPython1/demo/machine_learning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../myPython1/demo/demo01/demo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../myPython1/demo/demo01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding>
+            <element signature="e#16#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python27/Lib/urlparse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5034">
+          <caret line="156" column="40" lean-forward="false" selection-start-line="156" selection-start-column="40" selection-end-line="156" selection-end-column="40" />
+          <folding>
+            <element signature="e#16#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="758">
+          <caret line="58" column="17" lean-forward="false" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="196" column="17" lean-forward="true" selection-start-line="196" selection-start-column="17" selection-end-line="196" selection-end-column="17" />
           <folding>
             <element signature="e#15#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../myPython1/demo/demo01/d.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

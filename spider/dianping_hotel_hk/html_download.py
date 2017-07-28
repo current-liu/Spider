@@ -49,9 +49,8 @@ h_total = [headers2, headers3, headers4, headers5]
 h = random.choice(h_total)
 ip_list = ip_proxy.get_ips()
 
-
-
 def downloadPage(url):
+
 
     data = random.choice(ip_list)
     ip = data[0]

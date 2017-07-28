@@ -1,12 +1,14 @@
 # coding=utf-8
 
-from bs4 import BeautifulSoup
-import re
-import url_manager
-import urlparse
-import json
 import datetime
+import re
+import json
 import traceback
+import urlparse
+
+from bs4 import BeautifulSoup
+
+import url_manager
 
 shopId_num = 0
 

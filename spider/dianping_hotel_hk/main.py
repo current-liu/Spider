@@ -167,6 +167,7 @@ def crawling_room():
 
 
 def crawling_review():
+
     print "crawling_shop()"
 
     # 从数据库中读取已爬过的review_url
@@ -205,6 +206,7 @@ def crawling_review():
             elif doc == "403":
                 url_manager.add_new_review_url(identify_url)
                 print "403"
+
                 continue
             else:
                 result = h_parser.get_review(doc, url)

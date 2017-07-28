@@ -2,7 +2,7 @@
 
 import random
 import base64
-from Proxies import Proxies
+from demo01 import demo
 
 
 class RandomUserAgent(object):
