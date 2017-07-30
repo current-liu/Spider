@@ -7,18 +7,23 @@
 """
 import pymysql
 
-db = pymysql.connect("localhost", "liuchao", "1234", "test")
+db = pymysql.connect("localhost", "root", "1234", "test")
 cursor = db.cursor()
 cursor.execute("select version()")
 data = cursor.fetchone()
 print data
 
-# sql = """INSERT INTO emp(NAME, AGE,  INCOME)
-#          VALUES ('Mac', 20, 2000)"""
-# try:
-#     cursor.execute(sql)
-#     db.commit()
-# except:
-#     db.rollback()
-#
-# db.close()
+sql = """INSERT INTO emp(NAME, AGE,  INCOME)
+         VALUES ('Mac', 20, 2000)"""
+sql1 = """SELECT * FROM emp"""
+try:
+    cursor.execute(sql1)
+    r = cursor.fetchall()
+    db.commit()
+except:
+    db.rollback()
+
+    # TODO dja;lf
+db.close()
+
+
