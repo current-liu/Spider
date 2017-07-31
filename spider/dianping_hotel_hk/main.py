@@ -177,7 +177,7 @@ def crawling_room():
         print "扒完", shopId
         today = datetime.date.today()
         query_time = today.strftime("%Y-%m-%d")
-        dao.insert_hotel_rooms(room_info_list,query_time)
+        dao.insert_hotel_rooms(room_info_list, query_time)
 
 
 

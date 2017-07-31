@@ -47,7 +47,7 @@ headers5 = {
     'User-agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.2) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.2.149.27 Safari/525.13 '}
 h_total = [headers2, headers3, headers4, headers5]
 h = random.choice(h_total)
-ip_list = ip_proxy.get_ips()
+# ip_list = ip_proxy.get_ips()
 
 def downloadPage(url):
 
