@@ -20,9 +20,10 @@ print pymysql.paramstyle
 
 def insert(i, n, d, a, w, t, p, s, r, pu):
     try:
-        sql = """INSERT INTO dianping_hotel_hk_liuchao(
+        sql = """INSERT INTO hotel_shop_list(
                      id, name, detail_url, addr, walk, tags, price, star, review_num, picUrl)
-                     VALUES ('%d', '%s', '%s', '%s', '%s', '%s', '%d', '%s', '%d', '%s')""" % (i, n, d, a, w, t, p, s, r, pu)
+                     VALUES ('%d', '%s', '%s', '%s', '%s', '%s', '%d', '%s', '%d', '%s')""" % (
+        i, n, d, a, w, t, p, s, r, pu)
 
         cursor.execute(sql)
         db.commit()
@@ -35,7 +36,7 @@ def downloadShopUrl():
     results = []
     try:
         sql = """SELECT id
-                    FROM dianping_hotel_hk_liuchao"""
+                    FROM hotel_shop_list"""
         cursor.execute(sql)
         results = cursor.fetchall()
 
@@ -54,9 +55,9 @@ def insert_hotel_shops():
     """
 
     sql = """INSERT INTO hotel_shops (
-              shopId,shopName,area,walk,star,tag)
-              SELECT id,name,addr,walk,star,tags
-              FROM dianping_hotel_hk_liuchao d
+              shopId,shopName,area,walk,star,tag,picUrl)
+              SELECT id,name,addr,walk,star,tags,picUrl
+              FROM hotel_shop_list d
               WHERE d.id NOT IN (SELECT shopId FROM hotel_shops)"""
     try:
         cursor.execute(sql)
@@ -78,19 +79,34 @@ def update_hotel_shops(shopId, addr, tel, openTime, checkTime, facs, room_facs, 
         print e
 
 
-def insert_hotel_goods(shopIds, roomIds, titles, bedTypes, breakfasts, netTypes, cancelRules, prices):
-    # 清空原表
-    try:
-        cursor.execute("truncate hotel_room")
-        db.commit()
-    except BaseException, e:
-        db.rollback()
-        print e
+# def insert_hotel_goods(shopIds, roomIds, titles, bedTypes, breakfasts, netTypes, cancelRules, prices):
+#     # 清空原表
+#     try:
+#         cursor.execute("truncate hotel_room")
+#         db.commit()
+#     except BaseException, e:
+#         db.rollback()
+#         print e
+#
+#     for (s, r, t, b, bf, n, c, p) in zip(shopIds, roomIds, titles, bedTypes, breakfasts, netTypes, cancelRules, prices):
+#         sql = """INSERT INTO hotel_room (shopId,roomType,bedType,breakfastInfo,internet,cancelRules,roomPrice)
+#                   VALUES('%d', '%s', '%s', '%s', '%s', '%s', '%d')""" % (s, t, b, bf, n, c, p)
+#         try:
+#             cursor.execute(sql)
+#             db.commit()
+#         except BaseException, e:
+#             db.rollback()
+#             print e
 
-    for (s, r, t, b, bf, n, c, p) in zip(shopIds, roomIds, titles, bedTypes, breakfasts, netTypes, cancelRules, prices):
-        sql = """INSERT INTO hotel_room (shopId,roomType,bedType,breakfastInfo,internet,cancelRules,roomPrice)
-                  VALUES('%d', '%s', '%s', '%s', '%s', '%s', '%d')""" % (s, t, b, bf, n, c, p)
+def insert_hotel_rooms(room_info_list,query_time):
+    for room_info in room_info_list:
+        room = room_info["roomInfo"]
+
         try:
+            sql = """INSERT INTO hotel_room (roomId,shopId,roomType,query_time,roomPrice_0,roomPrice_1,roomPrice_2,roomPrice_3,roomPrice_4)
+                  VALUES('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')""" % (
+                    room[0], room[1], room[2], query_time, room[3], room[4], room[5], room[6], room[7])
+
             cursor.execute(sql)
             db.commit()
         except BaseException, e:

@@ -13,8 +13,8 @@ import random
 import traceback
 
 
-def hotel_list():
-    print "begin"
+def crawling_hotel_list():
+    print "begin crawling_hotel_list()"
     GOAL_URL = "http://www.dianping.com/hongkong/hotel/r2827"
     url_manager.add_new_url(GOAL_URL)
     # doc = html_download.downloadPage(GOAL_URL)
@@ -32,6 +32,7 @@ def hotel_list():
     review_nums = []
     picUrls = []
     while (url_manager.has_new_url()):
+        time.sleep(random.uniform(0.5, 1))
         url = url_manager.get_new_url()
         print url
         doc = html_download.downloadPage(url)
@@ -47,7 +48,8 @@ def hotel_list():
         stars += star
         review_nums += review_num
         picUrls += picUrl
-    for (i, n, d, a, w, t, p, s, r, pu) in zip(ids, names, detail_urls, addrs, walks, tags, prices, stars, review_nums, picUrls):
+    for (i, n, d, a, w, t, p, s, r, pu) in zip(ids, names, detail_urls, addrs, walks, tags, prices, stars, review_nums,
+                                               picUrls):
         print i, n, d, a, w, t, p, s, r, pu
         tags = " ".join(t)
 
@@ -128,46 +130,73 @@ def crawling_room():
     print "crawling_room()"
     index = 0
     ROOM_URL = "http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=3715216&" \
-               "checkinDate=2017-07-24&checkoutDate=2017-07-25"
+               "checkinDate=2017-08-01&checkoutDate=2017-08-02"
     init_room_url_list(ROOM_URL)
 
-    shopIds_total = []
-    roomIds_total = []
-    titles_total = []
-    bedTypes_total = []
-    breakfasts_total = []
-    netTypes_total = []
-    cancelRules_total = []
-    prices_total = []
+    # shopIds_total = []
+    # roomIds_total = []
+    # titles_total = []
+    # bedTypes_total = []
+    # breakfasts_total = []
+    # netTypes_total = []
+    # cancelRules_total = []
+    # prices_total = []
 
     while (url_manager.has_new_room_url()):
-        index += 1
-        print index
 
-        url = url_manager.get_new_room_url()
-        s = url.split("checkinDate")[0]
+        time.sleep(random.uniform(2, 3))
+
+        urls = url_manager.get_new_room_url()
+
+        s = urls.split("checkinDate")[0]
         shopId = int(re.sub(r'\D', "", s))
 
-        doc = html_download.downloadPage(url)
-        shopIds, roomIds, titles, bedTypes, breakfasts, netTypes, cancelRules, prices = h_parser.get_room(doc,
-                                                                                                          shopId)
+        url_list = urls.split(" ")
 
-        shopIds_total += shopIds
-        roomIds_total += roomIds
-        titles_total += titles
-        bedTypes_total += bedTypes
-        breakfasts_total += breakfasts
-        netTypes_total += netTypes
-        cancelRules_total += cancelRules
-        prices_total += prices
+        doc0 = html_download.downloadPage(url_list[0])
+        doc1 = html_download.downloadPage(url_list[1])
+        doc2 = html_download.downloadPage(url_list[2])
+        doc3 = html_download.downloadPage(url_list[3])
+        doc4 = html_download.downloadPage(url_list[4])
+        doc_list = (doc0, doc1, doc2, doc3, doc4)
 
-    print "爬取完毕，开始插入数据"
-    dao.insert_hotel_goods(shopIds_total, roomIds_total, titles_total, bedTypes_total, breakfasts_total,
-                           netTypes_total, cancelRules_total, prices_total)
+        rooms_info_total = h_parser.get_room(doc_list, shopId)
+        if rooms_info_total == None:
+            continue
+        room_info_list = []
+
+        for room_infos in rooms_info_total:
+            if room_infos[1] == 0:
+                room_info_list = room_infos[0]
+                pass
+            else:
+                for room in room_infos[0]:
+                    for r in room_info_list:
+                        if r["roomId"] == room["roomId"]:
+                            r["roomInfo"].append(room["roomInfo"][3])
+        print "扒完", shopId
+        today = datetime.date.today()
+        query_time = today.strftime("%Y-%m-%d")
+        dao.insert_hotel_rooms(room_info_list,query_time)
+
+
+
+
+        # shopIds_total += shopIds
+        # roomIds_total += roomIds
+        # titles_total += titles
+        # bedTypes_total += bedTypes
+        # breakfasts_total += breakfasts
+        # netTypes_total += netTypes
+        # cancelRules_total += cancelRules
+        # prices_total += prices
+
+        # print "爬取完毕，开始插入数据"
+        # dao.insert_hotel_goods(shopIds_total, roomIds_total, titles_total, bedTypes_total, breakfasts_total,
+        #                        netTypes_total, cancelRules_total, prices_total)
 
 
 def crawling_review():
-
     print "crawling_shop()"
 
     # 从数据库中读取已爬过的review_url
@@ -187,7 +216,7 @@ def crawling_review():
     try:
         while (url_manager.has_new_review_url()):
 
-            time.sleep(random.uniform(0.001, 0.02))
+            time.sleep(random.uniform(2, 5))
 
             identify_url = url_manager.get_new_review_url()
             if identify_url:
@@ -219,7 +248,6 @@ def crawling_review():
         print traceback.format_exc()
 
 
-
 # def init_old_review_urls():
 #     """#从数据库中读取已爬过的review_url"""
 #     message = raw_input("是否从数据库中读取new_review_url？y/n")
@@ -246,9 +274,22 @@ def init_shop_url_list(goal_url):
 
 def init_room_url_list(goal_url):
     today = datetime.date.today()
-    tomorrow = today + datetime.timedelta(days=1)
-    checkinDate = today.strftime("%Y-%m-%d")
-    checkoutDate = tomorrow.strftime("%Y-%m-%d")
+    after_1 = today + datetime.timedelta(days=1)
+    after_2 = today + datetime.timedelta(days=2)
+    after_3 = today + datetime.timedelta(days=3)
+    after_4 = today + datetime.timedelta(days=4)
+    after_5 = today + datetime.timedelta(days=5)
+
+    checkinDate_0 = today.strftime("%Y-%m-%d")
+    checkoutDate_0 = after_1.strftime("%Y-%m-%d")
+    checkinDate_1 = after_1.strftime("%Y-%m-%d")
+    checkoutDate_1 = after_2.strftime("%Y-%m-%d")
+    checkinDate_2 = after_2.strftime("%Y-%m-%d")
+    checkoutDate_2 = after_3.strftime("%Y-%m-%d")
+    checkinDate_3 = after_3.strftime("%Y-%m-%d")
+    checkoutDate_3 = after_4.strftime("%Y-%m-%d")
+    checkinDate_4 = after_4.strftime("%Y-%m-%d")
+    checkoutDate_4 = after_5.strftime("%Y-%m-%d")
     shop_id_list = dao.downloadShopUrl()
 
     for shop_id in shop_id_list:
@@ -259,9 +300,17 @@ def init_room_url_list(goal_url):
         str3 = "&checkoutDate="
 
         # 'http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=3715216&checkinDate=2017-07-24&checkoutDate=2017-07-25'
-        s = str1 + s + str2 + checkinDate + str3 + checkoutDate
-        new_url = urlparse.urljoin(goal_url, s)
-        url_manager.add_new_room_url(new_url)
+        s0 = str1 + s + str2 + checkinDate_0 + str3 + checkoutDate_0
+        s1 = str1 + s + str2 + checkinDate_1 + str3 + checkoutDate_1
+        s2 = str1 + s + str2 + checkinDate_2 + str3 + checkoutDate_2
+        s3 = str1 + s + str2 + checkinDate_3 + str3 + checkoutDate_3
+        s4 = str1 + s + str2 + checkinDate_4 + str3 + checkoutDate_4
+        new_url_0 = urlparse.urljoin(goal_url, s0)
+        new_url_1 = urlparse.urljoin(goal_url, s1)
+        new_url_2 = urlparse.urljoin(goal_url, s2)
+        new_url_3 = urlparse.urljoin(goal_url, s3)
+        new_url_4 = urlparse.urljoin(goal_url, s4)
+        url_manager.add_new_room_url(new_url_0 + " " + new_url_1 + " " + new_url_2 + " " + new_url_3 + " " + new_url_4)
 
 
 def init_review_url_list():
@@ -297,15 +346,14 @@ def init_review_url_list():
 
 if __name__ == "__main__":
     # 酒店列表
-    hotel_list()
+    # crawling_hotel_list()
 
     # 酒店详情
     # crawling_shop()
 
 
     # 房间详情
-    # crawling_room()
-
+    crawling_room()
 
     # try:
     #     crawling_review()

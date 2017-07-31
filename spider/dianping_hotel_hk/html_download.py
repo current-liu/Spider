@@ -52,24 +52,24 @@ ip_list = ip_proxy.get_ips()
 def downloadPage(url):
 
 
-    data = random.choice(ip_list)
-    ip = data[0]
-    port = data[1]
-    ip_port = ip + ":" + str(port)
-    print ip_port
-    # global ip_port
-    proxies = {'http': ip_port}
+    # data = random.choice(ip_list)
+    # ip = data[0]
+    # port = data[1]
+    # ip_port = ip + ":" + str(port)
+    # print ip_port
+    # # global ip_port
+    # proxies = {'http': ip_port}
 
     try:
         doc = requests.get(url, headers=h).content
         pass
     except BaseException, e:
         print e
-        ip_list.remove(data)
+        # ip_list.remove(data)
         return "error"
     else:
         if doc.__contains__("403 Forbidden"):
-            ip_list.remove(data)
+            # ip_list.remove(data)
             return "403"
         else:
             return doc

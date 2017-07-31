@@ -41,8 +41,11 @@ def htmlParser(doc):
         # < a class ="ibook" href="/shop/3715216" target="_blank" > < / a >
 
         pics = li.find("ul", class_="J_hotel-pics").find("li")
-        picUrl = pics.find("a")
-        pppp = picUrl['data-lazyload']
+        picUrl = str(pics.find("a"))
+        # reg = re.compile('http://[\S]*"')
+        # imgList = re.search(reg, picUrl)
+        # pppp = picUrl['data-lazyload']
+        pic_url = picUrl.split('data-lazyload="')[1].split('" title')[0]
         hotel_info_ctn = li.find("div", class_="hotel-info-ctn")
 
         hotel_info_main = hotel_info_ctn.find("div", class_="hotel-info-main")
@@ -107,7 +110,7 @@ def htmlParser(doc):
         addrs.append(addr.strip().replace("\n", ""))
         walks.append(walk.strip().replace("\n", ""))
         tags.append(tag_list)
-        picUrls.append(picUrl)
+        picUrls.append(pic_url)
         # 需要将 price unicode转str
         p_str = price.encode('utf-8')
         # print p_str
@@ -115,6 +118,7 @@ def htmlParser(doc):
             p_int = int(filter(str.isdigit, p_str))
         except BaseException, e:
             print e
+            print "价格获取失败，正常！"
             p_int = 0
         # print p_int
         prices.append(p_int)
@@ -134,7 +138,7 @@ def htmlParser(doc):
         except:
             print "parse complete"
 
-    return ids, names, detail_urls, addrs, walks, tags, prices, stars, review_nums
+    return ids, names, detail_urls, addrs, walks, tags, prices, stars, review_nums, picUrls
 
 
 def shopParser(doc):
@@ -229,52 +233,74 @@ def shopParser(doc):
 #             prices.append(price)
 
 
-def get_room(doc, shopId):
+def get_room(doc_list, shopId):
     """获取每个酒店房型的详细信息"""
-    shopIds = []
-    roomIds = []
-    titles = []
-    bedTypes = []
-    breakfasts = []
-    netTypes = []
-    cancelRules = []
-    prices = []
 
-    try:
-        room_list = json.loads(doc)["data"]["hotelGoodsList"]["roomList"]
-    except BaseException, e:
-        print e
-        print "获取酒店房型详情失败"
-    else:
-        n = room_list.__len__()
-        if (n == 0):
-            print "房型信息为空"
+    # bedTypes = []
+    # breakfasts = []
+    # netTypes = []
+    # cancelRules = []
+    # prices = []
+    # price0 = []
+
+    rooms_info_total = []
+    for doc in doc_list:
+        index = doc_list.index(doc)
+
+        try:
+            # TODO doc_list 按什么来查
+            room_list = json.loads(doc)["data"]["hotelGoodsList"]["roomList"]
+        except BaseException, e:
+            print e
+            print "获取酒店房型详情失败"
+            return
         else:
-            print "成功获取房型"
-            for room in room_list:
+            n = room_list.__len__()
+            if (n == 0):
+                print "房型信息为空"
+                return
+            else:
+                print "成功获取房型"
+                roomId_list = []
+                room_infos = []
+                for room in room_list:
+                    roomId = room["roomId"]
+                    if roomId_list.__contains__(roomId):
+                        continue
+                    roomId_list.append(roomId)
+                    title = room["title"]
+                    price = room["price"]
+                    # print roomId, title
+                    # roomIds.append(roomId)
+                    # shopIds.append(shopId)
+                    # titles.append(title)
+                    # prices.append(price)
+                    room_info = {"roomId": roomId, "roomInfo": [roomId, shopId, title, price]}
+                    room_infos.append(room_info)
+        room_in_doc = [room_infos, index]
+        rooms_info_total.append(room_in_doc)
 
-                roomId = room["roomId"]
-                title = room["title"]
-                print roomId, title
-                for good in room["goodsList"]:
-                    bedType = good["bedType"]
-                    breakfast = good["breakfast"]
-                    netType = good["netType"]
-                    cancelRule = good["cancelRule"]
-                    price = good["price"]
 
-                    shopIds.append(shopId)
-                    roomIds.append(roomId)
-                    titles.append(title)
-                    bedTypes.append(bedType)
-                    breakfasts.append(breakfast)
-                    netTypes.append(netType)
-                    cancelRules.append(cancelRule)
-                    prices.append(price)
+        # for good in room["goodsList"]:
+        #     bedType = good["bedType"]
+        #     breakfast = good["breakfast"]
+        #     netType = good["netType"]
+        #     cancelRule = good["cancelRule"]
+        #     price = good["price"]
+        #
+        #     shopIds.append(shopId)
+        #     roomIds.append(roomId)
+        #     titles.append(title)
+        #     bedTypes.append(bedType)
+        #     breakfasts.append(breakfast)
+        #     netTypes.append(netType)
+        #     cancelRules.append(cancelRule)
+        #     prices.append(price)
+        #
+        #     print bedType, breakfast, netType, cancelRule, price
+        # return shopIds, roomIds, titles, bedTypes, breakfasts, netTypes, cancelRules, prices
 
-                    print bedType, breakfast, netType, cancelRule, price
-
-    return shopIds, roomIds, titles, bedTypes, breakfasts, netTypes, cancelRules, prices
+    return rooms_info_total
 
 
 def get_review(doc, url):
