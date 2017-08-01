@@ -141,16 +141,16 @@ def crawling_room():
     # netTypes_total = []
     # cancelRules_total = []
     # prices_total = []
-
+    index = 0
     while (url_manager.has_new_room_url()):
 
         time.sleep(random.uniform(2, 3))
 
         urls = url_manager.get_new_room_url()
-
+        index += 1
         s = urls.split("checkinDate")[0]
         shopId = int(re.sub(r'\D', "", s))
-
+        print "crawling 第'%s'个：'%s'" % (index, shopId)
         url_list = urls.split(" ")
 
         doc0 = html_download.downloadPage(url_list[0])
@@ -161,10 +161,17 @@ def crawling_room():
         doc_list = (doc0, doc1, doc2, doc3, doc4)
 
         rooms_info_total = h_parser.get_room(doc_list, shopId)
-        if rooms_info_total == None:
-            continue
-        room_info_list = []
 
+        today = datetime.date.today()
+        query_time = today.strftime("%Y-%m-%d")
+
+        if rooms_info_total == None:
+            room_info_list = [{"roomInfo": [-1, shopId, "此shopId未查询到数据", -1, -1, -1, -1, -1]}]
+            dao.insert_hotel_rooms(room_info_list, query_time)
+            print "无信息", shopId
+            continue
+
+        room_info_list = []
         for room_infos in rooms_info_total:
             if room_infos[1] == 0:
                 room_info_list = room_infos[0]
@@ -175,9 +182,8 @@ def crawling_room():
                         if r["roomId"] == room["roomId"]:
                             r["roomInfo"].append(room["roomInfo"][3])
         print "扒完", shopId
-        today = datetime.date.today()
-        query_time = today.strftime("%Y-%m-%d")
-        dao.insert_hotel_rooms(room_info_list,query_time)
+
+        dao.insert_hotel_rooms(room_info_list, query_time)
 
 
 
@@ -311,6 +317,8 @@ def init_room_url_list(goal_url):
         new_url_3 = urlparse.urljoin(goal_url, s3)
         new_url_4 = urlparse.urljoin(goal_url, s4)
         url_manager.add_new_room_url(new_url_0 + " " + new_url_1 + " " + new_url_2 + " " + new_url_3 + " " + new_url_4)
+    u = url_manager.new_room_urls
+    pass
 
 
 def init_review_url_list():
