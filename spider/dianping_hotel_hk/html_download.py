@@ -47,29 +47,33 @@ headers5 = {
     'User-agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.2) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.2.149.27 Safari/525.13 '}
 h_total = [headers2, headers3, headers4, headers5]
 h = random.choice(h_total)
-# ip_list = ip_proxy.get_ips()
+ip_list = ip_proxy.get_ips()
+
 
 def downloadPage(url):
 
+    global ip_list
+    if ip_list.__len__() < 5:
+        ip_list += ip_proxy.get_ips()
 
-    # data = random.choice(ip_list)
-    # ip = data[0]
-    # port = data[1]
-    # ip_port = ip + ":" + str(port)
+    data = random.choice(ip_list)
+    ip = data['ip']
+    port = data['port']
+    ip_port = ip + ":" + str(port)
     # print ip_port
-    # # global ip_port
-    # proxies = {'http': ip_port}
+
+    proxies = {'http': ip_port}
 
     try:
-        doc = requests.get(url, headers=h).content
+        doc = requests.get(url, headers=h, proxies=proxies, timeout=2).content
         pass
     except BaseException, e:
         print e
-        # ip_list.remove(data)
-        return "error"
+        ip_list.remove(data)
+        return "download error"
     else:
         if doc.__contains__("403 Forbidden"):
-            # ip_list.remove(data)
-            return "403"
+            ip_list.remove(data)
+            return "403 Forbidden"
         else:
             return doc

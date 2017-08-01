@@ -341,6 +341,9 @@ def get_review(doc, url):
 
         shopId_num += 1
         print "第'%d'shopId '%d'已到末页" % (shopId_num, shopId)
+        fo = open("num'%d'shopId '%d'complete.txt" % (shopId_num, shopId), "wb")
+        fo.write(doc)
+        fo.close()
     else:
         nextpage = urlparse.urljoin(url, nextpage)
         indentify_url = nextpage.split("shop")[1]

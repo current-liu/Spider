@@ -209,20 +209,23 @@ def crawling_review():
     # init_old_review_urls()
 
     # 初始化new_review_urls
-    init_review_url_list()
+    # init_review_url_list()
 
     # 打印All new_review
     url_manager.print_new_review_url()
-    print "hhh"
 
-    # REVIEW_URL = "/3715216/review_more"
+    u_rasie = url_manager.new_review_urls
+    # raise BaseException
+
+    REVIEW_URL = "/5268306/review_more"
+    # 前三个shopId爬完了
     # url_manager.new_review_urls = set()
-    # url_manager.add_new_review_url(REVIEW_URL)
+    url_manager.add_new_review_url(REVIEW_URL)
 
     try:
         while (url_manager.has_new_review_url()):
 
-            time.sleep(random.uniform(2, 5))
+            # time.sleep(random.uniform(2, 5))
 
             identify_url = url_manager.get_new_review_url()
             if identify_url:
@@ -234,14 +237,11 @@ def crawling_review():
                 raise BaseException
 
             doc = html_download.downloadPage(url)
-            if doc == "error":
+            if doc == "download error" or doc == "403 Forbidden":
+                url_manager.remove_old_review_urls(identify_url)
                 url_manager.add_new_review_url(identify_url)
-                print "download error"
-                continue
-            elif doc == "403":
-                url_manager.add_new_review_url(identify_url)
-                print "403"
-
+                u_test = url_manager.new_review_urls
+                print doc
                 continue
             else:
                 result = h_parser.get_review(doc, url)
@@ -252,6 +252,7 @@ def crawling_review():
     except BaseException, e:
         print e
         print traceback.format_exc()
+
 
 
 # def init_old_review_urls():
@@ -316,7 +317,9 @@ def init_room_url_list(goal_url):
         new_url_2 = urlparse.urljoin(goal_url, s2)
         new_url_3 = urlparse.urljoin(goal_url, s3)
         new_url_4 = urlparse.urljoin(goal_url, s4)
+
         url_manager.add_new_room_url(new_url_0 + " " + new_url_1 + " " + new_url_2 + " " + new_url_3 + " " + new_url_4)
+
     u = url_manager.new_room_urls
     pass
 
@@ -334,14 +337,21 @@ def init_review_url_list():
     elif message == 'n':
         print "您选择了No，将根据数据库中的表hotel_new_review_url初始化new_review_urls"
         r = dao.select_new_review_urls()
+
+        # 初始化完成后清空原表
+        dao.truncate_new_review_urls()
         l = list(r)
         # if r:
         #     for url in r:
         #         x = url[0]
         #         l.append(str(x))
         #
+        if l == None:
+            print "表hotel_new_review_url为空，初始化失败!"
+            return
         try:
             url_manager.add_new_review_urls(l)
+
         except BaseException, e:
             print "根据数据库中的表hotel_new_review_url初始化new_review_urls，失败"
         else:
@@ -361,12 +371,13 @@ if __name__ == "__main__":
 
 
     # 房间详情
-    crawling_room()
+    # crawling_room()
 
-    # try:
-    #     crawling_review()
-    # except BaseException, e:
-    #     url_manager.insert_new_review_url_into_db()
+    try:
+        crawling_review()
+    except BaseException, e:
+        print "程序中止，正咋将new_review_urls插入数据库hotel_new_review_url"
+        url_manager.insert_new_review_url_into_db()
 
     # url = "http://www.dianping.com/shop/3715216/review_more"
     # doc = html_download.downloadPage(url)

@@ -127,7 +127,11 @@ def add_new_review_url(url):
         u2 = new_review_urls
         pass
         x = new_review_urls
-        print u2
+        # print u2
+
+
+def remove_old_review_urls(url):
+    old_review_urls.remove(url)
 
 
 def add_new_review_urls(urls):
