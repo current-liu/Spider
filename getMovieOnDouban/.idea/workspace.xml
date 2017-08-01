@@ -4,8 +4,12 @@
     <list default="true" id="bb965f97-59ad-41fd-95d5-487c6bc2a174" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler" afterPath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler2" afterPath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../getJpg/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../getJpg/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/dao.py" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/dao.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/ip_proxy.py" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/ip_proxy.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/test_get_room.py" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/test_get_room.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -97,11 +101,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="162" column="40" lean-forward="true" selection-start-line="162" selection-start-column="40" selection-end-line="162" selection-end-column="40" />
+            <state relative-caret-position="510">
+              <caret line="184" column="0" lean-forward="true" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
               <folding>
                 <element signature="e#15#30#0" expanded="true" />
               </folding>
@@ -109,7 +113,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="h_parser.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="h_parser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
@@ -122,8 +126,8 @@
       <file leaf-file-name="test_get_room.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/test_get_room.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="32" column="54" lean-forward="false" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
+            <state relative-caret-position="862">
+              <caret line="45" column="54" lean-forward="false" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
               <folding>
                 <element signature="e#15#44#0" expanded="true" />
               </folding>
@@ -134,28 +138,9 @@
       <file leaf-file-name="dao.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/dao.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="100" column="4" lean-forward="false" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
-              <folding>
-                <element signature="e#6201#6486#0" expanded="false" />
-                <marker date="1501493161744" expanded="true" signature="431:642" ph="INSERT INTO dianping_hotel_hk_liuchao... " />
-                <marker date="1501493161744" expanded="true" signature="873:913" ph="SELECT id FR... dianping_hotel_hk_liuchao" />
-                <marker date="1501493161744" expanded="true" signature="873:923" ph="SELECT id FR... hotel_shop_list" />
-                <marker date="1501493161744" expanded="true" signature="1225:1465" ph="INSERT INTO hotel_shops... " />
-                <marker date="1501493161744" expanded="true" signature="1322:1465" ph="SELECT id,na... dianping_hotel_hk_liuchao" />
-                <marker date="1501493161744" expanded="true" signature="1434:1464" ph="SELECT shopI... hotel_shops" />
-                <marker date="1501493161744" expanded="true" signature="1765:1936" ph="UPDATE hotel... " />
-                <marker date="1501493161744" expanded="true" signature="2567:2729" ph="INSERT INTO hotel_room... " />
-                <marker date="1501493161744" expanded="true" signature="3079:3276" ph="INSERT INTO hotel_room... " />
-                <marker date="1501493161744" expanded="true" signature="3989:4223" ph="INSERT INTO hotel_review... " />
-                <marker date="1501493161744" expanded="true" signature="4396:4607" ph="INSERT INTO hotel_review... " />
-                <marker date="1501493161744" expanded="true" signature="4629:4879" ph="INSERT INTO hotel_review... " />
-                <marker date="1501493161744" expanded="true" signature="5368:5437" ph="INSERT INTO hotel_review_url_crawled... " />
-                <marker date="1501493161744" expanded="true" signature="5900:5942" ph="SELECT revie... hotel_review_url_crawled" />
-                <marker date="1501493161744" expanded="true" signature="6210:6252" ph="select * fro... hotel_review_url_crawled" />
-                <marker date="1501493161744" expanded="true" signature="6523:6610" ph="INSERT INTO ip... " />
-                <marker date="1501493161744" expanded="true" signature="6827:6905" ph="SELECT Ipadd... ip" />
-              </folding>
+            <state relative-caret-position="689">
+              <caret line="115" column="1" lean-forward="false" selection-start-line="115" selection-start-column="1" selection-end-line="115" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -185,7 +170,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="767">
               <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
-              <folding />
+              <folding>
+                <marker date="1501553628380" expanded="true" signature="2661:2846" ph="..." />
+                <marker date="1501553628380" expanded="true" signature="2856:2920" ph="..." />
+                <marker date="1501553628380" expanded="true" signature="2949:3019" ph="..." />
+                <marker date="1501553628380" expanded="true" signature="3075:3135" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -736,7 +726,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46212122" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46212122" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18722944" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -792,7 +782,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/test_get_room.py</url>
-          <line>34</line>
+          <line>47</line>
           <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -862,7 +852,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/dao.py</url>
-          <line>215</line>
+          <line>228</line>
           <option name="timeStamp" value="242" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -907,7 +897,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/dao.py</url>
-          <line>31</line>
+          <line>21</line>
           <option name="timeStamp" value="263" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -997,7 +987,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/test_get_room.py</url>
-          <line>23</line>
+          <line>35</line>
           <option name="timeStamp" value="282" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1430,57 +1420,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/test_get_room.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="32" column="54" lean-forward="false" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
-          <folding>
-            <element signature="e#15#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/dao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="100" column="4" lean-forward="false" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
-          <folding>
-            <element signature="e#6201#6486#0" expanded="false" />
-            <marker date="1501493161744" expanded="true" signature="431:642" ph="INSERT INTO dianping_hotel_hk_liuchao... " />
-            <marker date="1501493161744" expanded="true" signature="873:913" ph="SELECT id FR... dianping_hotel_hk_liuchao" />
-            <marker date="1501493161744" expanded="true" signature="873:923" ph="SELECT id FR... hotel_shop_list" />
-            <marker date="1501493161744" expanded="true" signature="1225:1465" ph="INSERT INTO hotel_shops... " />
-            <marker date="1501493161744" expanded="true" signature="1322:1465" ph="SELECT id,na... dianping_hotel_hk_liuchao" />
-            <marker date="1501493161744" expanded="true" signature="1434:1464" ph="SELECT shopI... hotel_shops" />
-            <marker date="1501493161744" expanded="true" signature="1765:1936" ph="UPDATE hotel... " />
-            <marker date="1501493161744" expanded="true" signature="2567:2729" ph="INSERT INTO hotel_room... " />
-            <marker date="1501493161744" expanded="true" signature="3079:3276" ph="INSERT INTO hotel_room... " />
-            <marker date="1501493161744" expanded="true" signature="3989:4223" ph="INSERT INTO hotel_review... " />
-            <marker date="1501493161744" expanded="true" signature="4396:4607" ph="INSERT INTO hotel_review... " />
-            <marker date="1501493161744" expanded="true" signature="4629:4879" ph="INSERT INTO hotel_review... " />
-            <marker date="1501493161744" expanded="true" signature="5368:5437" ph="INSERT INTO hotel_review_url_crawled... " />
-            <marker date="1501493161744" expanded="true" signature="5900:5942" ph="SELECT revie... hotel_review_url_crawled" />
-            <marker date="1501493161744" expanded="true" signature="6210:6252" ph="select * fro... hotel_review_url_crawled" />
-            <marker date="1501493161744" expanded="true" signature="6523:6610" ph="INSERT INTO ip... " />
-            <marker date="1501493161744" expanded="true" signature="6827:6905" ph="SELECT Ipadd... ip" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="767">
           <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="162" column="40" lean-forward="true" selection-start-line="162" selection-start-column="40" selection-end-line="162" selection-end-column="40" />
           <folding>
-            <element signature="e#15#30#0" expanded="true" />
+            <marker date="1501553628380" expanded="true" signature="2661:2846" ph="..." />
+            <marker date="1501553628380" expanded="true" signature="2856:2920" ph="..." />
+            <marker date="1501553628380" expanded="true" signature="2949:3019" ph="..." />
+            <marker date="1501553628380" expanded="true" signature="3075:3135" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1490,6 +1438,34 @@
         <state relative-caret-position="378">
           <caret line="254" column="30" lean-forward="true" selection-start-line="254" selection-start-column="30" selection-end-line="254" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/dao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="689">
+          <caret line="115" column="1" lean-forward="false" selection-start-line="115" selection-start-column="1" selection-end-line="115" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/test_get_room.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="862">
+          <caret line="45" column="54" lean-forward="false" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
+          <folding>
+            <element signature="e#15#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="184" column="0" lean-forward="true" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
