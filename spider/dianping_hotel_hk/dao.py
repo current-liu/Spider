@@ -115,6 +115,7 @@ def insert_hotel_rooms(room_info_list, query_time):
 
 
 def insert_hotel_review():
+    msg = ""
     while (result_manager.has_new_result()):
         res = result_manager.get_new_result()
         shopId = res[0]
@@ -152,9 +153,11 @@ def insert_hotel_review():
         except BaseException, e:
             db.rollback()
             print e
+            if str(e).__contains__("for key 'PRIMARY'"):
+                msg = "for key 'PRIMARY'"
             # print "review_id", review_id
             # print sql
-
+    return msg
 
 def insert_new_review_url(urls):
     sql = """INSERT INTO hotel_new_review_url (shopId,reviewUrl) VALUES('%s','%s')"""

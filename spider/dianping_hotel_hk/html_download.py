@@ -64,16 +64,21 @@ def downloadPage(url):
 
     proxies = {'http': ip_port}
 
+    msg = "ok"
+    doc = ""
     try:
         doc = requests.get(url, headers=h, proxies=proxies, timeout=2).content
         pass
     except BaseException, e:
         print e
-        ip_list.remove(data)
-        return "download error"
+        msg = "download error"
     else:
         if doc.__contains__("403 Forbidden"):
-            ip_list.remove(data)
-            return "403 Forbidden"
-        else:
-            return doc
+            msg = "403 Forbidden"
+        elif doc.__contains__("<h1>ERROR</h1>") or doc.__contains__("ERROR"):
+            msg = "ERROR"
+
+    if msg != "ok":
+        ip_list.remove(data)
+
+    return doc, msg

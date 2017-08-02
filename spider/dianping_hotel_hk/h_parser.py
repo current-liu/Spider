@@ -11,6 +11,8 @@ from bs4 import BeautifulSoup
 import url_manager
 
 shopId_num = 0
+today = datetime.date.today()
+today_str = today.strftime("%Y-%m-%d")
 
 
 def htmlParser(doc):
@@ -248,7 +250,7 @@ def get_room(doc_list, shopId):
         index = doc_list.index(doc)
 
         try:
-            # TODO doc_list 按什么来查
+
             room_list = json.loads(doc)["data"]["hotelGoodsList"]["roomList"]
         except BaseException, e:
             print e
@@ -303,6 +305,50 @@ def get_room(doc_list, shopId):
     return rooms_info_total
 
 
+def get_next_review_url(doc, url, shopId):
+    soup = BeautifulSoup(doc, "lxml")
+    try:
+        next = soup.find("div", class_="Pages")
+        nextpage = next.find("a", class_="NextPage")['href']
+    except BaseException, e:
+        print "find nextpage faile"
+        global shopId_num
+
+        shopId_num += 1
+        print "第'%d'shopId '%d'已到末页" % (shopId_num, shopId)
+        fo = open(
+            r"D:\Liuchao\PycharmProjects\pythonproject\spider\dianping_hotel_hk\complete\'%s'num'%d'shopId '%d'complete.txt" % (
+                today_str.shopId_num, shopId), "wb")
+        fo.write(doc)
+        fo.close()
+    else:
+        nextpage = urlparse.urljoin(url, nextpage)
+        indentify_url = nextpage.split("shop")[1]
+        url_manager.add_new_review_url(indentify_url)
+
+
+def get_review_page_num(doc, url):
+    try:
+        url_mini = url.split("?")[0]
+        shopId = int(re.sub(r'\D', "", url_mini))
+    except BaseException, e:
+        print e
+        print traceback.format_exc()
+        print "get_review()  ---shopId解析失败---------- url:", url
+        shopId = 0
+    soup = BeautifulSoup(doc, "lxml")
+
+    totalpage_num = 1
+    try:
+        next = soup.find("div", class_="Pages")
+        nextpage = next.find("a", class_="NextPage")
+        lastpage = nextpage.previous_sibling.previous_sibling
+        totalpage_num = int(lastpage['data-pg'])
+    except BaseException, e:
+        print "get_review_page_num(doc,url)", e
+    return totalpage_num
+
+
 def get_review(doc, url):
     try:
         url_mini = url.split("?")[0]
@@ -332,23 +378,12 @@ def get_review(doc, url):
     soup = BeautifulSoup(doc, "lxml")
     u = url_manager.new_review_urls
     # nextpage_full = "http://www.dianping.com/shop/3715216/review_more?pageno=210"
-    try:
-        next = soup.find("div", class_="Pages")
-        nextpage = next.find("a", class_="NextPage")['href']
-    except BaseException, e:
-        print "find nextpage faile"
-        global shopId_num
 
-        shopId_num += 1
-        print "第'%d'shopId '%d'已到末页" % (shopId_num, shopId)
-        fo = open("num'%d'shopId '%d'complete.txt" % (shopId_num, shopId), "wb")
-        fo.write(doc)
-        fo.close()
-    else:
-        nextpage = urlparse.urljoin(url, nextpage)
-        indentify_url = nextpage.split("shop")[1]
-        url_manager.add_new_review_url(indentify_url)
+    # 找下一页的连接
+    # 现在按照评论总页数来做循环，不需要找下一页的连接了
+    # get_next_review_url(doc, url, shopId)
 
+    # 解析页面内容
     try:
         comment_list = soup.find("div", class_="comment-list").find("ul").find_all("li", recursive=False)
     except BaseException, e:
@@ -418,6 +453,9 @@ def get_review(doc, url):
                 r_time = y + "-" + r_time
             elif l == 8:
                 r_time = century + r_time
+            else:
+                # 异常情况
+                r_time = u"0000-00-00"
             create_time = datetime.datetime.strptime(r_time, '%Y-%m-%d')
 
             countWrapper = misc_info.find("span", class_="col-right").find("span", class_="countWrapper")
@@ -434,13 +472,16 @@ def get_review(doc, url):
         except BaseException, e:
             print e
             print traceback.format_exc()
+            print "get_review(doc, url)中解析页面内容出现异常"
             print url
             print "shopId", shopId
             print "reviewId", review_id
 
+            # 出现异常时 给剩余变量赋值
             reviewStar = room = loc = service = health = fac = like = reply_num = -2
             comment_txt = "此条评论信息未完整获取"
-            create_time = ""
+            create_time = datetime.datetime.strptime(u"1946-01-01", '%Y-%m-%d')
+
         shopIds.append(shopId)
         review_ids.append(review_id)
         user_ids.append(user_id)

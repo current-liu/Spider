@@ -8,7 +8,7 @@ import requests
 import dao
 
 url_list = []
-url = "http://http-webapi.zhimaruanjian.com/getip?num=10&type=2&pro=&city=0&yys=0&port=11&pack=382&ts=0&ys=0&cs=0&lb=1&sb=0&pb=4&mr=1"
+url = "http://http-webapi.zhimaruanjian.com/getip?num=1&type=2&pro=&city=0&yys=0&port=11&time=1&ts=0&ys=0&cs=0&lb=1&sb=0&pb=4&mr=1"
 
 
 # def get_ips_from_db():

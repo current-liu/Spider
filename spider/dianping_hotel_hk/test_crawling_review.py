@@ -10,7 +10,7 @@ class TestCrawling_review(TestCase):
         url = "http://www.dianping.com/shop/4567116/review_more"
         url1 = "http://www.dianping.com/shop/21136114/review_more?pageno=2"
 
-        doc = html_download.downloadPage(url1)
+        doc, msg = html_download.downloadPage(url1)
         result = h_parser.get_review(doc, url1)
         if result:
             result_manager.add_new_result(result)

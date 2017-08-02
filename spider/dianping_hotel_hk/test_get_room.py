@@ -21,11 +21,11 @@ class TestGet_room(TestCase):
                     "checkinDate=2017-08-04&checkoutDate=2017-08-05"
         self.url5 = "http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=67132351&" \
                     "checkinDate=2017-08-05&checkoutDate=2017-08-06"
-        self.doc1 = html_download.downloadPage(self.url1)
-        self.doc2 = html_download.downloadPage(self.url2)
-        self.doc3 = html_download.downloadPage(self.url3)
-        self.doc4 = html_download.downloadPage(self.url4)
-        self.doc5 = html_download.downloadPage(self.url5)
+        self.doc1, msg = html_download.downloadPage(self.url1)
+        self.doc2, msg = html_download.downloadPage(self.url2)
+        self.doc3, msg = html_download.downloadPage(self.url3)
+        self.doc4, msg = html_download.downloadPage(self.url4)
+        self.doc5, msg = html_download.downloadPage(self.url5)
         self.doc_list = [self.doc1, self.doc2, self.doc3, self.doc4, self.doc5]
         # soup = BeautifulSoup(self.doc, "lxml")
 
