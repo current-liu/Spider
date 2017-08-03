@@ -52,17 +52,20 @@ ip_list = ip_proxy.get_ips()
 
 def downloadPage(url):
 
-    global ip_list
-    if ip_list.__len__() < 5:
-        ip_list += ip_proxy.get_ips()
+    try:
+        global ip_list
+        if ip_list.__len__() < 5:
+            ip_list += ip_proxy.get_ips()
 
-    data = random.choice(ip_list)
-    ip = data['ip']
-    port = data['port']
-    ip_port = ip + ":" + str(port)
-    # print ip_port
+        data = random.choice(ip_list)
+        ip = data['ip']
+        port = data['port']
+        ip_port = ip + ":" + str(port)
+        # print ip_port
 
-    proxies = {'http': ip_port}
+        proxies = {'http': ip_port}
+    except BaseException, e:
+        print e
 
     msg = "ok"
     doc = ""
@@ -78,7 +81,10 @@ def downloadPage(url):
         elif doc.__contains__("<h1>ERROR</h1>") or doc.__contains__("ERROR"):
             msg = "ERROR"
 
-    if msg != "ok":
-        ip_list.remove(data)
+    try:
+        if msg != "ok":
+            ip_list.remove(data)
+    except BaseException, e:
+        print e
 
     return doc, msg

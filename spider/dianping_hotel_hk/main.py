@@ -14,7 +14,7 @@ import traceback
 
 today = datetime.date.today()
 today_str = today.strftime("%Y-%m-%d")
-
+fo_log = open("20170803.txt", "wb")
 
 def crawling_hotel_list():
     print "begin crawling_hotel_list()"
@@ -220,7 +220,10 @@ def crawling_review():
 
 
     # 初始化new_review_urls
-    init_review_url_list()
+    try:
+        init_review_url_list()
+    except BaseException, e:
+        print e
     # REVIEW_URL = "/4567549/review_more"
     # url_manager.add_new_review_url(REVIEW_URL)
 
@@ -236,10 +239,15 @@ def crawling_review():
             shopId = int(re.sub(r'\D', "", identify_url))
             if identify_url:
                 url = "http://www.dianping.com/shop" + identify_url
-                print "大循环循环到第'%s'：'%s'" % (index_while01, shopId)
+                msg1 = "大循环循环到第'%s'：'%s'" % (index_while01, shopId)
+                print msg1
                 print url
+                fo_log.write(msg1)
+                fo_log.write(url)
             else:
-                print "错误的identify_url:%s" % identify_url
+                msg2 = "错误的identify_url:%s" % identify_url
+                print msg2
+                fo_log.write(msg2)
                 raise BaseException
 
             # 获取每个shopId的评论总页数
@@ -259,7 +267,8 @@ def crawling_review():
                         continue
                     else:
                         # 放弃获取该ID的totalpage_num
-                        print "放弃获取该ID的totalpage_num：", url
+                        msg3 = "放弃获取该ID的totalpage_num：" + url
+                        print msg3
                         continue
                 else:
                     get_page_num_record[url] = 1
@@ -274,8 +283,10 @@ def crawling_review():
             while (page_num >= 1):
                 test_n = page_num
                 review_url = "http://www.dianping.com/shop/"+str(shopId)+"/review_more?pageno="+str(page_num)
-                print "小循环循环到:"
+                msg4 = "小循环循环到:"
+                print msg4
                 print review_url
+                fo_log.write(msg4+review_url)
                 doc, msg = html_download.downloadPage(review_url)
 
                 if msg != "ok":
@@ -287,7 +298,9 @@ def crawling_review():
                             continue
                         else:
                             # 放弃该页面
-                            print "放弃：", identify_url
+                            msg5 = "放弃："+identify_url
+                            print msg5
+                            fo_log.write(msg5)
                             page_num -= 1
                             fo = open(
                                 r"D:\Liuchao\PycharmProjects\pythonproject\spider\dianping_hotel_hk\download_error\'%s''%s'.txt" % (
@@ -312,10 +325,13 @@ def crawling_review():
                     page_num -= 1
 
                 if res == "for key 'PRIMARY'":
-                    print "shopId %s 已循环到已经爬过内容" % shopId
+                    msg6 = "shopId %s 已循环到已经爬过内容" % shopId
+                    print msg6
+                    fo_log.write(msg6)
                     break
-            print "shopId %s complete to pageno=%s" % (shopId,page_num)
-
+            msg7 = "shopId %s complete to pageno=%s" % (shopId, page_num)
+            print msg7
+            fo_log.write(msg7)
 
             # 之前的，每次获取下一页连接的处理逻辑
             # doc, msg = html_download.downloadPage(url)

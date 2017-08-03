@@ -98,14 +98,14 @@ def update_hotel_shops(shopId, addr, tel, openTime, checkTime, facs, room_facs, 
 #             db.rollback()
 #             print e
 
-def insert_hotel_rooms(room_info_list, query_time):
+def insert_hotel_rooms(room_info_list, queryTime):
     for room_info in room_info_list:
         room = room_info["roomInfo"]
 
         try:
-            sql = """INSERT INTO hotel_room (roomId,shopId,roomType,query_time,roomPrice_0,roomPrice_1,roomPrice_2,roomPrice_3,roomPrice_4)
+            sql = """INSERT INTO hotel_room (roomId,shopId,roomType,queryTime,roomPrice_0,roomPrice_1,roomPrice_2,roomPrice_3,roomPrice_4)
                   VALUES('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')""" % (
-                room[0], room[1], room[2], query_time, room[3], room[4], room[5], room[6], room[7])
+                room[0], room[1], room[2], queryTime, room[3], room[4], room[5], room[6], room[7])
 
             cursor.execute(sql)
             db.commit()
@@ -117,20 +117,23 @@ def insert_hotel_rooms(room_info_list, query_time):
 def insert_hotel_review():
     msg = ""
     while (result_manager.has_new_result()):
-        res = result_manager.get_new_result()
-        shopId = res[0]
-        review_id = res[1]
-        user_id = res[2]
-        reviewStar = res[3]
-        room = res[4]
-        loc = res[5]
-        service = res[6]
-        health = res[7]
-        fac = res[8]
-        comment_txt = res[9]
-        create_time = res[10]
-        like = res[11]
-        reply_num = res[12]
+        try:
+            res = result_manager.get_new_result()
+            shopId = res[0]
+            review_id = res[1]
+            user_id = res[2]
+            reviewStar = res[3]
+            room = res[4]
+            loc = res[5]
+            service = res[6]
+            health = res[7]
+            fac = res[8]
+            comment_txt = res[9]
+            create_time = res[10]
+            like = res[11]
+            reply_num = res[12]
+        except BaseException, e:
+            print e
 
         sql = """INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
               facilities,content,creatTime,likes,reply)

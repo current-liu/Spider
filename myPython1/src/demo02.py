@@ -23,7 +23,7 @@ try:
 except:
     db.rollback()
 
-    # TODO dja;lf
+
 db.close()
 
 

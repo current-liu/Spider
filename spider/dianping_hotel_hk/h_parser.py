@@ -375,8 +375,11 @@ def get_review(doc, url):
     likes = []
     reply_nums = []
 
-    soup = BeautifulSoup(doc, "lxml")
-    u = url_manager.new_review_urls
+    try:
+        soup = BeautifulSoup(doc, "lxml")
+        u = url_manager.new_review_urls
+    except BaseException, e:
+        print e
     # nextpage_full = "http://www.dianping.com/shop/3715216/review_more?pageno=210"
 
     # 找下一页的连接
@@ -481,21 +484,27 @@ def get_review(doc, url):
             reviewStar = room = loc = service = health = fac = like = reply_num = -2
             comment_txt = "此条评论信息未完整获取"
             create_time = datetime.datetime.strptime(u"1946-01-01", '%Y-%m-%d')
+        try:
+            shopIds.append(shopId)
+            review_ids.append(review_id)
+            user_ids.append(user_id)
+            reviewStars.append(reviewStar)
+            rooms.append(room)
+            locs.append(loc)
+            services.append(service)
+            healths.append(health)
+            facs.append(fac)
+            comment_txts.append(comment_txt)
+            create_times.append(create_time)
+            likes.append(like)
+            reply_nums.append(reply_num)
 
-        shopIds.append(shopId)
-        review_ids.append(review_id)
-        user_ids.append(user_id)
-        reviewStars.append(reviewStar)
-        rooms.append(room)
-        locs.append(loc)
-        services.append(service)
-        healths.append(health)
-        facs.append(fac)
-        comment_txts.append(comment_txt)
-        create_times.append(create_time)
-        likes.append(like)
-        reply_nums.append(reply_num)
+            result = [shopIds, review_ids, user_ids, reviewStars, rooms, locs, services, healths, facs, comment_txts,
+                      create_times, likes, reply_nums]
+        except BaseException, e:
+            print e
+    try:
+        return result
+    except BaseException, e:
+        print e
 
-        result = [shopIds, review_ids, user_ids, reviewStars, rooms, locs, services, healths, facs, comment_txts,
-                  create_times, likes, reply_nums]
-    return result
