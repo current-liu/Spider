@@ -16,6 +16,7 @@ today = datetime.date.today()
 today_str = today.strftime("%Y-%m-%d")
 fo_log = open("20170803.txt", "wb")
 
+
 def crawling_hotel_list():
     print "begin crawling_hotel_list()"
     GOAL_URL = "http://www.dianping.com/hongkong/hotel/r2827"
@@ -84,14 +85,20 @@ def crawling_shop():
     room_facss = []
     servicess = []
     infos = []
+    review_nums = []
+    index = 1
     while (url_manager.has_new_shop_url()):
         url = url_manager.get_new_shop_url()
         shopId = int(re.sub(r'\D', "", url))
 
+        print "下载并解析第%s个shopId:" % index, shopId
+        index += 1
+
         doc, msg = html_download.downloadPage(url)
-
-        addr, tel, openTime, checkTime, facs, room_facs, services, info = h_parser.shopParser(doc)
-
+        if msg == "ok":
+            addr, tel, openTime, checkTime, facs, room_facs, services, info, review_num = h_parser.shopParser(doc)
+        else:
+            print "下载酒店详情页失败"
         shopIds.append(shopId)
         addrs.append(addr)
         tels.append(tel)
@@ -101,8 +108,7 @@ def crawling_shop():
         room_facss.append(room_facs)
         servicess.append(services)
         infos.append(info)
-
-        print shopId
+        review_nums.append(review_num)
 
     # url = url_manager.get_new_shop_url()
     # shopId = int(re.sub(r'\D', "", url))
@@ -120,18 +126,21 @@ def crawling_shop():
     #
     # print shopId
 
-    for (s, a, t, o, c, f, rf, ss, i) in zip(shopIds, addrs, tels, openTimes, checkTimes, facss, room_facss, servicess,
-                                             infos):
+    print "正在写入数据库，请稍后"
+    # TODO 应该修改为每查询一个酒店的信息就插入，避免中间错误导致数据丢失
+    for (s, a, t, o, c, f, rf, ss, i, n) in zip(shopIds, addrs, tels, openTimes, checkTimes, facss, room_facss,
+                                                servicess,
+                                                infos, review_nums):
         fac = " ".join(f)
         room_facs = " ".join(rf)
         service = " ".join(ss)
-        dao.update_hotel_shops(s, a, t, o, c, fac, room_facs, service, i)
+        dao.update_hotel_shops(s, a, t, o, c, fac, room_facs, service, i, n)
         pass
 
 
 def crawling_room():
     print "crawling_room()"
-    index = 0
+
     ROOM_URL = "http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=3715216&" \
                "checkinDate=2017-08-01&checkoutDate=2017-08-02"
     init_room_url_list(ROOM_URL)
@@ -206,7 +215,7 @@ def crawling_room():
 
 
 def crawling_review():
-    print "crawling_shop()"
+    print "crawling_review()"
 
     # 从数据库中读取已爬过的review_url
     # init_old_review_urls()
@@ -229,7 +238,8 @@ def crawling_review():
 
     try:
         index_while01 = 0
-        get_page_num_record = {}
+        # 功能迁移，变量作废
+        # get_page_num_record = {}
         while (url_manager.has_new_review_url()):
             index_while01 += 1
             # time.sleep(random.uniform(2, 5))
@@ -255,80 +265,91 @@ def crawling_review():
             try:
                 # TODO异常的处理 html_download.downloadPage(url) 返回的msg
                 doc, msg = html_download.downloadPage(url)
-                if msg != "ok":
-                    raise BaseException
-                totalpage_num = h_parser.get_review_page_num(doc, url)
-            except:
-                if get_page_num_record.__contains__(url):
-                    if get_page_num_record[url] < 3:
-                        get_page_num_record[url] = get_page_num_record[url] + 1
-                        url_manager.remove_old_review_urls(identify_url)
-                        url_manager.add_new_review_url(identify_url)
-                        continue
-                    else:
-                        # 放弃获取该ID的totalpage_num
-                        msg3 = "放弃获取该ID的totalpage_num：" + url
-                        print msg3
-                        continue
+                if msg == "ok":
+                    totalpage_num = h_parser.get_review_page_num(doc, url)
                 else:
-                    get_page_num_record[url] = 1
-                    url_manager.remove_old_review_urls(identify_url)
-                    url_manager.add_new_review_url(identify_url)
-                    continue
+                    raise BaseException
+            except BaseException, e:
+                print e
+                msg3 = "获取评论总页数totalpage_num失败" + url
+                print msg3
+                fo_log.write(msg3)
+
+                # if get_page_num_record.__contains__(url):
+                #     if get_page_num_record[url] < 3:
+                #         get_page_num_record[url] = get_page_num_record[url] + 1
+                #         url_manager.remove_old_review_urls(identify_url)
+                #         url_manager.add_new_review_url(identify_url)
+                #         continue
+                #     else:
+                #         # 放弃获取该ID的totalpage_num
+                #         msg3 = "放弃获取该ID的totalpage_num：" + url
+                #         print msg3
+                #         continue
+                # else:
+                #     get_page_num_record[url] = 1
+                #     url_manager.remove_old_review_urls(identify_url)
+                #     url_manager.add_new_review_url(identify_url)
+                #     continue
+
             # 按评论总页数，从最后一页开始往前爬
             page_num = totalpage_num
 
-            down_record = {}
+            # 功能迁移，变量作废
+            # down_record = {}
 
             while (page_num >= 1):
-                test_n = page_num
-                review_url = "http://www.dianping.com/shop/"+str(shopId)+"/review_more?pageno="+str(page_num)
+                # test_n = page_num
+                review_url = "http://www.dianping.com/shop/" + str(shopId) + "/review_more?pageno=" + str(page_num)
                 msg4 = "小循环循环到:"
                 print msg4
                 print review_url
-                fo_log.write(msg4+review_url)
+                fo_log.write(msg4 + review_url)
                 doc, msg = html_download.downloadPage(review_url)
 
-                if msg != "ok":
-                    if down_record.__contains__(page_num):
-
-                        # 尝试3次，还不行就放弃
-                        if down_record[page_num] < 3:
-                            down_record[page_num] = down_record[page_num] + 1
-                            continue
-                        else:
-                            # 放弃该页面
-                            msg5 = "放弃："+identify_url
-                            print msg5
-                            fo_log.write(msg5)
-                            page_num -= 1
-                            fo = open(
-                                r"D:\Liuchao\PycharmProjects\pythonproject\spider\dianping_hotel_hk\download_error\'%s''%s'.txt" % (
-                                    today_str, identify_url), "wb")
-                            fo.write(doc)
-                            fo.close()
-                            continue
-                    else:
-                        down_record[page_num] = 1
-                        continue
-
-                else:
+                # 这块功能迁移到html_download.py 模块中，更为合理
+                # if msg != "ok":
+                #     if down_record.__contains__(page_num):
+                #
+                #         # 尝试3次，还不行就放弃
+                #         if down_record[page_num] < 3:
+                #             down_record[page_num] = down_record[page_num] + 1
+                #             continue
+                #         else:
+                #             # 放弃该页面
+                #             msg5 = "放弃："+identify_url
+                #             print msg5
+                #             fo_log.write(msg5)
+                #             page_num -= 1
+                #             fo = open(
+                #                 r"D:\Liuchao\PycharmProjects\pythonproject\spider\dianping_hotel_hk\download_error\'%s''%s'.txt" % (
+                #                     today_str, identify_url), "wb")
+                #             fo.write(doc)
+                #             fo.close()
+                #             continue
+                #     else:
+                #         down_record[page_num] = 1
+                #         continue
+                #
+                # else:
+                try:
                     result = h_parser.get_review(doc, review_url)
+                except BaseException, e:
+                    print e
 
                 res = ""
                 if result:
                     result_manager.add_new_result(result)
                     res = dao.insert_hotel_review()
-                    page_num -= 1
-                else:
-                    # 没有评论
-                    page_num -= 1
 
                 if res == "for key 'PRIMARY'":
                     msg6 = "shopId %s 已循环到已经爬过内容" % shopId
                     print msg6
                     fo_log.write(msg6)
                     break
+                else:
+                    page_num -= 1
+
             msg7 = "shopId %s complete to pageno=%s" % (shopId, page_num)
             print msg7
             fo_log.write(msg7)
@@ -424,6 +445,7 @@ def init_room_url_list(goal_url):
     u = url_manager.new_room_urls
     pass
 
+
 def init_review_url_list():
     shop_id_list = dao.downloadShopUrl()
     for shop_id in shop_id_list:
@@ -432,7 +454,8 @@ def init_review_url_list():
         new_url = "/" + s + "/review_more"
         url_manager.add_new_review_url(new_url)
 
-#  按照评论总页数循环的思路，该方法做出调整
+
+# 按照评论总页数循环的思路，该方法做出调整
 # def init_review_url_list():
 #     message = raw_input("是否根据shopId初始化new_review_urls？选择否将根据数据库new_review_url初始化?:y/n")
 #     if message == 'y':
@@ -478,17 +501,16 @@ if __name__ == "__main__":
     # 酒店详情
     # crawling_shop()
 
-
     # 房间详情
-    # crawling_room()
+    crawling_room()
 
-    try:
-        crawling_review()
-    except BaseException, e:
-        print e
-        print "程序中止"
-        # print "程序中止，正咋将new_review_urls插入数据库hotel_new_review_url"
-        # url_manager.insert_new_review_url_into_db()
+    # try:
+    #     crawling_review()
+    # except BaseException, e:
+    #     print e
+    #     print "程序中止"
+    # print "程序中止，正咋将new_review_urls插入数据库hotel_new_review_url"
+    # url_manager.insert_new_review_url_into_db()
 
 
     pass

@@ -29,12 +29,26 @@ url = "http://http-webapi.zhimaruanjian.com/getip?num=1&type=2&pro=&city=0&yys=0
 
 
 def get_ips():
-    doc = requests.get(url).content
-    ip_list = json.loads(doc)['data']
-    if ip_list.__len__() == 0:
-        print "正在获取代理ip，请等待"
-        time.sleep(1.5)
-        ip_list = get_ips()
+    index = 1
+    flag = True
+    while (flag):
+        index += 1
+        if index == 10:
+            flag = False
+            msg1 = "获取代理ip失败，请处理"
+            print msg1
+        try:
+            doc = requests.get(url).content
+            ip_list = json.loads(doc)['data']
+            if ip_list.__len__() == 0:
+                print "正在获取代理ip，请等待"
+                time.sleep(1.5)
+            else:
+                break
+        except BaseException, e:
+            # print e
+            msg2 = "获取代理ip异常，正在重试"
+            print msg2
 
     # if ip_list.__len__() < 5:
     #     ip_list += get_ip()

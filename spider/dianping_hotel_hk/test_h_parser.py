@@ -17,8 +17,15 @@ class TestGet_review(TestCase):
     #     num = h_parser.get_review_page_num(doc, REVIEW_URL)
     #     print num
 
-    def test_get_review(self):
-        REVIEW_URL = "http://www.dianping.com/shop/3052915/review_more?pageno=15"
-        doc, msg = html_download.downloadPage(REVIEW_URL)
-        num = h_parser.get_review(doc, REVIEW_URL)
-        print num
+    # def test_get_review(self):
+    #     REVIEW_URL = "http://www.dianping.com/shop/3052915/review_more?pageno=15"
+    #     doc, msg = html_download.downloadPage(REVIEW_URL)
+    #     num = h_parser.get_review(doc, REVIEW_URL)
+    #     print num
+
+    def test_shopParser(self):
+        url = "http://www.dianping.com/shop/3715216"
+        doc, msg = html_download.downloadPage(url)
+        r= h_parser.shopParser(doc)
+        print r
+

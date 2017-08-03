@@ -21,7 +21,7 @@ print pymysql.paramstyle
 def insert(i, n, d, a, w, t, p, s, r, pu):
     try:
         sql = """INSERT INTO hotel_shop_list(
-                     id, name, detail_url, addr, walk, tags, price, star, review_num, picUrl)
+                     id, name, detail_url, addr, walk, tags, price, star, comments, picUrl)
                      VALUES ('%d', '%s', '%s', '%s', '%s', '%s', '%d', '%s', '%d', '%s')""" % (
             i, n, d, a, w, t, p, s, r, pu)
 
@@ -67,10 +67,10 @@ def insert_hotel_shops():
         print e
 
 
-def update_hotel_shops(shopId, addr, tel, openTime, checkTime, facs, room_facs, services, info):
+def update_hotel_shops(shopId, addr, tel, openTime, checkTime, facs, room_facs, services, info, review_num):
     """hotel_shop的部分信息已经由insert_hotel_shops插入，剩下的信息在这里补全"""
-    sql = """UPDATE hotel_shops SET addr = '%s',tel = '%s',openTime = '%s',checkTime = '%s',facilities = '%s',roomFac = '%s', service = '%s',info = '%s' WHERE hotel_shops.shopId = '%d'""" % (
-        addr, tel, openTime, checkTime, facs, room_facs, services, info, shopId)
+    sql = """UPDATE hotel_shops SET addr = '%s',tel = '%s',openTime = '%s',checkTime = '%s',facilities = '%s',roomFac = '%s', service = '%s',info = '%s', reviewNum = '%s' WHERE hotel_shops.shopId = '%d'""" % (
+        addr, tel, openTime, checkTime, facs, room_facs, services, info, review_num, shopId)
     try:
         cursor.execute(sql)
         db.commit()
@@ -103,7 +103,7 @@ def insert_hotel_rooms(room_info_list, queryTime):
         room = room_info["roomInfo"]
 
         try:
-            sql = """INSERT INTO hotel_room (roomId,shopId,roomType,queryTime,roomPrice_0,roomPrice_1,roomPrice_2,roomPrice_3,roomPrice_4)
+            sql = """INSERT INTO hotel_room (roomId,shopId,roomType,query_time,roomPrice_0,roomPrice_1,roomPrice_2,roomPrice_3,roomPrice_4)
                   VALUES('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')""" % (
                 room[0], room[1], room[2], queryTime, room[3], room[4], room[5], room[6], room[7])
 
