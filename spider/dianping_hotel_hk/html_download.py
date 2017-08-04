@@ -48,17 +48,15 @@ headers5 = {
 h_total = [headers2, headers3, headers4, headers5]
 h = random.choice(h_total)
 
-ip_list = ip_proxy.get_ips()
-
 fo_log = open("20170803.txt", "wb")
 
-def downloadPage(url):
 
+def downloadPage(url):
     flag = True
     index = 0
     while (flag):
         index += 1
-        print "第%s次" % index, url
+        print "download第%s次" % index, url
         # 同一个地址最多尝试三次
         if index == 4:
             msg5 = "放弃：" + url
@@ -66,7 +64,7 @@ def downloadPage(url):
             fo_log.write(msg5)
             break
 
-        # 获取随机IP
+        # 获取随机IP,迁移到ip_proxy
         # try:
         #     global ip_list
         #     if ip_list.__len__() < 5:
@@ -80,13 +78,18 @@ def downloadPage(url):
         #
         #     proxies = {'http': ip_port}
         # except BaseException, e:
-        #     print e proxies=proxies,
+        #     print e
+        try:
+            ip_port = ip_proxy.get_ip()
+            proxies = {'http': ip_port}
+        except BaseException, e:
+            pass
 
         # 处理请求结果
         msg = "ok"
         doc = ""
         try:
-            doc = requests.get(url, headers=h, timeout=2).content
+            doc = requests.get(url, headers=h, proxies=proxies, timeout=2).content
             pass
         except BaseException, e:
             print e
@@ -102,7 +105,8 @@ def downloadPage(url):
             if msg == "ok":
                 break
             else:
-                ip_list.remove(data)
+                # 移除无法使用的ip
+                ip_proxy.remove_ip(ip_port)
         except BaseException, e:
             print e
 

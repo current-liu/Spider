@@ -5,17 +5,20 @@ import re
 import json
 import traceback
 import urlparse
-
 from bs4 import BeautifulSoup
 
 import url_manager
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 
 shopId_num = 0
 today = datetime.date.today()
 today_str = today.strftime("%Y-%m-%d")
 
 
-def htmlParser(doc):
+def get_hotel_list(doc):
     URL_FULL = "http://www.dianping.com/shop/3715216"
     PAGE_URL = "http://www.dianping.com/hongkong/hotel/r2827"
     soup = BeautifulSoup(doc, "lxml")
@@ -41,26 +44,31 @@ def htmlParser(doc):
         # target = "_blank"
         # title = "香港丽思卡尔顿酒店" > 香港丽思卡尔顿酒店 < / a >
         # < a class ="ibook" href="/shop/3715216" target="_blank" > < / a >
-
-        pics = li.find("ul", class_="J_hotel-pics").find("li")
-        picUrl = str(pics.find("a"))
+        try:
+            pics = li.find("ul", class_="J_hotel-pics").find("li")
+            picUrl = str(pics.find("a"))
+        except BaseException, e:
+            picUrl = "none"
         # reg = re.compile('http://[\S]*"')
         # imgList = re.search(reg, picUrl)
         # pppp = picUrl['data-lazyload']
         pic_url = picUrl.split('data-lazyload="')[1].split('" title')[0]
-        hotel_info_ctn = li.find("div", class_="hotel-info-ctn")
 
-        hotel_info_main = hotel_info_ctn.find("div", class_="hotel-info-main")
-        hotel_remark = hotel_info_ctn.find("div", class_="hotel-remark")
-        link = hotel_info_main.find("a", class_="hotel-name-link")
-        name = link.get_text()
-        url = link['href']
-        # mode = re.compile(r'\d+')
-        # shopId = mode.search(url).group()
-        # 截取数字
-        shopId = int(re.sub(r'\D', "", url))
+        try:
+            hotel_info_ctn = li.find("div", class_="hotel-info-ctn")
+            hotel_info_main = hotel_info_ctn.find("div", class_="hotel-info-main")
+            hotel_remark = hotel_info_ctn.find("div", class_="hotel-remark")
+            link = hotel_info_main.find("a", class_="hotel-name-link")
+            name = link.get_text()
+            url = link['href']
+            # mode = re.compile(r'\d+')
+            # shopId = mode.search(url).group()
+            # 截取数字
+            shopId = int(re.sub(r'\D', "", url))
 
-        detail_url = urlparse.urljoin(URL_FULL, url)
+            detail_url = urlparse.urljoin(URL_FULL, url)
+        except BaseException:
+            continue
         # raise BaseException
 
         #         < p
@@ -80,10 +88,13 @@ def htmlParser(doc):
         #     class ="walk-dist" title="步行至九龙站2分钟" > 步行至九龙站2分钟 < / span >
         #
         # < / p >
-        place = hotel_info_main.find("p", class_="place")
-        addr = place.find("a").get_text()
-        walk = place.find("span").get_text()
-
+        try:
+            place = hotel_info_main.find("p", class_="place")
+            addr = place.find("a").get_text()
+            walk = place.find("span").get_text()
+        except BaseException, e:
+            addr = "无"
+            walk = "无"
         # < p
         #
         # class ="hotel-tags" >
@@ -119,8 +130,8 @@ def htmlParser(doc):
         try:
             p_int = int(filter(str.isdigit, p_str))
         except BaseException, e:
-            print e
-            print "价格获取失败，正常！"
+            # print e
+            # print "价格获取失败，正常！"
             p_int = 0
         # print p_int
         prices.append(p_int)
@@ -133,12 +144,12 @@ def htmlParser(doc):
             review_num_int = 0
         review_nums.append(review_num_int)
 
-        try:
-            next_url = soup.find("div", class_="page").find("a", text='下一页')['href']
-            next_url = urlparse.urljoin(PAGE_URL, next_url)
-            url_manager.add_new_url(next_url)
-        except:
-            print "parse complete"
+    try:
+        next_url = soup.find("div", class_="page").find("a", text='下一页')['href']
+        next_url = urlparse.urljoin(PAGE_URL, next_url)
+        url_manager.add_new_url(next_url)
+    except:
+        print "parse complete"
 
     return ids, names, detail_urls, addrs, walks, tags, prices, stars, review_nums, picUrls
 
@@ -212,7 +223,7 @@ def shopParser(doc):
             review_num = int(review_count.strip().replace("\n", "").replace("(", "").replace(")", ""))
         except BaseException, e:
             print e
-        # TODO review_num返回的后续处理
+
         return addr, tel, openTime, checkTime, facs, room_facs, services, info, review_num
     except BaseException, e:
         print e

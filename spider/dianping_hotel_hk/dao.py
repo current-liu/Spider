@@ -47,6 +47,22 @@ def downloadShopUrl():
     return results
 
 
+def downloadShopIdFrom_hotel_shops():
+    """查询hotel_shops表中还没有更新酒店详情的shopId"""
+    results = []
+    try:
+        sql = """SELECT shopId
+                    FROM hotel_shops where reviewNum IS NULL """
+        cursor.execute(sql)
+        results = cursor.fetchall()
+
+    except BaseException, e:
+        db.rollback()
+        print e
+
+    return results
+
+
 def insert_hotel_shops():
     """
     从dianping_hotel_hk_liuchao中把数据更新到hotel_shops中，
@@ -69,6 +85,7 @@ def insert_hotel_shops():
 
 def update_hotel_shops(shopId, addr, tel, openTime, checkTime, facs, room_facs, services, info, review_num):
     """hotel_shop的部分信息已经由insert_hotel_shops插入，剩下的信息在这里补全"""
+    info = info.replace("'", "").replace('"', "")
     sql = """UPDATE hotel_shops SET addr = '%s',tel = '%s',openTime = '%s',checkTime = '%s',facilities = '%s',roomFac = '%s', service = '%s',info = '%s', reviewNum = '%s' WHERE hotel_shops.shopId = '%d'""" % (
         addr, tel, openTime, checkTime, facs, room_facs, services, info, review_num, shopId)
     try:
@@ -158,9 +175,10 @@ def insert_hotel_review():
             print e
             if str(e).__contains__("for key 'PRIMARY'"):
                 msg = "for key 'PRIMARY'"
-            # print "review_id", review_id
-            # print sql
+                # print "review_id", review_id
+                # print sql
     return msg
+
 
 def insert_new_review_url(urls):
     sql = """INSERT INTO hotel_new_review_url (shopId,reviewUrl) VALUES('%s','%s')"""
