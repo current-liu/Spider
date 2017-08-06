@@ -79,11 +79,10 @@ def downloadPage(url):
         #     proxies = {'http': ip_port}
         # except BaseException, e:
         #     print e
-        try:
-            ip_port = ip_proxy.get_ip()
-            proxies = {'http': ip_port}
-        except BaseException, e:
-            pass
+
+        # 获取随机IP
+        ip_port = ip_proxy.get_ip()
+        proxies = {'http': ip_port}
 
         # 处理请求结果
         msg = "ok"

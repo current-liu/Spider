@@ -324,6 +324,7 @@ def crawling_review():
                 print msg4
                 print review_url
                 fo_log.write(msg4 + review_url)
+                # TODO 对html_download.downloadPage(url)返回的结果应该进行处理，判断msg，所有地方用到此函数的都要处理
                 doc, msg = html_download.downloadPage(review_url)
 
                 # 这块功能迁移到html_download.py 模块中，更为合理
