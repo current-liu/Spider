@@ -26,6 +26,8 @@ class TestGet_review(TestCase):
     def test_shopParser(self):
         url = "http://www.dianping.com/shop/3715216"
         doc, msg = html_download.downloadPage(url)
-        r= h_parser.shopParser(doc)
+        r= h_parser.hotel_shop_parser(doc)
         print r
+
+
 

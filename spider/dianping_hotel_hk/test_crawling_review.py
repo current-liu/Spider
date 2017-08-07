@@ -11,7 +11,7 @@ class TestCrawling_review(TestCase):
         url1 = "http://www.dianping.com/shop/21136114/review_more?pageno=2"
 
         doc, msg = html_download.downloadPage(url1)
-        result = h_parser.get_review(doc, url1)
+        result = h_parser.get_hotel_review(doc, url1)
         if result:
             result_manager.add_new_result(result)
             dao.insert_hotel_review()

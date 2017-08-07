@@ -14,7 +14,7 @@ import traceback
 
 today = datetime.date.today()
 today_str = today.strftime("%Y-%m-%d")
-fo_log = open("20170803.txt", "wb")
+fo_log = open("20170807.txt", "wb")
 
 
 def crawling_hotel_list():
@@ -49,6 +49,9 @@ def crawling_hotel_list():
         url = url_manager.get_new_url()
         print url
         doc, msg = html_download.downloadPage(url)
+        if msg != "ok":
+            continue
+
         shop_id, name, detail_url, addr, walk, tag, price, star, review_num, picUrl = h_parser.get_hotel_list(doc)
         # print content
         ids += shop_id
@@ -108,7 +111,7 @@ def crawling_shop():
 
         doc, msg = html_download.downloadPage(url)
         if msg == "ok":
-            addr, tel, openTime, checkTime, facs, room_facs, services, info, review_num = h_parser.shopParser(doc)
+            addr, tel, openTime, checkTime, facs, room_facs, services, info, review_num = h_parser.hotel_shop_parser(doc)
         else:
             print "下载酒店详情页失败"
 
@@ -183,11 +186,11 @@ def crawling_room():
         print "crawling_room 第'%s'个shopId：'%s'" % (index, shopId)
         url_list = urls.split(" ")
 
-        doc0, msg = html_download.downloadPage(url_list[0])
-        doc1, msg = html_download.downloadPage(url_list[1])
-        doc2, msg = html_download.downloadPage(url_list[2])
-        doc3, msg = html_download.downloadPage(url_list[3])
-        doc4, msg = html_download.downloadPage(url_list[4])
+        doc0, msg = html_download.downloadPage_without_proxy(url_list[0])
+        doc1, msg = html_download.downloadPage_without_proxy(url_list[1])
+        doc2, msg = html_download.downloadPage_without_proxy(url_list[2])
+        doc3, msg = html_download.downloadPage_without_proxy(url_list[3])
+        doc4, msg = html_download.downloadPage_without_proxy(url_list[4])
         doc_list = (doc0, doc1, doc2, doc3, doc4)
 
         rooms_info_total = h_parser.get_room(doc_list, shopId)
@@ -216,8 +219,6 @@ def crawling_room():
         dao.insert_hotel_rooms(room_info_list, query_time)
 
 
-
-
         # shopIds_total += shopIds
         # roomIds_total += roomIds
         # titles_total += titles
@@ -230,6 +231,79 @@ def crawling_room():
         # print "爬取完毕，开始插入数据"
         # dao.insert_hotel_goods(shopIds_total, roomIds_total, titles_total, bedTypes_total, breakfasts_total,
         #                        netTypes_total, cancelRules_total, prices_total)
+
+
+def crawling_review_02():
+    """评论总数从hotel_sops表中直接读取，同shopId一起传过来"""
+    print "crawling_review()"
+    try:
+        res = dao.select_shopid_and_reviewnum()
+    except BaseException, e:
+        print e
+    for shop in res:
+        try:
+            index = res.index(shop) + 1
+            shopId = shop[0]
+            review_num = shop[1]
+            if review_num < 1:
+                continue
+            elif review_num % 20 == 0:
+                page_num = review_num / 20
+            else:
+                page_num = 1+review_num/20
+        except BaseException:
+            msg1 = "解析shopId，page_num失败"
+            print msg1
+
+        msg1 = "大循环循环到第'%s'：'%s'" % (index, shopId)
+        print msg1
+        fo_log.write(msg1)
+
+        # 爬取页面上的评论
+        get_review_on_page(shopId, page_num)
+
+
+def get_review_on_page(shopId, page_num):
+    flag = True
+    while (flag):
+        if page_num == 1:
+            flag = False
+
+        review_url = "http://www.dianping.com/shop/" + str(shopId) + "/review_more_newest?pageno=" + str(page_num)
+        msg4 = "小循环循环到:"
+        print msg4
+        print review_url
+        fo_log.write(msg4 + review_url)
+        # TODO对html_download.downloadPage(url)返回的结果应该进行处理，判断msg，所有地方用到此函数的都要处理
+        doc, msg = html_download.downloadPage(review_url)
+        if msg != "ok":
+            continue
+
+        try:
+            result = h_parser.get_hotel_review(doc, review_url)
+        except BaseException, e:
+            # TODO应该把doc打印出来,有问题但在html_download里面未被拦截的doc
+            print e
+            fo_log.write("doc with error")
+            fo_log.write(doc)
+
+        res = ""
+        if result:
+            result_manager.add_new_result(result)
+            res = dao.insert_hotel_review()
+
+        if res == "for key 'PRIMARY'":
+            msg6 = "shopId %s 已循环到已经爬过内容" % shopId
+            print msg6
+            fo_log.write(msg6)
+            break
+
+        else:
+            page_num -= 1
+
+    msg7 = "shopId %s complete to pageno=%s" % (shopId, page_num)
+    print msg7
+    fo_log.write(msg7)
 
 
 def crawling_review():
@@ -279,7 +353,7 @@ def crawling_review():
                 raise BaseException
 
             # 获取每个shopId的评论总页数
-            # TODO 改为从hotel_sops表中直接读取，同shopId一起传过来
+
             try:
                 # TODO异常的处理 html_download.downloadPage(url) 返回的msg
                 doc, msg = html_download.downloadPage(url)
@@ -316,17 +390,23 @@ def crawling_review():
             # 功能迁移，变量作废
             # down_record = {}
 
-            # TODO while(flag) if page_num = 1: flag = False
-            while (page_num >= 1):
-                # test_n = page_num
+            # TODOwhile(flag) if page_num = 1: flag = False
+            flag = True
+            while (flag):
+                if page_num == 1:
+                    flag = False
+                else:
+                    page_num -= 1
+
                 review_url = "http://www.dianping.com/shop/" + str(shopId) + "/review_more_newest?pageno=" + str(page_num)
                 msg4 = "小循环循环到:"
                 print msg4
                 print review_url
                 fo_log.write(msg4 + review_url)
-                # TODO 对html_download.downloadPage(url)返回的结果应该进行处理，判断msg，所有地方用到此函数的都要处理
+                # TODO对html_download.downloadPage(url)返回的结果应该进行处理，判断msg，所有地方用到此函数的都要处理
                 doc, msg = html_download.downloadPage(review_url)
-
+                if msg != "ok":
+                    continue
                 # 这块功能迁移到html_download.py 模块中，更为合理
                 # if msg != "ok":
                 #     if down_record.__contains__(page_num):
@@ -353,7 +433,7 @@ def crawling_review():
                 #
                 # else:
                 try:
-                    result = h_parser.get_review(doc, review_url)
+                    result = h_parser.get_hotel_review(doc, review_url)
                 except BaseException, e:
                     print e
 
@@ -367,8 +447,6 @@ def crawling_review():
                     print msg6
                     fo_log.write(msg6)
                     break
-                else:
-                    page_num -= 1
 
             msg7 = "shopId %s complete to pageno=%s" % (shopId, page_num)
             print msg7
@@ -444,7 +522,8 @@ def init_room_url_list(goal_url):
     checkoutDate_3 = after_4.strftime("%Y-%m-%d")
     checkinDate_4 = after_4.strftime("%Y-%m-%d")
     checkoutDate_4 = after_5.strftime("%Y-%m-%d")
-    shop_id_list = dao.downloadShopUrl()
+
+    shop_id_list = dao.downloadShopIds_unselected(today_str)
 
     for shop_id in shop_id_list:
         i = str(shop_id)
@@ -472,7 +551,7 @@ def init_room_url_list(goal_url):
 
 
 def init_review_url_list():
-    shop_id_list = dao.downloadShopUrl()
+    shop_id_list = dao.downloadShopIds()
     for shop_id in shop_id_list:
         i = str(shop_id)
         s = re.sub(r'\D', "", i)
@@ -518,6 +597,45 @@ def init_review_url_list():
 #         print "输入有误"
 #         init_review_url_list()
 
+def crawling_attraction_shop():
+    # 需要更新景点名录时调用此函数
+    # init_attraction_shop_list()
+    pass
+
+
+def init_attraction_shop_list():
+    """初始化景点列表"""
+    attraction_url = "http://www.dianping.com/hongkong/attraction"
+    doc, msg = html_download.downloadPage(attraction_url)
+    if msg != "ok":
+        pass
+    else:
+        attraction_num = h_parser.get_attraction_num(doc)
+        attraction_page_num = 1 + attraction_num / 15
+        get_attraction_list(attraction_page_num)
+
+
+def get_attraction_list(page_num):
+    pre_url = "http://www.dianping.com/hongkong/attraction?district=&category=&pageNum="
+    flag = True
+    index = 0
+    while(flag):
+        index += 1
+        if index == page_num:
+            flag = False
+
+        url = pre_url + str(index)
+        doc, msg = html_download.downloadPage(url)
+        if msg != "ok":
+            pass
+        else:
+            try:
+                shopIds, picUrls, tips = h_parser.get_attraction_list(doc)
+                dao.insert_attraction_shops(shopIds, tips, picUrls)
+            except BaseException, e:
+                print e
+                print "in get_attraction_list(page_num)"
+
 
 if __name__ == "__main__":
 
@@ -531,14 +649,17 @@ if __name__ == "__main__":
     # crawling_room()
 
     # 获取评论
-    try:
-        crawling_review()
-    except BaseException, e:
-        print e
-        print "程序中止"
+    # try:
+    #     crawling_review_02()
 
-    # print "程序中止，正咋将new_review_urls插入数据库hotel_new_review_url"
-    # url_manager.insert_new_review_url_into_db()
+    # except BaseException, e:
+    #     print e
+    #     print "程序中止"
+
+    # 景点列表
+    crawling_attraction_shop()
+
+
 
 
 

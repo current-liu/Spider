@@ -48,7 +48,7 @@ headers5 = {
 h_total = [headers2, headers3, headers4, headers5]
 h = random.choice(h_total)
 
-fo_log = open("20170803.txt", "wb")
+fo_log = open("20170807.txt", "wb")
 
 
 def downloadPage(url):
@@ -108,6 +108,41 @@ def downloadPage(url):
                 ip_proxy.remove_ip(ip_port)
         except BaseException, e:
             print e
+
+    return doc, msg
+
+
+def downloadPage_without_proxy(url):
+    flag = True
+    index = 0
+    while (flag):
+        index += 1
+        print "download第%s次" % index, url
+        # 同一个地址最多尝试三次
+        if index == 4:
+            msg6 = "放弃：" + url
+            print msg6
+            fo_log.write(msg6)
+            break
+
+        # 处理请求结果
+        msg = "ok"
+        doc = ""
+        try:
+            doc = requests.get(url, headers=h, timeout=2).content
+            pass
+        except BaseException, e:
+            print e
+            msg = "download error"
+        else:
+            if doc.__contains__("403 Forbidden"):
+                msg = "403 Forbidden"
+            elif doc.__contains__("<h1>ERROR</h1>") or doc.__contains__("ERROR"):
+                msg = "ERROR"
+
+        # 请求成功，跳出循环
+        if msg == "ok":
+            break
 
     return doc, msg
 

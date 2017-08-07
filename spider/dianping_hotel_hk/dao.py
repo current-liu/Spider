@@ -32,7 +32,7 @@ def insert(i, n, d, a, w, t, p, s, r, pu):
         print e
 
 
-def downloadShopUrl():
+def downloadShopIds():
     results = []
     try:
         sql = """SELECT id
@@ -42,6 +42,37 @@ def downloadShopUrl():
 
     except BaseException, e:
         db.rollback()
+        print e
+
+    return results
+
+
+def downloadShopIds_unselected(today_str):
+    """今天还没有查过房价的酒店id"""
+    results = []
+    try:
+        sql = """SELECT id
+                    FROM hotel_shop_list WHERE
+                    id NOT IN (SELECT shopId FROM hotel_room WHERE query_time = '%s')"""
+        cursor.execute(sql % today_str)
+        results = cursor.fetchall()
+
+    except BaseException, e:
+        db.rollback()
+        print e
+
+    return results
+
+
+def select_shopid_and_reviewnum():
+    results = []
+    try:
+        sql = """SELECT shopId,reviewNum
+                        FROM hotel_shops"""
+        cursor.execute(sql)
+        results = cursor.fetchall()
+
+    except BaseException, e:
         print e
 
     return results
@@ -132,6 +163,7 @@ def insert_hotel_rooms(room_info_list, queryTime):
 
 
 def insert_hotel_review():
+    index = 0
     msg = ""
     while (result_manager.has_new_result()):
         try:
@@ -168,15 +200,19 @@ def insert_hotel_review():
                 create_time, like,
                 reply_num)
         try:
+            print sql2 % data
             cursor.execute(sql2 % data)
             db.commit()
         except BaseException, e:
             db.rollback()
             print e
             if str(e).__contains__("for key 'PRIMARY'"):
-                msg = "for key 'PRIMARY'"
+                # 由于一条评论信息可能出现在连续的两页上，故一个页面上有一个主键冲突不能判定该页面已经爬取过
+                index += 1
                 # print "review_id", review_id
                 # print sql
+    if index == 20:
+        msg = "for key 'PRIMARY'"
     return msg
 
 
@@ -262,3 +298,16 @@ def select_ip():
         db.rollback()
         print e
         return
+
+
+def insert_attraction_shops(shopIds, tips, picUrls):
+    for s, t, p in zip(shopIds, tips, picUrls):
+        sql = """INSERT INTO attraction_shops (shopId,tip,picUrl)
+                  VALUES ('%s','%s','%s')
+                      """
+        try:
+            cursor.execute(sql % (s, t, p))
+            db.commit()
+        except BaseException, e:
+            db.rollback()
+            print e

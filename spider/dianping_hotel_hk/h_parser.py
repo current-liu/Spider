@@ -154,7 +154,7 @@ def get_hotel_list(doc):
     return ids, names, detail_urls, addrs, walks, tags, prices, stars, review_nums, picUrls
 
 
-def shopParser(doc):
+def hotel_shop_parser(doc):
     try:
         soup = BeautifulSoup(doc, "lxml")
 
@@ -370,7 +370,7 @@ def get_review_page_num(doc, url):
     return totalpage_num
 
 
-def get_review(doc, url):
+def get_hotel_review(doc, url):
     try:
         url_mini = url.split("?")[0]
         shopId = int(re.sub(r'\D', "", url_mini))
@@ -529,3 +529,46 @@ def get_review(doc, url):
     except BaseException, e:
         print e
 
+
+def get_attraction_num(doc):
+    try:
+        soup = BeautifulSoup(doc, "lxml")
+    except BaseException, e:
+        print "in get_attraction_num(doc)"
+        print e
+    left = soup.find("div", class_='section-filter').find("div", class_="left").get_text()
+    num = int(re.sub(r'\D', "", left))
+    return num
+
+
+def get_attraction_list(doc):
+    shopIds = []
+    picUrls = []
+    tips = []
+    try:
+        soup = BeautifulSoup(doc, "lxml")
+    except BaseException, e:
+        print "in get_attraction_list(doc)"
+        print e
+    poi_list = soup.find("div", class_="poi-ctn").find("ul", class_="poi-list clearfix")
+    for poi in poi_list.find_all("li"):
+        a = poi.find("a")
+        shopId = a['href'].split("shop/")[1]
+        picUrl = a.find("img")['src']
+        tip = poi.find("div", class_="poi-tips").get_text()
+
+        shopIds.append(shopId)
+        picUrls.append(picUrl)
+        tips.append(tip)
+
+    return shopIds, picUrls, tips
+
+# TODO
+def attraction_hotel_parser(doc):
+    try:
+        soup = BeautifulSoup(doc, "lxml")
+        basic = soup.find("div", class_="basic-info")
+
+    except BaseException, e:
+        print e
+        print "in attraction_hotel_parser(doc)"
