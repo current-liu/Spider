@@ -8,7 +8,7 @@ import requests
 
 ip_pool = []
 url = "http://http-webapi.zhimaruanjian.com/getip?num=3&type=2&pro=&city=0&yys=0&port=11&time=1&ts=0&ys=0&cs=0&lb=1&sb=0&pb=4&mr=1"
-
+dict_ip_to_remove = {}
 
 # def get_ips_from_db():
 #     d = dao.select_ip()
@@ -63,7 +63,7 @@ def get_ip():
 
     while True:
         n = ip_pool.__len__()
-        if n >= 5:
+        if n >= 20:
             break
         msg = download_ips()
         if msg == "fail":
@@ -81,10 +81,21 @@ def get_ip():
 
 def remove_ip(ip_port):
     """移除无法使用的ip"""
+    global dict_ip_to_remove
+
     ip = ip_port.split(":")[0]
-    for i in ip_pool:
-        if i["ip"] == ip:
-            ip_pool.remove(i)
-            break
+
+    if dict_ip_to_remove.__contains__(ip):
+        if dict_ip_to_remove[ip] <= 3:
+            dict_ip_to_remove[ip] += dict_ip_to_remove[ip] + 1
+        else:
+            for i in ip_pool:
+                if i["ip"] == ip:
+                    ip_pool.remove(i)
+                    break
+    else:
+        dict_ip_to_remove[ip] = 1
+
+
 
 

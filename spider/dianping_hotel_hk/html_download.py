@@ -119,7 +119,7 @@ def downloadPage_without_proxy(url):
         index += 1
         print "download第%s次" % index, url
         # 同一个地址最多尝试三次
-        if index == 4:
+        if index == 6:
             msg6 = "放弃：" + url
             print msg6
             fo_log.write(msg6)

@@ -9,9 +9,9 @@ from bs4 import BeautifulSoup
 
 import url_manager
 import sys
+
 reload(sys)
 sys.setdefaultencoding('utf-8')
-
 
 shopId_num = 0
 today = datetime.date.today()
@@ -563,12 +563,83 @@ def get_attraction_list(doc):
 
     return shopIds, picUrls, tips
 
+
 # TODO
 def attraction_hotel_parser(doc):
     try:
         soup = BeautifulSoup(doc, "lxml")
         basic = soup.find("div", class_="basic-info")
+        shop_n = basic.find("h1", class_="shop-name")
+        l = list(shop_n.stripped_strings)
+        shop_name = l[0].replace("\n", "")
+        # TODO 标签怎么确定
+        dict_brief = {u"星级": "无", u"评论数": -1, u"人均": -1, u"项目": -1, u"餐饮": -1, u"划算": -1}
+        try:
+            brief = basic.find("div", class_="brief-info").find_all("span")
+            items = []
+            items.append(brief[0]['title'])
+            for br in brief[1:]:
+                items.append(br.get_text().strip().replace("\n", ""))
+            star_str = items[0]
+            if star_str == "五星商户":
+                dict_brief[u"星级"] = 5
+            if star_str == "四星商户":
+                dict_brief[u"星级"] = 4
+            if star_str == "三星商户":
+                dict_brief[u"星级"] = 3
+            if star_str == "二星商户":
+                dict_brief[u"星级"] = 2
+            if star_str == "一星商户":
+                dict_brief[u"星级"] = 1
+            try:
+                review_num = int(re.sub(r'\D', "", items[1]))
+                dict_brief[u"评论数"] = review_num
+            except BaseException, e:
+                print e
+                msg1 = "景点评论数获取失败"
+                print msg1
+
+            price = int(re.sub(r'\D', "", items[2]))
+            dict_brief[u"人均"] = price
+
+            for i in items[3:]:
+                if i.__contains__(u"项目"):
+                    dict_brief[u"项目"] = re.sub(r'\D', "", i)
+                if i.__contains__(u"餐饮"):
+                    dict_brief[u"餐饮"] = re.sub(r'\D', "", i)
+                if i.__contains__(u"划算"):
+                    dict_brief[u"划算"] = re.sub(r'\D', "", i)
+        except BaseException, e:
+            print e
+            print "in for item in brief:"
+
+        address = basic.find("div", class_="expand-info address").find("span",
+                                                                       class_="item").get_text().strip().replace("\n",
+                                                                                                                 "")
+        tel = basic.find("p", class_='expand-info tel').find("span", class_="item").get_text()
+
+        other = basic.find("div", class_="other J-other Hide")
+        indents = []
+        dict_indent = {u"别名": "无", u"营业时间": "无", u"商户简介": "无"}
+        try:
+            for indent in other.find_all("p", class_="info info-indent"):
+                l_indent = list(indent.stripped_strings)
+                indents.append(l_indent)
+
+            for par in indents:
+                obj = par[0]
+                if obj == u'别       名：':
+                    dict_indent[u"别名"] = par[1]
+                if obj == u'营业时间：':
+                    dict_indent[u"营业时间"] = par[1]
+                if obj == u'商户简介：':
+                    dict_indent[u"商户简介"] = par[1]
+        except BaseException, e:
+            print e
+            print "in for par in indents:"
 
     except BaseException, e:
         print e
         print "in attraction_hotel_parser(doc)"
+
+    return shop_name, dict_brief, address, tel, dict_indent

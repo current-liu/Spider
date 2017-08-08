@@ -111,7 +111,8 @@ def crawling_shop():
 
         doc, msg = html_download.downloadPage(url)
         if msg == "ok":
-            addr, tel, openTime, checkTime, facs, room_facs, services, info, review_num = h_parser.hotel_shop_parser(doc)
+            addr, tel, openTime, checkTime, facs, room_facs, services, info, review_num = h_parser.hotel_shop_parser(
+                doc)
         else:
             print "下载酒店详情页失败"
 
@@ -131,32 +132,32 @@ def crawling_shop():
         # infos.append(info)
         # review_nums.append(review_num)
 
-    # url = url_manager.get_new_shop_url()
-    # shopId = int(re.sub(r'\D', "", url))
-    # doc = html_download.downloadPage(url)
-    # addr, tel, openTime, checkTime, facs, services, info = html_parser.shopParser(doc)
-    #
-    # shopIds.append(shopId)
-    # addrs.append(addr)
-    # tels.append(tel)
-    # openTimes.append(openTime)
-    # checkTimes.append(checkTime)
-    # facss.append(facs)
-    # servicess.append(services)
-    # infos.append(info)
-    #
-    # print shopId
+        # url = url_manager.get_new_shop_url()
+        # shopId = int(re.sub(r'\D', "", url))
+        # doc = html_download.downloadPage(url)
+        # addr, tel, openTime, checkTime, facs, services, info = html_parser.shopParser(doc)
+        #
+        # shopIds.append(shopId)
+        # addrs.append(addr)
+        # tels.append(tel)
+        # openTimes.append(openTime)
+        # checkTimes.append(checkTime)
+        # facss.append(facs)
+        # servicess.append(services)
+        # infos.append(info)
+        #
+        # print shopId
 
-    # print "正在写入数据库，请稍后"
-    # #  应该修改为每查询一个酒店的信息就插入，避免中间错误导致数据丢失
-    # for (s, a, t, o, c, f, rf, ss, i, n) in zip(shopIds, addrs, tels, openTimes, checkTimes, facss, room_facss,
-    #                                             servicess,
-    #                                             infos, review_nums):
-    #     fac = " ".join(f)
-    #     room_facs = " ".join(rf)
-    #     service = " ".join(ss)
-    #     dao.update_hotel_shops(s, a, t, o, c, fac, room_facs, service, i, n)
-    #     pass
+        # print "正在写入数据库，请稍后"
+        # #  应该修改为每查询一个酒店的信息就插入，避免中间错误导致数据丢失
+        # for (s, a, t, o, c, f, rf, ss, i, n) in zip(shopIds, addrs, tels, openTimes, checkTimes, facss, room_facss,
+        #                                             servicess,
+        #                                             infos, review_nums):
+        #     fac = " ".join(f)
+        #     room_facs = " ".join(rf)
+        #     service = " ".join(ss)
+        #     dao.update_hotel_shops(s, a, t, o, c, fac, room_facs, service, i, n)
+        #     pass
 
 
 def crawling_room():
@@ -177,7 +178,7 @@ def crawling_room():
     index = 0
     while (url_manager.has_new_room_url()):
 
-        time.sleep(random.uniform(2, 3))
+        time.sleep(random.uniform(1, 2))
 
         urls = url_manager.get_new_room_url()
         index += 1
@@ -250,7 +251,7 @@ def crawling_review_02():
             elif review_num % 20 == 0:
                 page_num = review_num / 20
             else:
-                page_num = 1+review_num/20
+                page_num = 1 + review_num / 20
         except BaseException:
             msg1 = "解析shopId，page_num失败"
             print msg1
@@ -398,7 +399,8 @@ def crawling_review():
                 else:
                     page_num -= 1
 
-                review_url = "http://www.dianping.com/shop/" + str(shopId) + "/review_more_newest?pageno=" + str(page_num)
+                review_url = "http://www.dianping.com/shop/" + str(shopId) + "/review_more_newest?pageno=" + str(
+                    page_num)
                 msg4 = "小循环循环到:"
                 print msg4
                 print review_url
@@ -523,7 +525,7 @@ def init_room_url_list(goal_url):
     checkinDate_4 = after_4.strftime("%Y-%m-%d")
     checkoutDate_4 = after_5.strftime("%Y-%m-%d")
 
-    shop_id_list = dao.downloadShopIds_unselected(today_str)
+    shop_id_list = dao.download_hotel_shopIds_unselected(today_str)
 
     for shop_id in shop_id_list:
         i = str(shop_id)
@@ -551,7 +553,7 @@ def init_room_url_list(goal_url):
 
 
 def init_review_url_list():
-    shop_id_list = dao.downloadShopIds()
+    shop_id_list = dao.download_hotel_shopIds()
     for shop_id in shop_id_list:
         i = str(shop_id)
         s = re.sub(r'\D', "", i)
@@ -600,6 +602,34 @@ def init_review_url_list():
 def crawling_attraction_shop():
     # 需要更新景点名录时调用此函数
     # init_attraction_shop_list()
+    try:
+        shopIds = dao.download_attraction_shopIds()
+    except BaseException, e:
+        print e
+        msg1 = "shopIds 获取失败"
+        print msg1
+    for shop in shopIds:
+        time.sleep(random.uniform(1, 2))
+        shop_id = shop[0]
+        id_str = str(shop_id)
+        tel = -10
+        print "num.%s shopId：%s" % (shopIds.index(shop), shop_id)
+
+        url = "http://www.dianping.com/shop/" + id_str
+        doc, msg = html_download.downloadPage_without_proxy(url)
+        if msg != "ok":
+            continue
+        else:
+            try:
+                shop_name, dict_brief, address, tel, dict_indent = h_parser.attraction_hotel_parser(doc)
+            except BaseException, e:
+                print e
+                # print doc
+        try:
+            dao.update_attraction_shops(shop_id, shop_name, dict_brief, address, tel, dict_indent)
+        except BaseException, e:
+            print e
+
     pass
 
 
@@ -619,7 +649,7 @@ def get_attraction_list(page_num):
     pre_url = "http://www.dianping.com/hongkong/attraction?district=&category=&pageNum="
     flag = True
     index = 0
-    while(flag):
+    while (flag):
         index += 1
         if index == page_num:
             flag = False
@@ -638,7 +668,6 @@ def get_attraction_list(page_num):
 
 
 if __name__ == "__main__":
-
     # 酒店列表
     # crawling_hotel_list()
 
@@ -658,8 +687,3 @@ if __name__ == "__main__":
 
     # 景点列表
     crawling_attraction_shop()
-
-
-
-
-

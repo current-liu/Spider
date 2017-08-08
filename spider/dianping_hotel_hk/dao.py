@@ -32,7 +32,7 @@ def insert(i, n, d, a, w, t, p, s, r, pu):
         print e
 
 
-def downloadShopIds():
+def download_hotel_shopIds():
     results = []
     try:
         sql = """SELECT id
@@ -47,7 +47,7 @@ def downloadShopIds():
     return results
 
 
-def downloadShopIds_unselected(today_str):
+def download_hotel_shopIds_unselected(today_str):
     """今天还没有查过房价的酒店id"""
     results = []
     try:
@@ -311,3 +311,33 @@ def insert_attraction_shops(shopIds, tips, picUrls):
         except BaseException, e:
             db.rollback()
             print e
+
+
+def update_attraction_shops(shop_id, shop_name, dict_brief, address, tel, dict_indent):
+    sql = """UPDATE attraction_shops SET shopName='%s',addr='%s',tel='%s',star='%s',reviewNum='%s',price='%s',items='%s',food='%s',huasuan='%s',alias='%s',bussinessTime='%s',info='%s'
+              WHERE shopId = '%s'"""
+    try:
+        cursor.execute(sql % (
+            shop_name, address, tel, dict_brief[u"星级"], dict_brief[u"评论数"], dict_brief[u"人均"], dict_brief[u"项目"],
+            dict_brief[u"餐饮"], dict_brief[u"划算"], dict_indent[u"别名"], dict_indent[u"营业时间"],
+            dict_indent[u"商户简介"].replace("'", "").replace('"', ""),
+            shop_id))
+        db.commit()
+    except BaseException, e:
+        db.rollback()
+        print e
+
+
+def download_attraction_shopIds():
+    results = []
+    try:
+        sql = """SELECT shopId
+                    FROM attraction_shops"""
+        cursor.execute(sql)
+        results = cursor.fetchall()
+
+    except BaseException, e:
+        db.rollback()
+        print e
+
+    return results
