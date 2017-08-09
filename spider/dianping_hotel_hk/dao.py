@@ -10,12 +10,12 @@ import traceback
 reload(sys)
 sys.setdefaultencoding("utf8")
 
-db = pymysql.connect("192.168.1.166", "root", "keystone", "k11data", charset="utf8mb4")
-cursor = db.cursor()
-cursor.execute("select version()")
-data = cursor.fetchone()
-print data
-print pymysql.paramstyle
+# db = pymysql.connect("192.168.1.166", "root", "keystone", "k11data", charset="utf8mb4")
+# cursor = db.cursor()
+# cursor.execute("select version()")
+# data = cursor.fetchone()
+# print data
+# print pymysql.paramstyle
 
 
 def insert(i, n, d, a, w, t, p, s, r, pu):
