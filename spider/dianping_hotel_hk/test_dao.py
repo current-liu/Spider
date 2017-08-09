@@ -18,5 +18,5 @@ import dao
 
 class TestDao(TestCase):
     def test_select_shopid_and_reviewnum(self):
-        res = dao.select_shopid_and_reviewnum()
+        res = dao.select_shopid_and_reviewnum("hotel_shops")
         print res

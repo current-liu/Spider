@@ -64,11 +64,11 @@ def download_hotel_shopIds_unselected(today_str):
     return results
 
 
-def select_shopid_and_reviewnum():
+def select_shopid_and_reviewnum(table):
     results = []
     try:
         sql = """SELECT shopId,reviewNum
-                        FROM hotel_shops"""
+                        FROM %s""" % table
         cursor.execute(sql)
         results = cursor.fetchall()
 
@@ -200,7 +200,7 @@ def insert_hotel_review():
                 create_time, like,
                 reply_num)
         try:
-            print sql2 % data
+            # print sql2 % data
             cursor.execute(sql2 % data)
             db.commit()
         except BaseException, e:
@@ -318,8 +318,8 @@ def update_attraction_shops(shop_id, shop_name, dict_brief, address, tel, dict_i
               WHERE shopId = '%s'"""
     try:
         cursor.execute(sql % (
-            shop_name, address, tel, dict_brief[u"星级"], dict_brief[u"评论数"], dict_brief[u"人均"], dict_brief[u"项目"],
-            dict_brief[u"餐饮"], dict_brief[u"划算"], dict_indent[u"别名"], dict_indent[u"营业时间"],
+            shop_name.replace("'", "").replace('"', ""), address.replace("'", "").replace('"', ""), tel, dict_brief[u"星级"], dict_brief[u"评论数"], dict_brief[u"人均"], dict_brief[u"项目"],
+            dict_brief[u"餐饮"], dict_brief[u"划算"], dict_indent[u"别名"].replace("'", "").replace('"', ""), dict_indent[u"营业时间"].replace("'", "").replace('"', ""),
             dict_indent[u"商户简介"].replace("'", "").replace('"', ""),
             shop_id))
         db.commit()
@@ -332,7 +332,7 @@ def download_attraction_shopIds():
     results = []
     try:
         sql = """SELECT shopId
-                    FROM attraction_shops"""
+                    FROM attraction_shops """
         cursor.execute(sql)
         results = cursor.fetchall()
 
@@ -341,3 +341,50 @@ def download_attraction_shopIds():
         print e
 
     return results
+
+
+def insert_attraction_review():
+    index = 0
+    msg = ""
+    while (result_manager.has_new_attraction_review_result()):
+        try:
+            res = result_manager.get_new_attraction_review_result()
+            shopId = res[0]
+            review_id = res[1]
+            user_id = res[2]
+            reviewStar = res[3]
+
+            items = res[4]
+            food = res[5]
+            huasuan = res[6]
+            price = res[7]
+
+            comment_txt = res[8]
+            create_time = res[9]
+            like = res[10]
+            reply_num = res[11]
+        except BaseException, e:
+            print e
+
+
+        sql2 = """INSERT INTO attraction_review (reviewId,memberId,shopId,reviewStar,items,food,huasuan,price,
+                      content,creatTime,likes,reply)
+                      values('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')"""
+        data = (review_id, user_id, shopId, reviewStar, items, food, huasuan, price,
+                comment_txt.replace("'", "").replace('"', ""),
+                create_time, like,reply_num)
+        try:
+            # print sql2 % data
+            cursor.execute(sql2 % data)
+            db.commit()
+        except BaseException, e:
+            db.rollback()
+            print e
+            if str(e).__contains__("for key 'PRIMARY'"):
+                # 由于一条评论信息可能出现在连续的两页上，故一个页面上有一个主键冲突不能判定该页面已经爬取过
+                index += 1
+                # print "review_id", review_id
+                # print sql
+    if index == 20:
+        msg = "for key 'PRIMARY'"
+    return msg

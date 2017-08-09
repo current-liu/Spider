@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../spider/IPProxyPool-master/.idea/IPProxyPool-master.iml" filepath="$PROJECT_DIR$/../spider/IPProxyPool-master/.idea/IPProxyPool-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/../baidu_spider/baidu_spider.iml" filepath="$PROJECT_DIR$/../baidu_spider/baidu_spider.iml" />
       <module fileurl="file://$PROJECT_DIR$/../getJpg/.idea/getJpg.iml" filepath="$PROJECT_DIR$/../getJpg/.idea/getJpg.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/getMovieOnDouban.iml" filepath="$PROJECT_DIR$/.idea/getMovieOnDouban.iml" />

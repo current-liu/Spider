@@ -7,7 +7,7 @@
 """
 import pymysql
 
-db = pymysql.connect("localhost", "root", "1234", "test")
+db = pymysql.connect("127.0.0.1", "root", "liu1991chao", "test")
 cursor = db.cursor()
 cursor.execute("select version()")
 data = cursor.fetchone()

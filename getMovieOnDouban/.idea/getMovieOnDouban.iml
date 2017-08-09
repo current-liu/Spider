@@ -11,6 +11,7 @@
     <orderEntry type="module" module-name="k11" />
     <orderEntry type="module" module-name="myPython" />
     <orderEntry type="module" module-name="myPython1" />
+    <orderEntry type="module" module-name="IPProxyPool-master" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

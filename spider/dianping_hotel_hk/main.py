@@ -233,12 +233,90 @@ def crawling_room():
         # dao.insert_hotel_goods(shopIds_total, roomIds_total, titles_total, bedTypes_total, breakfasts_total,
         #                        netTypes_total, cancelRules_total, prices_total)
 
+def get_attraction_review_on_page(shopId, page_num):
+    flag = True
+    while (flag):
+        if page_num == 1:
+            flag = False
 
-def crawling_review_02():
+        review_url = "http://www.dianping.com/shop/" + str(shopId) + "/review_all_newest?pageno=" + str(page_num)
+
+        msg14 = "小循环循环到:"
+        print msg14
+        print review_url
+        fo_log.write(msg14 + review_url)
+        # TODO对html_download.downloadPage(url)返回的结果应该进行处理，判断msg，所有地方用到此函数的都要处理
+        doc, msg = html_download.downloadPage(review_url)
+        if msg != "ok":
+            continue
+
+        try:
+            result = h_parser.get_attraction_review(shopId, doc, review_url)
+            timeout = result[-1]
+            if timeout:
+                flag = False
+        except BaseException, e:
+            # TODO应该把doc打印出来,有问题但在html_download里面未被拦截的doc
+            print e
+            # TODO 打成单独文件
+            fo_log.write("doc with error")
+            fo_log.write(doc)
+
+        res = ""
+        if result:
+            result_manager.add_new_attraction_review_result(result)
+            res = dao.insert_attraction_review()
+
+        if res == "for key 'PRIMARY'":
+            msg16 = "shopId %s 已循环到已经爬过内容" % shopId
+            print msg16
+            fo_log.write(msg16)
+            break
+
+        else:
+            page_num -= 1
+
+    msg17 = "shopId %s complete to pageno=%s" % (shopId, page_num)
+    print msg17
+    fo_log.write(msg17)
+
+
+def crawling_attraction_review_():
+    """评论总数从attraction_sops表中直接读取，同shopId一起传过来"""
+    print "crawling_attraction_review()"
+    try:
+        res = dao.select_shopid_and_reviewnum("attraction_shops")
+    except BaseException, e:
+        print e
+    for shop in res:
+        try:
+            index = res.index(shop) + 1
+            shopId = shop[0]
+            review_num = shop[1]
+            if review_num < 1:
+                continue
+            elif review_num % 20 == 0:
+                page_num = review_num / 20
+            else:
+                page_num = 1 + review_num / 20
+        except BaseException:
+            msg11 = "解析shopId，page_num失败"
+            print msg11
+
+        msg12 = "大循环循环到第'%s'：'%s'" % (index, shopId)
+        print msg12
+        fo_log.write(msg12)
+
+        # 爬取页面上的评论
+        get_attraction_review_on_page(shopId, page_num)
+
+
+
+def crawling_hotel_review_02():
     """评论总数从hotel_sops表中直接读取，同shopId一起传过来"""
     print "crawling_review()"
     try:
-        res = dao.select_shopid_and_reviewnum()
+        res = dao.select_shopid_and_reviewnum("hotel_shops")
     except BaseException, e:
         print e
     for shop in res:
@@ -261,10 +339,10 @@ def crawling_review_02():
         fo_log.write(msg1)
 
         # 爬取页面上的评论
-        get_review_on_page(shopId, page_num)
+        get_hotel_review_on_page(shopId, page_num)
 
 
-def get_review_on_page(shopId, page_num):
+def get_hotel_review_on_page(shopId, page_num):
     flag = True
     while (flag):
         if page_num == 1:
@@ -290,7 +368,7 @@ def get_review_on_page(shopId, page_num):
 
         res = ""
         if result:
-            result_manager.add_new_result(result)
+            result_manager.add_new_hotel_review_result(result)
             res = dao.insert_hotel_review()
 
         if res == "for key 'PRIMARY'":
@@ -307,7 +385,7 @@ def get_review_on_page(shopId, page_num):
     fo_log.write(msg7)
 
 
-def crawling_review():
+def crawling_hotel_review():
     print "crawling_review()"
 
     # 从数据库中读取已爬过的review_url
@@ -441,7 +519,7 @@ def crawling_review():
 
                 res = ""
                 if result:
-                    result_manager.add_new_result(result)
+                    result_manager.add_new_hotel_review_result(result)
                     res = dao.insert_hotel_review()
 
                 if res == "for key 'PRIMARY'":
@@ -621,7 +699,7 @@ def crawling_attraction_shop():
             continue
         else:
             try:
-                shop_name, dict_brief, address, tel, dict_indent = h_parser.attraction_hotel_parser(doc)
+                shop_name, dict_brief, address, tel, dict_indent = h_parser.attraction_shop_parser(doc)
             except BaseException, e:
                 print e
                 # print doc
@@ -677,13 +755,16 @@ if __name__ == "__main__":
     # 房间详情
     # crawling_room()
 
-    # 获取评论
+    # 酒店评论
     # try:
-    #     crawling_review_02()
-
+    #    crawling_hotel_review_02()
+    #
     # except BaseException, e:
     #     print e
     #     print "程序中止"
 
     # 景点列表
-    crawling_attraction_shop()
+    # crawling_attraction_shop()
+
+    # 景点评论
+    crawling_attraction_review_()

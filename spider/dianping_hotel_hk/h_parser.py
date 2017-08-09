@@ -8,10 +8,6 @@ import urlparse
 from bs4 import BeautifulSoup
 
 import url_manager
-import sys
-
-reload(sys)
-sys.setdefaultencoding('utf-8')
 
 shopId_num = 0
 today = datetime.date.today()
@@ -370,6 +366,187 @@ def get_review_page_num(doc, url):
     return totalpage_num
 
 
+def get_attraction_review(shopId, doc, url):
+    # try:
+    #     url_mini = url.split("?")[0]
+    #     shopId = int(re.sub(r'\D', "", url_mini))
+    # except BaseException, e:
+    #     print e
+    #     print traceback.format_exc()
+    #     print "get_review()  ---shopId解析失败---------- url:", url
+    #     shopId = 0
+    timeout = False
+
+    shopIds = []
+    review_ids = []
+    user_ids = []
+    reviewStars = []
+
+    items = []
+    foods = []
+    huasuans = []
+    prices = []
+
+    comment_txts = []
+    create_times = []
+    likes = []
+    reply_nums = []
+
+    try:
+        soup = BeautifulSoup(doc, "lxml")
+    except BaseException, e:
+        print e
+
+    # 解析页面内容
+    try:
+        comment_list = soup.find("div", class_="comment-list").find("ul").find_all("li", recursive=False)
+    except BaseException, e:
+        print e
+        return
+    for li in comment_list:
+        try:
+            review_id = int(li["data-id"])
+            pic = li.find("div", class_="pic")
+            user_id = int(pic.find("a")["user-id"])
+
+            try:
+                content = li.find("div", class_="content")
+                star_tag = content.find("div", class_="user-info").find("span")
+                star = star_tag["title"]
+                star1 = star
+                reviewStar = -1
+                star = star.encode("utf-8")
+                if (u"非常好" == star1):
+                    reviewStar = 5
+                    pass
+                elif ("很好" == star):
+                    reviewStar = 4
+                elif ("好" == star):
+                    reviewStar = 3
+                elif ("一般" == star):
+                    reviewStar = 2
+                elif ("很差" == star):
+                    reviewStar = 1
+            except BaseException, e:
+                pass
+
+            price = -1
+            try:
+                price_tag = star_tag.next_sibling
+                price = int(re.sub(r'\D', "", price_tag.get_text()))
+            except BaseException, e:
+                pass
+
+            # 非常好4 很好3 好2 一般1 很差0
+            item = -1
+            food = -1
+            huasuan = -1
+
+            try:
+                comment_rst = content.find("div", class_="comment-rst").find_all("span")
+                rsts = {"项目": None, "餐饮": None, "划算": None}
+                for rst in comment_rst:
+                    c = rst.get_text()
+                    value = int(re.sub(r'\D', "", c))
+                    key = re.sub(r'\d', "", c).split("(")[0].encode("utf-8")
+                    # list = ["项目", "餐饮", "划算"]
+                    # if key not in list:
+                    #     print "key not in list!!!!!!!!!!!!!!!!!!!!!", key
+                    rsts[key] = value
+
+                if (rsts["项目"] != None):
+                    item = rsts["项目"]
+                if (rsts["餐饮"] != None):
+                    food = rsts["餐饮"]
+                if (rsts["划算"] != None):
+                    huasuan = rsts["划算"]
+            except BaseException, e:
+                pass
+
+
+            try:
+                comment_txt = content.find("div", class_="comment-txt").find("div",
+                                                                             class_="J_brief-cont").get_text().strip()
+                misc_info = content.find("div", class_="misc-info")
+                review_time = misc_info.find("span", class_="time").get_text()[0:8]
+                r_time = review_time.split(u"更")[0].strip()
+
+                l = r_time.__len__()
+                y = datetime.date.today().strftime("%Y")
+                century = "20"
+                if l == 5:
+                    r_time = y + "-" + r_time
+                elif l == 8:
+                    year_short = int(r_time.split("-")[0])
+                    if year_short < 15:
+                        timeout = True
+                        # TODO 逻辑待处理
+                        break
+                    else:
+                        r_time = century + r_time
+                else:
+                    # 异常情况
+                    r_time = u"1946-01-01"
+                create_time = datetime.datetime.strptime(r_time, '%Y-%m-%d')
+            except BaseException, e:
+                pass
+
+            try:
+                countWrapper = misc_info.find("span", class_="col-right").find("span", class_="countWrapper")
+                heart = countWrapper.find("a").find("span", class_="heart-num")
+                like = -1
+                if heart != None:
+                    like = int(re.sub(r'\D', "", heart.get_text()))
+
+                reply = (countWrapper.next_sibling.next_sibling.find("a"))
+                reply_num = -1
+                if reply != None:
+                    a = reply["title total"]
+                    b = reply["total"]
+                    reply_num = int(reply.get_text())
+            except BaseException, e:
+                pass
+
+        except BaseException, e:
+            print e
+            print traceback.format_exc()
+            print "get_review(doc, url)中解析页面内容出现异常"
+            print url
+            print "shopId", shopId
+            print "reviewId", review_id
+
+            # 出现异常时 给剩余变量赋值
+            reviewStar = item = food = huasuan = price = like = reply_num = -2
+            comment_txt = "此条评论信息未完整获取"
+            create_time = datetime.datetime.strptime(u"1946-01-01", '%Y-%m-%d')
+        try:
+            shopIds.append(shopId)
+            review_ids.append(review_id)
+            user_ids.append(user_id)
+            reviewStars.append(reviewStar)
+
+            items.append(item)
+            foods.append(food)
+            huasuans.append(huasuan)
+            prices.append(price)
+
+            comment_txts.append(comment_txt)
+            create_times.append(create_time)
+            likes.append(like)
+            reply_nums.append(reply_num)
+
+        except BaseException, e:
+            print e
+    # TODO 怎么直接跳到这里了
+    result = [shopIds, review_ids, user_ids, reviewStars, items, foods, huasuans, prices, comment_txts,
+              create_times, likes, reply_nums, timeout]
+    try:
+        return result
+    except BaseException, e:
+        print e
+
+
+
 def get_hotel_review(doc, url):
     try:
         url_mini = url.split("?")[0]
@@ -479,7 +656,7 @@ def get_hotel_review(doc, url):
                 r_time = century + r_time
             else:
                 # 异常情况
-                r_time = u"0000-00-00"
+                r_time = u"1946-01-01"
             create_time = datetime.datetime.strptime(r_time, '%Y-%m-%d')
 
             countWrapper = misc_info.find("span", class_="col-right").find("span", class_="countWrapper")
@@ -565,14 +742,14 @@ def get_attraction_list(doc):
 
 
 # TODO
-def attraction_hotel_parser(doc):
+def attraction_shop_parser(doc):
     try:
         soup = BeautifulSoup(doc, "lxml")
         basic = soup.find("div", class_="basic-info")
         shop_n = basic.find("h1", class_="shop-name")
         l = list(shop_n.stripped_strings)
         shop_name = l[0].replace("\n", "")
-        # TODO 标签怎么确定
+        # TODO标签怎么确定
         dict_brief = {u"星级": "无", u"评论数": -1, u"人均": -1, u"项目": -1, u"餐饮": -1, u"划算": -1}
         try:
             brief = basic.find("div", class_="brief-info").find_all("span")
@@ -599,7 +776,11 @@ def attraction_hotel_parser(doc):
                 msg1 = "景点评论数获取失败"
                 print msg1
 
-            price = int(re.sub(r'\D', "", items[2]))
+            price = -1
+            try:
+                price = int(re.sub(r'\D', "", items[2]))
+            except BaseException:
+                pass
             dict_brief[u"人均"] = price
 
             for i in items[3:]:
@@ -613,10 +794,18 @@ def attraction_hotel_parser(doc):
             print e
             print "in for item in brief:"
 
-        address = basic.find("div", class_="expand-info address").find("span",
-                                                                       class_="item").get_text().strip().replace("\n",
-                                                                                                                 "")
-        tel = basic.find("p", class_='expand-info tel').find("span", class_="item").get_text()
+        address = "-1"
+        try:
+            address = basic.find("div", class_="expand-info address").find("span",
+                                                                           class_="item").get_text().strip().replace(
+                "\n", "")
+        except BaseException:
+            pass
+        tel = "-1"
+        try:
+            tel = basic.find("p", class_='expand-info tel').find("span", class_="item").get_text()
+        except BaseException:
+            pass
 
         other = basic.find("div", class_="other J-other Hide")
         indents = []

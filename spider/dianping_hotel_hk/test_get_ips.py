@@ -15,7 +15,15 @@ class TestGet_ips(TestCase):
     #     data = ip_proxy.get_ips()
     #     pass
 
-    def test_ip_proxy(self):
-        url = "http://www.baidu.com"
-        # ip = ip_proxy.get_ip()
-        html_download.downloadPage(url)
+    # def test_ip_proxy(self):
+    #     url = "http://www.baidu.com"
+    #     # ip = ip_proxy.get_ip()
+    #     html_download.downloadPage(url)
+
+    def test_get_ip_from_IPProxyPool(self):
+        # ip_port = ip_proxy.get_ip_from_IPProxyPool()
+        # proxies = {'http': ip_port}
+        while(True):
+            url = "http://www.dianping.com"
+            doc, msg = html_download.downloadPage(url)
+            pass

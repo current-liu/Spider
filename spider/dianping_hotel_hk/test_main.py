@@ -19,4 +19,4 @@ __version__ = '1.0'
 
 class TestMain(TestCase):
     def test_get_review_on_page(self):
-        main.get_review_on_page(2576827, 69)
+        main.get_hotel_review_on_page(2576827, 69)

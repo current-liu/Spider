@@ -57,8 +57,9 @@ def downloadPage(url):
     while (flag):
         index += 1
         print "download第%s次" % index, url
-        # 同一个地址最多尝试三次
-        if index == 4:
+        # 同一个地址最多尝试6次
+        max_try = 6
+        if index == max_try:
             msg5 = "放弃：" + url
             print msg5
             fo_log.write(msg5)
@@ -81,7 +82,14 @@ def downloadPage(url):
         #     print e
 
         # 获取随机IP
+        # error_num为该ip下载失败几次时删除
+
+        error_num = 3
         ip_port = ip_proxy.get_ip()
+        # OR
+        # error_num = 1
+        # ip_port = ip_proxy.get_ip_from_IPProxyPool()
+
         proxies = {'http': ip_port}
 
         # 处理请求结果
@@ -105,7 +113,7 @@ def downloadPage(url):
                 break
             else:
                 # 移除无法使用的ip
-                ip_proxy.remove_ip(ip_port)
+                ip_proxy.remove_ip(ip_port, error_num)
         except BaseException, e:
             print e
 
@@ -118,8 +126,9 @@ def downloadPage_without_proxy(url):
     while (flag):
         index += 1
         print "download第%s次" % index, url
-        # 同一个地址最多尝试三次
-        if index == 6:
+        # 同一个地址最多尝试3次
+        max_try = 3
+        if index == max_try:
             msg6 = "放弃：" + url
             print msg6
             fo_log.write(msg6)
@@ -147,28 +156,4 @@ def downloadPage_without_proxy(url):
     return doc, msg
 
 
-    # 这块功能迁移到html_download.py 模块中，更为合理
-    # if msg != "ok":
-    #     if down_record.__contains__(page_num):
-    #
-    #         # 尝试3次，还不行就放弃
-    #         if down_record[page_num] < 3:
-    #             down_record[page_num] = down_record[page_num] + 1
-    #             continue
-    #         else:
-    #             # 放弃该页面
-    #             msg5 = "放弃："+identify_url
-    #             print msg5
-    #             fo_log.write(msg5)
-    #             page_num -= 1
-    #             fo = open(
-    #                 r"D:\Liuchao\PycharmProjects\pythonproject\spider\dianping_hotel_hk\download_error\'%s''%s'.txt" % (
-    #                     today_str, identify_url), "wb")
-    #             fo.write(doc)
-    #             fo.close()
-    #             continue
-    #     else:
-    #         down_record[page_num] = 1
-    #         continue
-    #
-    # else:
+
