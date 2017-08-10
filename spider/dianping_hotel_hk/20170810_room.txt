@@ -1,0 +1,15 @@
+放弃：http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=20900946&checkinDate=2017-08-13&checkoutDate=2017-08-14
+放弃：http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=6138997&checkinDate=2017-08-10&checkoutDate=2017-08-11
+放弃：http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=6138997&checkinDate=2017-08-11&checkoutDate=2017-08-12
+放弃：http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=6138997&checkinDate=2017-08-12&checkoutDate=2017-08-13
+放弃：http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=6138997&checkinDate=2017-08-14&checkoutDate=2017-08-15
+放弃：http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=8404526&checkinDate=2017-08-12&checkoutDate=2017-08-13
+放弃：http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=21255165&checkinDate=2017-08-10&checkoutDate=2017-08-11
+放弃：http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=21255165&checkinDate=2017-08-11&checkoutDate=2017-08-12
+放弃：http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=13773039&checkinDate=2017-08-10&checkoutDate=2017-08-11
+放弃：http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=13773039&checkinDate=2017-08-13&checkoutDate=2017-08-14
+放弃：http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=8396935&checkinDate=2017-08-14&checkoutDate=2017-08-15
+放弃：http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=3424915&checkinDate=2017-08-14&checkoutDate=2017-08-15
+放弃：http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=13737898&checkinDate=2017-08-12&checkoutDate=2017-08-13
+放弃：http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=13737898&checkinDate=2017-08-13&checkoutDate=2017-08-14
+放弃：http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=13737898&checkinDate=2017-08-14&checkoutDate=2017-08-15

@@ -1,5 +1,5 @@
 from unittest import TestCase
-import ip_proxy
+import dianping_hotel_hk.ip_proxy
 from dianping_hotel_hk import html_download
 
 

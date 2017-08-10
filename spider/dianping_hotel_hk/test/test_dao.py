@@ -14,9 +14,9 @@ sys.setdefaultencoding('utf-8')
 __author__ = 'Administrator'
 __version__ = '1.0'
 
-import dao
+import dianping_hotel_hk.dao
 
 class TestDao(TestCase):
     def test_select_shopid_and_reviewnum(self):
-        res = dao.select_shopid_and_reviewnum("hotel_shops")
+        res = dianping_hotel_hk.dao.select_shopid_and_reviewnum("hotel_shops")
         print res

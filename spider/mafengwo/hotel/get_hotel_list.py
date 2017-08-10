@@ -9,6 +9,6 @@ import action
 __author__ = 'Administrator'
 __version__ = '1.0'
 
-
+# TODO log文件名带上方法名
 if __name__ == '__main__':
     action.get_hotel_list()

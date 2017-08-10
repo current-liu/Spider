@@ -1,8 +1,8 @@
 from unittest import TestCase
-import h_parser
-import html_download
-import result_manager
-import dao
+import dianping_hotel_hk.h_parser
+import dianping_hotel_hk.html_download
+import dianping_hotel_hk.result_manager
+import dianping_hotel_hk.dao
 from dianping_hotel_hk.main import get_attraction_review_on_page
 
 
