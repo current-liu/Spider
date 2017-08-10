@@ -1,13 +1,8 @@
 # coding=utf-8
 import datetime
 import requests
-import re
 import random
-import pip
 import ip_proxy
-import url_manager
-
-# print(pip.pep425tags.get_supported())
 
 
 headers = {
@@ -63,7 +58,7 @@ def downloadPage(url):
         index += 1
         print "download第%s次" % index, url
         # 同一个地址最多尝试6次
-        max_try = 6
+        max_try = 8
         if index == max_try:
             msg5 = "放弃：" + url
             print msg5
@@ -109,9 +104,8 @@ def downloadPage(url):
         else:
             if doc.__contains__("403 Forbidden"):
                 msg = "403 Forbidden"
-            elif doc.__contains__("<h1>ERROR</h1>") or doc.__contains__("ERROR") or doc.__contains__("doc with error"):
+            elif doc.__contains__("<h1>ERROR</h1>") or doc.__contains__("ERROR"):
                 msg = "ERROR"
-
 
         # 请求成功，跳出循环
         try:

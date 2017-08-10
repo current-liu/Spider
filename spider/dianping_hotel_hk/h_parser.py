@@ -432,7 +432,7 @@ def get_attraction_review(shopId, doc, url):
 
             price = -1
             try:
-                price_tag = star_tag.next_sibling
+                price_tag = content.find("div", class_="user-info").find("span",class_="comm-per")
                 price = int(re.sub(r'\D', "", price_tag.get_text()))
             except BaseException, e:
                 pass
@@ -478,9 +478,8 @@ def get_attraction_review(shopId, doc, url):
                     r_time = y + "-" + r_time
                 elif l == 8:
                     year_short = int(r_time.split("-")[0])
-                    if year_short < 15:
+                    if year_short < 10:
                         timeout = True
-                        # TODO 逻辑待处理
                         break
                     else:
                         r_time = century + r_time
@@ -492,18 +491,21 @@ def get_attraction_review(shopId, doc, url):
                 pass
 
             try:
-                countWrapper = misc_info.find("span", class_="col-right").find("span", class_="countWrapper")
-                heart = countWrapper.find("a").find("span", class_="heart-num")
+                heart = misc_info.find("span", class_="col-right").find("span", class_="heart-num")
                 like = -1
-                if heart != None:
+                try:
                     like = int(re.sub(r'\D', "", heart.get_text()))
+                except BaseException, e:
+                    like = 0
 
-                reply = (countWrapper.next_sibling.next_sibling.find("a"))
+                col_right = misc_info.find("span", class_="col-right").find_all("span")
+                reply = col_right[2]
                 reply_num = -1
-                if reply != None:
-                    a = reply["title total"]
-                    b = reply["total"]
-                    reply_num = int(reply.get_text())
+                try:
+                    b = reply.get_text()
+                    reply_num = int(re.sub(r'\D', "", b))
+                except BaseException, e:
+                    reply_num = 0
             except BaseException, e:
                 pass
 
@@ -537,7 +539,7 @@ def get_attraction_review(shopId, doc, url):
 
         except BaseException, e:
             print e
-    # TODO 怎么直接跳到这里了
+
     result = [shopIds, review_ids, user_ids, reviewStars, items, foods, huasuans, prices, comment_txts,
               create_times, likes, reply_nums, timeout]
     try:
@@ -620,8 +622,8 @@ def get_hotel_review(doc, url):
                 value = int(re.sub(r'\D', "", c))
                 key = re.sub(r'\d', "", c).split("(")[0].encode("utf-8")
                 list = ["房间", "位置", "服务", "卫生", "设施"]
-                if key not in list:
-                    print "key not in list!!!!!!!!!!!!!!!!!!!!!", key
+                # if key not in list:
+                #     print "key not in list!!!!!!!!!!!!!!!!!!!!!", key
 
                 rsts[key] = value
 
@@ -741,7 +743,7 @@ def get_attraction_list(doc):
     return shopIds, picUrls, tips
 
 
-# TODO
+
 def attraction_shop_parser(doc):
     try:
         soup = BeautifulSoup(doc, "lxml")

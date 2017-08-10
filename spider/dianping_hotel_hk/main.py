@@ -5,7 +5,6 @@ import url_manager
 import dao
 import urlparse
 import re
-from bs4 import BeautifulSoup
 import datetime
 import result_manager
 import time
@@ -14,7 +13,9 @@ import traceback
 
 today = datetime.date.today()
 today_str = today.strftime("%Y-%m-%d")
-fo_log = open("20170807.txt", "wb")
+today_fo = today.strftime("%Y%m%d")
+filename = today_fo+".txt"
+fo_log = open(filename, "a")
 
 
 def crawling_hotel_list():
@@ -233,15 +234,17 @@ def crawling_room():
         # dao.insert_hotel_goods(shopIds_total, roomIds_total, titles_total, bedTypes_total, breakfasts_total,
         #                        netTypes_total, cancelRules_total, prices_total)
 
+
 def get_attraction_review_on_page(shopId, page_num):
     flag = True
+    index = 1
     while (flag):
-        if page_num == 1:
+        if index == page_num:
             flag = False
 
-        review_url = "http://www.dianping.com/shop/" + str(shopId) + "/review_all_newest?pageno=" + str(page_num)
+        review_url = "http://www.dianping.com/shop/" + str(shopId) + "/review_all_latest?pageno=" + str(index)
 
-        msg14 = "小循环循环到:"
+        msg14 = "小循环循环到(total '%d'):" % page_num
         print msg14
         print review_url
         fo_log.write(msg14 + review_url)
@@ -255,12 +258,15 @@ def get_attraction_review_on_page(shopId, page_num):
             timeout = result[-1]
             if timeout:
                 flag = False
+                print "截止2010年，更早的舍弃"
         except BaseException, e:
             # TODO应该把doc打印出来,有问题但在html_download里面未被拦截的doc
             print e
-            # TODO 打成单独文件
-            fo_log.write("doc with error")
-            fo_log.write(doc)
+            # TODO打成单独文件
+            filename1 = "'%s'doc_with_error.txt" % today_fo
+            fo_log_doc_with_error = open(filename1, "a")
+            fo_log_doc_with_error.write("doc with error:'%d'" % shopId)
+            fo_log_doc_with_error.write(doc)
 
         res = ""
         if result:
@@ -274,14 +280,14 @@ def get_attraction_review_on_page(shopId, page_num):
             break
 
         else:
-            page_num -= 1
+            index += 1
 
-    msg17 = "shopId %s complete to pageno=%s" % (shopId, page_num)
+    msg17 = "shopId %s complete to pageno=%s" % (shopId, index)
     print msg17
     fo_log.write(msg17)
 
 
-def crawling_attraction_review_():
+def crawling_attraction_review():
     """评论总数从attraction_sops表中直接读取，同shopId一起传过来"""
     print "crawling_attraction_review()"
     try:
@@ -309,7 +315,6 @@ def crawling_attraction_review_():
 
         # 爬取页面上的评论
         get_attraction_review_on_page(shopId, page_num)
-
 
 
 def crawling_hotel_review_02():
@@ -753,7 +758,7 @@ if __name__ == "__main__":
     # crawling_shop()
 
     # 房间详情
-    # crawling_room()
+    crawling_room()
 
     # 酒店评论
     # try:
@@ -767,4 +772,4 @@ if __name__ == "__main__":
     # crawling_attraction_shop()
 
     # 景点评论
-    crawling_attraction_review_()
+    # crawling_attraction_review()

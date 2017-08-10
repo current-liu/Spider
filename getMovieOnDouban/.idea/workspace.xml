@@ -2,63 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb965f97-59ad-41fd-95d5-487c6bc2a174" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/data/qqwry.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/qiye2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/IPProxy.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/api/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/api/apiServer.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/config.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/db/DataStore.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/db/ISqlHelper.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/db/MongoHelper.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/db/RedisHelper.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/db/SqlHelper.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/db/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/requirements.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/spider/HtmlDownloader.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/spider/HtmlPraser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/spider/ProxyCrawl.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/spider/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/start.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/test/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/test/test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/test/testIPAddress.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/test/testIPType.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/test/testbase64.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/test/testhttpserver.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/test/testlist.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/test/testlxml.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/test/testqueue.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/test/testsql.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/util/IPAddress.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/util/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/util/compatibility.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/util/exception.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/util/logger.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/validator/Validator.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/IPProxyPool-master/validator/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/cmd/crawling_room.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/attraction/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/attraction/action.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/attraction/dao.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/attraction/h_parser.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/food/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/food/action.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/food/dao.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/food/h_parser.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/hotel/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/hotel/action.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/hotel/dao.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_list.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/hotel/h_parser.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/html_download.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/ip_proxy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/localdeals/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/localdeals/action.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/localdeals/dao.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/localdeals/h_parser.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/main.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/shopping/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/shopping/action.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/shopping/dao.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/shopping/h_parser.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/test_package/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/test_package/attraction/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/test_package/food/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/test_package/hotel/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/test_package/localdeals/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/test_package/shopping/__init__.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../myPython1/demo/2017-08-07.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler" afterPath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler2" afterPath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler2" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/a19dd8f8-6f41-47f8-b143-86881fceb14e.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/a19dd8f8-6f41-47f8-b143-86881fceb14e.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/getMovieOnDouban.iml" afterPath="$PROJECT_DIR$/.idea/getMovieOnDouban.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../myPython1/src/demo02.py" afterPath="$PROJECT_DIR$/../myPython1/src/demo02.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../myPython1/demo/demo05.py" afterPath="$PROJECT_DIR$/../myPython1/demo/demo05.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/20170807.txt" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/20170807.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/dao.py" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/dao.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/ip_proxy.py" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/ip_proxy.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/result_manager.py" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/result_manager.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/test_crawling_review.py" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/test_crawling_review.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/test_dao.py" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/test_dao.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/test_get_ips.py" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/test_get_ips.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/test_main.py" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/test_main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -68,52 +56,55 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_get_ips_py.coverage" NAME="Unittests in test_get_ips.py Coverage Results" MODIFIED="1501556373204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_room_TestGet_room_test_get_room.coverage" NAME="Unittests for test_get_room.TestGet_room.test_get_room Coverage Results" MODIFIED="1501483418719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$output.coverage" NAME="output Coverage Results" MODIFIED="1499937839219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/k11" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$demo02.coverage" NAME="demo02 Coverage Results" MODIFIED="1502243122050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../myPython1/src" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$demo05.coverage" NAME="demo05 Coverage Results" MODIFIED="1502095769057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../myPython1/demo" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$demo05.coverage" NAME="demo05 Coverage Results" MODIFIED="1502352225557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../myPython1/demo" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_review_TestGet_review_setUp.coverage" NAME="Unittests for test_get_review.TestGet_review.setUp Coverage Results" MODIFIED="1501640443877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_review_TestGet_review.coverage" NAME="Unittests for test_get_review.TestGet_review Coverage Results" MODIFIED="1501662596845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$html_parser.coverage" NAME="html_parser Coverage Results" MODIFIED="1500013326838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/k11" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_ips_TestGet_ips_test_get_ips.coverage" NAME="Unittests for test_get_ips.TestGet_ips.test_get_ips Coverage Results" MODIFIED="1501221225075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_crawling_review_TestCrawling_review_test_crawling_review.coverage" NAME="Unittests for test_crawling_review.TestCrawling_review.test_crawling_review Coverage Results" MODIFIED="1501144253626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_ips_TestGet_ips_test_ip_proxy.coverage" NAME="Unittests for test_get_ips.TestGet_ips.test_ip_proxy Coverage Results" MODIFIED="1501811851659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_dao_py.coverage" NAME="Unittests in test_dao.py Coverage Results" MODIFIED="1502068798355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$html_download.coverage" NAME="html_download Coverage Results" MODIFIED="1501642742462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_review_TestGet_review_test_get_review_page_num.coverage" NAME="Unittests for test_get_review.TestGet_review.test_get_review_page_num Coverage Results" MODIFIED="1501643295538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_h_parser_TestGet_review.coverage" NAME="Unittests for test_h_parser.TestGet_review Coverage Results" MODIFIED="1501732602598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1502241196259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/IPProxyPool-master/test" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$getjpg.coverage" NAME="getjpg Coverage Results" MODIFIED="1499910420709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../getJpg/src" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$action.coverage" NAME="action Coverage Results" MODIFIED="1502353838083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/hotel" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$output__1_.coverage" NAME="output (1) Coverage Results" MODIFIED="1500435221021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_ips_TestGet_ips_test_get_ip_from_IPProxyPool.coverage" NAME="Unittests for test_get_ips.TestGet_ips.test_get_ip_from_IPProxyPool Coverage Results" MODIFIED="1502258436978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_ips_TestGet_ips_test_load_ip.coverage" NAME="Unittests for test_get_ips.TestGet_ips.test_load_ip Coverage Results" MODIFIED="1501640951267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_get_review_py.coverage" NAME="Unittests in test_get_review.py Coverage Results" MODIFIED="1501662970586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_main_TestMain_test_get_review_on_page.coverage" NAME="Unittests for test_main.TestMain.test_get_review_on_page Coverage Results" MODIFIED="1502072623981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1500881423203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/k11" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$main.coverage" NAME="main Coverage Results" MODIFIED="1502354778137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_room_TestGet_room_test_checkindate.coverage" NAME="Unittests for test_get_room.TestGet_room.test_checkindate Coverage Results" MODIFIED="1500869840004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$config.coverage" NAME="config Coverage Results" MODIFIED="1502243143006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/IPProxyPool-master" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_room_TestGet_room.coverage" NAME="Unittests for test_get_room.TestGet_room Coverage Results" MODIFIED="1501483409023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$demo04.coverage" NAME="demo04 Coverage Results" MODIFIED="1501720917457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../myPython1/demo" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_room_TestGet_room_setUp.coverage" NAME="Unittests for test_get_room.TestGet_room.setUp Coverage Results" MODIFIED="1500887127041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_crawling_review_py.coverage" NAME="Unittests in test_crawling_review.py Coverage Results" MODIFIED="1502334619532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$get_hotel_list.coverage" NAME="get_hotel_list Coverage Results" MODIFIED="1502353984338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/hotel" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1501207004603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/tianyancha" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_review_TestGet_review_test_get_review.coverage" NAME="Unittests for test_get_review.TestGet_review.test_get_review Coverage Results" MODIFIED="1501663533429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_get_ips_py.coverage" NAME="Unittests in test_get_ips.py Coverage Results" MODIFIED="1501556373204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_room_TestGet_room_test_get_room.coverage" NAME="Unittests for test_get_room.TestGet_room.test_get_room Coverage Results" MODIFIED="1501483418719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_review_TestGet_review.coverage" NAME="Unittests for test_get_review.TestGet_review Coverage Results" MODIFIED="1501662596845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$html_parser.coverage" NAME="html_parser Coverage Results" MODIFIED="1500013326838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/k11" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_ips_TestGet_ips_test_get_ips.coverage" NAME="Unittests for test_get_ips.TestGet_ips.test_get_ips Coverage Results" MODIFIED="1501221225075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_crawling_review_TestCrawling_review_test_crawling_review.coverage" NAME="Unittests for test_crawling_review.TestCrawling_review.test_crawling_review Coverage Results" MODIFIED="1501144253626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_dao_py.coverage" NAME="Unittests in test_dao.py Coverage Results" MODIFIED="1502068798355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1502241196259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/IPProxyPool-master/test" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_ips_TestGet_ips_test_get_ip_from_IPProxyPool.coverage" NAME="Unittests for test_get_ips.TestGet_ips.test_get_ip_from_IPProxyPool Coverage Results" MODIFIED="1502258436978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$demo03.coverage" NAME="demo03 Coverage Results" MODIFIED="1501637735472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../myPython1/demo" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$main.coverage" NAME="main Coverage Results" MODIFIED="1502266343169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_downloadPage_TestDownloadPage_test_downloadPage.coverage" NAME="Unittests for test_downloadPage.TestDownloadPage.test_downloadPage Coverage Results" MODIFIED="1501641732444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$demo0.coverage" NAME="demo0 Coverage Results" MODIFIED="1500597749545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../myPython/src" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_get_last_old_review_urls_py.coverage" NAME="Unittests in test_get_last_old_review_urls.py Coverage Results" MODIFIED="1501062098573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_h_parser_py.coverage" NAME="Unittests in test_h_parser.py Coverage Results" MODIFIED="1502071010401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_h_parser_TestGet_review_test_shopParser.coverage" NAME="Unittests for test_h_parser.TestGet_review.test_shopParser Coverage Results" MODIFIED="1501732847835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Validator.coverage" NAME="Validator Coverage Results" MODIFIED="1502257090712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/IPProxyPool-master/validator" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_room_TestGet_room_test_checkindate.coverage" NAME="Unittests for test_get_room.TestGet_room.test_checkindate Coverage Results" MODIFIED="1500869840004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$crawling_room.coverage" NAME="crawling_room Coverage Results" MODIFIED="1502356088627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk/cmd" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$IPProxy.coverage" NAME="IPProxy Coverage Results" MODIFIED="1502261493687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/IPProxyPool-master" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$ip_proxy.coverage" NAME="ip_proxy Coverage Results" MODIFIED="1501210132662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$config.coverage" NAME="config Coverage Results" MODIFIED="1502243143006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/IPProxyPool-master" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_attraction_py.coverage" NAME="Unittests in test_attraction.py Coverage Results" MODIFIED="1502089652501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_room_TestGet_room.coverage" NAME="Unittests for test_get_room.TestGet_room Coverage Results" MODIFIED="1501483409023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$demo04.coverage" NAME="demo04 Coverage Results" MODIFIED="1501720917457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../myPython1/demo" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1500597763556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/k11" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_room_TestGet_room_setUp.coverage" NAME="Unittests for test_get_room.TestGet_room.setUp Coverage Results" MODIFIED="1500887127041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_downloadPage_py.coverage" NAME="Unittests in test_downloadPage.py Coverage Results" MODIFIED="1501641526882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_crawling_review_py.coverage" NAME="Unittests in test_crawling_review.py Coverage Results" MODIFIED="1502272730279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_main_py.coverage" NAME="Unittests in test_main.py Coverage Results" MODIFIED="1502074064524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_ips_TestGet_ips.coverage" NAME="Unittests for test_get_ips.TestGet_ips Coverage Results" MODIFIED="1501811500258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1501207004603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/tianyancha" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_review_TestGet_review_test_get_review.coverage" NAME="Unittests for test_get_review.TestGet_review.test_get_review Coverage Results" MODIFIED="1501663533429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_main_TestMain.coverage" NAME="Unittests for test_main.TestMain Coverage Results" MODIFIED="1502071622394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
   </component>
   <component name="DatabaseView">
@@ -148,43 +139,67 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="spider" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="k11data" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="attraction_review" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ip_proxy.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/ip_proxy.py">
+      <file leaf-file-name="html_download.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-159">
-              <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+            <state relative-caret-position="416">
+              <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="html_download.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py">
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a19dd8f8-6f41-47f8-b143-86881fceb14e/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+            <state relative-caret-position="405">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="action.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/action.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+              <folding>
+                <element signature="e#83#117#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_hotel_list.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_list.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="h_parser.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/h_parser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="crawling_room.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/cmd/crawling_room.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -193,75 +208,88 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="243" column="0" lean-forward="false" selection-start-line="243" selection-start-column="0" selection-end-line="243" selection-end-column="0" />
+            <state relative-caret-position="429">
+              <caret line="252" column="5" lean-forward="true" selection-start-line="252" selection-start-column="5" selection-end-line="252" selection-end-column="5" />
               <folding>
-                <element signature="e#15#30#0" expanded="true" />
-                <element signature="e#24048#24533#0" expanded="false" />
+                <element signature="e#384#2021#0" expanded="false" />
+                <element signature="e#424#483#0" expanded="false" />
+                <element signature="e#817#861#0" expanded="false" />
+                <element signature="e#1129#1706#0" expanded="false" />
+                <element signature="e#1892#2021#0" expanded="false" />
+                <element signature="e#2049#4833#0" expanded="false" />
+                <element signature="e#2180#2221#0" expanded="false" />
+                <element signature="e#2456#2470#0" expanded="false" />
+                <element signature="e#2714#4833#0" expanded="false" />
+                <element signature="e#3008#3134#0" expanded="false" />
+                <element signature="e#3419#3443#0" expanded="false" />
+                <element signature="e#6266#6464#0" expanded="false" />
+                <element signature="e#6550#6874#0" expanded="false" />
+                <element signature="e#6589#6640#0" expanded="false" />
+                <element signature="e#6675#6874#0" expanded="false" />
+                <element signature="e#6722#6874#0" expanded="false" />
+                <element signature="e#6771#6874#0" expanded="false" />
+                <element signature="e#6972#6998#0" expanded="false" />
+                <element signature="e#8096#8284#0" expanded="false" />
+                <element signature="e#8234#8284#0" expanded="false" />
+                <element signature="e#8704#8808#0" expanded="false" />
+                <element signature="e#8861#8974#0" expanded="false" />
+                <element signature="e#9158#9977#0" expanded="false" />
+                <element signature="e#9394#9977#0" expanded="false" />
+                <element signature="e#9411#9703#0" expanded="false" />
+                <element signature="e#9746#9799#0" expanded="false" />
+                <element signature="e#11470#11608#0" expanded="false" />
+                <element signature="e#11658#11752#0" expanded="false" />
+                <element signature="e#11805#11915#0" expanded="false" />
+                <element signature="e#12097#18359#0" expanded="false" />
+                <element signature="e#12128#12151#0" expanded="false" />
+                <element signature="e#12434#12471#0" expanded="false" />
+                <element signature="e#12539#18272#0" expanded="false" />
+                <element signature="e#12565#12576#0" expanded="false" />
+                <element signature="e#12674#18272#0" expanded="false" />
+                <element signature="e#12705#12739#0" expanded="false" />
+                <element signature="e#12981#13222#0" expanded="false" />
+                <element signature="e#13257#13397#0" expanded="false" />
+                <element signature="e#13464#13742#0" expanded="false" />
+                <element signature="e#13796#14756#0" expanded="false" />
+                <element signature="e#13937#13980#0" expanded="false" />
+                <element signature="e#14840#14851#0" expanded="false" />
+                <element signature="e#15010#17323#0" expanded="false" />
+                <element signature="e#15633#15667#0" expanded="false" />
+                <element signature="e#17018#17120#0" expanded="false" />
+                <element signature="e#17189#17323#0" expanded="false" />
+                <element signature="e#17466#17486#0" expanded="false" />
+                <element signature="e#18311#18356#0" expanded="false" />
+                <element signature="e#18359#18388#0" expanded="false" />
+                <element signature="e#18804#19227#0" expanded="false" />
+                <element signature="e#18875#18904#0" expanded="false" />
+                <element signature="e#19084#19227#0" expanded="false" />
+                <element signature="e#20148#21175#0" expanded="false" />
+                <element signature="e#21254#21482#0" expanded="false" />
+                <element signature="e#21339#21479#0" expanded="false" />
+                <element signature="e#21482#21504#0" expanded="false" />
+                <element signature="e#22762#23738#0" expanded="false" />
+                <element signature="e#22762#22778#0" expanded="false" />
+                <element signature="e#22911#22967#0" expanded="false" />
+                <element signature="e#23001#23728#0" expanded="false" />
+                <element signature="e#23366#23563#0" expanded="false" />
+                <element signature="e#23528#23563#0" expanded="false" />
+                <element signature="e#23778#24120#0" expanded="false" />
+                <element signature="e#23968#24120#0" expanded="false" />
+                <element signature="e#24162#24788#0" expanded="false" />
+                <element signature="e#24303#24788#0" expanded="false" />
+                <element signature="e#24523#24788#0" expanded="false" />
+                <element signature="e#24544#24670#0" expanded="false" />
+                <element signature="e#24724#24788#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_crawling_review.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/test_crawling_review.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="case.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files/Python27/Lib/unittest/case.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="334" column="84" lean-forward="true" selection-start-line="334" selection-start-column="84" selection-end-line="334" selection-end-column="84" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="result_manager.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/result_manager.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="77" column="43" lean-forward="false" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_dao.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/test_dao.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="20" column="58" lean-forward="false" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
-              <folding>
-                <element signature="e#83#93#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files/Python27/Lib/site-packages/pytz/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="33" column="50" lean-forward="false" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="h_parser.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="h_parser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="482" column="36" lean-forward="false" selection-start-line="482" selection-start-column="36" selection-end-line="482" selection-end-column="36" />
+            <state relative-caret-position="321">
+              <caret line="325" column="4" lean-forward="true" selection-start-line="325" selection-start-column="4" selection-end-line="325" selection-end-column="37" />
               <folding>
                 <element signature="e#16#31#0" expanded="true" />
                 <element signature="e#253#5069#0" expanded="false" />
@@ -288,60 +316,24 @@
                 <element signature="e#9973#10579#0" expanded="false" />
                 <element signature="e#10238#10259#0" expanded="false" />
                 <element signature="e#10677#10709#0" expanded="false" />
-                <element signature="e#11486#12220#0" expanded="false" />
                 <element signature="e#11537#11637#0" expanded="false" />
-                <element signature="e#11675#12055#0" expanded="false" />
                 <element signature="e#12074#12220#0" expanded="false" />
                 <element signature="e#12262#12902#0" expanded="false" />
                 <element signature="e#12275#12353#0" expanded="false" />
                 <element signature="e#12391#12518#0" expanded="false" />
                 <element signature="e#12597#12800#0" expanded="false" />
-                <element signature="e#17775#18200#0" expanded="false" />
-                <element signature="e#20144#23196#0" expanded="false" />
-                <element signature="e#21096#21432#0" expanded="false" />
-                <element signature="e#23243#23674#0" expanded="false" />
-                <marker date="1502272829919" expanded="false" signature="19136:19272" ph="..." />
-                <marker date="1502272829919" expanded="false" signature="19277:19355" ph="..." />
-                <marker date="1502272829919" expanded="false" signature="19599:19681" ph="..." />
-                <marker date="1502272829919" expanded="false" signature="20536:20588" ph="..." />
-                <marker date="1502272829919" expanded="false" signature="24500:24784" ph="..." />
-                <marker date="1502272829919" expanded="false" signature="24816:25425" ph="..." />
-                <marker date="1502272829919" expanded="false" signature="24944:25004" ph="..." />
-                <marker date="1502272829919" expanded="false" signature="25133:25390" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dao.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/dao.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
-              <caret line="388" column="33" lean-forward="true" selection-start-line="388" selection-start-column="33" selection-end-line="388" selection-end-column="33" />
-              <folding>
-                <marker date="1502268445836" expanded="true" signature="431:640" ph="INSERT INTO hotel_shop_list... " />
-                <marker date="1502268445836" expanded="true" signature="882:932" ph="SELECT id FR... hotel_shop_list" />
-                <marker date="1502268445836" expanded="true" signature="1208:1350" ph="SELECT id FR... hotel_shop_list" />
-                <marker date="1502268445836" expanded="true" signature="1296:1349" ph="SELECT shopI... hotel_room" />
-                <marker date="1502268445836" expanded="true" signature="1603:1656" ph="SELECT shopI... hotel_shops" />
-                <marker date="1502268445836" expanded="true" signature="1603:1658" ph="SELECT shopI... " />
-                <marker date="1502268445836" expanded="true" signature="1925:1999" ph="SELECT shopI... hotel_shops" />
-                <marker date="1502268445836" expanded="true" signature="2302:2542" ph="INSERT INTO hotel_shops... " />
-                <marker date="1502268445836" expanded="true" signature="2399:2542" ph="SELECT id,na... hotel_shop_list" />
-                <marker date="1502268445836" expanded="true" signature="2511:2541" ph="SELECT shopI... hotel_shops" />
-                <marker date="1502268445836" expanded="true" signature="2904:3093" ph="UPDATE hotel... " />
-                <marker date="1502268445836" expanded="true" signature="4248:4445" ph="INSERT INTO hotel_room... " />
-                <marker date="1502268445836" expanded="true" signature="5302:5536" ph="INSERT INTO hotel_review... " />
-                <marker date="1502268445836" expanded="true" signature="5709:5920" ph="INSERT INTO hotel_review... " />
-                <marker date="1502268445836" expanded="true" signature="5942:6192" ph="INSERT INTO hotel_review... " />
-                <marker date="1502268445836" expanded="true" signature="6938:7007" ph="INSERT INTO hotel_new_review_url... " />
-                <marker date="1502268445836" expanded="true" signature="7780:7822" ph="SELECT revie... hotel_new_review_url" />
-                <marker date="1502268445836" expanded="true" signature="8279:8366" ph="INSERT INTO ip... " />
-                <marker date="1502268445836" expanded="true" signature="8583:8661" ph="SELECT Ipadd... ip" />
-                <marker date="1502268445836" expanded="true" signature="8965:9055" ph="INSERT INTO attraction_shops... " />
-                <marker date="1502268445836" expanded="true" signature="9345:9549" ph="UPDATE attra... " />
-                <marker date="1502268445836" expanded="true" signature="10192:10247" ph="SELECT shopI... attraction_shops" />
-                <marker date="1502268445836" expanded="true" signature="11038:11278" ph="INSERT INTO attraction_review... " />
+                <element signature="e#17827#18252#0" expanded="false" />
+                <element signature="e#19177#19304#0" expanded="false" />
+                <element signature="e#19309#19339#0" expanded="false" />
+                <element signature="e#19640#19713#0" expanded="false" />
+                <element signature="e#20176#23232#0" expanded="false" />
+                <element signature="e#20585#20620#0" expanded="false" />
+                <element signature="e#21128#21468#0" expanded="false" />
+                <element signature="e#23279#23710#0" expanded="false" />
+                <element signature="e#24541#24820#0" expanded="false" />
+                <element signature="e#24857#25461#0" expanded="false" />
+                <element signature="e#24989#25040#0" expanded="false" />
+                <element signature="e#25178#25426#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -359,18 +351,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>crawling_shop()</find>
-      <find>get_review_on_page</find>
-      <find>today_str</find>
-      <find>reply</find>
-      <find>replace</find>
-      <find>split</find>
-      <find>星级</find>
-      <find>星</find>
-      <find>UPDATE</find>
-      <find>D</find>
-      <find>random.uniform</find>
-      <find>DB_CONNECT_STRING</find>
       <find>price</find>
       <find>i</find>
       <find>in</find>
@@ -389,6 +369,18 @@
       <find>result_manager</find>
       <find>rsts</find>
       <find>crawling_hotel_review_02()</find>
+      <find>D</find>
+      <find>fo_log</find>
+      <find>fo</find>
+      <find>doc</find>
+      <find>page_num</find>
+      <find>!!!!!</find>
+      <find>crawling_attraction_review</find>
+      <find>print</find>
+      <find>%d</find>
+      <find>已</find>
+      <find>小循环循环到</find>
+      <find>fo_log_</find>
     </findStrings>
     <replaceStrings>
       <replace>+=</replace>
@@ -425,15 +417,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lagou/main.py" />
-        <option value="$PROJECT_DIR$/../spider/hldptpark/li.html" />
-        <option value="$PROJECT_DIR$/../spider/k11/download.py" />
-        <option value="$PROJECT_DIR$/../spider/k11/parser.py" />
-        <option value="$PROJECT_DIR$/../spider/k11/soup.html" />
-        <option value="$PROJECT_DIR$/../spider/k11/html_download.py" />
-        <option value="$PROJECT_DIR$/../spider/hldptpark/main.py" />
-        <option value="$PROJECT_DIR$/../spider/k11/url_manager.py" />
-        <option value="$PROJECT_DIR$/../spider/k11/html_parser.py" />
         <option value="$PROJECT_DIR$/../spider/k11/main.py" />
         <option value="C:/Program Files/Python27/Lib/site-packages/pymysql/connections.py" />
         <option value="$PROJECT_DIR$/../spider/k11/output.py" />
@@ -459,22 +442,32 @@
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/test_h_parser.py" />
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/test_main.py" />
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/test_attraction.py" />
-        <option value="$PROJECT_DIR$/../myPython1/demo/demo05.py" />
         <option value="$PROJECT_DIR$/../spider/IPProxyPool-master/util/exception.py" />
         <option value="$PROJECT_DIR$/../spider/IPProxyPool-master/spider/HtmlDownloader.py" />
         <option value="$PROJECT_DIR$/../myPython1/src/demo02.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a19dd8f8-6f41-47f8-b143-86881fceb14e/console.sql" />
         <option value="$PROJECT_DIR$/../spider/IPProxyPool-master/db/DataStore.py" />
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/test_get_ips.py" />
         <option value="$PROJECT_DIR$/../spider/IPProxyPool-master/config.py" />
-        <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py" />
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/test_dao.py" />
-        <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/ip_proxy.py" />
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/result_manager.py" />
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/dao.py" />
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/test_crawling_review.py" />
-        <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py" />
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py" />
+        <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/ip_proxy.py" />
+        <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/20170810.txt" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/main.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/action.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/dao.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/h_parser.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/html_download.py" />
+        <option value="$PROJECT_DIR$/../myPython1/demo/demo05.py" />
+        <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/hotel/action.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_list.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a19dd8f8-6f41-47f8-b143-86881fceb14e/console.sql" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/hotel/h_parser.py" />
+        <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/cmd/crawling_room.py" />
+        <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py" />
       </list>
     </option>
   </component>
@@ -525,7 +518,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -565,6 +557,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -577,8 +570,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Liuchao\PycharmProjects\pythonproject\spider\tianyancha" />
-      <recent name="D:\Liuchao\PycharmProjects\pythonproject\spider\dianping_hotel_hk" />
+      <recent name="D:\Liuchao\PycharmProjects\pythonproject\spider\mafengwo\shopping" />
+      <recent name="D:\Liuchao\PycharmProjects\pythonproject\spider\mafengwo\localdeals" />
+      <recent name="D:\Liuchao\PycharmProjects\pythonproject\spider\mafengwo\hotel" />
+      <recent name="D:\Liuchao\PycharmProjects\pythonproject\spider\mafengwo\food" />
+      <recent name="D:\Liuchao\PycharmProjects\pythonproject\spider\mafengwo\attraction" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -593,7 +589,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_crawling_review.py">
+  <component name="RunManager" selected="Python.crawling_room">
     <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -613,74 +609,80 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="IPProxy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="demo05" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../spider/IPProxyPool-master" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../myPython1/demo" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IPProxyPool-master" />
+      <module name="myPython1" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../spider/IPProxyPool-master/IPProxy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../myPython1/demo/demo05.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests for test_get_ips.TestGet_ips.test_get_ip_from_IPProxyPool" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="getMovieOnDouban" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_get_ips.TestGet_ips.test_get_ip_from_IPProxyPool&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Validator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="action" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../spider/IPProxyPool-master/validator" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../spider/mafengwo/hotel" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="IPProxyPool-master" />
+      <module name="spider" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../spider/IPProxyPool-master/validator/Validator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../spider/mafengwo/hotel/action.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in test_crawling_review.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="get_hotel_list" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../spider/mafengwo/hotel" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="getMovieOnDouban" />
+      <module name="spider" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/../spider/dianping_hotel_hk/test_crawling_review.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_list.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="crawling_room" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../spider/dianping_hotel_hk/cmd" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="spider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../spider/dianping_hotel_hk/cmd/crawling_room.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -833,18 +835,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.main" />
-      <item index="1" class="java.lang.String" itemvalue="Python.IPProxy" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test_get_ips.TestGet_ips.test_get_ip_from_IPProxyPool" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Validator" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test_crawling_review.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python.demo05" />
+      <item index="2" class="java.lang.String" itemvalue="Python.action" />
+      <item index="3" class="java.lang.String" itemvalue="Python.get_hotel_list" />
+      <item index="4" class="java.lang.String" itemvalue="Python.crawling_room" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_crawling_review.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python.crawling_room" />
         <item index="1" class="java.lang.String" itemvalue="Python.main" />
-        <item index="2" class="java.lang.String" itemvalue="Python.IPProxy" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test_get_ips.TestGet_ips.test_get_ip_from_IPProxyPool" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Validator" />
+        <item index="2" class="java.lang.String" itemvalue="Python.get_hotel_list" />
+        <item index="3" class="java.lang.String" itemvalue="Python.action" />
+        <item index="4" class="java.lang.String" itemvalue="Python.demo05" />
       </list>
     </recent_temporary>
   </component>
@@ -865,19 +867,19 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_get_ips_TestGet_ips_test_get_ip_from_IPProxyPool - 2017.08.09 at 13h 59m 18s.xml">
-      <configuration name="Unittests for test_get_ips.TestGet_ips.test_get_ip_from_IPProxyPool" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_get_ips_TestGet_ips_test_get_ip_from_IPProxyPool - 2017.08.09 at 14h 00m 20s.xml">
-      <configuration name="Unittests for test_get_ips.TestGet_ips.test_get_ip_from_IPProxyPool" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_attraction_py - 2017.08.07 at 15h 08m 31s.xml">
-      <configuration name="Unittests in test_attraction.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_crawling_review_py - 2017.08.09 at 17h 02m 09s.xml">
+    <history-entry file="Unittests_in_test_crawling_review_py - 2017.08.09 at 17h 50m 17s.xml">
       <configuration name="Unittests in test_crawling_review.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_crawling_review_py - 2017.08.09 at 17h 50m 17s.xml">
+    <history-entry file="Unittests_in_test_crawling_review_py - 2017.08.10 at 09h 03m 54s.xml">
+      <configuration name="Unittests in test_crawling_review.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_crawling_review_py - 2017.08.10 at 09h 06m 58s.xml">
+      <configuration name="Unittests in test_crawling_review.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_crawling_review_py - 2017.08.10 at 09h 07m 21s.xml">
+      <configuration name="Unittests in test_crawling_review.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_crawling_review_py - 2017.08.10 at 09h 08m 40s.xml">
       <configuration name="Unittests in test_crawling_review.py" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_test_main_py - 2017.08.07 at 10h 04m 30s.xml">
@@ -909,25 +911,25 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1433902" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5064935" sideWeight="0.5053305" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5064935" sideWeight="0.4946695" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2196162" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6785714" sideWeight="0.4946695" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18722944" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6212121" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14232409" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09488273" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18939394" sideWeight="0.49573562" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18722944" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2943723" sideWeight="0.49573562" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3073593" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32683983" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1052,7 +1054,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>66</line>
+          <line>67</line>
           <option name="timeStamp" value="262" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1062,12 +1064,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>54</line>
+          <line>55</line>
           <option name="timeStamp" value="264" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>50</line>
+          <line>51</line>
           <option name="timeStamp" value="265" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1137,12 +1139,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>77</line>
+          <line>78</line>
           <option name="timeStamp" value="279" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>79</line>
+          <line>80</line>
           <option name="timeStamp" value="280" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1157,12 +1159,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>219</line>
+          <line>220</line>
           <option name="timeStamp" value="291" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>208</line>
+          <line>209</line>
           <option name="timeStamp" value="294" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
@@ -1182,27 +1184,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>213</line>
+          <line>214</line>
           <option name="timeStamp" value="301" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>217</line>
+          <line>218</line>
           <option name="timeStamp" value="302" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>629</line>
+          <line>634</line>
           <option name="timeStamp" value="304" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>397</line>
+          <line>402</line>
           <option name="timeStamp" value="305" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>670</line>
+          <line>675</line>
           <option name="timeStamp" value="306" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1212,7 +1214,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>545</line>
+          <line>550</line>
           <option name="timeStamp" value="316" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1262,32 +1264,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>442</line>
+          <line>447</line>
           <option name="timeStamp" value="332" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>453</line>
+          <line>458</line>
           <option name="timeStamp" value="333" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>463</line>
+          <line>468</line>
           <option name="timeStamp" value="334" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>469</line>
+          <line>474</line>
           <option name="timeStamp" value="335" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>448</line>
+          <line>453</line>
           <option name="timeStamp" value="336" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>441</line>
+          <line>446</line>
           <option name="timeStamp" value="337" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1307,12 +1309,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>482</line>
+          <line>487</line>
           <option name="timeStamp" value="343" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>524</line>
+          <line>529</line>
           <option name="timeStamp" value="344" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1332,12 +1334,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>491</line>
+          <line>496</line>
           <option name="timeStamp" value="349" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>509</line>
+          <line>514</line>
           <option name="timeStamp" value="350" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1357,7 +1359,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py</url>
-          <line>83</line>
+          <line>88</line>
           <option name="timeStamp" value="361" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1372,7 +1374,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>105</line>
+          <line>106</line>
           <option name="timeStamp" value="374" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1387,7 +1389,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>704</line>
+          <line>706</line>
           <option name="timeStamp" value="377" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1397,17 +1399,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>729</line>
+          <line>734</line>
           <option name="timeStamp" value="380" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>736</line>
+          <line>741</line>
           <option name="timeStamp" value="381" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>740</line>
+          <line>742</line>
           <option name="timeStamp" value="384" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1417,47 +1419,47 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>716</line>
+          <line>718</line>
           <option name="timeStamp" value="386" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>683</line>
+          <line>688</line>
           <option name="timeStamp" value="390" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>829</line>
+          <line>831</line>
           <option name="timeStamp" value="392" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>828</line>
+          <line>830</line>
           <option name="timeStamp" value="393" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>771</line>
+          <line>773</line>
           <option name="timeStamp" value="395" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>697</line>
+          <line>702</line>
           <option name="timeStamp" value="396" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>701</line>
+          <line>706</line>
           <option name="timeStamp" value="397" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>688</line>
+          <line>693</line>
           <option name="timeStamp" value="398" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>696</line>
+          <line>701</line>
           <option name="timeStamp" value="399" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1467,12 +1469,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>593</line>
+          <line>595</line>
           <option name="timeStamp" value="406" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>288</line>
+          <line>294</line>
           <option name="timeStamp" value="407" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1482,17 +1484,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>542</line>
+          <line>544</line>
           <option name="timeStamp" value="413" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>236</line>
+          <line>238</line>
           <option name="timeStamp" value="414" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
-          <line>243</line>
+          <line>246</line>
           <option name="timeStamp" value="415" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1511,79 +1513,44 @@
           <option name="timeStamp" value="418" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>432</line>
-          <option name="timeStamp" value="421" />
+          <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py</url>
+          <line>92</line>
+          <option name="timeStamp" value="441" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>537</line>
-          <option name="timeStamp" value="423" />
+          <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py</url>
+          <line>255</line>
+          <option name="timeStamp" value="445" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>509</line>
-          <option name="timeStamp" value="424" />
+          <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/dao.py</url>
+          <line>377</line>
+          <option name="timeStamp" value="448" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>502</line>
-          <option name="timeStamp" value="428" />
+          <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/dao.py</url>
+          <line>378</line>
+          <option name="timeStamp" value="449" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>429</line>
-          <option name="timeStamp" value="429" />
+          <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/dao.py</url>
+          <line>364</line>
+          <option name="timeStamp" value="461" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>436</line>
-          <option name="timeStamp" value="430" />
+          <url>file://$PROJECT_DIR$/../spider/mafengwo/hotel/action.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="462" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>493</line>
-          <option name="timeStamp" value="431" />
+          <url>file://$PROJECT_DIR$/../spider/mafengwo/hotel/action.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="463" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>490</line>
-          <option name="timeStamp" value="432" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>462</line>
-          <option name="timeStamp" value="433" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>444</line>
-          <option name="timeStamp" value="434" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>466</line>
-          <option name="timeStamp" value="435" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>506</line>
-          <option name="timeStamp" value="436" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>521</line>
-          <option name="timeStamp" value="437" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>480</line>
-          <option name="timeStamp" value="438" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py</url>
-          <line>481</line>
-          <option name="timeStamp" value="439" />
+          <url>file://$PROJECT_DIR$/../spider/mafengwo/hotel/action.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="464" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1596,7 +1563,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="440" />
+      <option name="time" value="465" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="tests">
@@ -1609,6 +1576,7 @@
         <watch expression="result_manager.results" language="Python" />
         <watch expression="__py_debug_temp_var_166708193" />
         <watch expression="rsts" />
+        <watch expression="items" />
       </configuration>
       <configuration name="PythonConfigurationType">
         <watch expression="doc" />
@@ -1618,199 +1586,10 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../spider/IPProxyPool-master/spider/ProxyCrawl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/IPProxyPool-master/util/exception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="43" lean-forward="false" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/IPProxyPool-master/test/testsql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/IPProxyPool-master/spider/HtmlDownloader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="42" column="31" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-          <folding>
-            <element signature="e#16#29#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python27/Lib/site-packages/requests/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16875">
-          <caret line="657" column="8" lean-forward="false" selection-start-line="657" selection-start-column="8" selection-end-line="657" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/IPProxyPool-master/test/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python27/Lib/site-packages/redis/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="394" column="18" lean-forward="false" selection-start-line="394" selection-start-column="18" selection-end-line="394" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python27/Lib/ntpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="212" column="4" lean-forward="false" selection-start-line="212" selection-start-column="4" selection-end-line="212" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python27/Lib/site-packages/sqlalchemy/ext/declarative/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25">
-          <caret line="248" column="4" lean-forward="false" selection-start-line="248" selection-start-column="4" selection-end-line="248" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python27/Lib/site-packages/sqlalchemy/sql/schema.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2212">
-          <caret line="3822" column="8" lean-forward="false" selection-start-line="3822" selection-start-column="8" selection-end-line="3822" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/IPProxyPool-master/db/SqlHelper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="46" column="33" lean-forward="false" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../getJpg/src/getjpg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../myPython1/demo/demo01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../myPython1/demo/demo02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#193#211#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../myPython/src/demo91.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../myPython/src/demo92.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../myPython/src/demo93.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../myPython/src/demo94.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../myPython/src/demo95.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../myPython/src/demo9.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../myPython/src/demo8.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../myPython/src/demo7.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../myPython/src/demo6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../myPython/src/demo5.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1818,7 +1597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1826,7 +1604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1834,7 +1611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1842,7 +1618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1850,7 +1625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1858,7 +1632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1811">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1866,31 +1639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding>
-            <marker date="1502243122004" expanded="true" signature="323:392" ph="INSERT INTO emp... " />
-            <marker date="1502243122004" expanded="true" signature="406:423" ph="SELECT * FRO... emp" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a19dd8f8-6f41-47f8-b143-86881fceb14e/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/cfe404e8/a19dd8f8-6f41-47f8-b143-86881fceb14e/k11data.attraction_shops">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1898,7 +1646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1906,9 +1653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-          <folding>
-            <element signature="e#15#25#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1924,7 +1668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1269">
           <caret line="61" column="19" lean-forward="true" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1932,7 +1675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="137" column="33" lean-forward="false" selection-start-line="137" selection-start-column="33" selection-end-line="137" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1950,7 +1692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1958,19 +1699,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="196" column="26" lean-forward="false" selection-start-line="196" selection-start-column="26" selection-end-line="196" selection-end-column="26" />
-          <folding>
-            <element signature="e#297#4007#0" expanded="false" />
-            <element signature="e#303#592#0" expanded="false" />
-            <element signature="e#5170#9426#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Program Files/Python27/Lib/site-packages/pytz/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="675">
           <caret line="33" column="50" lean-forward="false" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1979,22 +1714,14 @@
         <state relative-caret-position="540">
           <caret line="20" column="58" lean-forward="false" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
           <folding>
-            <element signature="e#83#93#0" expanded="true" />
+            <element signature="e#83#93#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/ip_proxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-159">
-          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/result_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
+        <state relative-caret-position="2079">
           <caret line="77" column="43" lean-forward="false" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
           <folding />
         </state>
@@ -2002,77 +1729,219 @@
     </entry>
     <entry file="file://C:/Program Files/Python27/Lib/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="334" column="84" lean-forward="true" selection-start-line="334" selection-start-column="84" selection-end-line="334" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/dao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="388" column="33" lean-forward="true" selection-start-line="388" selection-start-column="33" selection-end-line="388" selection-end-column="33" />
-          <folding>
-            <marker date="1502268445836" expanded="true" signature="431:640" ph="INSERT INTO hotel_shop_list... " />
-            <marker date="1502268445836" expanded="true" signature="882:932" ph="SELECT id FR... hotel_shop_list" />
-            <marker date="1502268445836" expanded="true" signature="1208:1350" ph="SELECT id FR... hotel_shop_list" />
-            <marker date="1502268445836" expanded="true" signature="1296:1349" ph="SELECT shopI... hotel_room" />
-            <marker date="1502268445836" expanded="true" signature="1603:1656" ph="SELECT shopI... hotel_shops" />
-            <marker date="1502268445836" expanded="true" signature="1603:1658" ph="SELECT shopI... " />
-            <marker date="1502268445836" expanded="true" signature="1925:1999" ph="SELECT shopI... hotel_shops" />
-            <marker date="1502268445836" expanded="true" signature="2302:2542" ph="INSERT INTO hotel_shops... " />
-            <marker date="1502268445836" expanded="true" signature="2399:2542" ph="SELECT id,na... hotel_shop_list" />
-            <marker date="1502268445836" expanded="true" signature="2511:2541" ph="SELECT shopI... hotel_shops" />
-            <marker date="1502268445836" expanded="true" signature="2904:3093" ph="UPDATE hotel... " />
-            <marker date="1502268445836" expanded="true" signature="4248:4445" ph="INSERT INTO hotel_room... " />
-            <marker date="1502268445836" expanded="true" signature="5302:5536" ph="INSERT INTO hotel_review... " />
-            <marker date="1502268445836" expanded="true" signature="5709:5920" ph="INSERT INTO hotel_review... " />
-            <marker date="1502268445836" expanded="true" signature="5942:6192" ph="INSERT INTO hotel_review... " />
-            <marker date="1502268445836" expanded="true" signature="6938:7007" ph="INSERT INTO hotel_new_review_url... " />
-            <marker date="1502268445836" expanded="true" signature="7780:7822" ph="SELECT revie... hotel_new_review_url" />
-            <marker date="1502268445836" expanded="true" signature="8279:8366" ph="INSERT INTO ip... " />
-            <marker date="1502268445836" expanded="true" signature="8583:8661" ph="SELECT Ipadd... ip" />
-            <marker date="1502268445836" expanded="true" signature="8965:9055" ph="INSERT INTO attraction_shops... " />
-            <marker date="1502268445836" expanded="true" signature="9345:9549" ph="UPDATE attra... " />
-            <marker date="1502268445836" expanded="true" signature="10192:10247" ph="SELECT shopI... attraction_shops" />
-            <marker date="1502268445836" expanded="true" signature="11038:11278" ph="INSERT INTO attraction_review... " />
-          </folding>
+        <state relative-caret-position="8667">
+          <caret line="334" column="84" lean-forward="false" selection-start-line="334" selection-start-column="84" selection-end-line="334" selection-end-column="84" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/test_crawling_review.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
-          <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+          <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../myPython1/demo/2017-08-10.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/'2017-08-10'.txt" />
+    <entry file="file://$PROJECT_DIR$/../myPython1/demo/20170810.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/dao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <marker date="1502332593452" expanded="true" signature="431:640" ph="INSERT INTO hotel_shop_list... " />
+            <marker date="1502332593452" expanded="true" signature="882:932" ph="SELECT id FR... hotel_shop_list" />
+            <marker date="1502332593452" expanded="true" signature="1208:1350" ph="SELECT id FR... hotel_shop_list" />
+            <marker date="1502332593452" expanded="true" signature="1296:1349" ph="SELECT shopI... hotel_room" />
+            <marker date="1502332593452" expanded="true" signature="1603:1656" ph="SELECT shopI... hotel_shops" />
+            <marker date="1502332593452" expanded="true" signature="1603:1658" ph="SELECT shopI... " />
+            <marker date="1502332593452" expanded="true" signature="1925:1999" ph="SELECT shopI... hotel_shops" />
+            <marker date="1502332593452" expanded="true" signature="2302:2542" ph="INSERT INTO hotel_shops... " />
+            <marker date="1502332593452" expanded="true" signature="2399:2542" ph="SELECT id,na... hotel_shop_list" />
+            <marker date="1502332593452" expanded="true" signature="2511:2541" ph="SELECT shopI... hotel_shops" />
+            <marker date="1502332593452" expanded="true" signature="2904:3093" ph="UPDATE hotel... " />
+            <marker date="1502332593452" expanded="true" signature="4248:4445" ph="INSERT INTO hotel_room... " />
+            <marker date="1502332593452" expanded="true" signature="5302:5536" ph="INSERT INTO hotel_review... " />
+            <marker date="1502332593452" expanded="true" signature="5709:5920" ph="INSERT INTO hotel_review... " />
+            <marker date="1502332593452" expanded="true" signature="5942:6192" ph="INSERT INTO hotel_review... " />
+            <marker date="1502332593452" expanded="true" signature="6938:7007" ph="INSERT INTO hotel_new_review_url... " />
+            <marker date="1502332593452" expanded="true" signature="7780:7822" ph="SELECT revie... hotel_new_review_url" />
+            <marker date="1502332593452" expanded="true" signature="8279:8366" ph="INSERT INTO ip... " />
+            <marker date="1502332593452" expanded="true" signature="8583:8661" ph="SELECT Ipadd... ip" />
+            <marker date="1502332593452" expanded="true" signature="8965:9055" ph="INSERT INTO attraction_shops... " />
+            <marker date="1502332593452" expanded="true" signature="9345:9549" ph="UPDATE attra... " />
+            <marker date="1502332593452" expanded="true" signature="10192:10247" ph="SELECT shopI... attraction_shops" />
+            <marker date="1502332593452" expanded="true" signature="11038:11273" ph="INSERT INTO attraction_review... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py">
+    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/ip_proxy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="243" column="0" lean-forward="false" selection-start-line="243" selection-start-column="0" selection-end-line="243" selection-end-column="0" />
+        <state relative-caret-position="162">
+          <caret line="9" column="59" lean-forward="true" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/action.py" />
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/dao.py" />
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/html_download.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="60" column="19" lean-forward="false" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
           <folding>
-            <element signature="e#15#30#0" expanded="true" />
-            <element signature="e#24048#24533#0" expanded="false" />
+            <element signature="e#15#30#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/h_parser.py" />
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/attraction/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/attraction/action.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/food/action.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/localdeals/action.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/20170810.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/'20170810'doc_with_error.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="999">
+          <caret line="37" column="46" lean-forward="false" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../myPython1/demo/20170810.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../myPython1/demo/demo05.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding>
+            <element signature="e#83#93#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/a19dd8f8-6f41-47f8-b143-86881fceb14e/k11data.attraction_review">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/a19dd8f8-6f41-47f8-b143-86881fceb14e/k11data.attraction_shops">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/20170810.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a19dd8f8-6f41-47f8-b143-86881fceb14e/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/shopping/action.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="482" column="36" lean-forward="false" selection-start-line="482" selection-start-column="36" selection-end-line="482" selection-end-column="36" />
+        <state relative-caret-position="321">
+          <caret line="325" column="4" lean-forward="true" selection-start-line="325" selection-start-column="4" selection-end-line="325" selection-end-column="37" />
           <folding>
             <element signature="e#16#31#0" expanded="true" />
             <element signature="e#253#5069#0" expanded="false" />
@@ -2099,27 +1968,137 @@
             <element signature="e#9973#10579#0" expanded="false" />
             <element signature="e#10238#10259#0" expanded="false" />
             <element signature="e#10677#10709#0" expanded="false" />
-            <element signature="e#11486#12220#0" expanded="false" />
             <element signature="e#11537#11637#0" expanded="false" />
-            <element signature="e#11675#12055#0" expanded="false" />
             <element signature="e#12074#12220#0" expanded="false" />
             <element signature="e#12262#12902#0" expanded="false" />
             <element signature="e#12275#12353#0" expanded="false" />
             <element signature="e#12391#12518#0" expanded="false" />
             <element signature="e#12597#12800#0" expanded="false" />
-            <element signature="e#17775#18200#0" expanded="false" />
-            <element signature="e#20144#23196#0" expanded="false" />
-            <element signature="e#21096#21432#0" expanded="false" />
-            <element signature="e#23243#23674#0" expanded="false" />
-            <marker date="1502272829919" expanded="false" signature="19136:19272" ph="..." />
-            <marker date="1502272829919" expanded="false" signature="19277:19355" ph="..." />
-            <marker date="1502272829919" expanded="false" signature="19599:19681" ph="..." />
-            <marker date="1502272829919" expanded="false" signature="20536:20588" ph="..." />
-            <marker date="1502272829919" expanded="false" signature="24500:24784" ph="..." />
-            <marker date="1502272829919" expanded="false" signature="24816:25425" ph="..." />
-            <marker date="1502272829919" expanded="false" signature="24944:25004" ph="..." />
-            <marker date="1502272829919" expanded="false" signature="25133:25390" ph="..." />
+            <element signature="e#17827#18252#0" expanded="false" />
+            <element signature="e#19177#19304#0" expanded="false" />
+            <element signature="e#19309#19339#0" expanded="false" />
+            <element signature="e#19640#19713#0" expanded="false" />
+            <element signature="e#20176#23232#0" expanded="false" />
+            <element signature="e#20585#20620#0" expanded="false" />
+            <element signature="e#21128#21468#0" expanded="false" />
+            <element signature="e#23279#23710#0" expanded="false" />
+            <element signature="e#24541#24820#0" expanded="false" />
+            <element signature="e#24857#25461#0" expanded="false" />
+            <element signature="e#24989#25040#0" expanded="false" />
+            <element signature="e#25178#25426#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/h_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/action.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <element signature="e#83#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/cmd/crawling_room.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="252" column="5" lean-forward="true" selection-start-line="252" selection-start-column="5" selection-end-line="252" selection-end-column="5" />
+          <folding>
+            <element signature="e#384#2021#0" expanded="false" />
+            <element signature="e#424#483#0" expanded="false" />
+            <element signature="e#817#861#0" expanded="false" />
+            <element signature="e#1129#1706#0" expanded="false" />
+            <element signature="e#1892#2021#0" expanded="false" />
+            <element signature="e#2049#4833#0" expanded="false" />
+            <element signature="e#2180#2221#0" expanded="false" />
+            <element signature="e#2456#2470#0" expanded="false" />
+            <element signature="e#2714#4833#0" expanded="false" />
+            <element signature="e#3008#3134#0" expanded="false" />
+            <element signature="e#3419#3443#0" expanded="false" />
+            <element signature="e#6266#6464#0" expanded="false" />
+            <element signature="e#6550#6874#0" expanded="false" />
+            <element signature="e#6589#6640#0" expanded="false" />
+            <element signature="e#6675#6874#0" expanded="false" />
+            <element signature="e#6722#6874#0" expanded="false" />
+            <element signature="e#6771#6874#0" expanded="false" />
+            <element signature="e#6972#6998#0" expanded="false" />
+            <element signature="e#8096#8284#0" expanded="false" />
+            <element signature="e#8234#8284#0" expanded="false" />
+            <element signature="e#8704#8808#0" expanded="false" />
+            <element signature="e#8861#8974#0" expanded="false" />
+            <element signature="e#9158#9977#0" expanded="false" />
+            <element signature="e#9394#9977#0" expanded="false" />
+            <element signature="e#9411#9703#0" expanded="false" />
+            <element signature="e#9746#9799#0" expanded="false" />
+            <element signature="e#11470#11608#0" expanded="false" />
+            <element signature="e#11658#11752#0" expanded="false" />
+            <element signature="e#11805#11915#0" expanded="false" />
+            <element signature="e#12097#18359#0" expanded="false" />
+            <element signature="e#12128#12151#0" expanded="false" />
+            <element signature="e#12434#12471#0" expanded="false" />
+            <element signature="e#12539#18272#0" expanded="false" />
+            <element signature="e#12565#12576#0" expanded="false" />
+            <element signature="e#12674#18272#0" expanded="false" />
+            <element signature="e#12705#12739#0" expanded="false" />
+            <element signature="e#12981#13222#0" expanded="false" />
+            <element signature="e#13257#13397#0" expanded="false" />
+            <element signature="e#13464#13742#0" expanded="false" />
+            <element signature="e#13796#14756#0" expanded="false" />
+            <element signature="e#13937#13980#0" expanded="false" />
+            <element signature="e#14840#14851#0" expanded="false" />
+            <element signature="e#15010#17323#0" expanded="false" />
+            <element signature="e#15633#15667#0" expanded="false" />
+            <element signature="e#17018#17120#0" expanded="false" />
+            <element signature="e#17189#17323#0" expanded="false" />
+            <element signature="e#17466#17486#0" expanded="false" />
+            <element signature="e#18311#18356#0" expanded="false" />
+            <element signature="e#18359#18388#0" expanded="false" />
+            <element signature="e#18804#19227#0" expanded="false" />
+            <element signature="e#18875#18904#0" expanded="false" />
+            <element signature="e#19084#19227#0" expanded="false" />
+            <element signature="e#20148#21175#0" expanded="false" />
+            <element signature="e#21254#21482#0" expanded="false" />
+            <element signature="e#21339#21479#0" expanded="false" />
+            <element signature="e#21482#21504#0" expanded="false" />
+            <element signature="e#22762#23738#0" expanded="false" />
+            <element signature="e#22762#22778#0" expanded="false" />
+            <element signature="e#22911#22967#0" expanded="false" />
+            <element signature="e#23001#23728#0" expanded="false" />
+            <element signature="e#23366#23563#0" expanded="false" />
+            <element signature="e#23528#23563#0" expanded="false" />
+            <element signature="e#23778#24120#0" expanded="false" />
+            <element signature="e#23968#24120#0" expanded="false" />
+            <element signature="e#24162#24788#0" expanded="false" />
+            <element signature="e#24303#24788#0" expanded="false" />
+            <element signature="e#24523#24788#0" expanded="false" />
+            <element signature="e#24544#24670#0" expanded="false" />
+            <element signature="e#24724#24788#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

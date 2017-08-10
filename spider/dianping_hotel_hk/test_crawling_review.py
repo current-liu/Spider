@@ -18,4 +18,4 @@ class TestCrawling_review(TestCase):
     #         dao.insert_hotel_review()
 
     def test_get_attraction_review_on_page(self):
-        get_attraction_review_on_page(2614873, 10)
+        get_attraction_review_on_page(2028214, 329)
