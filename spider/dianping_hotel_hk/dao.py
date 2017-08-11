@@ -18,7 +18,7 @@ print data
 print pymysql.paramstyle
 
 
-def insert(i, n, d, a, w, t, p, s, r, pu):
+def insert_hotel_list(i, n, d, a, w, t, p, s, r, pu):
     try:
         sql = """INSERT INTO hotel_shop_list(
                      id, name, detail_url, addr, walk, tags, price, star, comments, picUrl)

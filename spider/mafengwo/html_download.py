@@ -65,25 +65,6 @@ def downloadPage(url):
             fo_log.write(msg5)
             break
 
-        # 获取随机IP,迁移到ip_proxy
-        # try:
-        #     global ip_list
-        #     if ip_list.__len__() < 5:
-        #         ip_list += ip_proxy.get_ips()
-        #
-        #     data = random.choice(ip_list)
-        #     ip = data['ip']
-        #     port = data['port']
-        #     ip_port = ip + ":" + str(port)
-        #     # print ip_port
-        #
-        #     proxies = {'http': ip_port}
-        # except BaseException, e:
-        #     print e
-
-        # 获取随机IP
-        # error_num为该ip下载失败几次时删除
-
         error_num = 3
         ip_port = ip_proxy.get_ip()
         # OR

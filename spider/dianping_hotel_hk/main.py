@@ -71,7 +71,7 @@ def crawling_hotel_list():
         tags = " ".join(t)
 
         # 修改
-        dao.insert(i, n, d, a, w, tags, p, s, r, pu)
+        dao.insert_hotel_list(i, n, d, a, w, tags, p, s, r, pu)
 
 
 def crawling_shop():
