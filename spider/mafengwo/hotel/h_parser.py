@@ -7,6 +7,7 @@ base Info
 """
 import re
 from bs4 import BeautifulSoup
+from action import fo_log
 
 __author__ = 'Administrator'
 __version__ = '1.0'
@@ -55,8 +56,9 @@ def parser_hotel_shops(doc):
         loc = hotel_intro.find("div", class_="location").find("span").get_text()
 
     except BaseException, e:
-        msg1 = "in get_hotel_shops(doc)"
+        msg1 = "in get_hotel_shops() shop_name, shop_name_en, score, loc"
         print msg1
+        fo_log.write(msg1)
         print e
 
     try:
@@ -84,25 +86,32 @@ def parser_hotel_shops(doc):
             built = basic_info_list[u"建成于"]
             room_num = re.sub(r"\D", "", basic_info_list[u"酒店规模"])
         except BaseException, e:
-            pass
+            msg2 = "in get_hotel_shops() checkIn, checkOut, built, room_num"
+            print msg2
+            fo_log.write(msg2)
+            print e
 
         service = "-1"
         try:
             expand_wrap = info_sections[1].find("div", class_="expand-wrap")
             service = expand_wrap.get_text().replace("\n", " ").replace("'", "").replace('"', "")
-        except BaseException:
-            pass
+        except BaseException, e:
+            msg3 = "in get_hotel_shops() service"
+            print msg3
+            fo_log.write(msg3)
+            print e
 
         info = "-1"
         try:
             expand_wrap1 = info_sections[2].find("div", class_="expand-wrap")
             info = expand_wrap1.get_text().replace("\n", "").replace("'", "").replace('"', "")
-        except BaseException:
-            pass
+        except BaseException, e:
+            msg4 = "in get_hotel_shops() info"
+            print msg4
+            fo_log.write(msg4)
+            print e
 
     except BaseException, e:
-        msg1 = "in get_hotel_shops(doc)"
-        print msg1
         print e
 
     try:
@@ -132,13 +141,20 @@ def parser_hotel_shops(doc):
             sco_fac = sco_list[u"设施"]
             sco_food = sco_list[u"餐饮"]
         except BaseException, e:
-            pass
+            msg5 = "in get_hotel_shops() soc_list"
+            print msg5
+            fo_log.write(msg5)
+            print e
+
         rev_tags = ""
         try:
             rev_tags = comment.find("div", class_="rev-tags") \
                 .get_text().replace("\n", "").replace("'", "").replace('"', "")
         except BaseException, e:
-            pass
+            msg6 = "in get_hotel_shops() tags"
+            print msg6
+            fo_log.write(msg6)
+            print e
     except BaseException, e:
         pass
 

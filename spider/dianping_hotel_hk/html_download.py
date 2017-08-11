@@ -1,5 +1,7 @@
 # coding=utf-8
 import datetime
+import os
+
 import requests
 import re
 import random
@@ -53,6 +55,7 @@ h = random.choice(h_total)
 today = datetime.date.today()
 today_fo = today.strftime("%Y%m%d")
 filename = today_fo+".txt"
+os.chdir("./log")
 fo_log = open(filename, "a")
 
 
@@ -152,7 +155,7 @@ def downloadPage_without_proxy(url):
         else:
             if doc.__contains__("403 Forbidden"):
                 msg = "403 Forbidden"
-            elif doc.__contains__("<h1>ERROR</h1>") or doc.__contains__("ERROR"):
+            elif doc.__contains__("<h1>ERROR</h1>") or doc.__contains__("ERROR") or doc.__contains__("doc with error"):
                 msg = "ERROR"
 
         # 请求成功，跳出循环

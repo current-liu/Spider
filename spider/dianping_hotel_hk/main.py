@@ -1,4 +1,6 @@
 # coding=utf-8
+import os
+
 import h_parser
 import html_download
 import url_manager
@@ -14,6 +16,7 @@ import traceback
 today = datetime.date.today()
 today_str = today.strftime("%Y-%m-%d")
 today_fo = today.strftime("%Y%m%d")
+os.chdir("."+"/log")
 filename = today_fo+".txt"
 fo_log = open(filename, "a")
 
@@ -282,7 +285,7 @@ def get_attraction_review_on_page(shopId, page_num):
         else:
             index += 1
 
-    msg17 = "shopId %s complete to pageno=%s" % (shopId, index)
+    msg17 = "shopId %s log to pageno=%s" % (shopId, index)
     print msg17
     fo_log.write(msg17)
 
@@ -385,7 +388,7 @@ def get_hotel_review_on_page(shopId, page_num):
         else:
             page_num -= 1
 
-    msg7 = "shopId %s complete to pageno=%s" % (shopId, page_num)
+    msg7 = "shopId %s log to pageno=%s" % (shopId, page_num)
     print msg7
     fo_log.write(msg7)
 
@@ -533,7 +536,7 @@ def crawling_hotel_review():
                     fo_log.write(msg6)
                     break
 
-            msg7 = "shopId %s complete to pageno=%s" % (shopId, page_num)
+            msg7 = "shopId %s log to pageno=%s" % (shopId, page_num)
             print msg7
             fo_log.write(msg7)
 

@@ -145,7 +145,7 @@ def get_hotel_list(doc):
         next_url = urlparse.urljoin(PAGE_URL, next_url)
         url_manager.add_new_url(next_url)
     except:
-        print "parse complete"
+        print "parse log"
 
     return ids, names, detail_urls, addrs, walks, tags, prices, stars, review_nums, picUrls
 
@@ -334,7 +334,7 @@ def get_next_review_url(doc, url, shopId):
         shopId_num += 1
         print "第'%d'shopId '%d'已到末页" % (shopId_num, shopId)
         fo = open(
-            r"D:\Liuchao\PycharmProjects\pythonproject\spider\dianping_hotel_hk\complete\'%s'num'%d'shopId '%d'complete.txt" % (
+            r"D:\Liuchao\PycharmProjects\pythonproject\spider\dianping_hotel_hk\log\'%s'num'%d'shopId '%d'log.txt" % (
                 today_str.shopId_num, shopId), "wb")
         fo.write(doc)
         fo.close()

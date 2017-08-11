@@ -7,7 +7,7 @@ base Info
 """
 
 import sys
-
+import os
 import datetime
 
 import re
@@ -26,4 +26,10 @@ fo_log.write("nihao")
 # today_int = int(re.sub(r'\D', "", today_str))
 # fo_log = open("'%s'.txt" % today_str, "a")
 
-
+print os.getcwd()
+print os.path.abspath('.')
+# os.chdir("."+"/demo01")
+print os.path.abspath('..')
+print os.getcwd()
+fo_log = open(filename, "a")
+fo_log.write("nihao")
