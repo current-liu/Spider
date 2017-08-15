@@ -55,8 +55,8 @@ h = random.choice(h_total)
 today = datetime.date.today()
 today_fo = today.strftime("%Y%m%d")
 filename = today_fo+".txt"
-os.chdir("./log")
-fo_log = open(filename, "a")
+
+fo_log = open("./log/"+filename, "a")
 
 
 def downloadPage(url):

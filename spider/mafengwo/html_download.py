@@ -49,7 +49,7 @@ def downloadPage(url, fo_log):
             msg = "download error"
         else:
             msg = "ok"
-            if doc.__contains__("403 Forbidden"):
+            if doc.__contains__("403 Forbidden") or doc == "":
                 msg = "403 Forbidden"
             elif doc.__contains__("<h1>ERROR</h1>") or doc.__contains__("ERROR") or doc.__contains__("doc with error"):
                 msg = "ERROR"
@@ -91,7 +91,7 @@ def downloadPage_without_proxy(url, fo_log):
             msg = "download error"
         else:
             msg = "ok"
-            if doc.__contains__("403 Forbidden"):
+            if doc.__contains__("403 Forbidden") or doc == "":
                 msg = "403 Forbidden"
             elif doc.__contains__("<h1>ERROR</h1>") or doc.__contains__("ERROR") or doc.__contains__("doc with error"):
                 msg = "ERROR"

@@ -5,10 +5,19 @@ Created on 2017/8/10 0010 下午 3:01
 
 base Info
 """
+import os
 import re
-from bs4 import BeautifulSoup
-from action import fo_log
 
+import datetime
+from bs4 import BeautifulSoup
+from pandas import json
+
+today = datetime.date.today()
+today_str = today.strftime("%Y-%m-%d")
+today_fo = today.strftime("%Y%m%d")
+# os.chdir("./log")
+filename = today_fo + ".txt"
+fo_log = open("./log/" + filename, "a")
 __author__ = 'Administrator'
 __version__ = '1.0'
 
@@ -48,12 +57,13 @@ def parser_hotel_shops(doc):
     loc = "-1"
     try:
         hotel_intro = soup.find("div", class_="hotel-intro")
-        score = re.sub(r"\D", "", hotel_intro.find("span", class_="score").get_text())
         shop_name = hotel_intro.find("div", class_="main-title").get_text().replace("\n", "").replace("'", "").replace(
             '"', "").split("(")[0]
         shop_name_en = hotel_intro.find("div", class_="en-title").get_text().replace("\n", "").replace("'", "").replace(
             '"', "")
-        loc = hotel_intro.find("div", class_="location").find("span").get_text()
+        loc = hotel_intro.find("div", class_="location").find("span").get_text().get_text().replace("\n", "").replace(
+            "'", "").replace('"', "")
+        score = re.sub(r"\D", "", hotel_intro.find("span", class_="score").get_text())
 
     except BaseException, e:
         msg1 = "in get_hotel_shops() shop_name, shop_name_en, score, loc"
@@ -81,10 +91,10 @@ def parser_hotel_shops(doc):
                 content = b_cell.split(":")[1].replace("\n", "")
                 basic_info_list[label] = content
 
-            checkIn = basic_info_list[u"入住时间"]+"之后"
-            checkOut = basic_info_list[u"离店时间"]+"之前"
+            checkIn = basic_info_list[u"入住时间"] + "之后"
+            checkOut = basic_info_list[u"离店时间"] + "之前"
             built = basic_info_list[u"建成于"]
-            room_num = re.sub(r"\D", "", basic_info_list[u"酒店规模"])
+            room_num = int(re.sub(r"\D", "", basic_info_list[u"酒店规模"]))
         except BaseException, e:
             msg2 = "in get_hotel_shops() checkIn, checkOut, built, room_num"
             print msg2
@@ -160,3 +170,65 @@ def parser_hotel_shops(doc):
 
     return shop_name, shop_name_en, score, loc, checkIn, checkOut, built, room_num, service, info, \
            sco_loc, sco_ser, sco_clear, sco_comfo, sco_fac, sco_food, rev_tags
+
+
+def parser_hotel_review(doc):
+    review_list = json.loads(doc)['html']
+    soup = BeautifulSoup(review_list, "lxml")
+    review_ids = []
+    member_ids = []
+    likes = []
+    contents = []
+    stars = []
+    times = []
+    try:
+        comment_list = soup.find_all("div", class_="comm-item _j_comment_item")
+        for comment in comment_list:
+            review_id = -1
+            member_id = -1
+            try:
+                review_id = int(comment['data-id'])
+                member = comment.find("div", class_="user").find("a", class_="avatar")['href']
+                member_id = int(re.sub(r"\D", "", member.split("&")[0]))
+            except BaseException, e:
+                print e
+                msg1 = "review_id,member_id获取失败"
+                print msg1
+                fo_log.write(msg1)
+
+            like = -1
+            try:
+                like = int(comment.find("div", class_="like").get_text())
+            except:
+                pass
+            content = "-1"
+            try:
+                content = comment.find("div", class_="txt").get_text().replace("\n", "").replace("'", "").replace('"', "")
+            except:
+                pass
+            star = -1
+            try:
+                comm_star = comment.find("div", class_="comm-meta").find("span")
+                star_str = comm_star['class'][2]
+                star = int(re.sub(r"\D", "", star_str))
+            except BaseException, e:
+                pass
+            create_time = "-1"
+            try:
+                time = comment.find("span", class_="time").get_text()
+                create_time = datetime.datetime.strptime(time, '%Y-%m-%d')
+
+            except:
+                pass
+            pass
+
+            review_ids.append(review_id)
+            member_ids.append(member_id)
+            likes.append(like)
+            contents.append(content)
+            stars.append(star)
+            times.append(create_time)
+
+        return review_ids, member_ids, likes, contents, stars, times
+    except BaseException, e:
+        print e

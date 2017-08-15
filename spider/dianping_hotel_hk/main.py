@@ -16,9 +16,8 @@ import traceback
 today = datetime.date.today()
 today_str = today.strftime("%Y-%m-%d")
 today_fo = today.strftime("%Y%m%d")
-os.chdir("."+"/log")
 filename = today_fo+".txt"
-fo_log = open(filename, "a")
+fo_log = open("./log/"+filename, "a")
 
 
 def crawling_hotel_list():
