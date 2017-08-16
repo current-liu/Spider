@@ -232,3 +232,43 @@ def parser_hotel_review(doc):
         return review_ids, member_ids, likes, contents, stars, times
     except BaseException, e:
         print e
+
+
+def get_room(doc_list, shopId):
+    """获取每个酒店房型的详细信息"""
+
+    rooms_info_total = []
+    for doc in doc_list:
+        index = doc_list.index(doc)
+
+        try:
+            # TODO
+            room_list = json.loads(doc)
+        except BaseException, e:
+            print e
+            print "获取酒店房型详情失败"
+            return
+        else:
+            n = room_list.__len__()
+            if (n == 0):
+                print "房型信息为空"
+                return
+            else:
+                print "成功获取房型"
+                roomId_list = []
+                room_infos = []
+                for room in room_list:
+                    roomId = room["roomId"]
+                    if roomId_list.__contains__(roomId):
+                        continue
+                    roomId_list.append(roomId)
+                    title = room["title"]
+                    price = room["price"]
+
+                    room_info = {"roomId": roomId, "roomInfo": [roomId, shopId, title, price]}
+                    room_infos.append(room_info)
+        room_in_doc = [room_infos, index]
+        rooms_info_total.append(room_in_doc)
+
+
+    return rooms_info_total

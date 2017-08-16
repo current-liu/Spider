@@ -11,4 +11,4 @@ __version__ = '1.0'
 
 
 if __name__ == '__main__':
-    action.get_hotel_shops()
+    action.get_hotel_shop()

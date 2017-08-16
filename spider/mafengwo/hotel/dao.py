@@ -13,10 +13,10 @@ cursor = base_dao.cursor
 db = base_dao.db
 
 
-def insert_hotel_shops(shopIds, picUrls, areas, review_nums, travel_nums):
+def insert_hotel_shop(shopIds, picUrls, areas, review_nums, travel_nums):
     for q, w, e, r, t in zip(shopIds, picUrls, areas, review_nums, travel_nums):
         try:
-            sql = """INSERT INTO hotel_shops(
+            sql = """INSERT INTO hotel_shop(
                          shopId, picUrl,area,reviewNum,travelsNum)
                          VALUES ('%s', '%s', '%s', '%s', '%s')""" % (q, w, e, r, t)
             cursor.execute(sql)
@@ -26,10 +26,10 @@ def insert_hotel_shops(shopIds, picUrls, areas, review_nums, travel_nums):
             print e
 
 
-def update_hotel_shops(shop_name, shop_name_en, score, loc, checkIn, checkOut, built, room_num, service, info, \
+def update_hotel_shop(shop_name, shop_name_en, score, loc, checkIn, checkOut, built, room_num, service, info, \
                        sco_loc, sco_ser, sco_clear, sco_comfo, sco_fac, sco_food, tag, shopId):
     try:
-        sql = """UPDATE hotel_shops SET shopName = '%s', shopNameEn = '%s', score = '%s', addr = '%s', checkIn = '%s', checkOut = '%s', openTime = '%s', roomNum = '%s', service = '%s', info = '%s', 
+        sql = """UPDATE hotel_shop SET shopName = '%s', shopNameEn = '%s', score = '%s', addr = '%s', checkIn = '%s', checkOut = '%s', openTime = '%s', roomNum = '%s', service = '%s', info = '%s', 
                   scoLoc = '%s', scoSer = '%s', scoClear = '%s', scoComfo = '%s', scoFac = '%s', scoFood = '%s', tag = '%s' WHERE shopId = '%d'"""
 
         cursor.execute(sql % (shop_name, shop_name_en, score, loc, checkIn, checkOut, built, room_num, service, info, \
@@ -60,3 +60,20 @@ def insert_hotel_review(shop_id, review_ids, member_ids, likes, contents, stars,
     if index == 10:
         msg = "for key 'PRIMARY'"
     return msg
+
+
+def download_hotel_shopIds_unselected(today_str):
+    """今天还没有查过房价的酒店id"""
+    results = []
+    try:
+        sql = """SELECT shopId
+                    FROM hotel_shop WHERE
+                    shopId NOT IN (SELECT shopId FROM hotel_room WHERE queryTime = '%s')"""
+        cursor.execute(sql % today_str)
+        results = cursor.fetchall()
+
+    except BaseException, e:
+        db.rollback()
+        print e
+
+    return results

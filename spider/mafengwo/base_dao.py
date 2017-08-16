@@ -28,8 +28,22 @@ __version__ = '1.0'
 def select_shopid_and_reviewnum(table):
     results = []
     try:
+        sql = """SELECT shopId,reviewNum FROM %s """ % table
+        cursor.execute(sql)
+        results = cursor.fetchall()
+
+    except BaseException, e:
+        print e
+
+    return results
+
+
+def select_unqueried_shopid_and_reviewnum(table):
+    """查询hotel_review表中没有的shopId"""
+    results = []
+    try:
         sql = """SELECT shopId,reviewNum
-                        FROM %s""" % table
+                        FROM %s WHERE shopId NOT IN (SELECT shopId FROM hotel_review)""" % table
         cursor.execute(sql)
         results = cursor.fetchall()
 
@@ -43,7 +57,7 @@ def select_shopid(table):
     results = []
 
     try:
-        sql = """SELECT shopId FROM %s""" % table
+        sql = """SELECT shopId FROM %s """ % table
         cursor.execute(sql)
         results = cursor.fetchall()
 
