@@ -29,7 +29,6 @@ today_fo = today.strftime("%Y%m%d")
 filename = today_fo + ".txt"
 fo_log = open("./log/" + filename, "a")
 
-
 room_url_list = UrlSet()
 
 
@@ -73,7 +72,7 @@ def get_hotel_shop():
             msg2 = "shopId:'%s'解析完成，正写入数据" % shop_id
             print msg2
             dao.update_hotel_shop(shop_name, shop_name_en, score, loc, checkIn, checkOut, built, room_num, service,
-                                   info, sco_loc, sco_ser, sco_clear, sco_comfo, sco_fac, sco_food, tag, shop_id)
+                                  info, sco_loc, sco_ser, sco_clear, sco_comfo, sco_fac, sco_food, tag, shop_id)
         except:
             fo_log.write("doc error '%s'" % shop_id)
             fo_log.write(doc)
@@ -128,35 +127,52 @@ def get_hotel_room():
     fo_log.flush()
 
     init_room_url_list()
+
     global room_url_list
     global today
     index = 0
     while (room_url_list.has_new_url()):
-        time.sleep(random.uniform(1, 2))
+        try:
+            try:
+                urls = room_url_list.get_new_url()
+                index += 1
+                s = urls.split("sCheckIn")[0].split("iPoiId=")[1]
+                shopId = int(re.sub(r'\D', "", s))
+                print "crawling_room 第'%s'个shopId：'%s'" % (index, shopId)
+                url_list = urls.split(" ")
+            except BaseException, e:
+                print e
+                msg0 = "获取地址失败"
+                print msg0
+                continue
 
-        urls = room_url_list.get_new_url()
-        index += 1
-        s = urls.split("checkin")[0]
-        shopId = int(re.sub(r'\D', "", s))
-        print "crawling_room 第'%s'个shopId：'%s'" % (index, shopId)
-        url_list = urls.split(" ")
-        url = 'http://www.mafengwo.cn/hotel/36273.html#checkin=2017-08-16&checkout=2017-08-17&guests=2-0'
-        url1 = 'http://www.mafengwo.cn/hotel/36273.html#checkin=2017-08-17&checkout=2017-08-18&guests=2-0'
-        doc0, msg = html_download.downloadPage_without_proxy(url, fo_log)
-        doc1, msg = html_download.downloadPage_without_proxy(url1, fo_log)
-        doc2, msg = html_download.downloadPage_without_proxy(url_list[2], fo_log)
-        doc3, msg = html_download.downloadPage_without_proxy(url_list[3], fo_log)
-        doc4, msg = html_download.downloadPage_without_proxy(url_list[4], fo_log)
-        doc_list = (doc0, doc1, doc2, doc3, doc4)
-        # TODO
-        rooms_info_total = h_parser.get_room(doc_list, shopId)
+            doc0, msg = html_download.downloadPage(url_list[0], fo_log)
+            doc1, msg = html_download.downloadPage(url_list[1], fo_log)
+            doc2, msg = html_download.downloadPage(url_list[2], fo_log)
+            doc3, msg = html_download.downloadPage(url_list[3], fo_log)
+            doc4, msg = html_download.downloadPage(url_list[4], fo_log)
+            doc_list = (doc0, doc1, doc2, doc3, doc4)
+            # TODO
+            try:
+                rooms_info_total = h_parser.get_room(doc_list)
+            except BaseException, e:
+                print e
+                msg1 = "解析房间信息失败"
+                print msg1
+                continue
 
-        query_time = today.strftime("%Y-%m-%d")
+            query_time = today_str
+            ota = "youyu_pkg"
+            dao.insert_hotel_room(shopId, rooms_info_total, query_time, ota)
+
+        except BaseException, e:
+            print e
 
 
 def init_room_url_list():
     global room_url_list
     global today
+    global today_str
     after_1 = today + datetime.timedelta(days=1)
     after_2 = today + datetime.timedelta(days=2)
     after_3 = today + datetime.timedelta(days=3)
@@ -179,12 +195,12 @@ def init_room_url_list():
     for shop_id in shop_id_list:
         i = str(shop_id)
         shop_id_str = re.sub(r'\D', "", i)
-        str1 = "http://www.mafengwo.cn/hotel/"
-        str2 = ".html#checkin="
-        str3 = "&checkout="
-        str4 = "&guests=2-0"
+        str1 = "http://server.mafengwo.cn/hotel/ajax.php?sJsonCallBack=jQuery18109789543989958343_1502861850903&sAction=getRealPrice&iMddId=10189&iPoiId="
+        str2 = "&sOta=youyu_pkg&sCheckIn="
+        str3 = "&sCheckOut="
+        str4 = "&iAdultsNum=2&iChildrenNum=0&sChildrenAge=&_=1502862132197"
 
-        # 'http://www.mafengwo.cn/hotel/36273.html#checkin=2017-08-16&checkout=2017-08-17&guests=2-0'
+        # "http://server.mafengwo.cn/hotel/ajax.php?sJsonCallBack=jQuery18109789543989958343_1502861850903&sAction=getRealPrice&iMddId=10189&iPoiId=36273&sOta=youyu_pkg&sCheckIn=2017-08-19&sCheckOut=2017-08-20&iAdultsNum=2&iChildrenNum=0&sChildrenAge=&_=1502862132197"
         u0 = str1 + shop_id_str + str2 + checkinDate_0 + str3 + checkoutDate_0 + str4
         u1 = str1 + shop_id_str + str2 + checkinDate_1 + str3 + checkoutDate_1 + str4
         u2 = str1 + shop_id_str + str2 + checkinDate_2 + str3 + checkoutDate_2 + str4

@@ -203,7 +203,8 @@ def parser_hotel_review(doc):
                 pass
             content = "-1"
             try:
-                content = comment.find("div", class_="txt").get_text().replace("\n", "").replace("'", "").replace('"', "")
+                content = comment.find("div", class_="txt").get_text().replace("\n", "").replace("'", "").replace('"',
+                                                                                                                  "")
             except:
                 pass
             star = -1
@@ -234,41 +235,29 @@ def parser_hotel_review(doc):
         print e
 
 
-def get_room(doc_list, shopId):
+def get_room(doc_list):
     """获取每个酒店房型的详细信息"""
 
-    rooms_info_total = []
+    room_infos = []
+    room_name = "-1"
     for doc in doc_list:
-        index = doc_list.index(doc)
-
         try:
             # TODO
-            room_list = json.loads(doc)
+            room = json.loads(doc.split("(")[1].split(")")[0])
+            price = room['msg']['list']["youyu_pkg"]
         except BaseException, e:
             print e
             print "获取酒店房型详情失败"
-            return
+            price = "-1"
         else:
-            n = room_list.__len__()
-            if (n == 0):
+            if (price == 0):
                 print "房型信息为空"
-                return
             else:
                 print "成功获取房型"
-                roomId_list = []
-                room_infos = []
-                for room in room_list:
-                    roomId = room["roomId"]
-                    if roomId_list.__contains__(roomId):
-                        continue
-                    roomId_list.append(roomId)
-                    title = room["title"]
-                    price = room["price"]
+                if room_name == "-1":
+                    room_name = room['msg']['room_name']
 
-                    room_info = {"roomId": roomId, "roomInfo": [roomId, shopId, title, price]}
-                    room_infos.append(room_info)
-        room_in_doc = [room_infos, index]
-        rooms_info_total.append(room_in_doc)
+        room_infos.append(price)
 
-
-    return rooms_info_total
+    room_infos.append(room_name)
+    return room_infos

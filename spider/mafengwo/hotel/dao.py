@@ -27,7 +27,7 @@ def insert_hotel_shop(shopIds, picUrls, areas, review_nums, travel_nums):
 
 
 def update_hotel_shop(shop_name, shop_name_en, score, loc, checkIn, checkOut, built, room_num, service, info, \
-                       sco_loc, sco_ser, sco_clear, sco_comfo, sco_fac, sco_food, tag, shopId):
+                      sco_loc, sco_ser, sco_clear, sco_comfo, sco_fac, sco_food, tag, shopId):
     try:
         sql = """UPDATE hotel_shop SET shopName = '%s', shopNameEn = '%s', score = '%s', addr = '%s', checkIn = '%s', checkOut = '%s', openTime = '%s', roomNum = '%s', service = '%s', info = '%s', 
                   scoLoc = '%s', scoSer = '%s', scoClear = '%s', scoComfo = '%s', scoFac = '%s', scoFood = '%s', tag = '%s' WHERE shopId = '%d'"""
@@ -77,3 +77,16 @@ def download_hotel_shopIds_unselected(today_str):
         print e
 
     return results
+
+
+def insert_hotel_room(shopId, rooms_info_total, query_time, ota):
+    sql = """INSERT INTO hotel_room (shopId, roomType, queryTime, ota, roomPrice_0, roomPrice_1, roomPrice_2, roomPrice_3, roomPrice_4)
+              VALUES('%s','%s','%s','%s','%s','%s','%s','%s','%s')"""
+    try:
+        cursor.execute(sql % (
+            shopId, rooms_info_total[5], query_time, ota, rooms_info_total[0], rooms_info_total[1], rooms_info_total[2],
+            rooms_info_total[3], rooms_info_total[4]))
+        db.commit()
+    except BaseException, e:
+        db.rollback()
+        print e

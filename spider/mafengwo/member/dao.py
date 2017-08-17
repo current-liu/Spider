@@ -29,7 +29,7 @@ def insert_hotel_shop(shopIds, picUrls, areas, review_nums, travel_nums):
 def select_member_id(table):
     results = []
     try:
-        sql = """SELECT memberId FROM %s WHERE memberMark IS NULL""" % table
+        sql = """SELECT DISTINCT memberId FROM %s WHERE memberMark = 0""" % table
         cursor.execute(sql)
         results = cursor.fetchall()
 
@@ -39,9 +39,9 @@ def select_member_id(table):
     return results
 
 
-def update_member_mark(table, value, member_id):
+def update_member_mark(table, value):
     try:
-        sql = """UPDATE %s SET memberMark = '%s' WHERE memberId = '%s' """ % (table, value, member_id)
+        sql = """UPDATE %s SET memberMark = '%s' WHERE memberId in (SELECT memberId FROM member) """ % (table, value)
         cursor.execute(sql)
         db.commit()
     except BaseException, e:
@@ -60,3 +60,5 @@ def insert_member(pic, name, gender, vip, duo, zhi, level, loc, profile, follow,
     except BaseException, e:
         db.rollback()
         print e
+
+

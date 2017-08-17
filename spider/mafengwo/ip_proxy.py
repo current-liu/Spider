@@ -95,7 +95,7 @@ def get_ip():
     while True:
         n = ip_pool.__len__()
         # TODO 正常运行时改为20
-        if n >= 20:
+        if n >= 5:
             break
         msg = download_ips()
         if msg == "fail":

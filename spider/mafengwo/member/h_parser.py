@@ -30,17 +30,18 @@ def parser_member(doc):
         msg1 = "part1"
         print msg1
 
-        pic = "-1"
-        name = "-1"
-        gender = "-1"
+    pic = "-1"
+    name = "-1"
+    gender = "-1"
     try:
         pic = avatar.find("div", class_="MAvaImg hasAva").find("img")['src']
-        name = avatar.find("div", class_="MAvaName").get_text().strip()
+        name = avatar.find("div", class_="MAvaName").get_text().strip().replace("\n", "").replace("'", "").replace(
+            '"', "")
         gender_tag = avatar.find("div", class_="MAvaName").find("i")
         gender_s = gender_tag['class'][0]
         if gender_s == 'MGenderMale':
             gender = "male"
-        elif gender_s == "":
+        elif gender_s == "MGenderFemale":
             gender = "female"
     except BaseException, e:
         print e
