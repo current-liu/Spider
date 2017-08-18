@@ -22,6 +22,7 @@ from mafengwo import base_dao
 
 __author__ = 'Administrator'
 __version__ = '1.0'
+
 today = datetime.date.today()
 today_str = today.strftime("%Y-%m-%d")
 today_fo = today.strftime("%Y%m%d")
