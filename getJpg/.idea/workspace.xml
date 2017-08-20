@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="179a0096-b667-40a6-a2bb-81939a54f749" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myPython1/demo/bitmap.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/__init__.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/base_dao.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/base_dao.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_rooms.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_rooms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../myPython1/demo/demo06.py" afterPath="$PROJECT_DIR$/../myPython1/demo/demo06.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/attraction/get_attraction_list.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/attraction/get_attraction_list.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/attraction/get_attraction_shop.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/attraction/get_attraction_shop.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/hotel/action.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/hotel/action.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_list.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_list.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_reviews.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_reviews.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_shops.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_shops.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/hotel/h_parser.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/hotel/h_parser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/member/get_member.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/member/get_member.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,6 +49,7 @@
     <SUITE FILE_PATH="coverage/getJpg$Unittests_for_test_get_room_TestGet_room_test_get_room.coverage" NAME="Unittests for test_get_room.TestGet_room.test_get_room Coverage Results" MODIFIED="1501504878815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getJpg$Unittests_in_demo08_py.coverage" NAME="Unittests in demo08.py Coverage Results" MODIFIED="1500798333715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../myPython1/src" />
     <SUITE FILE_PATH="coverage/getJpg$html_download.coverage" NAME="html_download Coverage Results" MODIFIED="1501153673213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/tianyancha" />
+    <SUITE FILE_PATH="coverage/getJpg$demo06.coverage" NAME="demo06 Coverage Results" MODIFIED="1503197665085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../myPython1/demo" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -61,8 +69,8 @@
       <file leaf-file-name="h_parser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/h_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="244" column="14" lean-forward="false" selection-start-line="244" selection-start-column="14" selection-end-line="244" selection-end-column="14" />
+            <state relative-caret-position="210">
+              <caret line="244" column="13" lean-forward="false" selection-start-line="244" selection-start-column="13" selection-end-line="244" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -71,115 +79,101 @@
       <file leaf-file-name="action.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/action.py">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="87" column="45" lean-forward="true" selection-start-line="87" selection-start-column="45" selection-end-line="87" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo06.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../myPython1/demo/demo06.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bitmap.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../myPython1/demo/bitmap.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_hotel_shops.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_shops.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="e#84#94#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_hotel_list.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_list.py">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="162" column="0" lean-forward="false" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base_dao.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/base_dao.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="13" selection-end-column="26" />
               <folding>
-                <element signature="e#84#98#0" expanded="true" />
-                <marker date="1502973092202" expanded="true" signature="606:635" ph="SELECT shopI... missing_value" />
-                <marker date="1502973092202" expanded="true" signature="911:1020" ph="SELECT shopI... missing_value" />
-                <marker date="1502973092202" expanded="true" signature="988:1019" ph="SELECT shopI... hotel_review" />
-                <marker date="1502973092202" expanded="true" signature="1234:1253" ph="SELECT shopI... missing_value" />
-                <marker date="1502973092202" expanded="true" signature="1256:1259" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-                <marker date="1502973092202" expanded="true" signature="1256:1331" ph="..." />
+                <element signature="e#83#93#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="html_download.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/html_download.py">
+      <file leaf-file-name="get_member.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/member/get_member.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="336">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
-                <element signature="e#15#30#0" expanded="true" />
+                <element signature="e#83#93#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_hotel_rooms.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_rooms.py">
+      <file leaf-file-name="get_attraction_list.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/attraction/get_attraction_list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="14" column="48" lean-forward="false" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+            <state relative-caret-position="390">
+              <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
               <folding>
-                <element signature="e#85#95#0" expanded="true" />
+                <element signature="e#83#93#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ntpath.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files/Python27/Lib/ntpath.py">
+      <file leaf-file-name="get_attraction_shop.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/attraction/get_attraction_shop.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="176" column="76" lean-forward="false" selection-start-line="176" selection-start-column="71" selection-end-line="176" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="html_download.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1500">
-              <caret line="58" column="37" lean-forward="false" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+            <state relative-caret-position="390">
+              <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
               <folding>
-                <element signature="e#15#30#0" expanded="true" />
+                <element signature="e#84#94#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ip_proxy.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/ip_proxy.py">
+      <file leaf-file-name="get_hotel_reviews.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_reviews.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3960">
-              <caret line="135" column="4" lean-forward="false" selection-start-line="135" selection-start-column="4" selection-end-line="135" selection-end-column="4" />
+            <state relative-caret-position="336">
+              <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
               <folding>
-                <marker date="1502972543189" expanded="true" signature="1996:2421" ph="..." />
-                <marker date="1502972543189" expanded="true" signature="2051:2287" ph="..." />
-                <marker date="1502972543189" expanded="true" signature="2198:2287" ph="..." />
-                <marker date="1502972543189" expanded="true" signature="2454:2856" ph="..." />
-                <marker date="1502972543189" expanded="true" signature="2509:2730" ph="..." />
-                <marker date="1502972543189" expanded="true" signature="2641:2730" ph="..." />
-                <marker date="1502972543189" expanded="true" signature="2895:3339" ph="..." />
-                <marker date="1502972543189" expanded="true" signature="3043:3295" ph="..." />
-                <marker date="1502972543189" expanded="true" signature="3167:3295" ph="..." />
-                <marker date="1502972543189" expanded="true" signature="3197:3295" ph="..." />
-                <marker date="1502972543189" expanded="true" signature="3231:3295" ph="..." />
+                <element signature="e#134#144#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dao.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/dao.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -237,13 +231,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../myPython/src/demo7.py" />
-        <option value="$PROJECT_DIR$/../getMovieOnDouban/src/main.py" />
-        <option value="$PROJECT_DIR$/../spider/k11/k11数据采集说明.txt" />
-        <option value="$PROJECT_DIR$/../spider/k11/download.py" />
-        <option value="$PROJECT_DIR$/../spider/k11/__init__.py" />
-        <option value="$PROJECT_DIR$/../spider/k11/parser.py" />
-        <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/url_manager.py" />
         <option value="$PROJECT_DIR$/../spider/k11/main.py" />
         <option value="$PROJECT_DIR$/../myPython1/src/demo08.py" />
         <option value="$PROJECT_DIR$/../myPython1/src/test.py" />
@@ -277,17 +264,24 @@
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/test_get_room.py" />
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/test_crawling_review.py" />
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py" />
-        <option value="$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_list.py" />
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/dao.py" />
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/cmd/crawling_room.py" />
         <option value="$PROJECT_DIR$/../myPython1/demo/demo05.py" />
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py" />
-        <option value="$PROJECT_DIR$/../spider/mafengwo/hotel/h_parser.py" />
-        <option value="$PROJECT_DIR$/../spider/mafengwo/hotel/action.py" />
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py" />
         <option value="$PROJECT_DIR$/../spider/mafengwo/html_download.py" />
         <option value="$PROJECT_DIR$/../spider/mafengwo/base_dao.py" />
         <option value="$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_rooms.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_reviews.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/hotel/h_parser.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_shops.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_list.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/member/get_member.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/attraction/get_attraction_list.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/attraction/get_attraction_shop.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/hotel/action.py" />
+        <option value="$PROJECT_DIR$/../myPython1/demo/demo06.py" />
+        <option value="$PROJECT_DIR$/../myPython1/demo/bitmap.py" />
       </list>
     </option>
   </component>
@@ -321,8 +315,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -331,21 +323,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="getJpg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mafengwo" />
+              <option name="myItemId" value="myPython1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -358,9 +336,15 @@
               <option name="myItemId" value="myPython1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -393,23 +377,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.get_hotel_rooms">
-    <configuration default="false" name="Unittests for dianping_hotel_hk.test.test_crawling_review.TestCrawling_review.test_get_attraction_review_on_page" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="getJpg" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;dianping_hotel_hk.test.test_crawling_review.TestCrawling_review.test_get_attraction_review_on_page&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.demo06">
     <configuration default="false" name="crawling_room" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -481,6 +449,25 @@
       <module name="spider" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_rooms.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="demo06" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../myPython1/demo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="myPython1" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../myPython1/demo/demo06.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -672,19 +659,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.demo02 (1)" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for dianping_hotel_hk.test.test_crawling_review.TestCrawling_review.test_get_attraction_review_on_page" />
-      <item index="2" class="java.lang.String" itemvalue="Python.crawling_room" />
-      <item index="3" class="java.lang.String" itemvalue="Python.get_hotel_shops" />
-      <item index="4" class="java.lang.String" itemvalue="Python.demo05" />
-      <item index="5" class="java.lang.String" itemvalue="Python.get_hotel_rooms" />
+      <item index="1" class="java.lang.String" itemvalue="Python.crawling_room" />
+      <item index="2" class="java.lang.String" itemvalue="Python.get_hotel_shops" />
+      <item index="3" class="java.lang.String" itemvalue="Python.demo05" />
+      <item index="4" class="java.lang.String" itemvalue="Python.get_hotel_rooms" />
+      <item index="5" class="java.lang.String" itemvalue="Python.demo06" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.get_hotel_rooms" />
-        <item index="1" class="java.lang.String" itemvalue="Python.demo05" />
-        <item index="2" class="java.lang.String" itemvalue="Python.get_hotel_shops" />
-        <item index="3" class="java.lang.String" itemvalue="Python.crawling_room" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for dianping_hotel_hk.test.test_crawling_review.TestCrawling_review.test_get_attraction_review_on_page" />
+        <item index="0" class="java.lang.String" itemvalue="Python.demo06" />
+        <item index="1" class="java.lang.String" itemvalue="Python.get_hotel_rooms" />
+        <item index="2" class="java.lang.String" itemvalue="Python.demo05" />
+        <item index="3" class="java.lang.String" itemvalue="Python.get_hotel_shops" />
+        <item index="4" class="java.lang.String" itemvalue="Python.crawling_room" />
       </list>
     </recent_temporary>
   </component>
@@ -749,40 +736,27 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5106383" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7708674" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47954175" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4067227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18835099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6260032" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.48816568" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5118343" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19476268" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.290469" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.83282906" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5106383" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6260032" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47954175" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4067227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40504202" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.48816568" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5118343" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4067227" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.290469" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41734862" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28139183" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18229954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6260032" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.48816568" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5106383" sideWeight="0.4969743" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5118343" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40752864" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.290469" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -989,74 +963,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../myPython1/demo/demo01/s.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/62715a56/60a3aca0-789d-4d04-a36a-d4d2a8ea4bbd/company.product">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/62715a56/60a3aca0-789d-4d04-a36a-d4d2a8ea4bbd/company.video">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/62715a56/60a3aca0-789d-4d04-a36a-d4d2a8ea4bbd/company.admin">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/62715a56/60a3aca0-789d-4d04-a36a-d4d2a8ea4bbd/company.demo">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/62715a56/60a3aca0-789d-4d04-a36a-d4d2a8ea4bbd/company.demo1">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/62715a56/60a3aca0-789d-4d04-a36a-d4d2a8ea4bbd/company.news">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1290,21 +1196,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_shops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/dao.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -1318,17 +1209,17 @@
         <state relative-caret-position="3960">
           <caret line="135" column="4" lean-forward="false" selection-start-line="135" selection-start-column="4" selection-end-line="135" selection-end-column="4" />
           <folding>
-            <marker date="1502972543189" expanded="true" signature="1996:2421" ph="..." />
-            <marker date="1502972543189" expanded="true" signature="2051:2287" ph="..." />
-            <marker date="1502972543189" expanded="true" signature="2198:2287" ph="..." />
-            <marker date="1502972543189" expanded="true" signature="2454:2856" ph="..." />
-            <marker date="1502972543189" expanded="true" signature="2509:2730" ph="..." />
-            <marker date="1502972543189" expanded="true" signature="2641:2730" ph="..." />
-            <marker date="1502972543189" expanded="true" signature="2895:3339" ph="..." />
-            <marker date="1502972543189" expanded="true" signature="3043:3295" ph="..." />
-            <marker date="1502972543189" expanded="true" signature="3167:3295" ph="..." />
-            <marker date="1502972543189" expanded="true" signature="3197:3295" ph="..." />
-            <marker date="1502972543189" expanded="true" signature="3231:3295" ph="..." />
+            <marker date="1503195893424" expanded="true" signature="1996:2422" ph="..." />
+            <marker date="1503195893424" expanded="true" signature="2051:2288" ph="..." />
+            <marker date="1503195893424" expanded="true" signature="2199:2288" ph="..." />
+            <marker date="1503195893424" expanded="true" signature="2455:2857" ph="..." />
+            <marker date="1503195893424" expanded="true" signature="2510:2731" ph="..." />
+            <marker date="1503195893424" expanded="true" signature="2642:2731" ph="..." />
+            <marker date="1503195893424" expanded="true" signature="2896:3340" ph="..." />
+            <marker date="1503195893424" expanded="true" signature="3044:3296" ph="..." />
+            <marker date="1503195893424" expanded="true" signature="3168:3296" ph="..." />
+            <marker date="1503195893424" expanded="true" signature="3198:3296" ph="..." />
+            <marker date="1503195893424" expanded="true" signature="3232:3296" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1338,7 +1229,7 @@
         <state relative-caret-position="1500">
           <caret line="58" column="37" lean-forward="false" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
           <folding>
-            <element signature="e#15#30#0" expanded="true" />
+            <element signature="e#15#30#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1358,23 +1249,19 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#15#30#0" expanded="true" />
+            <element signature="e#15#30#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../spider/mafengwo/base_dao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
+        <state relative-caret-position="210">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#84#98#0" expanded="true" />
-            <marker date="1502973092202" expanded="true" signature="606:635" ph="SELECT shopI... missing_value" />
-            <marker date="1502973092202" expanded="true" signature="911:1020" ph="SELECT shopI... missing_value" />
-            <marker date="1502973092202" expanded="true" signature="988:1019" ph="SELECT shopI... hotel_review" />
-            <marker date="1502973092202" expanded="true" signature="1234:1253" ph="SELECT shopI... missing_value" />
-            <marker date="1502973092202" expanded="true" signature="1256:1259" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-            <marker date="1502973092202" expanded="true" signature="1256:1331" ph="..." />
+            <element signature="e#84#98#0" expanded="false" />
+            <marker date="1503195893409" expanded="true" signature="1310:1347" ph="..." />
+            <marker date="1503195893409" expanded="true" signature="1310:1413" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1383,22 +1270,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/action.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="162" column="0" lean-forward="false" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/h_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="244" column="14" lean-forward="false" selection-start-line="244" selection-start-column="14" selection-end-line="244" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1414,14 +1285,14 @@
     <entry file="file://$PROJECT_DIR$/../spider/mafengwo/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Program Files/Python27/Lib/ntpath.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
+        <state relative-caret-position="5070">
           <caret line="176" column="76" lean-forward="false" selection-start-line="176" selection-start-column="71" selection-end-line="176" selection-end-column="76" />
           <folding />
         </state>
@@ -1429,11 +1300,103 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_rooms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="14" column="48" lean-forward="false" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        <state relative-caret-position="307">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="e#85#95#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/h_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="244" column="13" lean-forward="false" selection-start-line="244" selection-start-column="13" selection-end-line="244" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_shops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#84#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="13" selection-end-column="26" />
+          <folding>
+            <element signature="e#83#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/member/get_member.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#83#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/attraction/get_attraction_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding>
+            <element signature="e#83#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/attraction/get_attraction_shop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding>
+            <element signature="e#84#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_reviews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding>
+            <element signature="e#134#144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/action.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="87" column="45" lean-forward="true" selection-start-line="87" selection-start-column="45" selection-end-line="87" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../myPython1/demo/demo06.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../myPython1/demo/bitmap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>

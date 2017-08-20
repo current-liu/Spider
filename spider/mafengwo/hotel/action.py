@@ -85,7 +85,7 @@ def get_hotel_review():
     for shop in shops:
         shop_id = shop[0]
         review_num = shop[1]
-        page_num = review_num / 10 + 1
+        page_num = (review_num + 10 - 1) / 10
         msg1 = "第'%d':'%s' 共'%d':页评论" % (shops.index(shop), shop_id, page_num)
         print msg1
         fo_log.write(msg1)

@@ -13,3 +13,5 @@ __version__ = '1.0'
 today = datetime.date.today()
 today_str = today.strftime("%Y-%m-%d")
 print "%s" % today
+
+print 1|0
