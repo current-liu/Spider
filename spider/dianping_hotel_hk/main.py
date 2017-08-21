@@ -187,7 +187,7 @@ def crawling_room():
         index += 1
         s = urls.split("checkinDate")[0]
         shopId = int(re.sub(r'\D', "", s))
-        print "crawling_room 第'%s'个shopId：'%s'" % (index, shopId)
+        print "crawling_room num. %s shopId：%s " % (index, shopId)
         url_list = urls.split(" ")
 
         doc0, msg = html_download.downloadPage_without_proxy(url_list[0])
@@ -203,9 +203,9 @@ def crawling_room():
         query_time = today.strftime("%Y-%m-%d")
 
         if rooms_info_total == None:
-            room_info_list = [{"roomInfo": [-1, shopId, "此shopId未查询到数据", -1, -1, -1, -1, -1]}]
+            room_info_list = [{"roomInfo": [-1, shopId, "shopId parser data fail", -1, -1, -1, -1, -1]}]
             dao.insert_hotel_rooms(room_info_list, query_time)
-            print "无信息", shopId
+            print "nothing to get", shopId
             continue
 
         room_info_list = []
@@ -218,7 +218,7 @@ def crawling_room():
                     for r in room_info_list:
                         if r["roomId"] == room["roomId"]:
                             r["roomInfo"].append(room["roomInfo"][3])
-        print "扒完", shopId
+        print "complete", shopId
 
         dao.insert_hotel_rooms(room_info_list, query_time)
 

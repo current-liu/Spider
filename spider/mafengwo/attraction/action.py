@@ -30,7 +30,7 @@ def get_attraction_list():
     url_pre = "http://www.mafengwo.cn/ajax/router.php?cb=jQuery18109768219088779657_1503019977250&sAct=KMdd_StructWebAjax|GetPoisByTag&iMddid=10189&iTagId=0&iPage="
     flag = True
     index = 0
-    while(flag):
+    while (flag):
         index += 1
         if index == 32:
             flag = False
@@ -47,7 +47,6 @@ def get_attraction_list():
             print msg1
         else:
             dao.insert_attraction_shop(attractions)
-
 
 
 def get_attraction_shop():
@@ -68,13 +67,59 @@ def get_attraction_shop():
             continue
 
         try:
-            shop_name, shop_name_en, info, tel, site, time_use, trans, ticket, bussiness_time,\
-                loc, inner_scenic, review_num = h_parser.parser_attraction_shops(doc)
+            shop_name, shop_name_en, info, tel, site, time_use, trans, ticket, bussiness_time, loc, inner_scenic, review_num = h_parser.parser_attraction_shops(
+                doc)
             msg2 = "shopId:'%s'解析完成，正写入数据" % shop_id
             print msg2
-            dao.update_attraction_shop(shop_name, shop_name_en, info, tel, site, time_use, trans, ticket, bussiness_time, \
-                loc, inner_scenic, review_num, shop_id)
+            dao.update_attraction_shop(shop_name, shop_name_en, info, tel, site, time_use, trans, ticket,
+                                       bussiness_time, loc, inner_scenic, review_num, shop_id)
         except:
             # TODO 这里会接到异常吗？ 两个函数的异常都在内部处理过了
             fo_log.write("doc error '%s'" % shop_id)
             fo_log.write(doc)
+
+
+def get_attraction_review():
+    table = "attraction_shop"
+    shops = base_dao.select_shopid_and_reviewnum(table)
+    for shop in shops:
+        shop_id = shop[0]
+        shop_id = 520
+        review_num = shop[1]
+        review_num = 6528
+        page_num = (review_num + 15 - 1) / 15
+        msg1 = "num.%d %s : totally %d pages review" % (shops.index(shop), shop_id, page_num)
+        print msg1
+        fo_log.write(msg1)
+        get_attraction_review_on_page(shop_id, page_num)
+    pass
+
+
+def get_attraction_review_on_page(shop_id, page_num):
+    index = 300
+    flag = True
+    while (flag):
+        index += 1
+        url = 'http://www.mafengwo.cn/poi/__pagelet__/pagelet/poiCommentListApi?callback=jQuery18107355407450384277_1503280700250&params=%7B%22poi_id%22%3A%22' + str(
+            shop_id) + '%22%2C%22page%22%3A' + str(index) + '%2C%22just_comment%22%3A1%7D&_=1503281566568'
+
+        if index == page_num:
+            flag = False
+        time.sleep(random.uniform(2, 3))
+        doc, msg = html_download.downloadPage_without_proxy(url, fo_log)
+        if msg != "ok":
+            continue
+        try:
+            review_ids, member_ids, likes, contents, stars, times = h_parser.parser_attraction_review(doc)
+            msg = dao.insert_attraction_review(shop_id, review_ids, member_ids, likes, contents, stars, times)
+            if msg == "for key 'PRIMARY'":
+                msg2 = "shopId %s reach the page scrawled" % shop_id
+                print msg2
+                fo_log.write(msg2)
+                break
+
+        except BaseException, e:
+            print e
+    msg3 = "shopId %s log to pageno=%s" % (shop_id, index)
+    print msg3
+    fo_log.write(msg3)

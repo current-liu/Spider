@@ -271,15 +271,15 @@ def get_room(doc_list, shopId):
             room_list = json.loads(doc)["data"]["hotelGoodsList"]["roomList"]
         except BaseException, e:
             print e
-            print "获取酒店房型详情失败"
+            print "fail to get info about hotel room"
             return
         else:
             n = room_list.__len__()
             if (n == 0):
-                print "房型信息为空"
+                print "info about hotel room is empty"
                 return
             else:
-                print "成功获取房型"
+                print "get hotel room info successfully"
                 roomId_list = []
                 room_infos = []
                 for room in room_list:
@@ -399,6 +399,7 @@ def get_attraction_review(shopId, doc, url):
 
     # 解析页面内容
     try:
+        # 不递归find
         comment_list = soup.find("div", class_="comment-list").find("ul").find_all("li", recursive=False)
     except BaseException, e:
         print e

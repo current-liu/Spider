@@ -95,5 +95,68 @@ def parser_attraction_shops(doc):
     except BaseException, e:
         print e
 
-    return shop_name, shop_name_en, info, tel, site, time_use, trans, ticket, bussiness_time, \
-           loc, inner_scenic, review_num
+    return shop_name, shop_name_en, info, tel, site, time_use, trans, ticket, bussiness_time, loc, inner_scenic, review_num
+
+
+def parser_attraction_review(doc):
+    json_data = doc.split("(", 1)[1].replace('"css":[],"js":[]}});', '"css":[],"js":[]}}')
+    review_list = json.loads(json_data)['data']['html']
+    soup = BeautifulSoup(review_list, "lxml")
+    review_ids = []
+    member_ids = []
+    likes = []
+    contents = []
+    stars = []
+    times = []
+    try:
+        comment_list = soup.find("div", class_='rev-list').find_all("li", recursive=False)
+        for comment in comment_list:
+            review_id = -1
+            member_id = -1
+            like = 0
+            try:
+                review_id = comment.find("a", class_="useful")['data-id']
+                member = comment.find("div", class_="user").find("a", class_="avatar")['href']
+                member_id = re.sub(r"\D", "", member)
+            except BaseException, e:
+                print e
+                msg1 = "get review_id,member_id failed "
+                print msg1
+                fo_log.write(msg1)
+
+            try:
+                like = int(comment.find("a", class_="useful").find("span", class_="useful-num").get_text())
+            except BaseException, e:
+                pass
+            content = "-1"
+            try:
+                content = comment.find("p", class_="rev-txt").get_text().replace("\n", "").replace("'", "").replace('"',
+                                                                                                                    "")
+            except:
+                pass
+            star = -1
+            try:
+                comm_star = comment.find("span", recursive=False)
+                star_str = comm_star['class'][1]
+                star = int(re.sub(r"\D", "", star_str))
+            except BaseException, e:
+                pass
+            create_time = "-1"
+            try:
+                time = comment.find("span", class_="time").get_text()
+                create_time = datetime.datetime.strptime(time, '%Y-%m-%d %H:%M:%S')
+
+            except BaseException, e:
+                pass
+            pass
+
+            review_ids.append(review_id)
+            member_ids.append(member_id)
+            likes.append(like)
+            contents.append(content)
+            stars.append(star)
+            times.append(create_time)
+    except BaseException, e:
+        print e
+
+    return review_ids, member_ids, likes, contents, stars, times

@@ -37,3 +37,24 @@ def update_attraction_shop(shop_name, shop_name_en, info, tel, site, time_use, t
     except BaseException, e:
         db.rollback()
         print e
+
+
+def insert_attraction_review(shop_id, review_ids, member_ids, likes, contents, stars, times):
+    sql = """INSERT INTO attraction_review (reviewId,memberId,shopId,reviewStar,content,creatTime,likes)
+                         VALUES(%s,%s,%s,%s,%s,%s,%s)"""
+    msg = ""
+    index = 0
+    for (q, w, e, r, t, y) in zip(review_ids, member_ids, likes, contents, stars, times):
+        try:
+            cursor.execute(sql, (q, w, shop_id, t, r, y, e))
+            db.commit()
+        except BaseException, e:
+            db.rollback()
+            print e
+            if str(e).__contains__("for key 'PRIMARY'"):
+                # 由于一条评论信息可能出现在连续的两页上，故一个页面上有一个主键冲突不能判定该页面已经爬取过
+                index += 1
+
+    if index == 15:
+        msg = "for key 'PRIMARY'"
+    return msg

@@ -44,13 +44,13 @@ def download_ips():
             doc = requests.get(url).content
             ip_list = json.loads(doc)['data']
             if ip_list.__len__() == 0:
-                print "正在获取代理ip，请稍后"
+                print "getting ip, please wait..."
                 time.sleep(1.5)
             else:
                 break
         except BaseException, e:
             # print e
-            msg2 = "获取代理ip异常，正在重试"
+            msg2 = "there is a exception, wait for try again"
             print msg2
 
     ip_pool += ip_list
@@ -74,13 +74,13 @@ def download_from_ip_pool():
             doc = requests.get(url_IPProxyPool).content
             ip_list = json.loads(doc)
             if ip_list.__len__() == 0:
-                print "正在获取代理ip，请稍后"
+                print "getting ip, please wait..."
                 time.sleep(1.5)
             else:
                 break
         except BaseException, e:
             # print e
-            msg2 = "获取代理ip异常，正在重试"
+            msg2 = "there is a exception, wait for try again"
             print msg2
 
     ip_pool += ip_list
@@ -99,7 +99,7 @@ def get_ip():
             break
         msg = download_ips()
         if msg == "fail":
-            msg1 = "获取代理ip失败，请处理"
+            msg1 = "fail to get ip, please handle"
             print msg1
             raise BaseException
 
@@ -121,7 +121,7 @@ def get_ip_from_IPProxyPool():
             break
         msg = download_from_ip_pool()
         if msg == "fail":
-            msg1 = "获取代理ip失败，请处理"
+            msg1 = "fail to get ip, please handle"
             print msg1
             raise BaseException
 
