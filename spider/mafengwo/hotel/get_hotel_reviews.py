@@ -19,4 +19,5 @@ sys.path.append(rootPath1)
 import action
 
 if __name__ == '__main__':
+    # 评论无法按时间排序，后期更新存在问题
     action.get_hotel_review()

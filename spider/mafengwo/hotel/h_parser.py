@@ -214,7 +214,7 @@ def parser_hotel_review(doc):
                 star = int(re.sub(r"\D", "", star_str))
             except BaseException, e:
                 pass
-            create_time = "-1"
+                create_time = "1946-01-01 00:00:00"
             try:
                 time = comment.find("span", class_="time").get_text()
                 create_time = datetime.datetime.strptime(time, '%Y-%m-%d')

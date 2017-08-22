@@ -25,11 +25,11 @@ __author__ = 'Administrator'
 __version__ = '1.0'
 
 
-def select_shopid_and_reviewnum(table):
+def select_shopid_and_reviewnum(table, sql_=""):
     results = []
     try:
         sql = """SELECT shopId,reviewNum FROM %s """ % table
-        cursor.execute(sql)
+        cursor.execute(sql + sql_)
         results = cursor.fetchall()
 
     except BaseException, e:

@@ -138,7 +138,7 @@ def downloadPage_without_proxy(url):
         # 同一个地址最多尝试3次
         max_try = 3
         if index == max_try:
-            msg6 = "abandon：" + url
+            msg6 = "---abandon---：" + url
             print msg6
             fo_log.write(msg6)
             break

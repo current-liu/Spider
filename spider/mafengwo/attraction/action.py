@@ -84,19 +84,21 @@ def get_attraction_review():
     shops = base_dao.select_shopid_and_reviewnum(table)
     for shop in shops:
         shop_id = shop[0]
-        shop_id = 520
         review_num = shop[1]
-        review_num = 6528
         page_num = (review_num + 15 - 1) / 15
         msg1 = "num.%d %s : totally %d pages review" % (shops.index(shop), shop_id, page_num)
         print msg1
         fo_log.write(msg1)
+        if review_num < 1:
+            continue
         get_attraction_review_on_page(shop_id, page_num)
     pass
 
 
 def get_attraction_review_on_page(shop_id, page_num):
-    index = 300
+    index = 0
+    if shop_id == 520:
+        index = 293
     flag = True
     while (flag):
         index += 1

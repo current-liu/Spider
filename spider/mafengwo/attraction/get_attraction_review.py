@@ -18,4 +18,5 @@ __version__ = '1.0'
 
 
 if __name__ == '__main__':
+    # 评论无法按时间排序，后期更新存在问题
     action.get_attraction_review()

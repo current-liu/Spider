@@ -31,18 +31,18 @@ def parser_food_list(doc):
         print e
         msg1 = "parser page fail"
         print msg1
-        print
-    for li in li_list:
-        try:
-            href = li.find("span", class_="img").find("a")["href"]
-            shop_id = int(re.sub(r"\D", "", href))
-            pic_url = li.find("span", class_="img").find("a").find("img")["src"]
-            food = [shop_id, pic_url]
-            foods.append(food)
-        except BaseException, e:
-            print e
-            msg2 = "parser food_shop fail"
-            print msg2
+    else:
+        for li in li_list:
+            try:
+                href = li.find("span", class_="img").find("a")["href"]
+                shop_id = int(re.sub(r"\D", "", href))
+                pic_url = li.find("span", class_="img").find("a").find("img")["src"]
+                food = [shop_id, pic_url]
+                foods.append(food)
+            except BaseException, e:
+                print e
+                msg2 = "parser food_shop fail"
+                print msg2
     return foods
 
 
@@ -75,37 +75,49 @@ def parser_food_shops(doc):
     # TODO 根据子标签的内容，来判断时什么信息
     try:
         m_box_li_list = soup.find("div", class_="m-box m-info").find_all("li")
-        loc_str = m_box_li_list[0].get_text()
-        loc = loc_str.split("址：")[1].replace(" ", "").replace("\n", "")
-        if loc == "更多餐厅简介":
-            loc = "-1"
-        tel = m_box_li_list[1].get_text().replace(" ", "").replace("\n", "")
-        if tel == "更多餐厅简介":
-            tel = "-1"
+
+        li_01 = m_box_li_list[0]
+        content_01 = li_01.get_text()
+        icon_01 = li_01.find("i")['class'][0]
+        if icon_01 == "icon-location":
+            loc = content_01.split("址：")[1].replace(" ", "").replace("\n", "")
+        elif icon_01 == "icon-tel":
+            tel = content_01.replace(" ", "").replace("\n", "")
+
+        li_02 = m_box_li_list[1]
+        content_02 = li_02.get_text()
+        icon_02 = li_02.find("i")['class'][0]
+        if icon_02 == "icon-tel":
+            tel = content_02.replace(" ", "").replace("\n", "")
+
     except BaseException, e:
         print e
     return shop_name, loc, tel, score, star, review_num
 
 
 def parser_food_review(doc):
-    json_data = doc.split("(", 1)[1].replace('"css":[],"js":[]}});', '"css":[],"js":[]}}')
-    review_list = json.loads(json_data)['data']['html']
-    soup = BeautifulSoup(review_list, "lxml")
     review_ids = []
     member_ids = []
     likes = []
     contents = []
     stars = []
     times = []
+
+    msg = json.loads(doc)['msg']
+    if msg != "succ":
+        return review_ids, member_ids, likes, contents, stars, times
+
+    html = json.loads(doc)['html']['html']
+    soup = BeautifulSoup(html, "lxml")
     try:
-        comment_list = soup.find("div", class_='rev-list').find_all("li")
+        comment_list = soup.find_all("div", class_='comment-item')
         for comment in comment_list:
             review_id = -1
             member_id = -1
 
             try:
-                review_id = comment.find("a", class_="useful")['data-id']
-                member = comment.find("div", class_="user").find("a", class_="avatar")['href']
+                review_id = re.sub(r"\D", "", comment['id'])
+                member = comment.find("div", class_="user-bar").find("span", class_="user-avatar").find("a")['href']
                 member_id = re.sub(r"\D", "", member)
             except BaseException, e:
                 print e
@@ -115,7 +127,7 @@ def parser_food_review(doc):
 
             like = 0
             try:
-                like = int(comment.find("a", class_="useful").find("span", class_="useful-num").get_text())
+                like = int(comment.find("span", class_="useful").find("span", class_="useful-num").get_text())
             except BaseException, e:
                 pass
             content = "-1"
@@ -125,14 +137,14 @@ def parser_food_review(doc):
             except:
                 pass
 
-            star = -1
+            star = 0
             try:
                 comm_star = comment.find("span", class_="rank-star").find("span")
-                star_str = comm_star['class'][1]
+                star_str = comm_star['class'][0]
                 star = int(re.sub(r"\D", "", star_str))
             except BaseException, e:
                 pass
-            create_time = "-1"
+            create_time = "1946-01-01 00:00:00"
             try:
                 time = comment.find("span", class_="time").get_text()
                 create_time = datetime.datetime.strptime(time, '%Y-%m-%d %H:%M:%S')

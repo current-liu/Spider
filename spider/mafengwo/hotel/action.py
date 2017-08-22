@@ -139,11 +139,11 @@ def get_hotel_room():
                 index += 1
                 s = urls.split("sCheckIn")[0].split("iPoiId=")[1]
                 shopId = int(re.sub(r'\D', "", s))
-                print "crawling_room 第'%s'个shopId：'%s'" % (index, shopId)
+                print "crawling_room num.'%s' shopId: '%s'" % (index, shopId)
                 url_list = urls.split(" ")
             except BaseException, e:
                 print e
-                msg0 = "获取地址失败"
+                msg0 = "fail to get url"
                 print msg0
                 continue
 
@@ -158,7 +158,7 @@ def get_hotel_room():
                 rooms_info_total = h_parser.get_room(doc_list)
             except BaseException, e:
                 print e
-                msg1 = "解析房间信息失败"
+                msg1 = "fail to parser hotel room"
                 print msg1
                 continue
 

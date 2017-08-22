@@ -109,7 +109,7 @@ def parser_attraction_review(doc):
     stars = []
     times = []
     try:
-        comment_list = soup.find("div", class_='rev-list').find_all("li", recursive=False)
+        comment_list = soup.find("div", class_='rev-list').find("ul").find_all("li", recursive=False)
         for comment in comment_list:
             review_id = -1
             member_id = -1
@@ -141,7 +141,7 @@ def parser_attraction_review(doc):
                 star = int(re.sub(r"\D", "", star_str))
             except BaseException, e:
                 pass
-            create_time = "-1"
+                create_time = "1946-01-01 00:00:00"
             try:
                 time = comment.find("span", class_="time").get_text()
                 create_time = datetime.datetime.strptime(time, '%Y-%m-%d %H:%M:%S')

@@ -187,7 +187,7 @@ def crawling_room():
         index += 1
         s = urls.split("checkinDate")[0]
         shopId = int(re.sub(r'\D', "", s))
-        print "crawling_room num. %s shopId：%s " % (index, shopId)
+        print "crawling_room num.%s shopId: %s " % (index, shopId)
         url_list = urls.split(" ")
 
         doc0, msg = html_download.downloadPage_without_proxy(url_list[0])
