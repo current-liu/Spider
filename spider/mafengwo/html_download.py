@@ -84,7 +84,7 @@ def downloadPage_without_proxy(url, fo_log):
         # 处理请求结果
         doc = ""
         try:
-            doc = requests.get(url, headers=h, timeout=3).content
+            doc = requests.get(url, headers=h, timeout=10).content
             pass
         except BaseException, e:
             print e

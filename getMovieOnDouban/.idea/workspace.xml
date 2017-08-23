@@ -2,27 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb965f97-59ad-41fd-95d5-487c6bc2a174" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/food/get_food_review.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_list.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_review.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myPython1/demo/base_dao.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler" afterPath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler2" afterPath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/a19dd8f8-6f41-47f8-b143-86881fceb14e.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/a19dd8f8-6f41-47f8-b143-86881fceb14e.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/html_download.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py" afterPath="$PROJECT_DIR$/../spider/dianping_hotel_hk/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/attraction/action.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/attraction/action.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/attraction/get_attraction_review.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/attraction/get_attraction_review.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/attraction/h_parser.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/attraction/h_parser.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/base_dao.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/base_dao.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/food/action.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/food/action.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/food/get_food_review.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/food/get_food_review.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/food/h_parser.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/food/h_parser.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/hotel/action.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/hotel/action.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_reviews.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_reviews.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/hotel/h_parser.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/hotel/h_parser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/food/log/20170822.txt" afterPath="$PROJECT_DIR$/../spider/mafengwo/food/log/20170822.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/html_download.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/html_download.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/ip_proxy.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/ip_proxy.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/shopping/action.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/shopping/action.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/shopping/dao.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/shopping/dao.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_review.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_review.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_shop.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_shop.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/shopping/h_parser.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/shopping/h_parser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/shopping/log/20170822.txt" afterPath="$PROJECT_DIR$/../spider/mafengwo/shopping/log/20170822.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,7 +35,7 @@
     <SUITE FILE_PATH="coverage/getMovieOnDouban$demo05.coverage" NAME="demo05 Coverage Results" MODIFIED="1502781688896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../myPython1/demo" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_hotel_shops.coverage" NAME="get_hotel_shops Coverage Results" MODIFIED="1502843721226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/hotel" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_review_TestGet_review_setUp.coverage" NAME="Unittests for test_get_review.TestGet_review.setUp Coverage Results" MODIFIED="1501640443877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$get_attraction_review.coverage" NAME="get_attraction_review Coverage Results" MODIFIED="1503372960519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/attraction" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$get_attraction_review.coverage" NAME="get_attraction_review Coverage Results" MODIFIED="1503474023312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/attraction" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_member.coverage" NAME="get_member Coverage Results" MODIFIED="1502957132561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/member" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_ips_TestGet_ips_test_ip_proxy.coverage" NAME="Unittests for test_get_ips.TestGet_ips.test_ip_proxy Coverage Results" MODIFIED="1501811851659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_attraction_review_py.coverage" NAME="Unittests in test_attraction_review.py Coverage Results" MODIFIED="1503290813440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/test_package/attraction" />
@@ -63,17 +61,18 @@
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_crawling_review_py.coverage" NAME="Unittests in test_crawling_review.py Coverage Results" MODIFIED="1502334619532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_hotel_list.coverage" NAME="get_hotel_list Coverage Results" MODIFIED="1502423792127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/hotel" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_member_mark_py.coverage" NAME="Unittests in member_mark.py Coverage Results" MODIFIED="1502869523877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/test_package/member" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$get_food_review.coverage" NAME="get_food_review Coverage Results" MODIFIED="1503385891438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/food" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$get_shopping_review.coverage" NAME="get_shopping_review Coverage Results" MODIFIED="1503475820295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/shopping" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$get_food_review.coverage" NAME="get_food_review Coverage Results" MODIFIED="1503467274386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/food" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1501207004603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/tianyancha" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_review_TestGet_review_test_get_review.coverage" NAME="Unittests for test_get_review.TestGet_review.test_get_review Coverage Results" MODIFIED="1501663533429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_get_ips_py.coverage" NAME="Unittests in test_get_ips.py Coverage Results" MODIFIED="1501556373204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_attraction_shop_py.coverage" NAME="Unittests in test_attraction_shop.py Coverage Results" MODIFIED="1503044463938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/test_package/attraction" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_room_TestGet_room_test_get_room.coverage" NAME="Unittests for test_get_room.TestGet_room.test_get_room Coverage Results" MODIFIED="1501483418719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_review_TestGet_review.coverage" NAME="Unittests for test_get_review.TestGet_review Coverage Results" MODIFIED="1501662596845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$base_dao.coverage" NAME="base_dao Coverage Results" MODIFIED="1502422542278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$base_dao.coverage" NAME="base_dao Coverage Results" MODIFIED="1503471119636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../myPython1/demo" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$html_parser.coverage" NAME="html_parser Coverage Results" MODIFIED="1500013326838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/k11" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_ips_TestGet_ips_test_get_ips.coverage" NAME="Unittests for test_get_ips.TestGet_ips.test_get_ips Coverage Results" MODIFIED="1501221225075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$get_food_shop.coverage" NAME="get_food_shop Coverage Results" MODIFIED="1503377857621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/food" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$get_food_shop.coverage" NAME="get_food_shop Coverage Results" MODIFIED="1503448230976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/food" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_hotel_review.coverage" NAME="get_hotel_review Coverage Results" MODIFIED="1502843938715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/hotel" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_crawling_review_TestCrawling_review_test_crawling_review.coverage" NAME="Unittests for test_crawling_review.TestCrawling_review.test_crawling_review Coverage Results" MODIFIED="1501144253626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_shopping_list.coverage" NAME="get_shopping_list Coverage Results" MODIFIED="1503390245745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/shopping" />
@@ -97,6 +96,7 @@
     <SUITE FILE_PATH="coverage/getMovieOnDouban$ip_proxy.coverage" NAME="ip_proxy Coverage Results" MODIFIED="1501210132662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_attraction_py.coverage" NAME="Unittests in test_attraction.py Coverage Results" MODIFIED="1502089652501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_attraction_list.coverage" NAME="get_attraction_list Coverage Results" MODIFIED="1503026892470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/attraction" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$get_shopping_shop.coverage" NAME="get_shopping_shop Coverage Results" MODIFIED="1503480170401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/shopping" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1500597763556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/k11" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_downloadPage_py.coverage" NAME="Unittests in test_downloadPage.py Coverage Results" MODIFIED="1501641526882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_main_py.coverage" NAME="Unittests in test_main.py Coverage Results" MODIFIED="1502074064524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
@@ -118,7 +118,7 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="spider" />
+        <option name="myItemId" value="@192.168.1.166" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -128,7 +128,7 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="spider" />
+        <option name="myItemId" value="@192.168.1.166" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
@@ -140,28 +140,52 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="get_shopping_shop.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_shop.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="action.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../spider/mafengwo/shopping/action.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="335">
+              <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a19dd8f8-6f41-47f8-b143-86881fceb14e/console.sql">
+      <file leaf-file-name="html_download.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/html_download.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="40" column="51" lean-forward="false" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
-              <folding />
+            <state relative-caret-position="238">
+              <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+              <folding>
+                <marker date="1503479817008" expanded="true" signature="3236:3257" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kst_mafengwo.food_review" pinned="false" current-in-tab="true">
-        <entry file="dbDummy://dbtable:/cfe404e8/a19dd8f8-6f41-47f8-b143-86881fceb14e/kst_mafengwo.food_review">
+      <file leaf-file-name="ip_proxy.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/ip_proxy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="98" column="17" lean-forward="false" selection-start-line="98" selection-start-column="17" selection-end-line="98" selection-end-column="17" />
+              <folding>
+                <element signature="e#16#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kst_mafengwo.food_shop" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/cfe404e8/a19dd8f8-6f41-47f8-b143-86881fceb14e/kst_mafengwo.food_shop">
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -175,27 +199,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dao.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/shopping/dao.py">
+      <file leaf-file-name="kst_mafengwo.shopping_review" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/cfe404e8/a19dd8f8-6f41-47f8-b143-86881fceb14e/kst_mafengwo.shopping_review">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="h_parser.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/shopping/h_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="794">
-              <caret line="48" column="19" lean-forward="true" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+            <state relative-caret-position="254">
+              <caret line="68" column="19" lean-forward="false" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base_dao.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/base_dao.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding>
-                <marker date="1503386352187" expanded="true" signature="261:326" ph="INSERT INTO shopping_shop... " />
-                <marker date="1503386352187" expanded="true" signature="637:769" ph="UPDATE shopp... " />
-                <marker date="1503386352187" expanded="true" signature="1061:1204" ph="INSERT INTO shopping_review... " />
-                <marker date="1503386352187" expanded="true" signature="1081:1204" ph="INSERT INTO food_review... " />
+                <marker date="1503385891284" expanded="true" signature="615:644" ph="SELECT shopI... " />
+                <marker date="1503385891284" expanded="true" signature="615:646" ph="SELECT shopI... missing_value" />
+                <marker date="1503385891284" expanded="true" signature="615:647" ph="SELECT shopI... missing_value" />
+                <marker date="1503385891284" expanded="true" signature="927:1036" ph="SELECT shopI... missing_value" />
+                <marker date="1503385891284" expanded="true" signature="1004:1035" ph="SELECT shopI... hotel_review" />
+                <marker date="1503385891284" expanded="true" signature="1259:1278" ph="SELECT shopI... " />
+                <marker date="1503385891284" expanded="true" signature="1259:1281" ph="SELECT shopI... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_shopping_list.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_list.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+      <file leaf-file-name="kst_mafengwo.shopping_shop" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/cfe404e8/a19dd8f8-6f41-47f8-b143-86881fceb14e/kst_mafengwo.shopping_shop">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -204,37 +261,7 @@
         <entry file="file://$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_review.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="567">
-              <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="get_shopping_shop.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_shop.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="h_parser.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/shopping/h_parser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="h_parser.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/mafengwo/food/h_parser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="110" column="38" lean-forward="false" selection-start-line="105" selection-start-column="3" selection-end-line="110" selection-end-column="38" />
+              <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -322,9 +349,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../spider/mafengwo/member/get_member.py" />
-        <option value="$PROJECT_DIR$/../spider/mafengwo/test_package/member/member_mark.py" />
-        <option value="$PROJECT_DIR$/../spider/mafengwo/member/member.html" />
         <option value="$PROJECT_DIR$/../spider/mafengwo/member/h_parser.py" />
         <option value="$PROJECT_DIR$/../spider/mafengwo/member/dao.py" />
         <option value="$PROJECT_DIR$/../spider/mafengwo/member/log/20170817.txt" />
@@ -346,8 +370,6 @@
         <option value="$PROJECT_DIR$/../spider/mafengwo/test_package/attraction/test_attraction_review.py" />
         <option value="$PROJECT_DIR$/../spider/dianping_hotel_hk/h_parser.py" />
         <option value="$PROJECT_DIR$/../spider/mafengwo/attraction/dao.py" />
-        <option value="$PROJECT_DIR$/../spider/mafengwo/html_download.py" />
-        <option value="$PROJECT_DIR$/../spider/mafengwo/ip_proxy.py" />
         <option value="$PROJECT_DIR$/../spider/mafengwo/food/get_food_list.py" />
         <option value="$PROJECT_DIR$/../spider/mafengwo/food/get_food_shop.py" />
         <option value="$PROJECT_DIR$/../spider/mafengwo/food/dao.py" />
@@ -361,18 +383,23 @@
         <option value="$PROJECT_DIR$/../spider/mafengwo/attraction/h_parser.py" />
         <option value="$PROJECT_DIR$/../spider/mafengwo/hotel/h_parser.py" />
         <option value="dbtable:/cfe404e8/a19dd8f8-6f41-47f8-b143-86881fceb14e/kst_mafengwo.food_review" />
-        <option value="$PROJECT_DIR$/../spider/mafengwo/food/h_parser.py" />
         <option value="$PROJECT_DIR$/../spider/mafengwo/base_dao.py" />
-        <option value="$PROJECT_DIR$/../spider/mafengwo/food/action.py" />
         <option value="$PROJECT_DIR$/../spider/mafengwo/attraction/get_attraction_review.py" />
-        <option value="$PROJECT_DIR$/../spider/mafengwo/food/get_food_review.py" />
-        <option value="$PROJECT_DIR$/../spider/mafengwo/shopping/dao.py" />
         <option value="$PROJECT_DIR$/../spider/mafengwo/shopping/get_food_list.py" />
         <option value="$PROJECT_DIR$/../spider/mafengwo/shopping/get_food_review.py" />
         <option value="$PROJECT_DIR$/../spider/mafengwo/shopping/get_food_shop.py" />
-        <option value="$PROJECT_DIR$/../spider/mafengwo/shopping/action.py" />
-        <option value="$PROJECT_DIR$/../spider/mafengwo/shopping/h_parser.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/food/h_parser.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/shopping/dao.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a19dd8f8-6f41-47f8-b143-86881fceb14e/console.sql" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/food/get_food_review.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/food/action.py" />
+        <option value="$PROJECT_DIR$/../myPython1/demo/base_dao.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_review.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/ip_proxy.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/shopping/h_parser.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/shopping/action.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/html_download.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_shop.py" />
       </list>
     </option>
   </component>
@@ -397,6 +424,9 @@
           </State>
           <State>
             <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>SQL</id>
           </State>
         </expanded-state>
         <selected-state>
@@ -438,26 +468,58 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="getMovieOnDouban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mafengwo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="getMovieOnDouban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mafengwo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="SQL Resolution Scopes" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spider/mafengwo/test_package/attraction" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../myPython1/demo/base_dao.py" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="SearchEverywhereHistoryKey" value="country&#9;null&#9;null&#10;query_time&#9;null&#9;null&#10;dianping_hotel_hk_liuchao&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Liuchao\PycharmProjects\pythonproject\myPython1\demo" />
       <recent name="D:\Liuchao\PycharmProjects\pythonproject\spider\mafengwo\shopping" />
       <recent name="D:\Liuchao\PycharmProjects\pythonproject\spider\mafengwo\food" />
       <recent name="D:\Liuchao\PycharmProjects\pythonproject\spider\mafengwo\test_package\attraction" />
       <recent name="D:\Liuchao\PycharmProjects\pythonproject\spider\mafengwo\attraction" />
-      <recent name="D:\Liuchao\PycharmProjects\pythonproject\spider\mafengwo\member" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -472,64 +534,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.get_shopping_list">
-    <configuration default="false" name="get_attraction_review" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../spider/mafengwo/attraction" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="spider" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../spider/mafengwo/attraction/get_attraction_review.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="get_food_list" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../spider/mafengwo/food" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="spider" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../spider/mafengwo/food/get_food_list.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="get_food_shop" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../spider/mafengwo/food" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="spider" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../spider/mafengwo/food/get_food_shop.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.get_shopping_shop">
     <configuration default="false" name="get_food_review" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -549,7 +554,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="get_shopping_list" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="get_shopping_shop" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -562,7 +567,64 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="spider" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_list.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_shop.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="base_dao" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../myPython1/demo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="myPython1" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../myPython1/demo/base_dao.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="get_shopping_review" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../spider/mafengwo/shopping" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="spider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_review.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="get_attraction_review" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../spider/mafengwo/attraction" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="spider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../spider/mafengwo/attraction/get_attraction_review.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -717,19 +779,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.get_attraction_review" />
-      <item index="1" class="java.lang.String" itemvalue="Python.get_food_list" />
-      <item index="2" class="java.lang.String" itemvalue="Python.get_food_shop" />
-      <item index="3" class="java.lang.String" itemvalue="Python.get_food_review" />
-      <item index="4" class="java.lang.String" itemvalue="Python.get_shopping_list" />
+      <item index="0" class="java.lang.String" itemvalue="Python.get_food_review" />
+      <item index="1" class="java.lang.String" itemvalue="Python.get_shopping_shop" />
+      <item index="2" class="java.lang.String" itemvalue="Python.base_dao" />
+      <item index="3" class="java.lang.String" itemvalue="Python.get_shopping_review" />
+      <item index="4" class="java.lang.String" itemvalue="Python.get_attraction_review" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.get_shopping_list" />
-        <item index="1" class="java.lang.String" itemvalue="Python.get_food_review" />
-        <item index="2" class="java.lang.String" itemvalue="Python.get_food_shop" />
-        <item index="3" class="java.lang.String" itemvalue="Python.get_attraction_review" />
-        <item index="4" class="java.lang.String" itemvalue="Python.get_food_list" />
+        <item index="0" class="java.lang.String" itemvalue="Python.get_shopping_shop" />
+        <item index="1" class="java.lang.String" itemvalue="Python.get_shopping_review" />
+        <item index="2" class="java.lang.String" itemvalue="Python.get_attraction_review" />
+        <item index="3" class="java.lang.String" itemvalue="Python.base_dao" />
+        <item index="4" class="java.lang.String" itemvalue="Python.get_food_review" />
       </list>
     </recent_temporary>
   </component>
@@ -791,20 +853,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32683983" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5064935" sideWeight="0.5053305" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38636363" sideWeight="0.4946695" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37121212" sideWeight="0.4946695" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18722944" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3961039" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28411514" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2185501" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32599118" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39502165" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19189766" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25906184" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32575756" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40151516" sideWeight="0.49573562" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42207792" sideWeight="0.49573562" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1701,12 +1763,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/mafengwo/food/action.py</url>
-          <line>127</line>
+          <line>128</line>
           <option name="timeStamp" value="587" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/mafengwo/food/action.py</url>
-          <line>128</line>
+          <line>129</line>
           <option name="timeStamp" value="588" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1779,6 +1841,71 @@
           <line>51</line>
           <option name="timeStamp" value="602" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../spider/mafengwo/shopping/action.py</url>
+          <line>71</line>
+          <option name="timeStamp" value="603" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../spider/mafengwo/food/action.py</url>
+          <line>115</line>
+          <option name="timeStamp" value="604" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../myPython1/demo/base_dao.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="605" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../myPython1/demo/base_dao.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="606" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../myPython1/demo/base_dao.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="607" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../myPython1/demo/base_dao.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="608" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../myPython1/demo/base_dao.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="609" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../spider/mafengwo/shopping/action.py</url>
+          <line>136</line>
+          <option name="timeStamp" value="610" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../spider/mafengwo/shopping/action.py</url>
+          <line>137</line>
+          <option name="timeStamp" value="611" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../spider/mafengwo/shopping/action.py</url>
+          <line>124</line>
+          <option name="timeStamp" value="612" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../spider/mafengwo/attraction/action.py</url>
+          <line>102</line>
+          <option name="timeStamp" value="614" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../spider/mafengwo/shopping/h_parser.py</url>
+          <line>173</line>
+          <option name="timeStamp" value="615" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../spider/mafengwo/shopping/action.py</url>
+          <line>82</line>
+          <option name="timeStamp" value="616" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -1790,7 +1917,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="603" />
+      <option name="time" value="617" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="tests">
@@ -1804,41 +1931,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/attraction/2.py" />
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/1.py" />
-    <entry file="dbDummy://dbtable:/cfe404e8/a19dd8f8-6f41-47f8-b143-86881fceb14e/k11data.attraction_shops">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/cfe404e8/a19dd8f8-6f41-47f8-b143-86881fceb14e/kst_mafengwo.attraction_shops">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/attraction/test_attraction_shop.py" />
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/test_package/attraction/test_attraction_shop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../spider/mafengwo/attraction/log/20170818.txt">
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="0">
@@ -1927,22 +2019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/dao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1161">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="61" selection-end-column="14" />
-          <folding>
-            <marker date="1502962381585" expanded="true" signature="396:549" ph="INSERT INTO hotel_shop_list... " />
-            <marker date="1502962381585" expanded="true" signature="941:1265" ph="UPDATE hotel... " />
-            <marker date="1502962381585" expanded="true" signature="1690:1844" ph="INSERT INTO hotel_review... " />
-            <marker date="1502962381585" expanded="true" signature="2481:2625" ph="SELECT shopI... hotel_shop" />
-            <marker date="1502962381585" expanded="true" signature="2572:2624" ph="SELECT shopI... hotel_room" />
-            <marker date="1502962381585" expanded="true" signature="2874:2996" ph="INSERT INTO hotel_room... " />
-            <marker date="1502962381585" expanded="true" signature="2874:3063" ph="INSERT INTO hotel_room... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../spider/mafengwo/test_package/attraction/test_attraction_review.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1950,23 +2026,6 @@
           <folding>
             <element signature="e#84#113#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/html_download.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1917">
-          <caret line="74" column="43" lean-forward="false" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
-          <folding>
-            <marker date="1503291402860" expanded="true" signature="3235:3256" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/ip_proxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="96" column="10" lean-forward="false" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -2028,14 +2087,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_rooms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../spider/mafengwo/attraction/get_attraction_list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
@@ -2067,29 +2118,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/attraction/h_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="143" column="51" lean-forward="false" selection-start-line="143" selection-start-column="51" selection-end-line="143" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_reviews.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/action.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="110" column="91" lean-forward="true" selection-start-line="110" selection-start-column="91" selection-end-line="110" selection-end-column="91" />
-          <folding>
-            <element signature="e#83#92#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2116,86 +2149,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/base_dao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <marker date="1503385891284" expanded="true" signature="615:644" ph="SELECT shopI... " />
-            <marker date="1503385891284" expanded="true" signature="615:646" ph="SELECT shopI... missing_value" />
-            <marker date="1503385891284" expanded="true" signature="615:647" ph="SELECT shopI... missing_value" />
-            <marker date="1503385891284" expanded="true" signature="927:1036" ph="SELECT shopI... missing_value" />
-            <marker date="1503385891284" expanded="true" signature="1004:1035" ph="SELECT shopI... hotel_review" />
-            <marker date="1503385891284" expanded="true" signature="1259:1278" ph="SELECT shopI... " />
-            <marker date="1503385891284" expanded="true" signature="1259:1281" ph="SELECT shopI... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/attraction/action.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="81" column="4" lean-forward="false" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
-          <folding>
-            <element signature="e#83#92#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/attraction/get_attraction_review.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/food/action.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="93" column="4" lean-forward="false" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../spider/mafengwo/food/get_food_list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/food/get_food_review.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding>
-            <element signature="e#84#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/food/get_food_shop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_review.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_shop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -2215,35 +2172,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/food/h_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="110" column="38" lean-forward="false" selection-start-line="105" selection-start-column="3" selection-end-line="110" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/shopping/h_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/shopping/dao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="794">
-          <caret line="48" column="19" lean-forward="true" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-          <folding>
-            <marker date="1503386352187" expanded="true" signature="261:326" ph="INSERT INTO shopping_shop... " />
-            <marker date="1503386352187" expanded="true" signature="637:769" ph="UPDATE shopp... " />
-            <marker date="1503386352187" expanded="true" signature="1061:1204" ph="INSERT INTO shopping_review... " />
-            <marker date="1503386352187" expanded="true" signature="1081:1204" ph="INSERT INTO food_review... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
@@ -2252,7 +2180,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/cfe404e8/a19dd8f8-6f41-47f8-b143-86881fceb14e/kst_mafengwo.food_shop">
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/food/get_food_shop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/url_manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/get_hotel_rooms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/action.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="125" column="4" lean-forward="false" selection-start-line="125" selection-start-column="4" selection-end-line="125" selection-end-column="4" />
+          <folding>
+            <element signature="e#83#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/food/action.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="129" column="83" lean-forward="false" selection-start-line="129" selection-start-column="83" selection-end-line="129" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/food/h_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-383">
+          <caret line="97" column="4" lean-forward="false" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/a19dd8f8-6f41-47f8-b143-86881fceb14e/kst_mafengwo.food_review">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2262,6 +2240,140 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/a19dd8f8-6f41-47f8-b143-86881fceb14e/openrice.openrice_shops">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a72f78be-4071-4d77-9a00-c967d1574099/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/hotel/dao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="20" column="83" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="20" selection-end-column="83" />
+          <folding>
+            <marker date="1502962381585" expanded="true" signature="396:549" ph="INSERT INTO hotel_shop_list... " />
+            <marker date="1502962381585" expanded="true" signature="941:1265" ph="UPDATE hotel... " />
+            <marker date="1502962381585" expanded="true" signature="1690:1844" ph="INSERT INTO hotel_review... " />
+            <marker date="1502962381585" expanded="true" signature="2481:2625" ph="SELECT shopI... hotel_shop" />
+            <marker date="1502962381585" expanded="true" signature="2572:2624" ph="SELECT shopI... hotel_room" />
+            <marker date="1502962381585" expanded="true" signature="2874:2996" ph="INSERT INTO hotel_room... " />
+            <marker date="1502962381585" expanded="true" signature="2874:3063" ph="INSERT INTO hotel_room... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/dianping_hotel_hk/log/20170804运行文档.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="221" column="49" lean-forward="false" selection-start-line="221" selection-start-column="49" selection-end-line="221" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../myPython1/demo/base_dao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <marker date="1503471152592" expanded="true" signature="503:545" ph="SELECT shopI... openrice_shops" />
+            <marker date="1503471152592" expanded="true" signature="739:798" ph="INSERT INTO text_jb... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/attraction/h_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="161" column="64" lean-forward="true" selection-start-line="101" selection-start-column="4" selection-end-line="161" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a19dd8f8-6f41-47f8-b143-86881fceb14e/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/attraction/get_attraction_review.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/attraction/action.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding>
+            <element signature="e#83#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/shopping/dao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <marker date="1503454375891" expanded="true" signature="261:326" ph="INSERT INTO shopping_shop... " />
+            <marker date="1503454375891" expanded="true" signature="676:858" ph="UPDATE shopp... " />
+            <marker date="1503454375891" expanded="true" signature="1190:1333" ph="INSERT INTO shopping_review... " />
+            <marker date="1503454375891" expanded="true" signature="1210:1333" ph="INSERT INTO food_review... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/food/get_food_review.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/a19dd8f8-6f41-47f8-b143-86881fceb14e/kst_mafengwo.shopping_review">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/ip_proxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="98" column="17" lean-forward="false" selection-start-line="98" selection-start-column="17" selection-end-line="98" selection-end-column="17" />
+          <folding>
+            <element signature="e#16#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2278,23 +2390,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/shopping/h_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="68" column="19" lean-forward="false" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_review.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/base_dao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding>
+            <marker date="1503385891284" expanded="true" signature="615:644" ph="SELECT shopI... " />
+            <marker date="1503385891284" expanded="true" signature="615:646" ph="SELECT shopI... missing_value" />
+            <marker date="1503385891284" expanded="true" signature="615:647" ph="SELECT shopI... missing_value" />
+            <marker date="1503385891284" expanded="true" signature="927:1036" ph="SELECT shopI... missing_value" />
+            <marker date="1503385891284" expanded="true" signature="1004:1035" ph="SELECT shopI... hotel_review" />
+            <marker date="1503385891284" expanded="true" signature="1259:1278" ph="SELECT shopI... " />
+            <marker date="1503385891284" expanded="true" signature="1259:1281" ph="SELECT shopI... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../spider/mafengwo/shopping/action.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="335">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a19dd8f8-6f41-47f8-b143-86881fceb14e/console.sql">
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/html_download.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="40" column="51" lean-forward="false" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
-          <folding />
+        <state relative-caret-position="238">
+          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding>
+            <marker date="1503479817008" expanded="true" signature="3236:3257" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/cfe404e8/a19dd8f8-6f41-47f8-b143-86881fceb14e/kst_mafengwo.food_review">
+    <entry file="dbDummy://dbtable:/cfe404e8/a19dd8f8-6f41-47f8-b143-86881fceb14e/kst_mafengwo.food_shop">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2304,6 +2450,14 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_shop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

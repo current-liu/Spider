@@ -56,74 +56,79 @@ def parser_shopping_shops(doc):
     soup = BeautifulSoup(doc, "lxml")
 
     shop_name = "-1"
+    shop_name_en = "-1"
     try:
-        top = soup.find("div", class_="title clearfix")
-        title = top.find("div", class_="t")
+        title = soup.find("div", class_="title")
         shop_name = title.find("h1").get_text()
+        shop_name_en = title.find("div", class_="en").get_text()
     except BaseException, e:
         print e
+
     score = "-1"
     star = "-1"
-    review_num = "-1"
+    review_num = "0"
+    tip = "-1"
     try:
-        score_info = soup.find("div", class_="score")
-        score_str = score_info.find("span", class_="score-info").get_text()
+        info = soup.find("div", class_="info")
+        grade = info.find("div", class_="grade")
+        score_str = grade.find("span", class_="score").get_text()
         score = re.sub(r"\D", "", score_str)
-        star_str = score_info.find("span", class_="comm-info").find("div", class_="rank-star").find("span")['class'][0]
+        star_str = grade.find("span", class_="star").find("span")['class'][0]
         star = re.sub(r"\D", "", star_str)
-        review_num_str = score_info.find("p", class_="ranking").find("em").get_text()
+        review_num_str = info.find("div", class_="rev-count").find("em").get_text()
         review_num = re.sub(r"\D", "", review_num_str)
+        tip = info.find("div", class_="rev-txt").get_text()
     except BaseException, e:
         print e
 
-    loc = "-1"
+    site = "-1"
     tel = "-1"
-    # TODO 根据子标签的内容，来判断时什么信息
     try:
-        m_box_li_list = soup.find("div", class_="m-box m-info").find_all("li")
-
-        li_01 = m_box_li_list[0]
-        content_01 = li_01.get_text()
-        icon_01 = li_01.find("i")['class'][0]
-        if icon_01 == "icon-location":
-            loc = content_01.split("址：")[1].replace(" ", "").replace("\n", "")
-        elif icon_01 == "icon-tel":
-            tel = content_01.replace(" ", "").replace("\n", "")
-
-        li_02 = m_box_li_list[1]
-        content_02 = li_02.get_text()
-        icon_02 = li_02.find("i")['class'][0]
-        if icon_02 == "icon-tel":
-            tel = content_02.replace(" ", "").replace("\n", "")
+        baseinfo = soup.find("div", class_="mbd clearfix").find("ul", class_="baseinfo clearfix")
+        tel = baseinfo.find("li", class_="item-tel").find("div", class_="content").get_text()
+        site = baseinfo.find("li", class_="item-site").find("div", class_="content").get_text()
 
     except BaseException, e:
         print e
-    return shop_name, loc, tel, score, star, review_num
+
+    intro = "-1"
+    trans = "-1"
+    loc = "-1"
+    try:
+        detail_dls = soup.find("div", class_="main-detail").find_all("dl")
+        for dl in detail_dls:
+            label = dl.find("dt").get_text()
+            if label == "简介":
+                intro = dl.find("dd").get_text()
+            elif label == "地址":
+                loc = dl.find("dd").find("div", class_="address").get_text()
+            elif label == "交通":
+                trans = detail_dls[2].find("dd").get_text()
+
+    except BaseException, e:
+        print e
+    return shop_name, shop_name_en, score, star, review_num, tip, site, tel, intro, trans, loc
 
 
 def parser_shopping_review(doc):
+    json_data = doc.split("(", 1)[1].replace('"css":[],"js":[]}});', '"css":[],"js":[]}}')
+    review_list = json.loads(json_data)['data']['html']
+    soup = BeautifulSoup(review_list, "lxml")
     review_ids = []
     member_ids = []
     likes = []
     contents = []
     stars = []
     times = []
-
-    msg = json.loads(doc)['msg']
-    if msg != "succ":
-        return review_ids, member_ids, likes, contents, stars, times
-
-    html = json.loads(doc)['html']['html']
-    soup = BeautifulSoup(html, "lxml")
     try:
-        comment_list = soup.find_all("div", class_='comment-item')
+        comment_list = soup.find("div", class_='rev-list').find("ul").find_all("li", recursive=False)
         for comment in comment_list:
             review_id = -1
             member_id = -1
-
+            like = 0
             try:
-                review_id = re.sub(r"\D", "", comment['id'])
-                member = comment.find("div", class_="user-bar").find("span", class_="user-avatar").find("a")['href']
+                review_id = comment.find("a", class_="useful")['data-id']
+                member = comment.find("div", class_="user").find("a", class_="avatar")['href']
                 member_id = re.sub(r"\D", "", member)
             except BaseException, e:
                 print e
@@ -131,9 +136,8 @@ def parser_shopping_review(doc):
                 print msg1
                 fo_log.write(msg1)
 
-            like = 0
             try:
-                like = int(comment.find("span", class_="useful").find("span", class_="useful-num").get_text())
+                like = int(comment.find("a", class_="useful").find("span", class_="useful-num").get_text())
             except BaseException, e:
                 pass
             content = "-1"
@@ -142,18 +146,18 @@ def parser_shopping_review(doc):
                                                                                                                     "")
             except:
                 pass
-
-            star = 0
+            star = -1
             try:
-                comm_star = comment.find("span", class_="rank-star").find("span")
-                star_str = comm_star['class'][0]
+                comm_star = comment.find("span", recursive=False)
+                star_str = comm_star['class'][1]
                 star = int(re.sub(r"\D", "", star_str))
             except BaseException, e:
                 pass
-            create_time = "1946-01-01 00:00:00"
+                create_time = "1946-01-01 00:00:00"
             try:
                 time = comment.find("span", class_="time").get_text()
                 create_time = datetime.datetime.strptime(time, '%Y-%m-%d %H:%M:%S')
+
             except BaseException, e:
                 pass
             pass

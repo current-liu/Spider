@@ -10,6 +10,7 @@ url = "http://http-webapi.zhimaruanjian.com/getip?num=3&type=2&pro=&city=0&yys=0
 url_IPProxyPool = "http://127.0.0.1:8000/?types=0&count=50"
 dict_ip_to_remove = {}
 
+# TODO 应设计成単例模式
 
 # def get_ips_from_db():
 #     d = dao.select_ip()
@@ -50,7 +51,7 @@ def download_ips():
                 break
         except BaseException, e:
             # print e
-            msg2 = "there is a exception, wait for try again"
+            msg2 = "there is a exception during get ip_proxy, wait for try again"
             print msg2
 
     ip_pool += ip_list
@@ -95,7 +96,7 @@ def get_ip():
     while True:
         n = ip_pool.__len__()
         # TODO 正常运行时改为20
-        if n >= 10:
+        if n >= 6:
             break
         msg = download_ips()
         if msg == "fail":

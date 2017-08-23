@@ -72,7 +72,7 @@ def parser_food_shops(doc):
 
     loc = "-1"
     tel = "-1"
-    # TODO 根据子标签的内容，来判断时什么信息
+    # TODO根据子标签的内容，来判断时什么信息
     try:
         m_box_li_list = soup.find("div", class_="m-box m-info").find_all("li")
 

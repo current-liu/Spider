@@ -24,11 +24,12 @@ def insert_shopping_shop(shoppings, area):
             print e
 
 
-def update_shopping_shop(shop_name, loc, tel, score, star, review_num, shop_id):
-    sql = """UPDATE shopping_shop SET shopName=%s, addr=%s, tel=%s, score=%s, star=%s, reviewNum=%s              
+def update_shopping_shop(shop_name, shop_name_en, score, star, review_num, tip, site, tel, intro, trans, loc, shop_id):
+    sql = """UPDATE shopping_shop SET shopName=%s, shopNameEn=%s, addr=%s, tip=%s, site=%s,tel=%s, score=%s, star=%s, intro=%s, trans=%s,reviewNum=%s              
               WHERE shopId = %s"""
+
     try:
-        cursor.execute(sql, (shop_name, loc, tel, score, star, review_num, shop_id))
+        cursor.execute(sql, (shop_name, shop_name_en, loc, tip, site, tel, score, star, intro, trans, review_num, shop_id))
         db.commit()
     except BaseException, e:
         db.rollback()

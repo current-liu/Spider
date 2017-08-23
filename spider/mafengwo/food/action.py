@@ -66,7 +66,7 @@ def get_food_list():
 
 def get_food_shop():
     table = "food_shop"
-    shops = base_dao.select_shopid(table, "WHERE shopName Is Null ")
+    shops = base_dao.select_shopid(table, "WHERE shopName Is Not Null")
     fo_log.flush()
     for shop in shops:
         shop_id = shop[0]
@@ -115,6 +115,7 @@ def get_food_review():
 def get_food_review_on_page(shop_id, page_num):
     index = 0
     flag = True
+
     while (flag):
         index += 1
         url = "http://www.mafengwo.cn/gonglve/ajax.php?act=get_poi_comments&poi_id=" + str(shop_id) + \
