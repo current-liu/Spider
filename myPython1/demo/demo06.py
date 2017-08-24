@@ -15,3 +15,12 @@ today_str = today.strftime("%Y-%m-%d")
 print "%s" % today
 
 print 1|0
+
+
+lis = [1,2,3,4]
+
+
+for n in range(3):
+    x = len(lis)
+    y = lis.__len__()
+    print next(lis)
