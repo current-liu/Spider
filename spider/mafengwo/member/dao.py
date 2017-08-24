@@ -13,23 +13,12 @@ cursor = base_dao.cursor
 db = base_dao.db
 
 
-def insert_hotel_shop(shopIds, picUrls, areas, review_nums, travel_nums):
-    for q, w, e, r, t in zip(shopIds, picUrls, areas, review_nums, travel_nums):
-        try:
-            sql = """INSERT INTO hotel_shop(
-                         shopId, picUrl,area,reviewNum,travelsNum)
-                         VALUES ('%s', '%s', '%s', '%s', '%s')""" % (q, w, e, r, t)
-            cursor.execute(sql)
-            db.commit()
-        except BaseException, e:
-            db.rollback()
-            print e
-
-
-def select_member_id(table):
+def select_member_id_not_in_member(table):
+    """查询不在表member中的member_id"""
     results = []
     try:
-        sql = """SELECT DISTINCT memberId FROM %s WHERE memberMark = 0""" % table
+        sql = """SELECT DISTINCT %s.memberId FROM %s LEFT JOIN member ON %s.memberId = member.memberId WHERE member.memberId IS NULL""" % (
+            table, table, table)
         cursor.execute(sql)
         results = cursor.fetchall()
 
@@ -62,3 +51,15 @@ def insert_member(pic, name, gender, vip, duo, zhi, level, loc, profile, follow,
         print e
 
 
+def select_member_id_not_in_member_review():
+    """查询不在表member中的member_id"""
+    results = []
+    try:
+        sql = """SELECT member.memberId FROM member LEFT JOIN member_review ON member.memberId = member_review.memberId WHERE member_review.memberId IS NULL"""
+        cursor.execute(sql)
+        results = cursor.fetchall()
+
+    except BaseException, e:
+        print e
+
+    return results

@@ -129,7 +129,7 @@ def get_shopping_review_on_page(shop_id, page_num):
 
         if index == page_num:
             flag = False
-        time.sleep(random.uniform(2, 3))
+        time.sleep(random.uniform(3, 4))
         doc, msg = html_download.downloadPage_without_proxy(url, fo_log)
         if msg != "ok":
             continue

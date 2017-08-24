@@ -242,7 +242,6 @@ def get_room(doc_list):
     room_name = "-1"
     for doc in doc_list:
         try:
-            #TODO
             room = json.loads(doc.split("(")[1].split(")")[0])
             price = room['msg']['list']["youyu_pkg"]
         except BaseException, e:

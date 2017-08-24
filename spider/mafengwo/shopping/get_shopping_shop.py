@@ -18,5 +18,5 @@ __version__ = '1.0'
 
 
 if __name__ == '__main__':
-    # TODO 剩余6家 ，review_num -1改为0
+
     action.get_shopping_shop()

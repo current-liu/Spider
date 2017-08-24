@@ -20,6 +20,5 @@ __author__ = 'Administrator'
 __version__ = '1.0'
 
 if __name__ == '__main__':
-    tables = ["hotel_review", "food_review", "shopping_review", "attraction_review"]
-    for table in tables:
-        action.get_member(table)
+    # 点评数据不对呀，未点评也要获取
+    action.get_member_review()

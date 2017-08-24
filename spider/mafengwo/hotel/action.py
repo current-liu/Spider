@@ -146,14 +146,18 @@ def get_hotel_room():
                 msg0 = "fail to get url"
                 print msg0
                 continue
+            doc_list = []
+            for url in url_list:
+                time.sleep(random.uniform(3, 4))
+                doc, msg = html_download.downloadPage_without_proxy(url, fo_log)
+                doc_list.append(doc)
+            # doc0, msg = html_download.downloadPage(url_list[0], fo_log)
+            # doc1, msg = html_download.downloadPage(url_list[1], fo_log)
+            # doc2, msg = html_download.downloadPage(url_list[2], fo_log)
+            # doc3, msg = html_download.downloadPage(url_list[3], fo_log)
+            # doc4, msg = html_download.downloadPage(url_list[4], fo_log)
+            # doc_list = (doc0, doc1, doc2, doc3, doc4)
 
-            doc0, msg = html_download.downloadPage(url_list[0], fo_log)
-            doc1, msg = html_download.downloadPage(url_list[1], fo_log)
-            doc2, msg = html_download.downloadPage(url_list[2], fo_log)
-            doc3, msg = html_download.downloadPage(url_list[3], fo_log)
-            doc4, msg = html_download.downloadPage(url_list[4], fo_log)
-            doc_list = (doc0, doc1, doc2, doc3, doc4)
-            # TODO
             try:
                 rooms_info_total = h_parser.get_room(doc_list)
             except BaseException, e:

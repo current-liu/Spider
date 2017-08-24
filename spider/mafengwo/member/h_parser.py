@@ -35,8 +35,8 @@ def parser_member(doc):
     gender = "-1"
     try:
         pic = avatar.find("div", class_="MAvaImg hasAva").find("img")['src']
-        name = avatar.find("div", class_="MAvaName").get_text().strip().replace("\n", "").replace("'", "").replace(
-            '"', "")
+        name = avatar.find("div", class_="MAvaName").get_text().strip().replace("\n", "").replace("'", "").replace('"',
+                                                                                                                   "")
         gender_tag = avatar.find("div", class_="MAvaName").find("i")
         gender_s = gender_tag['class'][0]
         if gender_s == 'MGenderMale':
@@ -111,3 +111,43 @@ def parser_member(doc):
         print msg7
 
     return pic, name, gender, vip, duo, zhi, level, loc, profile, follow, fans, contribution, review
+
+
+def parser_member_review(doc):
+    html = json.loads(doc)["data"]["html"]
+    hasmore = json.loads(doc)["data"]["hasmore"]
+    soup = BeautifulSoup(html, "lxml")
+    reviews = soup.find("html").find("body").find_all("div", recursive=False)
+    member_reviews = []
+    for review in reviews:
+        data_typeid = "-1"
+        review_id = "-1"
+        create_time = "1946-01-01 00:00:00"
+        try:
+            data_typeid = review["data-typeid"]
+            review_id = review["data-itemid"]
+            createTime_str = soup.find("span", class_="time").get_text()
+            create_time = datetime.datetime.strptime(createTime_str, '%Y-%m-%d %H:%M:%S')
+        except BaseException, e:
+            print e
+        like = "0"
+        star = "0"
+        shopName = "-1"
+        shopId = "-1"
+
+        try:
+            detail = review.find("div", class_="poi-detail")
+            like = re.sub(r"\D", "", detail.find("span", class_="s-ding").get_text())
+            shopName = detail.find("h3", class_="title").get_text()
+            shopId_str = detail.find("h3", class_="title").find("a")["href"]
+            shopId = re.sub(r"\D", "", shopId_str)
+            star = detail.find("div", class_="rating")["data-star"]
+
+
+        except BaseException, e:
+            print e
+
+        member_review = [shopId, shopName, review_id, star, like, create_time, data_typeid]
+        member_reviews.append(member_review)
+
+    return member_reviews, hasmore
