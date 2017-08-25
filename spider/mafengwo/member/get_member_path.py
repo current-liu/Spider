@@ -20,5 +20,6 @@ __author__ = 'Administrator'
 __version__ = '1.0'
 
 if __name__ == '__main__':
-    # 点评数据不对呀，未点评也要获取
-    action.get_member_review()
+    # 中断时当前member需要手动处理
+    # TODO 给member_path.memberId 建索引
+    action.get_member_path()

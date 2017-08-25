@@ -6,7 +6,7 @@ Created on 2017/8/10 0010 下午 3:01
 base Info
 """
 from mafengwo import base_dao
-
+# from mafengwo.db_connection_pool import getPTConnection
 __author__ = 'Administrator'
 __version__ = '1.0'
 cursor = base_dao.cursor
@@ -82,6 +82,7 @@ def download_hotel_shopIds_unselected(today_str):
 def insert_hotel_room(shopId, rooms_info_total, query_time, ota):
     sql = """INSERT INTO hotel_room (shopId, roomType, queryTime, ota, roomPrice_0, roomPrice_1, roomPrice_2, roomPrice_3, roomPrice_4)
               VALUES('%s','%s','%s','%s','%s','%s','%s','%s','%s')"""
+
     try:
         cursor.execute(sql % (
             shopId, rooms_info_total[5], query_time, ota, rooms_info_total[0], rooms_info_total[1], rooms_info_total[2],

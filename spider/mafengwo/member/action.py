@@ -33,10 +33,12 @@ def get_member(table):
     try:
         member_ids = dao.select_member_id_not_in_member(table)
         print "%d members to update this time in %s" % (member_ids.__len__(), table)
+        # member_ids = [(17212115,)]
         for member in member_ids:
             time.sleep(random.uniform(3, 4))
             index = member_ids.index(member)
             member_id = member[0]
+
             url = "http://www.mafengwo.cn/u/" + str(member_id) + ".html"
             msg0 = "num.'%d' member_id:'%d'" % (index, member_id)
             print msg0
@@ -75,38 +77,70 @@ def get_member(table):
     #         dao.update_member_mark("hotel_review", 1, member_id)
 
 
-def get_member_review():
+def get_member_path():
     try:
-        member_ids = dao.select_member_id_not_in_member_review()
+        sql_ = "AND name != '-1' AND review > 0"
+        member_ids = dao.select_member_id_not_in_member_path(sql_)
         for member in member_ids:
 
             index = member_ids.index(member)
             member_id = member[0]
-            # member_id = 33721075
+            # member_id = 10034
 
             msg0 = "num.'%d' member_id:'%d'" % (index, member_id)
             print msg0
 
-            get_member_review_on_page(member_id)
+            get_member_path_on_page(member_id)
+            get_member_path_on_page_03(member_id)
 
     except BaseException, e:
         print e
 
 
-def get_member_review_on_page(member_id):
+def get_member_path_on_page(member_id):
     offset = 0
     hasmore = False
     while True:
         time.sleep(random.uniform(3, 4))
+
         url = "http://www.mafengwo.cn/home/ajax_review.php?act=loadList&filter=0&offset=" + str(
-            offset) + "&offset=20&uid=" + str(member_id) + "&sort=1"
+            offset) + "&limit=40&uid=" + str(member_id) + "&sort=1"
+
         doc, msg = html_download.downloadPage_without_proxy(url, fo_log)
         if msg == "ok":
             try:
-                member_reviews, hasmore = h_parser.parser_member_review(doc)
+                member_reviews, hasmore = h_parser.parser_member_review(doc, member_id)
+                dao.insert_member_path(member_reviews)
             except BaseException, e:
                 print e
-                msg1 = "in parser_member()"
+                msg1 = "in get_member_path_on_page(member_id)"
                 print msg1
         if (hasmore == False):
             break
+        else:
+            offset += 40
+
+
+def get_member_path_on_page_03(member_id):
+    """未点评的"""
+    offset = 0
+    hasmore = False
+    while True:
+        time.sleep(random.uniform(3, 4))
+
+        url = "http://www.mafengwo.cn/home/ajax_review.php?act=loadList&filter=3&offset=" + str(
+            offset) + "&limit=40&uid=" + str(member_id) + "&sort=1"
+
+        doc, msg = html_download.downloadPage_without_proxy(url, fo_log)
+        if msg == "ok":
+            try:
+                member_reviews, hasmore = h_parser.parser_member_review_03(doc, member_id)
+                dao.insert_member_path(member_reviews)
+            except BaseException, e:
+                print e
+                msg1 = "in get_member_path_on_page_03(member_id)"
+                print msg1
+        if (hasmore == False):
+            break
+        else:
+            offset += 40

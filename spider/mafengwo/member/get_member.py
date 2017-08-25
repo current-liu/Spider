@@ -21,5 +21,6 @@ __version__ = '1.0'
 
 if __name__ == '__main__':
     tables = ["hotel_review", "food_review", "shopping_review", "attraction_review"]
+    # member_fix 表改回来
     for table in tables:
         action.get_member(table)

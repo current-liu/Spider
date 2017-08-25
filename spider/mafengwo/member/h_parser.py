@@ -104,7 +104,7 @@ def parser_member(doc):
     review = "-1"
     try:
         review = re.sub(r"\D", "", soup.find("div", class_="common_block my_ask my_dp").find("div",
-                                                                                             class_="more_notes").get_text())
+                                                                                             class_="more_notes").find_all("strong")[-1].get_text())
     except BaseException, e:
         print e
         msg7 = "part7"
@@ -113,23 +113,32 @@ def parser_member(doc):
     return pic, name, gender, vip, duo, zhi, level, loc, profile, follow, fans, contribution, review
 
 
-def parser_member_review(doc):
+def parser_member_review(doc, member_id):
     html = json.loads(doc)["data"]["html"]
     hasmore = json.loads(doc)["data"]["hasmore"]
     soup = BeautifulSoup(html, "lxml")
     reviews = soup.find("html").find("body").find_all("div", recursive=False)
     member_reviews = []
     for review in reviews:
-        data_typeid = "-1"
         review_id = "-1"
+        try:
+            review_id_str = review["data-itemid"]
+            if review_id_str == "":
+                review_id = 0
+            else:
+                review_id = int(review_id_str)
+        except BaseException, e:
+            pass
+
+        data_typeid = "-1"
         create_time = "1946-01-01 00:00:00"
         try:
             data_typeid = review["data-typeid"]
-            review_id = review["data-itemid"]
-            createTime_str = soup.find("span", class_="time").get_text()
+            createTime_str = review.find("span", class_="time").get_text()
             create_time = datetime.datetime.strptime(createTime_str, '%Y-%m-%d %H:%M:%S')
         except BaseException, e:
             print e
+
         like = "0"
         star = "0"
         shopName = "-1"
@@ -147,7 +156,56 @@ def parser_member_review(doc):
         except BaseException, e:
             print e
 
-        member_review = [shopId, shopName, review_id, star, like, create_time, data_typeid]
+        member_review = (member_id, shopId, shopName, review_id, star, like, create_time, data_typeid)
+        member_reviews.append(member_review)
+
+    return member_reviews, hasmore
+
+
+def parser_member_review_03(doc,member_id):
+    html = json.loads(doc)["data"]["html"]
+    hasmore = json.loads(doc)["data"]["hasmore"]
+    soup = BeautifulSoup(html, "lxml")
+    reviews = soup.find("html").find("body").find_all("div", recursive=False)
+    member_reviews = []
+    for review in reviews:
+
+        review_id = "-1"
+        try:
+            review_id_str = review["data-itemid"]
+            if review_id_str == "":
+                review_id = 0
+            else:
+                review_id = int(review_id_str)
+        except BaseException, e:
+            pass
+
+        data_typeid = "-1"
+        create_time = "1946-01-01 00:00:00"
+        try:
+            data_typeid = review["data-typeid"]
+            createTime_str = review.find("span", class_="time").get_text()
+            create_time = datetime.datetime.strptime(createTime_str, '%Y-%m-%d %H:%M:%S')
+        except BaseException, e:
+            print e
+        like = "-5"
+        star = "-5"
+        shopName = "-1"
+        shopId = "-1"
+
+        try:
+            detail = review.find("div", class_="poi-detail")
+            # like = re.sub(r"\D", "", detail.find("span", class_="s-ding").get_text())
+            shopName = detail.find("h3", class_="title").get_text()
+            shopId_str = detail.find("h3", class_="title").find("a")["href"]
+            shopId = re.sub(r"\D", "", shopId_str)
+            # star = detail.find("div", class_="rating")["data-star"]
+
+
+        except BaseException, e:
+            print e
+
+        member_review = (member_id, shopId, shopName, review_id, star, like, create_time, data_typeid)
         member_reviews.append(member_review)
 
     return member_reviews, hasmore
