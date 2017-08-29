@@ -71,7 +71,8 @@ def select_member_id_not_in_member_path(sql_):
 
 
 def insert_member_path(member_reviews):
-
+    index = 0
+    msg = ""
     try:
         sql = """INSERT INTO member_path (memberId, shopId, shopName, reviewId, star, likes, createTime, typeId) 
                   VALUES (%s,%s,%s,%s,%s,%s,%s,%s)"""
@@ -80,6 +81,13 @@ def insert_member_path(member_reviews):
     except BaseException, e:
         print e
         db.rollback()
+        # if str(e).__contains__("for key 'PRIMARY'"):
+        #     # 由于一条评论信息可能出现在连续的两页上，故一个页面上有一个主键冲突不能判定该页面已经爬取过
+        #     index += 1
+
+    # if index == 40:
+    #     msg = "for key 'PRIMARY'"
+    # return msg
 
 
 

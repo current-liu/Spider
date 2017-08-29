@@ -21,6 +21,7 @@ __version__ = '1.0'
 
 if __name__ == '__main__':
     tables = ["hotel_review", "food_review", "shopping_review", "attraction_review"]
-    # member_fix 表改回来
+    # TODO member_fix 表改回来
+    # TODO dao里的index能否按照预期增加
     for table in tables:
         action.get_member(table)

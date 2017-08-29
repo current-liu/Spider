@@ -85,7 +85,7 @@ def get_member_path():
 
             index = member_ids.index(member)
             member_id = member[0]
-            # member_id = 10034
+            # member_id = 35464616
 
             msg0 = "num.'%d' member_id:'%d'" % (index, member_id)
             print msg0
