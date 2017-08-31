@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'manager/css/style.css' %}" />
+    <script type="text/javascript" src="{% static 'manager/js/jquery.min.js' %}"></script>
+    <script>
+    function fun(){
+        var id = 1
+        $.ajax({
+            url:'http://127.0.0.1:8000/manager/ajax',
+            type:'GET',
+            data:{"id":id},
+            dataTpye:"json",
+            success:function(res){
+                console.log(res)
+            }
+        })
+    }
+</script>
+
+</head>
+<body>
+    {% if latest_spider_list %}
+        <ul>
+        {% for spider in latest_spider_list %}
+            <!--<li><a hremanageolls/{{ question.id }}/">{{ question.question_text }}</a></li>-->
+            <li>{{ spider.name }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No spiders are available.</p>
+    {% endif %}
+    <button onclick="fun()">ajax</button>
+</body>
+</html>

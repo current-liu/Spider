@@ -16,11 +16,16 @@ print "%s" % today
 
 print 1|0
 
-
-lis = [1,2,3,4]
-
+def fun():
+    try:
+        lis = [1, 2, 3, 4]
+    except BaseException, e:
+        print e
 
 for n in range(3):
     x = len(lis)
     y = lis.__len__()
     print next(lis)
+
+if __name__ == '__main__':
+    fun()

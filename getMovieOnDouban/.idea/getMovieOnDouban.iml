@@ -13,6 +13,7 @@
     <orderEntry type="module" module-name="myPython1" />
     <orderEntry type="module" module-name="IPProxyPool-master" />
     <orderEntry type="module" module-name="HelloWorld" />
+    <orderEntry type="module" module-name="spider_manager" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />
