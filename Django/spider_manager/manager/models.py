@@ -8,11 +8,21 @@ from django.utils.encoding import python_2_unicode_compatible
 # Create your models here.
 
 @python_2_unicode_compatible
+class Project(models.Model):
+    name = models.CharField(max_length=50)
+    intro = models.TextField()
+    create_time = models.DateTimeField()
+
+    def __str__(self):
+        return self.name
+
+
+@python_2_unicode_compatible
 class Spider(models.Model):
     name = models.CharField(max_length=50)
     create_time = models.DateTimeField()
     intro = models.TextField()
-    project = models.CharField(max_length=100)
+    project = models.ForeignKey(Project, on_delete=models.CASCADE)
     target_site = models.CharField(max_length=200)
     type = models.IntegerField()
 

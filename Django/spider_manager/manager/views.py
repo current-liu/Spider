@@ -25,13 +25,4 @@ class IndexView(generic.ListView):
         return Spider.objects.order_by("-create_time")[:5]
 
 
-def ajax(request):
-    n = request.GET.get("id")
-    print n
-    ret = {'status': True, 'error': "null"}
-    l = [1, 2, 3, 4, 5]
-    r = {"l": n}
-    # a = ["123", "456"]
-    j_ret = json.dumps(ret)
-    return JsonResponse(r)
-    return HttpResponse(j_ret)
+

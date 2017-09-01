@@ -17,671 +17,1257 @@
     <schema id="9" parent="1" name="sys"/>
     <schema id="10" parent="1" name="openrice"/>
     <schema id="11" parent="1" name="lumi"/>
-    <table id="12" parent="5" name="attraction_review"/>
-    <table id="13" parent="5" name="attraction_shop"/>
-    <table id="14" parent="5" name="food_review"/>
-    <table id="15" parent="5" name="food_shop"/>
-    <table id="16" parent="5" name="hotel_review"/>
-    <table id="17" parent="5" name="hotel_room"/>
-    <table id="18" parent="5" name="hotel_shop"/>
-    <table id="19" parent="5" name="member"/>
-    <table id="20" parent="5" name="member_fix"/>
-    <table id="21" parent="5" name="member_path"/>
-    <table id="22" parent="5" name="shopping_review"/>
-    <table id="23" parent="5" name="shopping_shop"/>
-    <column id="24" parent="12" name="reviewId">
+    <schema id="12" parent="1" name="spider_manager">
+      <Visible>1</Visible>
+    </schema>
+    <table id="13" parent="5" name="attraction_review"/>
+    <table id="14" parent="5" name="attraction_shop"/>
+    <table id="15" parent="5" name="food_review"/>
+    <table id="16" parent="5" name="food_shop"/>
+    <table id="17" parent="5" name="hotel_review"/>
+    <table id="18" parent="5" name="hotel_room"/>
+    <table id="19" parent="5" name="hotel_shop"/>
+    <table id="20" parent="5" name="member"/>
+    <table id="21" parent="5" name="member_fix"/>
+    <table id="22" parent="5" name="member_path"/>
+    <table id="23" parent="5" name="shopping_review"/>
+    <table id="24" parent="5" name="shopping_shop"/>
+    <table id="25" parent="12" name="auth_group"/>
+    <table id="26" parent="12" name="auth_group_permissions"/>
+    <table id="27" parent="12" name="auth_permission"/>
+    <table id="28" parent="12" name="auth_user"/>
+    <table id="29" parent="12" name="auth_user_groups"/>
+    <table id="30" parent="12" name="auth_user_user_permissions"/>
+    <table id="31" parent="12" name="django_admin_log"/>
+    <table id="32" parent="12" name="django_content_type"/>
+    <table id="33" parent="12" name="django_migrations"/>
+    <table id="34" parent="12" name="django_session"/>
+    <table id="35" parent="12" name="manager_dict"/>
+    <table id="36" parent="12" name="manager_project"/>
+    <table id="37" parent="12" name="manager_spider"/>
+    <table id="38" parent="12" name="manager_spiderstatus"/>
+    <column id="39" parent="13" name="reviewId">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="25" parent="12" name="memberId">
+    <column id="40" parent="13" name="memberId">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="26" parent="12" name="shopId">
+    <column id="41" parent="13" name="shopId">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="27" parent="12" name="reviewStar">
+    <column id="42" parent="13" name="reviewStar">
       <Position>4</Position>
       <DataType>int(255)|0</DataType>
     </column>
-    <column id="28" parent="12" name="content">
+    <column id="43" parent="13" name="content">
       <Position>5</Position>
       <DataType>text|0</DataType>
     </column>
-    <column id="29" parent="12" name="creatTime">
+    <column id="44" parent="13" name="creatTime">
       <Position>6</Position>
       <Comment>如未获取到，则记为&quot;1946-01-01 00:00:00&quot;</Comment>
       <DataType>datetime|0</DataType>
     </column>
-    <column id="30" parent="12" name="likes">
+    <column id="45" parent="13" name="likes">
       <Position>7</Position>
       <DataType>int(255)|0</DataType>
-    </column>
-    <key id="31" parent="12" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>reviewId</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="32" parent="13" name="shopId">
-      <Position>1</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="33" parent="13" name="shopName">
-      <Position>2</Position>
-      <DataType>varchar(255)|0</DataType>
-    </column>
-    <column id="34" parent="13" name="shopNameEn">
-      <Position>3</Position>
-      <DataType>varchar(225)|0</DataType>
-    </column>
-    <column id="35" parent="13" name="info">
-      <Position>4</Position>
-      <DataType>text|0</DataType>
-    </column>
-    <column id="36" parent="13" name="addr">
-      <Position>5</Position>
-      <DataType>varchar(255)|0</DataType>
-    </column>
-    <column id="37" parent="13" name="tel">
-      <Position>6</Position>
-      <DataType>varchar(255)|0</DataType>
-    </column>
-    <column id="38" parent="13" name="bussinessTime">
-      <Position>7</Position>
-      <DataType>varchar(255)|0</DataType>
-    </column>
-    <column id="39" parent="13" name="innerScenic">
-      <Position>8</Position>
-      <DataType>varchar(225)|0</DataType>
-    </column>
-    <column id="40" parent="13" name="picUrl">
-      <Position>9</Position>
-      <DataType>varchar(255)|0</DataType>
-    </column>
-    <column id="41" parent="13" name="reviewNum">
-      <Position>10</Position>
-      <DataType>int(25)|0</DataType>
-    </column>
-    <column id="42" parent="13" name="ticket">
-      <Position>11</Position>
-      <DataType>text|0</DataType>
-    </column>
-    <column id="43" parent="13" name="timeUse">
-      <Position>12</Position>
-      <DataType>varchar(20)|0</DataType>
-    </column>
-    <column id="44" parent="13" name="site">
-      <Position>13</Position>
-      <DataType>varchar(255)|0</DataType>
-    </column>
-    <column id="45" parent="13" name="trans">
-      <Position>14</Position>
-      <DataType>text|0</DataType>
     </column>
     <key id="46" parent="13" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>shopId</ColNames>
+      <ColNames>reviewId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="47" parent="14" name="reviewId">
+    <column id="47" parent="14" name="shopId">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="48" parent="14" name="memberId">
+    <column id="48" parent="14" name="shopName">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="49" parent="14" name="shopNameEn">
+      <Position>3</Position>
+      <DataType>varchar(225)|0</DataType>
+    </column>
+    <column id="50" parent="14" name="info">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="51" parent="14" name="addr">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="52" parent="14" name="tel">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="53" parent="14" name="bussinessTime">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="54" parent="14" name="innerScenic">
+      <Position>8</Position>
+      <DataType>varchar(225)|0</DataType>
+    </column>
+    <column id="55" parent="14" name="picUrl">
+      <Position>9</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="56" parent="14" name="reviewNum">
+      <Position>10</Position>
+      <DataType>int(25)|0</DataType>
+    </column>
+    <column id="57" parent="14" name="ticket">
+      <Position>11</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="58" parent="14" name="timeUse">
+      <Position>12</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="59" parent="14" name="site">
+      <Position>13</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="60" parent="14" name="trans">
+      <Position>14</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <key id="61" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>shopId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="62" parent="15" name="reviewId">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="63" parent="15" name="memberId">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="49" parent="14" name="shopId">
+    <column id="64" parent="15" name="shopId">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="50" parent="14" name="reviewStar">
+    <column id="65" parent="15" name="reviewStar">
       <Position>4</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <column id="51" parent="14" name="content">
+    <column id="66" parent="15" name="content">
       <Position>5</Position>
       <DataType>text|0</DataType>
     </column>
-    <column id="52" parent="14" name="creatTime">
+    <column id="67" parent="15" name="creatTime">
       <Position>6</Position>
       <Comment>如未获取到，则记为&quot;1946-01-01 00:00:00&quot;</Comment>
       <DataType>datetime|0</DataType>
     </column>
-    <column id="53" parent="14" name="likes">
+    <column id="68" parent="15" name="likes">
       <Position>7</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <key id="54" parent="14" name="PRIMARY">
+    <key id="69" parent="15" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>reviewId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="55" parent="15" name="shopId">
+    <column id="70" parent="16" name="shopId">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="56" parent="15" name="shopName">
+    <column id="71" parent="16" name="shopName">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="57" parent="15" name="area">
+    <column id="72" parent="16" name="area">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="58" parent="15" name="addr">
+    <column id="73" parent="16" name="addr">
       <Position>4</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="59" parent="15" name="tel">
+    <column id="74" parent="16" name="tel">
       <Position>5</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="60" parent="15" name="picUrl">
+    <column id="75" parent="16" name="picUrl">
       <Position>6</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="61" parent="15" name="score">
+    <column id="76" parent="16" name="score">
       <Position>7</Position>
       <DataType>char(10)|0</DataType>
     </column>
-    <column id="62" parent="15" name="star">
+    <column id="77" parent="16" name="star">
       <Position>8</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <column id="63" parent="15" name="reviewNum">
+    <column id="78" parent="16" name="reviewNum">
       <Position>9</Position>
       <DataType>int(25)|0</DataType>
     </column>
-    <key id="64" parent="15" name="PRIMARY">
+    <key id="79" parent="16" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>shopId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="65" parent="16" name="reviewId">
+    <column id="80" parent="17" name="reviewId">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="66" parent="16" name="memberId">
+    <column id="81" parent="17" name="memberId">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="67" parent="16" name="shopId">
+    <column id="82" parent="17" name="shopId">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="68" parent="16" name="reviewStar">
+    <column id="83" parent="17" name="reviewStar">
       <Position>4</Position>
       <DataType>int(255)|0</DataType>
     </column>
-    <column id="69" parent="16" name="content">
+    <column id="84" parent="17" name="content">
       <Position>5</Position>
       <DataType>text|0</DataType>
     </column>
-    <column id="70" parent="16" name="creatTime">
+    <column id="85" parent="17" name="creatTime">
       <Position>6</Position>
       <Comment>如未获取到，则记为&quot;1946-01-01 00:00:00&quot;</Comment>
       <DataType>date|0</DataType>
     </column>
-    <column id="71" parent="16" name="likes">
+    <column id="86" parent="17" name="likes">
       <Position>7</Position>
       <DataType>int(255)|0</DataType>
     </column>
-    <column id="72" parent="16" name="memberMark">
+    <column id="87" parent="17" name="memberMark">
       <Position>8</Position>
       <DataType>int(10)|0</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <key id="73" parent="16" name="PRIMARY">
+    <key id="88" parent="17" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>reviewId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="74" parent="17" name="id">
+    <column id="89" parent="18" name="id">
       <Position>1</Position>
       <DataType>int(255)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="75" parent="17" name="shopId">
+    <column id="90" parent="18" name="shopId">
       <Position>2</Position>
       <DataType>int(255)|0</DataType>
     </column>
-    <column id="76" parent="17" name="roomType">
+    <column id="91" parent="18" name="roomType">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="77" parent="17" name="queryTime">
+    <column id="92" parent="18" name="queryTime">
       <Position>4</Position>
       <DataType>date|0</DataType>
     </column>
-    <column id="78" parent="17" name="ota">
+    <column id="93" parent="18" name="ota">
       <Position>5</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="79" parent="17" name="roomPrice_0">
+    <column id="94" parent="18" name="roomPrice_0">
       <Position>6</Position>
       <Comment>查询当日checkin的价格</Comment>
       <DataType>int(255)|0</DataType>
     </column>
-    <column id="80" parent="17" name="roomPrice_1">
+    <column id="95" parent="18" name="roomPrice_1">
       <Position>7</Position>
       <Comment>查询当日checkin的价格</Comment>
       <DataType>int(255)|0</DataType>
     </column>
-    <column id="81" parent="17" name="roomPrice_2">
+    <column id="96" parent="18" name="roomPrice_2">
       <Position>8</Position>
       <Comment>查询当日checkin的价格</Comment>
       <DataType>int(255)|0</DataType>
     </column>
-    <column id="82" parent="17" name="roomPrice_3">
+    <column id="97" parent="18" name="roomPrice_3">
       <Position>9</Position>
       <Comment>查询当日checkin的价格</Comment>
       <DataType>int(255)|0</DataType>
     </column>
-    <column id="83" parent="17" name="roomPrice_4">
+    <column id="98" parent="18" name="roomPrice_4">
       <Position>10</Position>
       <Comment>查询当日checkin的价格</Comment>
       <DataType>int(255)|0</DataType>
     </column>
-    <key id="84" parent="17" name="PRIMARY">
+    <key id="99" parent="18" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="85" parent="18" name="shopId">
+    <column id="100" parent="19" name="shopId">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="86" parent="18" name="shopName">
+    <column id="101" parent="19" name="shopName">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="87" parent="18" name="shopNameEn">
+    <column id="102" parent="19" name="shopNameEn">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="88" parent="18" name="area">
+    <column id="103" parent="19" name="area">
       <Position>4</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="89" parent="18" name="addr">
+    <column id="104" parent="19" name="addr">
       <Position>5</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="90" parent="18" name="score">
+    <column id="105" parent="19" name="score">
       <Position>6</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="91" parent="18" name="tag">
+    <column id="106" parent="19" name="tag">
       <Position>7</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="92" parent="18" name="openTime">
+    <column id="107" parent="19" name="openTime">
       <Position>8</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="93" parent="18" name="checkIn">
+    <column id="108" parent="19" name="checkIn">
       <Position>9</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="94" parent="18" name="checkOut">
+    <column id="109" parent="19" name="checkOut">
       <Position>10</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="95" parent="18" name="scoLoc">
+    <column id="110" parent="19" name="scoLoc">
       <Position>11</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="96" parent="18" name="scoSer">
+    <column id="111" parent="19" name="scoSer">
       <Position>12</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="97" parent="18" name="scoFood">
+    <column id="112" parent="19" name="scoFood">
       <Position>13</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="98" parent="18" name="scoComfo">
+    <column id="113" parent="19" name="scoComfo">
       <Position>14</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="99" parent="18" name="scoFac">
+    <column id="114" parent="19" name="scoFac">
       <Position>15</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="100" parent="18" name="scoClear">
+    <column id="115" parent="19" name="scoClear">
       <Position>16</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="101" parent="18" name="service">
+    <column id="116" parent="19" name="service">
       <Position>17</Position>
       <DataType>text|0</DataType>
     </column>
-    <column id="102" parent="18" name="info">
+    <column id="117" parent="19" name="info">
       <Position>18</Position>
       <DataType>text|0</DataType>
     </column>
-    <column id="103" parent="18" name="picUrl">
+    <column id="118" parent="19" name="picUrl">
       <Position>19</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="104" parent="18" name="roomNum">
+    <column id="119" parent="19" name="roomNum">
       <Position>20</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="105" parent="18" name="reviewNum">
+    <column id="120" parent="19" name="reviewNum">
       <Position>21</Position>
       <DataType>int(255)|0</DataType>
     </column>
-    <column id="106" parent="18" name="travelsNum">
+    <column id="121" parent="19" name="travelsNum">
       <Position>22</Position>
       <DataType>int(255)|0</DataType>
     </column>
-    <key id="107" parent="18" name="PRIMARY">
+    <key id="122" parent="19" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>shopId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="108" parent="19" name="memberId">
+    <column id="123" parent="20" name="memberId">
       <Position>1</Position>
       <DataType>int(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="109" parent="19" name="pic">
+    <column id="124" parent="20" name="pic">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="110" parent="19" name="name">
+    <column id="125" parent="20" name="name">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="111" parent="19" name="sex">
+    <column id="126" parent="20" name="sex">
       <Position>4</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <column id="112" parent="19" name="vip">
+    <column id="127" parent="20" name="vip">
       <Position>5</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <column id="113" parent="19" name="duo">
+    <column id="128" parent="20" name="duo">
       <Position>6</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <column id="114" parent="19" name="zhiluren">
+    <column id="129" parent="20" name="zhiluren">
       <Position>7</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <column id="115" parent="19" name="location">
+    <column id="130" parent="20" name="location">
       <Position>8</Position>
       <DataType>varchar(225)|0</DataType>
     </column>
-    <column id="116" parent="19" name="level">
+    <column id="131" parent="20" name="level">
       <Position>9</Position>
       <DataType>int(20)|0</DataType>
     </column>
-    <column id="117" parent="19" name="follows">
+    <column id="132" parent="20" name="follows">
       <Position>10</Position>
       <DataType>int(20)|0</DataType>
     </column>
-    <column id="118" parent="19" name="fans">
+    <column id="133" parent="20" name="fans">
       <Position>11</Position>
       <DataType>int(20)|0</DataType>
     </column>
-    <column id="119" parent="19" name="review">
+    <column id="134" parent="20" name="review">
       <Position>12</Position>
       <DataType>int(20)|0</DataType>
     </column>
-    <column id="120" parent="19" name="profile">
+    <column id="135" parent="20" name="profile">
       <Position>13</Position>
       <DataType>text|0</DataType>
     </column>
-    <column id="121" parent="19" name="contribution">
+    <column id="136" parent="20" name="contribution">
       <Position>14</Position>
       <DataType>int(20)|0</DataType>
     </column>
-    <column id="122" parent="19" name="followMark">
+    <column id="137" parent="20" name="followMark">
       <Position>15</Position>
       <DataType>int(10)|0</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="123" parent="19" name="fansMark">
+    <column id="138" parent="20" name="fansMark">
       <Position>16</Position>
       <DataType>int(10)|0</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="124" parent="19" name="reviewMark">
+    <column id="139" parent="20" name="reviewMark">
       <Position>17</Position>
       <DataType>int(10)|0</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <key id="125" parent="19" name="PRIMARY">
+    <key id="140" parent="20" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>memberId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="126" parent="20" name="memberId">
+    <column id="141" parent="21" name="memberId">
       <Position>1</Position>
       <DataType>int(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="127" parent="20" name="pic">
+    <column id="142" parent="21" name="pic">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="128" parent="20" name="name">
+    <column id="143" parent="21" name="name">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="129" parent="20" name="sex">
+    <column id="144" parent="21" name="sex">
       <Position>4</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <column id="130" parent="20" name="vip">
+    <column id="145" parent="21" name="vip">
       <Position>5</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <column id="131" parent="20" name="duo">
+    <column id="146" parent="21" name="duo">
       <Position>6</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <column id="132" parent="20" name="zhiluren">
+    <column id="147" parent="21" name="zhiluren">
       <Position>7</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <column id="133" parent="20" name="location">
+    <column id="148" parent="21" name="location">
       <Position>8</Position>
       <DataType>varchar(225)|0</DataType>
     </column>
-    <column id="134" parent="20" name="level">
+    <column id="149" parent="21" name="level">
       <Position>9</Position>
       <DataType>int(20)|0</DataType>
     </column>
-    <column id="135" parent="20" name="follows">
+    <column id="150" parent="21" name="follows">
       <Position>10</Position>
       <DataType>int(20)|0</DataType>
     </column>
-    <column id="136" parent="20" name="fans">
+    <column id="151" parent="21" name="fans">
       <Position>11</Position>
       <DataType>int(20)|0</DataType>
     </column>
-    <column id="137" parent="20" name="review">
+    <column id="152" parent="21" name="review">
       <Position>12</Position>
       <DataType>int(20)|0</DataType>
     </column>
-    <column id="138" parent="20" name="profile">
+    <column id="153" parent="21" name="profile">
       <Position>13</Position>
       <DataType>text|0</DataType>
     </column>
-    <column id="139" parent="20" name="contribution">
+    <column id="154" parent="21" name="contribution">
       <Position>14</Position>
       <DataType>int(20)|0</DataType>
     </column>
-    <column id="140" parent="20" name="followMark">
+    <column id="155" parent="21" name="followMark">
       <Position>15</Position>
       <DataType>int(10)|0</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="141" parent="20" name="fansMark">
+    <column id="156" parent="21" name="fansMark">
       <Position>16</Position>
       <DataType>int(10)|0</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="142" parent="20" name="reviewMark">
+    <column id="157" parent="21" name="reviewMark">
       <Position>17</Position>
       <DataType>int(10)|0</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <key id="143" parent="20" name="PRIMARY">
+    <key id="158" parent="21" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>memberId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="144" parent="21" name="id">
+    <column id="159" parent="22" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="145" parent="21" name="memberId">
+    <column id="160" parent="22" name="memberId">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="146" parent="21" name="shopId">
+    <column id="161" parent="22" name="shopId">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="147" parent="21" name="shopName">
+    <column id="162" parent="22" name="shopName">
       <Position>4</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="148" parent="21" name="reviewId">
+    <column id="163" parent="22" name="reviewId">
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="149" parent="21" name="star">
+    <column id="164" parent="22" name="star">
       <Position>6</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="150" parent="21" name="likes">
+    <column id="165" parent="22" name="likes">
       <Position>7</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="151" parent="21" name="createTime">
+    <column id="166" parent="22" name="createTime">
       <Position>8</Position>
       <DataType>datetime|0</DataType>
     </column>
-    <column id="152" parent="21" name="typeId">
+    <column id="167" parent="22" name="typeId">
       <Position>9</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <key id="153" parent="21" name="PRIMARY">
+    <index id="168" parent="22" name="index_memberId">
+      <ColNames>memberId</ColNames>
+    </index>
+    <key id="169" parent="22" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="154" parent="22" name="reviewId">
+    <column id="170" parent="23" name="reviewId">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="155" parent="22" name="memberId">
+    <column id="171" parent="23" name="memberId">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="156" parent="22" name="shopId">
+    <column id="172" parent="23" name="shopId">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="157" parent="22" name="reviewStar">
+    <column id="173" parent="23" name="reviewStar">
       <Position>4</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <column id="158" parent="22" name="content">
+    <column id="174" parent="23" name="content">
       <Position>5</Position>
       <DataType>text|0</DataType>
     </column>
-    <column id="159" parent="22" name="creatTime">
+    <column id="175" parent="23" name="creatTime">
       <Position>6</Position>
       <Comment>如未获取到，则记为&quot;1946-01-01 00:00:00&quot;</Comment>
       <DataType>datetime|0</DataType>
     </column>
-    <column id="160" parent="22" name="likes">
+    <column id="176" parent="23" name="likes">
       <Position>7</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <key id="161" parent="22" name="PRIMARY">
+    <key id="177" parent="23" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>reviewId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="162" parent="23" name="shopId">
+    <column id="178" parent="24" name="shopId">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="163" parent="23" name="shopName">
+    <column id="179" parent="24" name="shopName">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="164" parent="23" name="shopNameEn">
+    <column id="180" parent="24" name="shopNameEn">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="165" parent="23" name="area">
+    <column id="181" parent="24" name="area">
       <Position>4</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <column id="166" parent="23" name="addr">
+    <column id="182" parent="24" name="addr">
       <Position>5</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="167" parent="23" name="tel">
+    <column id="183" parent="24" name="tel">
       <Position>6</Position>
       <DataType>varchar(100)|0</DataType>
     </column>
-    <column id="168" parent="23" name="tip">
+    <column id="184" parent="24" name="tip">
       <Position>7</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="169" parent="23" name="site">
+    <column id="185" parent="24" name="site">
       <Position>8</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="170" parent="23" name="picUrl">
+    <column id="186" parent="24" name="picUrl">
       <Position>9</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="171" parent="23" name="score">
+    <column id="187" parent="24" name="score">
       <Position>10</Position>
       <DataType>char(10)|0</DataType>
     </column>
-    <column id="172" parent="23" name="star">
+    <column id="188" parent="24" name="star">
       <Position>11</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <column id="173" parent="23" name="intro">
+    <column id="189" parent="24" name="intro">
       <Position>12</Position>
       <DataType>text|0</DataType>
     </column>
-    <column id="174" parent="23" name="trans">
+    <column id="190" parent="24" name="trans">
       <Position>13</Position>
       <DataType>text|0</DataType>
     </column>
-    <column id="175" parent="23" name="reviewNum">
+    <column id="191" parent="24" name="reviewNum">
       <Position>14</Position>
       <DataType>int(25)|0</DataType>
     </column>
-    <key id="176" parent="23" name="PRIMARY">
+    <key id="192" parent="24" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>shopId</ColNames>
       <Primary>1</Primary>
     </key>
+    <column id="193" parent="25" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="194" parent="25" name="name">
+      <Position>2</Position>
+      <DataType>varchar(80)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="195" parent="25" name="name">
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="196" parent="25" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="197" parent="25" name="name">
+      <ColNames>name</ColNames>
+      <UnderlyingIndexName>name</UnderlyingIndexName>
+    </key>
+    <column id="198" parent="26" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="199" parent="26" name="group_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="200" parent="26" name="permission_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="201" parent="26" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
+      <ColNames>group_id
+permission_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="202" parent="26" name="auth_group_permissio_permission_id_84c5c92e_fk_auth_perm">
+      <ColNames>permission_id</ColNames>
+    </index>
+    <key id="203" parent="26" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="204" parent="26" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
+      <ColNames>group_id
+permission_id</ColNames>
+      <UnderlyingIndexName>auth_group_permissions_group_id_permission_id_0cd325b0_uniq</UnderlyingIndexName>
+    </key>
+    <foreign-key id="205" parent="26" name="auth_group_permissions_group_id_b120cbf9_fk_auth_group_id">
+      <ColNames>group_id</ColNames>
+      <RefSchemaName>spider_manager</RefSchemaName>
+      <RefTableName>auth_group</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="206" parent="26" name="auth_group_permissio_permission_id_84c5c92e_fk_auth_perm">
+      <ColNames>permission_id</ColNames>
+      <RefSchemaName>spider_manager</RefSchemaName>
+      <RefTableName>auth_permission</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="207" parent="27" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="208" parent="27" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="209" parent="27" name="content_type_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="210" parent="27" name="codename">
+      <Position>4</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="211" parent="27" name="auth_permission_content_type_id_codename_01ab375a_uniq">
+      <ColNames>content_type_id
+codename</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="212" parent="27" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="213" parent="27" name="auth_permission_content_type_id_codename_01ab375a_uniq">
+      <ColNames>content_type_id
+codename</ColNames>
+      <UnderlyingIndexName>auth_permission_content_type_id_codename_01ab375a_uniq</UnderlyingIndexName>
+    </key>
+    <foreign-key id="214" parent="27" name="auth_permission_content_type_id_2f476e4b_fk_django_co">
+      <ColNames>content_type_id</ColNames>
+      <RefSchemaName>spider_manager</RefSchemaName>
+      <RefTableName>django_content_type</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="215" parent="28" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="216" parent="28" name="password">
+      <Position>2</Position>
+      <DataType>varchar(128)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="217" parent="28" name="last_login">
+      <Position>3</Position>
+      <DataType>datetime(6)|0</DataType>
+    </column>
+    <column id="218" parent="28" name="is_superuser">
+      <Position>4</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="219" parent="28" name="username">
+      <Position>5</Position>
+      <DataType>varchar(150)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="220" parent="28" name="first_name">
+      <Position>6</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="221" parent="28" name="last_name">
+      <Position>7</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="222" parent="28" name="email">
+      <Position>8</Position>
+      <DataType>varchar(254)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="223" parent="28" name="is_staff">
+      <Position>9</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="224" parent="28" name="is_active">
+      <Position>10</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="225" parent="28" name="date_joined">
+      <Position>11</Position>
+      <DataType>datetime(6)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="226" parent="28" name="username">
+      <ColNames>username</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="227" parent="28" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="228" parent="28" name="username">
+      <ColNames>username</ColNames>
+      <UnderlyingIndexName>username</UnderlyingIndexName>
+    </key>
+    <column id="229" parent="29" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="230" parent="29" name="user_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="231" parent="29" name="group_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="232" parent="29" name="auth_user_groups_group_id_97559544_fk_auth_group_id">
+      <ColNames>group_id</ColNames>
+    </index>
+    <index id="233" parent="29" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
+      <ColNames>user_id
+group_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="234" parent="29" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="235" parent="29" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
+      <ColNames>user_id
+group_id</ColNames>
+      <UnderlyingIndexName>auth_user_groups_user_id_group_id_94350c0c_uniq</UnderlyingIndexName>
+    </key>
+    <foreign-key id="236" parent="29" name="auth_user_groups_user_id_6a12ed8b_fk_auth_user_id">
+      <ColNames>user_id</ColNames>
+      <RefSchemaName>spider_manager</RefSchemaName>
+      <RefTableName>auth_user</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="237" parent="29" name="auth_user_groups_group_id_97559544_fk_auth_group_id">
+      <ColNames>group_id</ColNames>
+      <RefSchemaName>spider_manager</RefSchemaName>
+      <RefTableName>auth_group</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="238" parent="30" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="239" parent="30" name="user_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="240" parent="30" name="permission_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="241" parent="30" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
+      <ColNames>user_id
+permission_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="242" parent="30" name="auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm">
+      <ColNames>permission_id</ColNames>
+    </index>
+    <key id="243" parent="30" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="244" parent="30" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
+      <ColNames>user_id
+permission_id</ColNames>
+      <UnderlyingIndexName>auth_user_user_permissions_user_id_permission_id_14a6b632_uniq</UnderlyingIndexName>
+    </key>
+    <foreign-key id="245" parent="30" name="auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id">
+      <ColNames>user_id</ColNames>
+      <RefSchemaName>spider_manager</RefSchemaName>
+      <RefTableName>auth_user</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="246" parent="30" name="auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm">
+      <ColNames>permission_id</ColNames>
+      <RefSchemaName>spider_manager</RefSchemaName>
+      <RefTableName>auth_permission</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="247" parent="31" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="248" parent="31" name="action_time">
+      <Position>2</Position>
+      <DataType>datetime(6)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="249" parent="31" name="object_id">
+      <Position>3</Position>
+      <DataType>longtext|0</DataType>
+    </column>
+    <column id="250" parent="31" name="object_repr">
+      <Position>4</Position>
+      <DataType>varchar(200)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="251" parent="31" name="action_flag">
+      <Position>5</Position>
+      <DataType>smallint(5) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="252" parent="31" name="change_message">
+      <Position>6</Position>
+      <DataType>longtext|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="253" parent="31" name="content_type_id">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="254" parent="31" name="user_id">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="255" parent="31" name="django_admin_log_content_type_id_c4bce8eb_fk_django_co">
+      <ColNames>content_type_id</ColNames>
+    </index>
+    <index id="256" parent="31" name="django_admin_log_user_id_c564eba6_fk_auth_user_id">
+      <ColNames>user_id</ColNames>
+    </index>
+    <key id="257" parent="31" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="258" parent="31" name="django_admin_log_content_type_id_c4bce8eb_fk_django_co">
+      <ColNames>content_type_id</ColNames>
+      <RefSchemaName>spider_manager</RefSchemaName>
+      <RefTableName>django_content_type</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="259" parent="31" name="django_admin_log_user_id_c564eba6_fk_auth_user_id">
+      <ColNames>user_id</ColNames>
+      <RefSchemaName>spider_manager</RefSchemaName>
+      <RefTableName>auth_user</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="260" parent="32" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="261" parent="32" name="app_label">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="262" parent="32" name="model">
+      <Position>3</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="263" parent="32" name="django_content_type_app_label_model_76bd3d3b_uniq">
+      <ColNames>app_label
+model</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="264" parent="32" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="265" parent="32" name="django_content_type_app_label_model_76bd3d3b_uniq">
+      <ColNames>app_label
+model</ColNames>
+      <UnderlyingIndexName>django_content_type_app_label_model_76bd3d3b_uniq</UnderlyingIndexName>
+    </key>
+    <column id="266" parent="33" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="267" parent="33" name="app">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="268" parent="33" name="name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="269" parent="33" name="applied">
+      <Position>4</Position>
+      <DataType>datetime(6)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="270" parent="33" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="271" parent="34" name="session_key">
+      <Position>1</Position>
+      <DataType>varchar(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="272" parent="34" name="session_data">
+      <Position>2</Position>
+      <DataType>longtext|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="273" parent="34" name="expire_date">
+      <Position>3</Position>
+      <DataType>datetime(6)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="274" parent="34" name="django_session_expire_date_a5c62663">
+      <ColNames>expire_date</ColNames>
+    </index>
+    <key id="275" parent="34" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>session_key</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="276" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="277" parent="35" name="table">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="278" parent="35" name="column">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="279" parent="35" name="value">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="280" parent="35" name="label">
+      <Position>5</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="281" parent="35" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="282" parent="36" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="283" parent="36" name="name">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="284" parent="36" name="intro">
+      <Position>3</Position>
+      <DataType>longtext|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="285" parent="36" name="create_time">
+      <Position>4</Position>
+      <DataType>datetime(6)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="286" parent="36" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="287" parent="37" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="288" parent="37" name="name">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="289" parent="37" name="create_time">
+      <Position>3</Position>
+      <DataType>datetime(6)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="290" parent="37" name="intro">
+      <Position>4</Position>
+      <DataType>longtext|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="291" parent="37" name="target_site">
+      <Position>5</Position>
+      <DataType>varchar(200)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="292" parent="37" name="type">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="293" parent="37" name="project_id">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="294" parent="37" name="manager_spider_project_id_fc7133a8_fk_manager_project_id">
+      <ColNames>project_id</ColNames>
+    </index>
+    <key id="295" parent="37" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="296" parent="37" name="manager_spider_project_id_fc7133a8_fk_manager_project_id">
+      <ColNames>project_id</ColNames>
+      <RefSchemaName>spider_manager</RefSchemaName>
+      <RefTableName>manager_project</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="297" parent="38" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="298" parent="38" name="loc">
+      <Position>2</Position>
+      <DataType>varchar(200)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="299" parent="38" name="status">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="300" parent="38" name="log">
+      <Position>4</Position>
+      <DataType>longtext|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="301" parent="38" name="edit_time">
+      <Position>5</Position>
+      <DataType>datetime(6)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="302" parent="38" name="spider_id">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="303" parent="38" name="manager_spiderstatus_spider_id_844ba96a_fk_manager_spider_id">
+      <ColNames>spider_id</ColNames>
+    </index>
+    <key id="304" parent="38" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="305" parent="38" name="manager_spiderstatus_spider_id_844ba96a_fk_manager_spider_id">
+      <ColNames>spider_id</ColNames>
+      <RefSchemaName>spider_manager</RefSchemaName>
+      <RefTableName>manager_spider</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
   </database-model>
 </dataSource>

@@ -5,21 +5,10 @@
     <title>Title</title>
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'manager/css/style.css' %}" />
-    <script type="text/javascript" src="{% static 'manager/js/jquery.min.js' %}"></script>
-    <script>
-    function fun(){
-        var id = 1
-        $.ajax({
-            url:'http://127.0.0.1:8000/manager/ajax',
-            type:'GET',
-            data:{"id":id},
-            dataTpye:"json",
-            success:function(res){
-                console.log(res)
-            }
-        })
-    }
-</script>
+    <script type="text/javascript" src="{% static 'manager/js/jquery-3.2.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'manager/js/manager.js' %}"></script>
+    <script type="text/javascript" src="{% static 'manager/js/base.js' %}"></script>
+
 
 </head>
 <body>
@@ -33,6 +22,19 @@
     {% else %}
         <p>No spiders are available.</p>
     {% endif %}
-    <button onclick="fun()">ajax</button>
+    <div><button onclick="fun()">ajax</button></div>
+    <div>
+        <button onclick="get_projects()">get_projects</button>
+    <button onclick="get_spiders_in_project()">get_spiders_in_project</button>
+    </div>
+    <div>
+        <button onclick="get_project()">get_project</button>
+        <button onclick="get_spider()">get_spider</button>
+    </div>
+    <div>
+        <button onclick="get_spiderstatus()">get_spiderstatus</button>
+        <button onclick="get_spiderstatus_today()">get_spiderstatus_today</button>
+    </div>
+
 </body>
 </html>
