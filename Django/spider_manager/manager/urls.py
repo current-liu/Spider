@@ -20,6 +20,7 @@ urlpatterns = [url(r'^$', views.IndexView.as_view(), name='index'),
                 url(r'^get_spider/$', service.get_spider, name='get_spider'),
                 url(r'^get_spiderstatus/$', service.get_spiderstatus, name='get_spiderstatus'),
                 url(r'^get_spiderstatus_today/$', service.get_spiderstatus_today, name='get_spiderstatus_today'),
+                url(r'^get_spiderstatus_last/$', service.get_spiderstatus_last, name='get_spiderstatus_last'),
                 url(r'^ajax/$', service.ajax, name='ajax'),
 
                ]

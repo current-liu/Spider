@@ -23,7 +23,7 @@ class Spider(models.Model):
     create_time = models.DateTimeField()
     intro = models.TextField()
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
-    target_site = models.CharField(max_length=200)
+    target_site = models.CharField(max_length=500)
     type = models.IntegerField()
 
     def __str__(self):
@@ -36,6 +36,7 @@ class SpiderStatus(models.Model):
     loc = models.CharField(max_length=200)
     status = models.IntegerField()
     log = models.TextField()
+    operation_time = models.DateTimeField()
     edit_time = models.DateTimeField()
 
     def __str__(self):
@@ -44,10 +45,10 @@ class SpiderStatus(models.Model):
 
 @python_2_unicode_compatible
 class Dict(models.Model):
-    table = models.CharField(max_length=20)
+
     column = models.CharField(max_length=20)
     value = models.IntegerField()
     label = models.CharField(max_length=20)
 
     def __str__(self):
-        return str(self.table + "." + self.column)
+        return str(self.column + "." + str(self.value) + "." + self.label)

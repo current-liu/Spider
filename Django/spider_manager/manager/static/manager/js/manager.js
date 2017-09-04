@@ -127,3 +127,22 @@ function get_spiderstatus_today(){
 
     })
 }
+
+function get_spiderstatus_last(){
+    var id = 1
+    $.ajax({
+        url:schema_url+'/get_spiderstatus_last',
+        type:'GET',
+        data:{"id":id},
+        dataTpye:"json",
+        success:function(res){
+            console.log(res)
+        },
+        error:function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+
+    })
+}

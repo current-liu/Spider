@@ -16,16 +16,20 @@ print "%s" % today
 
 print 1|0
 
-def fun():
-    try:
-        lis = [1, 2, 3, 4]
-    except BaseException, e:
-        print e
-
-for n in range(3):
-    x = len(lis)
-    y = lis.__len__()
-    print next(lis)
+# def fun():
+#     try:
+#         lis = [1, 2, 3, 4]
+#     except BaseException, e:
+#         print e
+#
+# for n in range(3):
+#     x = len(lis)
+#     y = lis.__len__()
+#     print next(lis)
 
 if __name__ == '__main__':
-    fun()
+    # fun()
+    create_time1 = datetime.datetime.strptime(u"2000-01-01 12:00:00", '%Y-%m-%d %H:%M:%S')
+    create_time2 = datetime.datetime.strptime(u"2001-01-01 12:00:01", '%Y-%m-%d %H:%M:%S')
+    time2_1 = create_time2 - create_time1
+    print time2_1

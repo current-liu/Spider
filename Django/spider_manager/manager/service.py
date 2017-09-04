@@ -13,6 +13,7 @@ from django.views import generic
 from django.utils import timezone
 from .models import Spider, Project, SpiderStatus, Dict
 from django.core import serializers
+import datetime
 
 __author__ = 'liuchao'
 __version__ = '1.0'
@@ -63,12 +64,22 @@ def get_spider(request):
     return HttpResponse(response, content_type="application/json")
 
 
+def get_spiderstatus_last(request):
+    spider_id = request.GET.get("id")
+    print "spider_id: " + str(spider_id)
+    spider = Spider.objects.get(pk=spider_id)
+    spiderstatus = spider.spiderstatus_set.order_by("-edit_time")[:1]
+
+    response = serializers.serialize("json", spiderstatus)
+    return HttpResponse(response, content_type="application/json")
+
+
 def get_spiderstatus_today(request):
     spider_id = request.GET.get("id")
     print "spider_id: " + str(spider_id)
     spider = Spider.objects.get(pk=spider_id)
-    spiderstatus = spider.spiderstatus_set.get(edit_time__lte=timezone.now())
-    response = serializers.serialize("json", (spiderstatus,))
+    spiderstatus = spider.spiderstatus_set.filter(edit_time__gte=datetime.date.today())
+    response = serializers.serialize("json", spiderstatus)
     return HttpResponse(response, content_type="application/json")
 
 

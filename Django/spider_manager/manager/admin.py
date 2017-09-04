@@ -37,9 +37,9 @@ class ProjectAdmin(admin.ModelAdmin):
     search_fields = ["name"]
 
 class DictAdmin(admin.ModelAdmin):
-    fields = ["table", "column", "value", "label"]
-    list_display = ("table", "column", "value", "label")
-    list_filter = ["table"]
+    fields = ["column", "value", "label"]
+    list_display = ("column", "value", "label")
+    list_filter = ["column"]
     search_fields = ["label"]
 
 
