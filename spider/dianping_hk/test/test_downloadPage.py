@@ -1,5 +1,5 @@
 from unittest import TestCase
-from dianping_hotel_hk import html_download
+from dianping_hk import html_download
 
 class TestDownloadPage(TestCase):
     def test_downloadPage(self):

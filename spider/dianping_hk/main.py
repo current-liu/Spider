@@ -12,12 +12,13 @@ import result_manager
 import time
 import random
 import traceback
+from spider_report_tool import spiderstatus_report
 
 today = datetime.date.today()
 today_str = today.strftime("%Y-%m-%d")
 today_fo = today.strftime("%Y%m%d")
-filename = today_fo+".txt"
-fo_log = open("./log/"+filename, "a")
+filename = today_fo + ".txt"
+fo_log = open("./log/" + filename, "a")
 
 
 def crawling_hotel_list():
@@ -164,6 +165,7 @@ def crawling_shop():
 
 
 def crawling_room():
+    i = 1 / 0
     print "crawling_room()"
 
     ROOM_URL = "http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=3715216&" \
@@ -509,7 +511,7 @@ def crawling_hotel_review():
                 #             fo_log.write(msg5)
                 #             page_num -= 1
                 #             fo = open(
-                #                 r"D:\Liuchao\PycharmProjects\pythonproject\spider\dianping_hotel_hk\download_error\'%s''%s'.txt" % (
+                #                 r"D:\Liuchao\PycharmProjects\pythonproject\spider\dianping_hk\download_error\'%s''%s'.txt" % (
                 #                     today_str, identify_url), "wb")
                 #             fo.write(doc)
                 #             fo.close()
@@ -546,7 +548,7 @@ def crawling_hotel_review():
             #     url_manager.add_new_review_url(identify_url)
             #     u_test = url_manager.new_review_urls
             #     fo = open(
-            #         r"D:\Liuchao\PycharmProjects\pythonproject\spider\dianping_hotel_hk\download_error\'%s''%s'.txt" % (
+            #         r"D:\Liuchao\PycharmProjects\pythonproject\spider\dianping_hk\download_error\'%s''%s'.txt" % (
             #             today_str, identify_url), "wb")
             #     fo.write(doc)
             #     fo.close()
@@ -760,18 +762,29 @@ if __name__ == "__main__":
     # crawling_shop()
 
     # 房间详情
-    crawling_room()
+    try:
+        start_time = spiderstatus_report.get_time_django()
+        spiderstatus_report.report_spider_start(5, start_time)
+        time.sleep(2)
+        crawling_room()
+    except BaseException, e:
+        print e
+        end_time = spiderstatus_report.get_time_django()
+        spiderstatus_report.report_spider_error(5, end_time, str(e), start_time)
+    else:
+        end_time = spiderstatus_report.get_time_django()
+        spiderstatus_report.report_spider_end(5, end_time, "normal", start_time)
 
-    # 酒店评论
-    # try:
-    #    crawling_hotel_review_02()
-    #
-    # except BaseException, e:
-    #     print e
-    #     print "程序中止"
+        # 酒店评论
+        # try:
+        #    crawling_hotel_review_02()
+        #
+        # except BaseException, e:
+        #     print e
+        #     print "程序中止"
 
-    # 景点列表
-    # crawling_attraction_shop()
+        # 景点列表
+        # crawling_attraction_shop()
 
-    # 景点评论
-    # crawling_attraction_review()
+        # 景点评论
+        # crawling_attraction_review()

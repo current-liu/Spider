@@ -9,7 +9,7 @@ base Info
 import sys
 from unittest import TestCase
 
-from dianping_hotel_hk import main
+from dianping_hk import main
 
 reload(sys)
 sys.setdefaultencoding('utf-8')

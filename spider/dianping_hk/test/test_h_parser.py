@@ -1,6 +1,6 @@
 from unittest import TestCase
-from dianping_hotel_hk import html_download
-from dianping_hotel_hk import h_parser
+from dianping_hk import html_download
+from dianping_hk import h_parser
 
 REVIEW_URL = "http://www.dianping.com/shop/6276819/review_more"
 class TestGet_review(TestCase):

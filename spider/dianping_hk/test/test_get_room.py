@@ -1,7 +1,7 @@
 # coding=utf-8
 from unittest import TestCase
-import dianping_hotel_hk.h_parser
-import dianping_hotel_hk.html_download
+import dianping_hk.h_parser
+import dianping_hk.html_download
 from bs4 import BeautifulSoup
 import json
 import time
@@ -21,16 +21,16 @@ class TestGet_room(TestCase):
                     "checkinDate=2017-08-04&checkoutDate=2017-08-05"
         self.url5 = "http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=67132351&" \
                     "checkinDate=2017-08-05&checkoutDate=2017-08-06"
-        self.doc1, msg = dianping_hotel_hk.html_download.downloadPage(self.url1)
-        self.doc2, msg = dianping_hotel_hk.html_download.downloadPage(self.url2)
-        self.doc3, msg = dianping_hotel_hk.html_download.downloadPage(self.url3)
-        self.doc4, msg = dianping_hotel_hk.html_download.downloadPage(self.url4)
-        self.doc5, msg = dianping_hotel_hk.html_download.downloadPage(self.url5)
+        self.doc1, msg = dianping_hk.html_download.downloadPage(self.url1)
+        self.doc2, msg = dianping_hk.html_download.downloadPage(self.url2)
+        self.doc3, msg = dianping_hk.html_download.downloadPage(self.url3)
+        self.doc4, msg = dianping_hk.html_download.downloadPage(self.url4)
+        self.doc5, msg = dianping_hk.html_download.downloadPage(self.url5)
         self.doc_list = [self.doc1, self.doc2, self.doc3, self.doc4, self.doc5]
         # soup = BeautifulSoup(self.doc, "lxml")
 
     def test_get_room(self):
-        dianping_hotel_hk.h_parser.get_room(self.doc_list, 67132351)
+        dianping_hk.h_parser.get_room(self.doc_list, 67132351)
         # self.doc = html_download.downloadPage(self.url_getroom)
         # data  = json.loads(self.doc)
         # room_list = data["data"]["hotelGoodsList"]["roomList"]

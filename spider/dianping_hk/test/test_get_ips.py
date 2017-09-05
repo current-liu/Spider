@@ -1,6 +1,6 @@
 from unittest import TestCase
-import dianping_hotel_hk.ip_proxy
-from dianping_hotel_hk import html_download
+import dianping_hk.ip_proxy
+from dianping_hk import html_download
 
 
 class TestGet_ips(TestCase):

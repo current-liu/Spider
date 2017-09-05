@@ -128,14 +128,20 @@ DATABASES = {
     #     'ENGINE': 'django.db.backends.sqlite3',
     #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     # }
-    'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'spider_manager',
-            'USER': 'root',
-            'PASSWORD': 'keystone',
-            'HOST': '192.168.1.166',
-            'PORT': '3306'
-        },
+    # 'default': {
+    #         'ENGINE': 'django.db.backends.mysql',
+    #         'NAME': 'spider_manager',
+    #         'USER': 'root',
+    #         'PASSWORD': 'Sz@860213',
+    #         'HOST': '202.110.49.146',
+    #         'PORT': '3306'
+    #     },
+    'default': {'ENGINE': 'django.db.backends.mysql',
+                'NAME': 'spider_manager',
+                'USER': 'root',
+                'PASSWORD': 'liu1991chao',
+                'HOST': '127.0.0.1',
+                'PORT': '3306'},
 }
 
 

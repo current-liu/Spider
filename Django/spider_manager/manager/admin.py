@@ -17,9 +17,9 @@ class SpiderStatusInLine(admin.TabularInline):
 
 
 class SpiderAdmin(admin.ModelAdmin):
-    fields = ["name", "create_time", "intro", "project", "target_site", "type"]
+    list_display = ("id", "name", "project", "type", "loc", "create_time")
+    fields = ["name", "create_time", "intro", "project", "target_site", "loc", "type"]
     inlines = [SpiderStatusInLine]
-    list_display = ("name", "project", "type", "create_time")
     list_filter = ["project"]
     search_fields = ["name"]
 
@@ -30,21 +30,28 @@ class SpiderInLine(admin.TabularInline):
 
 
 class ProjectAdmin(admin.ModelAdmin):
+    list_display = ("id", "name", "intro", "create_time")
     fields = ["name", "intro", "create_time"]
     inlines = [SpiderInLine]
-    list_display = ("name", "intro", "create_time")
     list_filter = ["create_time"]
     search_fields = ["name"]
 
 class DictAdmin(admin.ModelAdmin):
+    list_display = ("id", "column", "value", "label")
     fields = ["column", "value", "label"]
-    list_display = ("column", "value", "label")
     list_filter = ["column"]
     search_fields = ["label"]
 
 
+class SpiderStatusAdmin(admin.ModelAdmin):
+    list_display = ["id", "spider_id", "status", "log", "operation_time", "edit_time"]
+    fields = ["status", "log", "operation_time", "edit_time"]
+    list_filter = ["spider_id", "edit_time"]
+    search_fields = ["log"]
+
 admin.site.register(Project, ProjectAdmin)
 admin.site.register(Spider, SpiderAdmin)
 admin.site.register(Dict, DictAdmin)
+admin.site.register(SpiderStatus, SpiderStatusAdmin)
 
 

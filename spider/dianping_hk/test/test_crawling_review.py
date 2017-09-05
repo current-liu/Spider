@@ -1,9 +1,9 @@
 from unittest import TestCase
-import dianping_hotel_hk.h_parser
-import dianping_hotel_hk.html_download
-import dianping_hotel_hk.result_manager
-import dianping_hotel_hk.dao
-from dianping_hotel_hk.main import get_attraction_review_on_page
+import dianping_hk.h_parser
+import dianping_hk.html_download
+import dianping_hk.result_manager
+import dianping_hk.dao
+from dianping_hk.main import get_attraction_review_on_page
 
 
 class TestCrawling_review(TestCase):

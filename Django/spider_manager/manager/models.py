@@ -25,6 +25,7 @@ class Spider(models.Model):
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
     target_site = models.CharField(max_length=500)
     type = models.IntegerField()
+    loc = models.CharField(max_length=200)
 
     def __str__(self):
         return self.name
@@ -33,10 +34,10 @@ class Spider(models.Model):
 @python_2_unicode_compatible
 class SpiderStatus(models.Model):
     spider = models.ForeignKey(Spider, on_delete=models.CASCADE)
-    loc = models.CharField(max_length=200)
+    # loc = models.CharField(max_length=200)
     status = models.IntegerField()
     log = models.TextField()
-    operation_time = models.DateTimeField()
+    operation_time = models.CharField(max_length=20)
     edit_time = models.DateTimeField()
 
     def __str__(self):
