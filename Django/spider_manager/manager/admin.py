@@ -17,7 +17,7 @@ class SpiderStatusInLine(admin.TabularInline):
 
 
 class SpiderAdmin(admin.ModelAdmin):
-    list_display = ("id", "name", "project", "type", "loc", "create_time")
+    list_display = ("id", "name", "project", "type", "loc", "create_time", "status")
     fields = ["name", "create_time", "intro", "project", "target_site", "loc", "type"]
     inlines = [SpiderStatusInLine]
     list_filter = ["project"]

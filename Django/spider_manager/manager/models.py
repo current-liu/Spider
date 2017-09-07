@@ -26,6 +26,7 @@ class Spider(models.Model):
     target_site = models.CharField(max_length=500)
     type = models.IntegerField()
     loc = models.CharField(max_length=200)
+    status = models.IntegerField()
 
     def __str__(self):
         return self.name

@@ -13,7 +13,7 @@ __version__ = '1.0'
 
 today = datetime.datetime.today()
 today_django = today + datetime.timedelta(hours=-8)
-today_django_end = today + datetime.timedelta(hours=-7) + datetime.timedelta(days=5)
+today_django_end = today + datetime.timedelta(hours=-5) + datetime.timedelta(days=5)
 
 
 def get_time_django():
@@ -25,6 +25,7 @@ def get_time_django():
 def report_spider_start(spider_id, current_time):
     status = 1
     dao.insert_spider_status_start(spider_id, status, current_time)
+    dao.update_spider_status(spider_id, status)
 
 
 def report_spider_end(spider_id, current_time, log, start_time):
@@ -35,7 +36,7 @@ def report_spider_end(spider_id, current_time, log, start_time):
     operation_time_str = str(days)+":"+str(seconds)
 
     dao.insert_spider_status_end(spider_id, status, current_time, log, operation_time_str)
-
+    dao.update_spider_status(spider_id, status)
 
 def report_spider_error(spider_id, current_time, log, start_time):
     status = 3
@@ -44,7 +45,7 @@ def report_spider_error(spider_id, current_time, log, start_time):
     seconds = operation_time.seconds
     operation_time_str = str(days) + ":" + str(seconds)
     dao.insert_spider_status_end(spider_id, status, current_time, log, operation_time_str)
-
+    dao.update_spider_status(spider_id, status)
 
 if __name__ == '__main__':
     status = 1

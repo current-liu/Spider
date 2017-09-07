@@ -24,6 +24,19 @@ __author__ = 'Administrator'
 __version__ = '1.0'
 
 
+def get_spider_on_date(date):
+    sql = """SELECT * FROM manager_spider
+              WHERE manager_spider.id IN
+              (SELECT DISTINCT spider_id FROM manager_spiderstatus WHERE edit_time LIKE %s)"""
+    try:
+        cursor.execute(sql, date + "%")
+        results = cursor.fetchall()
+
+    except BaseException, e:
+        print e
+    return results
 
 
 
+if __name__ == '__main__':
+    get_spider_on_date("2017-09-06")

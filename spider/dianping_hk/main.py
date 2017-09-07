@@ -12,6 +12,13 @@ import result_manager
 import time
 import random
 import traceback
+import sys
+import os
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+# rootPath1 = os.path.split(rootPath)[0]
+# 要添加 D:\LiuChao\PycharmProjects\spider
+sys.path.append(rootPath)
 from spider_report_tool import spiderstatus_report
 
 today = datetime.date.today()
@@ -165,7 +172,7 @@ def crawling_shop():
 
 
 def crawling_room():
-    i = 1 / 0
+    # i = 1 / 0
     print "crawling_room()"
 
     ROOM_URL = "http://www.dianping.com/hotelproduct/pc/hotelPrepayAndOtaGoodsList?shopId=3715216&" \
@@ -765,7 +772,7 @@ if __name__ == "__main__":
     try:
         start_time = spiderstatus_report.get_time_django()
         spiderstatus_report.report_spider_start(5, start_time)
-        time.sleep(2)
+        # time.sleep(2)
         crawling_room()
     except BaseException, e:
         print e

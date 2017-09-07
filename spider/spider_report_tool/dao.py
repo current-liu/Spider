@@ -32,3 +32,17 @@ def insert_spider_status_end(spider_id, status, edit_time, log, operation_time):
     except BaseException, e:
         print e
         db.rollback()
+
+
+def update_spider_status(spider_id, status):
+    sql = """UPDATE manager_spider SET status=%s WHERE id = %s"""
+    try:
+        cursor.execute(sql, (status, spider_id))
+        db.commit()
+    except BaseException, e:
+        print e
+        db.rollback()
+
+
+if __name__ == '__main__':
+    update_spider_status(1, 2)

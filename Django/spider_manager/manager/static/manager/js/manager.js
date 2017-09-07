@@ -90,6 +90,24 @@ function get_spider(){
     })
 }
 
+function get_spiders(){
+
+    $.ajax({
+        url:schema_url+'/get_spiders',
+        type:'GET',
+
+        success:function(res){
+            console.log(res)
+        },
+        error:function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+
+    })
+}
+
 function get_spiderstatus(){
     var id = 1
     $.ajax({
@@ -134,6 +152,45 @@ function get_spiderstatus_last(){
         url:schema_url+'/get_spiderstatus_last',
         type:'GET',
         data:{"id":id},
+        dataTpye:"json",
+        success:function(res){
+            console.log(res)
+        },
+        error:function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+
+    })
+}
+
+
+function get_spider_group_by_status(){
+    n = 1
+    $.ajax({
+        url:schema_url+'/get_spider_group_by_status',
+        type:'GET',
+        data:{"status" : n},
+        dataTpye:"json",
+        success:function(res){
+            console.log(res)
+        },
+        error:function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+
+    })
+}
+
+function get_spider_on_date() {
+    n = "2017-09-06"
+    $.ajax({
+        url:schema_url+'/get_spider_on_date',
+        type:'GET',
+        data:{"date" : n},
         dataTpye:"json",
         success:function(res){
             console.log(res)
