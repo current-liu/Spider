@@ -186,9 +186,86 @@ function get_spider_group_by_status(){
 }
 
 function get_spider_on_date() {
-    n = "2017-09-06"
+    n = "2017-09-07"
     $.ajax({
         url:schema_url+'/get_spider_on_date',
+        type:'GET',
+        data:{"date" : n},
+        dataTpye:"json",
+        success:function(res){
+            console.log(res)
+        },
+        error:function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+
+    })
+}
+
+function get_error_spider_on_date() {
+    n = "2017-09-07"
+    $.ajax({
+        url:schema_url+'/get_error_spider_on_date',
+        type:'GET',
+        data:{"date" : n},
+        dataTpye:"json",
+        success:function(res){
+            console.log(res)
+        },
+        error:function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+
+    })
+}
+
+function get_spider_on_month() {
+    n = "2017-09"
+    $.ajax({
+        url:schema_url+'/get_spider_on_date',
+        type:'GET',
+        data:{"date" : n},
+        dataTpye:"json",
+        success:function(res){
+            console.log(res)
+        },
+        error:function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+
+    })
+}
+
+function get_error_spider_on_month() {
+    n = "2017-09"
+    $.ajax({
+        url:schema_url+'/get_error_spider_on_date',
+        type:'GET',
+        data:{"date" : n},
+        dataTpye:"json",
+        success:function(res){
+            console.log(res)
+        },
+        error:function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+
+    })
+}
+
+
+function get_spider_on_month_every_day() {
+    n = "2017-09"
+    $.ajax({
+        url:schema_url+'/get_spider_on_month_every_day',
         type:'GET',
         data:{"date" : n},
         dataTpye:"json",
