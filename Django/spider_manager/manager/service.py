@@ -21,6 +21,9 @@ import json
 import dao
 from django.utils import timezone
 
+from django.core.serializers.json import DjangoJSONEncoder
+from django.db.models.functions import TruncYear, TruncMonth, TruncDay, TruncHour
+
 __author__ = 'liuchao'
 __version__ = '1.0'
 
@@ -105,7 +108,7 @@ def get_spiderstatus(request):
     return HttpResponse(response, content_type="application/json")
 
 
-def get_spider_group_by_status(request):
+def get_spider_group_on_status(request):
     status = request.GET.get("status")
     res = Spider.objects.filter(status=status)
     response = serializers.serialize("json", res)
@@ -136,33 +139,156 @@ def get_error_spider_on_date(request):
     return HttpResponse(response, content_type="application/json")
 
 
+def get_spider_on_day_every_hour(request):
+    # TODO 按hour查会出错
+    date = str(request.GET.get("date"))
+    date_str = date.split("-")
+    year = date_str[0]
+    month = date_str[1]
+    day = date_str[2]
+    status = request.GET.get("status")
+    type_id = request.GET.get("type")
+
+    print date
+    print status, type_id
+
+    spiders = Spider.objects.filter()
+
+    if date is None:
+        pass
+    else:
+        spiders = spiders.filter(spiderstatus__edit_time__year=year, spiderstatus__edit_time__month=month,
+                                    spiderstatus__edit_time=date)
+    r = serializers.serialize("json", spiders)
+    h_r = HttpResponse(r, content_type="application/json")
+
+    if status is None:
+        pass
+    else:
+        spiders = spiders.filter(spiderstatus__status=status)
+    if type_id is None:
+        pass
+    else:
+        spiders = spiders.filter(type=type_id)
+
+    spiders_num = {}
+    for i in range(0, 24):
+        key = "hour" + str(i)
+        spiders_f = spiders.filter(spiderstatus__edit_time__hour=i)
+        r_1 = serializers.serialize("json", spiders)
+        h_r_1 = HttpResponse(r_1, content_type="application/json")
+        spiders_i = spiders_f.distinct().count()
+        spiders_num[key] = spiders_i
+
+    return JsonResponse(spiders_num)
+
+
 def get_spider_on_month_every_day(request):
-    month = request.GET.get("date")
-    print ""
-    spiders = Spider.objects.filter(spiderstatus__edit_time__contains=month)
-    spiders_distinct = Spider.objects.filter(spiderstatus__edit_time__contains=month).distinct()
-    spiders_day = spiders.filter(spiderstatus__edit_time__day=1)
-    response = serializers.serialize("json", spiders_distinct)
-    str_0 = unicode(response.replace("[", "").replace("]", ""))
-    str_1 = unicode(response)
-    # str_json = '[{' + u'"month":' + '{'+str_0 + '}},' + u'{"month1":' + '{'+str_0 + '}}]'
-    str_json = '[fsafsaf]'
-    # return HttpResponse(str_json, content_type="application/json")
-    return JsonResponse(str_json)
+    date = str(request.GET.get("date"))
+    year = date.split("-")[0]
+    month = date.split("-")[1]
+    status = request.GET.get("status")
+    type_id = request.GET.get("type")
+
+    print date
+    print status, type_id
+
+    spiders = Spider.objects.filter()
+
+    if date is None:
+        pass
+    else:
+        spiders = spiders.filter(spiderstatus__edit_time__year=year, spiderstatus__edit_time__month=month)
+    if status is None:
+        print str(status)
+    else:
+        spiders = spiders.filter(spiderstatus__status=status)
+    if type_id is None:
+        pass
+    else:
+        spiders = spiders.filter(type=type_id)
+
+    spiders_num = {}
+    for i in range(1, 32):
+        key = "day" + str(i)
+        spiders_i = spiders.filter(spiderstatus__edit_time__day=i).distinct().count()
+        spiders_num[key] = spiders_i
+
+    return JsonResponse(spiders_num)
 
 
 def get_spider_on_year_every_month(request):
     year = request.GET.get("date")
-    year = 2017
-    spiders = Spider.objects.filter(spiderstatus__edit_time__year=year).distinct()
-    spiders_month = SpiderStatus.objects.values("spider_id").annotate(dcount=Count(edit_time__month))
-    response = serializers.serialize("json", spiders_distinct)
-    str_0 = unicode(response.replace("[", "").replace("]", ""))
-    str_1 = unicode(response)
-    # str_json = '[{' + u'"month":' + '{'+str_0 + '}},' + u'{"month1":' + '{'+str_0 + '}}]'
-    str_json = '[fsafsaf]'
-    # return HttpResponse(str_json, content_type="application/json")
-    return JsonResponse(str_json)
+    status = request.GET.get("status")
+    type_id = request.GET.get("type")
+
+    print year
+    print status, type_id
+
+    spiders = Spider.objects.filter()
+
+    if year is None:
+        pass
+    else:
+        spiders = spiders.filter(spiderstatus__edit_time__year=year)
+
+    if status is None:
+        print str(status)
+    else:
+        spiders = spiders.filter(spiderstatus__status=status)
+
+    if type_id is None:
+        pass
+    else:
+        spiders = spiders.filter(type=type_id)
+
+    # response = serializers.serialize("json", res)
+    # return HttpResponse(response, content_type="application/json")
+    spiders_num = {}
+    for i in range(1, 13):
+        spiders_i = spiders.filter(spiderstatus__edit_time__month=i).distinct().count()
+        key = "month" + str(i)
+        spiders_num[key] = spiders_i
+
+    # res = SpiderStatus.objects.filter(edit_time__year=year).annotate(month=TruncMonth('edit_time')).values(
+    #     'month').annotate(num=Count('id')).values('num', 'month').order_by('month')
+    #
+    # spider_json = json.dumps(list(res), cls=DjangoJSONEncoder)
+    # return JsonResponse(spider_json, safe=False)
+    # return HttpResponse(spider_json, content_type="application/json")
+    return JsonResponse(spiders_num)
+
+
+def get_operation_time_last_n_days(request):
+    """TODO 每天的时间累加"""
+    spider_id = request.GET.get("id")
+    n = int(request.GET.get("n"))
+    today = datetime.datetime.today()
+    time_search = today + datetime.timedelta(days=-n)
+    operation_time_list = SpiderStatus.objects.filter(spider_id=spider_id, status=2,
+                                                      edit_time__gte=time_search).values_list("operation_time")
+    total_day = 0
+    total_sec = 0
+    for op_time in operation_time_list:
+        total_day += int(op_time[0].split(":")[0])
+        total_sec += int(op_time[0].split(":")[1])
+
+    day = total_sec / 86400
+    last_sec = total_sec - day * 86400
+    hour = last_sec / 3600
+    last_sec_1 = last_sec - hour * 3600
+    minutes = last_sec_1 / 60
+    sec = last_sec_1 % 60
+
+    day += total_day
+
+    full_seconds = n * 86400
+    operation_time_seconds = total_day * 86400 + total_sec
+    leisure_seconds = full_seconds - operation_time_seconds
+
+    operation_time = {"day": day, "hour": hour, "minutes": minutes, "sec": sec,
+                      "operation_time_seconds": operation_time_seconds, "leisure_seconds": leisure_seconds}
+    return JsonResponse(operation_time)
 
 
 if __name__ == '__main__':

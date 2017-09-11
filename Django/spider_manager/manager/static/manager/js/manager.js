@@ -166,7 +166,7 @@ function get_spiderstatus_last(){
 }
 
 
-function get_spider_group_by_status(){
+function get_spider_group_on_status(){
     n = 1
     $.ajax({
         url:schema_url+'/get_spider_group_by_status',
@@ -268,6 +268,65 @@ function get_spider_on_month_every_day() {
         url:schema_url+'/get_spider_on_month_every_day',
         type:'GET',
         data:{"date" : n},
+        dataTpye:"json",
+        success:function(res){
+            console.log(res)
+        },
+        error:function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+
+    })
+}
+
+
+function get_spider_on_year_every_month() {
+    n = "2017"
+    $.ajax({
+        url:schema_url+'/get_spider_on_year_every_month',
+        type:'GET',
+        data:{"date" : n, "status": 3},
+        dataTpye:"json",
+        success:function(res){
+            console.log(res)
+        },
+        error:function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+
+    })
+}
+
+function get_spider_on_day_every_hour() {
+    n = "2017-09-06"
+    $.ajax({
+        url:schema_url+'/get_spider_on_day_every_hour',
+        type:'GET',
+        data:{"date" : n},
+        dataTpye:"json",
+        success:function(res){
+            console.log(res)
+        },
+        error:function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+
+    })
+}
+
+function get_operation_time_last_n_days() {
+    n = 5
+    n_days = 7
+    $.ajax({
+        url:schema_url+'/get_operation_time_last_n_days',
+        type:'GET',
+        data:{"id" : n, "n": n_days},
         dataTpye:"json",
         success:function(res){
             console.log(res)

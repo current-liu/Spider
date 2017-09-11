@@ -14,7 +14,9 @@ reload(sys)
 sys.setdefaultencoding("utf8")
 
 db = pymysql.connect("127.0.0.1", "root", "liu1991chao", "spider_manager", charset="utf8mb4")
-# db = pymysql.connect("127.0.0.1", "root", "1234", "test", charset="utf8mb4")
+# 严猛 和上面的交换
+# db = pymysql.connect("192.168.1.166", "root", "keystone", "spider_manager", charset="utf8mb4")
+
 cursor = db.cursor()
 cursor.execute("select version()")
 data = cursor.fetchone()

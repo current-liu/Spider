@@ -26,6 +26,14 @@ print 1|0
 #     x = len(lis)
 #     y = lis.__len__()
 #     print next(lis)
+def sec_turn(total_sec):
+    day = total_sec / 86400
+    last_sec = total_sec - day * 86400
+    hour = last_sec / 3600
+    last_sec_1 = last_sec - hour * 3600
+    minutes = last_sec_1 / 60
+    sec = last_sec_1 % 60
+    print 1
 
 if __name__ == '__main__':
     # fun()
@@ -33,3 +41,6 @@ if __name__ == '__main__':
     create_time2 = datetime.datetime.strptime(u"2001-01-01 12:00:01", '%Y-%m-%d %H:%M:%S')
     time2_1 = create_time2 - create_time1
     print time2_1
+    for i in range(1,13):
+        print i
+    sec_turn(100000)
