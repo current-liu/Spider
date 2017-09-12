@@ -62,5 +62,15 @@ def get_error_spider_id_on_date(date):
     return results
 
 
+def get_spider_on_day_every_hour(date):
+    sql = """SELECT EXTRACT(HOUR FROM `manager_spiderstatus`.`edit_time`) "hour", COUNT(DISTINCT(spider_id)) FROM manager_spiderstatus WHERE edit_time LIKE %s GROUP BY hour;"""
+    try:
+        cursor.execute(sql, date + "%")
+        results = cursor.fetchall()
+
+    except BaseException, e:
+        print e
+    return results
+
 if __name__ == '__main__':
     get_error_spider_id_on_date("2017-09-06")

@@ -169,7 +169,7 @@ function get_spiderstatus_last(){
 function get_spider_group_on_status(){
     n = 1
     $.ajax({
-        url:schema_url+'/get_spider_group_by_status',
+        url:schema_url+'/get_spider_group_on_status',
         type:'GET',
         data:{"status" : n},
         dataTpye:"json",
@@ -291,6 +291,7 @@ function get_spider_on_year_every_month() {
         dataTpye:"json",
         success:function(res){
             console.log(res)
+            console.log(res.length)
         },
         error:function(XMLHttpRequest, textStatus, errorThrown) {
             console.log(XMLHttpRequest.status);

@@ -41,6 +41,6 @@ if __name__ == '__main__':
     create_time2 = datetime.datetime.strptime(u"2001-01-01 12:00:01", '%Y-%m-%d %H:%M:%S')
     time2_1 = create_time2 - create_time1
     print time2_1
-    for i in range(1,13):
+    for i in range(1,1):
         print i
     sec_turn(100000)
