@@ -340,3 +340,25 @@ function get_operation_time_last_n_days() {
 
     })
 }
+
+function get_spider_num_group_by_date() {
+    console.log("get_spider_num_group_by_date")
+    $.ajax({
+        url:schema_url+'/get_spider_num_group_by_date',
+        type:'GET',
+        data:{"type" : 1},
+        dataTpye:"json",
+        success:function(res){
+            console.log(res)
+            // console.log(res[0])
+            // console.log(res[0].run)
+            // console.log(res[0].run[0])
+        },
+        error:function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+
+    })
+}

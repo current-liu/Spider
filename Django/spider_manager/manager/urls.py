@@ -29,7 +29,8 @@ urlpatterns = [url(r'^$', views.IndexView.as_view(), name='index'),
                 url(r'^get_spider_on_year_every_month/$', service.get_spider_on_year_every_month, name='get_spider_on_year_every_month'),
                 url(r'^get_spider_on_day_every_hour/$', service.get_spider_on_day_every_hour, name='get_spider_on_day_every_hour'),
                 url(r'^get_operation_time_last_n_days/$', service.get_operation_time_last_n_days, name='get_operation_time_last_n_days'),
-
+                url(r'^update_spider_num/$', service.update_spider_num, name='update_spider_num'),
+                url(r'^get_spider_num_group_by_date/$', service.get_spider_num_group_by_date, name='get_spider_num_group_by_date'),
 
                 url(r'^ajax/$', service.ajax, name='ajax'),
 
