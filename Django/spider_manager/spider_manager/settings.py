@@ -25,7 +25,7 @@ SECRET_KEY = 'z3p7w+=-^n_u8-8y_4m8it=^zc=y^vroe!aam6cjasg+$rejzu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.151', '127.0.0.1']
+ALLOWED_HOSTS = ['192.168.1.151', '192.168.1.150', '192.168.1.152', '127.0.0.1']
 
 
 # Application definition
@@ -137,11 +137,17 @@ DATABASES = {
     #         'HOST': '202.110.49.146',
     #         'PORT': '3306'
     #     },
+    # 'default': {'ENGINE': 'django.db.backends.mysql',
+    #             'NAME': 'spider_manager',
+    #             'USER': 'root',
+    #             'PASSWORD': 'liu1991chao',
+    #             'HOST': '127.0.0.1',
+    #             'PORT': '3306'},
     'default': {'ENGINE': 'django.db.backends.mysql',
                 'NAME': 'spider_manager',
                 'USER': 'root',
-                'PASSWORD': 'liu1991chao',
-                'HOST': '127.0.0.1',
+                'PASSWORD': 'keystone',
+                'HOST': '192.168.1.166',
                 'PORT': '3306'},
 }
 

@@ -100,6 +100,16 @@ def get_spiderstatus_today(request):
     return HttpResponse(response, content_type="application/json")
 
 
+def get_spiderstatus_on_day(request):
+    spider_id = request.GET.get("id")
+    log_date = request.GET.get("date")
+    print "spider_id: " + str(spider_id)
+    spider = Spider.objects.get(pk=spider_id)
+    spiderstatus = spider.spiderstatus_set.filter(edit_time__date=log_date)
+    response = serializers.serialize("json", spiderstatus)
+    return HttpResponse(response, content_type="application/json")
+
+
 def get_spiderstatus(request):
     spider_id = request.GET.get("id")
     print "spider_id: " + str(spider_id)
@@ -332,30 +342,86 @@ def update_spider_num():
 
 def get_spider_num_group_by_date(request):
     # print "get_spider_num_group_by_date"
+    type_str = ""
     type_ = str(request.GET.get("type"))
-    spiders_2 = dao.get_spider_num_group_by_date(2, type_)
-    spiders_3 = dao.get_spider_num_group_by_date(3, type_)
+    if type_ != 'None':
+        type_str = " AND t.type =" + type_
+    # TODO 不传type时  查所有
+    spiders_1 = dao.get_spider_num_group_by_date(1, type_str)
+    spiders_3 = dao.get_spider_num_group_by_date(3, type_str)
     spiders_num = dao.select_spider_num_up_to_date()
-    length = spiders_2.__len__()
+    length = spiders_1.__len__()
     spider_4_list = []
-    spider_2_list = []
+    spider_1_list = []
     spider_3_list = []
 
     for i in range(0, length):
-        date = spiders_2[i][0]
-        s_2 = spiders_2[i][1]
+        date = spiders_1[i][0]
+        s_1 = spiders_1[i][1]
         s_3 = spiders_3[i][1]
         s_all = spiders_num[i][1]
-        s_4 = s_all - s_2 - s_3
+        s_4 = s_all - s_1
 
-        spider_2_list.append({"date": date, "num": s_2})
-        spider_3_list.append({"date": date, "num": s_3})
-        spider_4_list.append({"date": date, "num": s_4})
+        spider_1_list.append({"d": date, "n": s_1})
+        spider_3_list.append({"d": date, "n": s_3})
+        spider_4_list.append({"d": date, "n": s_4})
 
-    res_list = [{"run": spider_2_list}, {"error": spider_3_list}, {"pause": spider_4_list}]
+    res_list = [{"run": spider_1_list}, {"error": spider_3_list}, {"pause": spider_4_list}]
     j = JsonResponse(res_list, safe=False)
     return j
 
 
+def get_spider_num_group_by_hour(request):
+    date = request.GET.get("date")
+    # date = "2017-09-06"
+
+    spider_num_list = []
+    for i in range(1, 7):
+        type_ = i
+        spider_num = dao.get_spider_num_group_by_hour(date, type_)
+        spider_num_list.append(spider_num)
+
+    res_list = []
+    # for spider_num in spider_num_list:
+    for index, spider_num in enumerate(spider_num_list):
+        res = []
+        # index = spider_num_list.index(spider_num)
+        for s_n in spider_num:
+            i = s_n[0]
+            n = s_n[1]
+            res.append({"h": i, "n": n})
+        res_list.append({"t": index+1, "d": res})
+
+    j = JsonResponse(res_list, safe=False)
+    return j
+
+
+def get_spider_num_group_by_month(request):
+    date = request.GET.get("date")
+    # date = "2017"
+    spiders_1 = dao.get_spider_num_group_by_month(date, 1)
+    spiders_3 = dao.get_spider_num_group_by_month(date, 3)
+    spiders_num = dao.select_spider_num_up_to_month(date)
+    length = spiders_num.__len__()
+    month_start = int(spiders_num[0][0].split("-")[1])
+    spider_4_list = []
+    spider_1_list = []
+    spider_3_list = []
+
+    for i in range(0, length):
+        i_fix = i+month_start
+        month = spiders_1[i_fix][0]
+        s_1 = spiders_1[i_fix][1]
+        s_3 = spiders_3[i_fix][1]
+        s_all = spiders_num[i][1]
+        s_4 = s_all - s_1
+
+        spider_1_list.append({"m": month, "n": s_1})
+        spider_3_list.append({"m": month, "n": s_3})
+        spider_4_list.append({"m": month, "n": s_4})
+
+    res_list = [{"run": spider_1_list}, {"error": spider_3_list}, {"pause": spider_4_list}]
+    j = JsonResponse(res_list, safe=False)
+    return j
 if __name__ == '__main__':
     get_date_to_update_spider_num()

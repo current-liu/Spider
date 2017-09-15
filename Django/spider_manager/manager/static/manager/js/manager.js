@@ -146,6 +146,25 @@ function get_spiderstatus_today(){
     })
 }
 
+function get_spiderstatus_on_day(){
+    var id = 1
+    $.ajax({
+        url:schema_url+'/get_spiderstatus_on_day',
+        type:'GET',
+        data:{"id":id,"date":"2017-09-06"},
+        dataTpye:"json",
+        success:function(res){
+            console.log(res)
+        },
+        error:function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+
+    })
+}
+
 function get_spiderstatus_last(){
     var id = 1
     $.ajax({
@@ -347,6 +366,50 @@ function get_spider_num_group_by_date() {
         url:schema_url+'/get_spider_num_group_by_date',
         type:'GET',
         data:{"type" : 1},
+        dataTpye:"json",
+        success:function(res){
+            console.log(res)
+            // console.log(res[0])
+            // console.log(res[0].run)
+            // console.log(res[0].run[0])
+        },
+        error:function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+
+    })
+}
+
+function get_spider_num_group_by_hour() {
+    console.log("get_spider_num_group_by_hour")
+    $.ajax({
+        url:schema_url+'/get_spider_num_group_by_hour',
+        type:'GET',
+        data:{"date" : "2017-09-06"},
+        dataTpye:"json",
+        success:function(res){
+            console.log(res)
+            // console.log(res[0])
+            // console.log(res[0].run)
+            // console.log(res[0].run[0])
+        },
+        error:function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+
+    })
+}
+
+function get_spider_num_group_by_month() {
+    console.log("get_spider_num_group_by_month")
+    $.ajax({
+        url:schema_url+'/get_spider_num_group_by_month',
+        type:'GET',
+        data:{"date" : "2017"},
         dataTpye:"json",
         success:function(res){
             console.log(res)

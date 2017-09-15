@@ -21,6 +21,8 @@ urlpatterns = [url(r'^$', views.IndexView.as_view(), name='index'),
                 url(r'^get_spiders/$', service.get_spiders, name='get_spiders'),
                 url(r'^get_spiderstatus/$', service.get_spiderstatus, name='get_spiderstatus'),
                 url(r'^get_spiderstatus_today/$', service.get_spiderstatus_today, name='get_spiderstatus_today'),
+                url(r'^get_spiderstatus_on_day/$', service.get_spiderstatus_on_day, name='get_spiderstatus_on_day'),
+
                 url(r'^get_spiderstatus_last/$', service.get_spiderstatus_last, name='get_spiderstatus_last'),
                 url(r'^get_spider_group_on_status/$', service.get_spider_group_on_status, name='get_spider_group_on_status'),
                 url(r'^get_spider_on_date/$', service.get_spider_on_date, name='get_spider_on_date'),
@@ -31,6 +33,8 @@ urlpatterns = [url(r'^$', views.IndexView.as_view(), name='index'),
                 url(r'^get_operation_time_last_n_days/$', service.get_operation_time_last_n_days, name='get_operation_time_last_n_days'),
                 url(r'^update_spider_num/$', service.update_spider_num, name='update_spider_num'),
                 url(r'^get_spider_num_group_by_date/$', service.get_spider_num_group_by_date, name='get_spider_num_group_by_date'),
+                url(r'^get_spider_num_group_by_hour/$', service.get_spider_num_group_by_hour, name='get_spider_num_group_by_hour'),
+                url(r'^get_spider_num_group_by_month/$', service.get_spider_num_group_by_month, name='get_spider_num_group_by_month'),
 
                 url(r'^ajax/$', service.ajax, name='ajax'),
 

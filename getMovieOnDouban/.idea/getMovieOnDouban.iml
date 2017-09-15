@@ -14,6 +14,7 @@
     <orderEntry type="module" module-name="IPProxyPool-master" />
     <orderEntry type="module" module-name="HelloWorld" />
     <orderEntry type="module" module-name="spider_manager" />
+    <orderEntry type="module" module-name="cafedecoralcn" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

@@ -64,10 +64,33 @@ def get_spider_num_group_by_date(request):
     return j
 
 
+def get_spider_num_group_by_hour():
+    # date = request.GET.get("date")
+    date = "2017-09-06"
+    type_ = 1
+    spider_num_list = []
+    for i in range(1, 7):
+        spider_num = dao.get_spider_num_group_by_hour(date, type_)
+        spider_num_list.append(spider_num)
+
+    res_list = []
+    for spider_num in spider_num_list:
+        res = []
+        index = spider_num_list.index(spider_num)+1
+        for s_n in spider_num:
+            i = s_n[0]
+            n = s_n[1]
+            res.append({"hour": i, "num": n})
+        res_list.append({"type": index, "date": res})
+
+    j = JsonResponse(res_list, safe=False)
+    return j
+
+
 if __name__ == '__main__':
     # get_date_to_update_spider_num()
     # update_spider_num()
     # res = dao.get_spider_num_group_by_date(3)
-    get_spider_num_group_by_date()
-
+    # get_spider_num_group_by_date()
+    get_spider_num_group_by_hour()
     pass

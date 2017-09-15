@@ -48,7 +48,6 @@ def report_spider_start_fix(spider_id, current_time):
 
 
 def report_spider_end(spider_id, end_time, log, start_time):
-    status = 2
 
     day_0 = start_time.day
     day_1 = end_time.day
@@ -56,9 +55,10 @@ def report_spider_end(spider_id, end_time, log, start_time):
     if day_n == 0:
         # 此次运行没有跨天
         # 当天运行了多少秒
-        operation_time_str = get_second_from_start_to_end(start_time, end_time)
-        dao.insert_spider_status_end(spider_id, status, end_time, log, operation_time_str)
-        dao.update_spider_status(spider_id, 2)
+        # operation_time_str = get_second_from_start_to_end(start_time, end_time)
+        # dao.insert_spider_status_end(spider_id, status, end_time, log, operation_time_str)
+        # dao.update_spider_status(spider_id, 2)
+        report_spider_end_in_day(spider_id, end_time, log, start_time)
 
     else:
         # 此次运行跨天了，在凌晨时刻前一秒，补一个结束记录;在凌晨补一个开始记录
@@ -89,6 +89,35 @@ def get_second_from_start_to_end(start, end):
     return operation_time_str
 
 
+def report_spider_end_in_day(spider_id, end_time, log, start_time):
+    # 拆分记录某天运行记录，按小时拆
+    hour_0 = start_time.hour
+    hour_1 = end_time.hour
+    hour_n = hour_1 - hour_0
+
+    if hour_n == 0:
+        # 此次运行没有跨小时
+        # 运行了多少秒
+        operation_time_str = get_second_from_start_to_end(start_time, end_time)
+        status_ = 2
+        dao.insert_spider_status_end(spider_id, status_, end_time, log, operation_time_str)
+        dao.update_spider_status(spider_id, 2)
+
+    else:
+        # 此次运行小时了，在当前小时0秒补一个开始记录；在当前小时前一秒，补一个结束记录;
+        start_time_fix = datetime.datetime(end_time.year, end_time.month, end_time.day, end_time.hour, 0,0)
+        end_time_fix = start_time_fix + datetime.timedelta(seconds=-1)
+
+        log_fix_end = "end_fix"
+
+        report_spider_start_fix(spider_id, start_time_fix)
+
+        report_spider_end_in_day(spider_id, end_time, log_fix_end, start_time_fix)
+
+        # 递归
+        report_spider_end_in_day(spider_id, end_time_fix, log_fix_end, start_time)
+
+
 if __name__ == '__main__':
     status = 1
     spider_id = 1
@@ -106,4 +135,5 @@ if __name__ == '__main__':
     start_time_fix = datetime.datetime(current_time.year, current_time.month, current_time.day, 0, 0,
                                        0) + + datetime.timedelta(seconds=-1)
 
-    report_spider_error(spider_id, today_django_end, log, today_django)
+    # report_spider_error(spider_id, today_django_end, log, today_django)
+    report_spider_error(3, current_time, "test", current_time + datetime.timedelta(hours=-3))
