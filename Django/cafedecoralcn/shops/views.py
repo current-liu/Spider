@@ -13,3 +13,6 @@ def index(request):
 
 class IndexView(generic.ListView):
     template_name = "shops/index.html"
+
+    def get_queryset(self):
+        pass

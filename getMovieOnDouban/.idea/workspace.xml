@@ -2,55 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb965f97-59ad-41fd-95d5-487c6bc2a174" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/static/reviews/images/background.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/shops/images/background.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/images/background.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/.idea/cafedecoralcn.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/dao.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/service.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/static/reviews/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/static/reviews/js/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/static/reviews/js/jquery-3.2.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/static/reviews/js/reviews.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/templates/reviews/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/dao.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/service.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/shops/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/shops/js/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/shops/js/jquery-3.2.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/shops/js/shops.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/templates/shops/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/dao.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/service.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/jquery-3.2.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/users.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/templates/users/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/46860fd3-640c-4c9b-a30f-790e5b9bd246/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/46860fd3-640c-4c9b-a30f-790e5b9bd246/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/46860fd3-640c-4c9b-a30f-790e5b9bd246/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/46860fd3-640c-4c9b-a30f-790e5b9bd246/_metadata_/metadata.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/46860fd3-640c-4c9b-a30f-790e5b9bd246/_src_/schema/spider_manager.zip" afterPath="$PROJECT_DIR$/.idea/dataSources/46860fd3-640c-4c9b-a30f-790e5b9bd246/_src_/schema/spider_manager.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler" afterPath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler2" afterPath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/spider_manager/manager/dao.py" afterPath="$PROJECT_DIR$/../Django/spider_manager/manager/dao.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/spider_manager/manager/dao_test.py" afterPath="$PROJECT_DIR$/../Django/spider_manager/manager/dao_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/.idea/cafedecoralcn.iml" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/.idea/cafedecoralcn.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/.idea/misc.xml" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/.idea/modules.xml" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/README.md" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/dao.py" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/dao.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/models.py" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/service.py" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/service.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/static/reviews/js/reviews.js" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/static/reviews/js/reviews.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/templates/reviews/index.html" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/templates/reviews/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/urls.py" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/views.py" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/dao.py" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/dao.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/models.py" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/service.py" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/service.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/shops/js/shops.js" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/shops/js/shops.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/templates/shops/index.html" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/templates/shops/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/urls.py" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/views.py" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/users/dao.py" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/dao.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/users/models.py" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/users/service.py" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/service.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/base.js" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/users.js" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/users.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/users/templates/users/index.html" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/templates/users/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/users/urls.py" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/users/views.py" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/spider_manager/.idea/spider_manager.iml" afterPath="$PROJECT_DIR$/../Django/spider_manager/.idea/spider_manager.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/spider_manager/manager/service.py" afterPath="$PROJECT_DIR$/../Django/spider_manager/manager/service.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/spider_manager/manager/static/manager/js/manager.js" afterPath="$PROJECT_DIR$/../Django/spider_manager/manager/static/manager/js/manager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/spider_manager/manager/templates/manager/index.html" afterPath="$PROJECT_DIR$/../Django/spider_manager/manager/templates/manager/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/spider_manager/manager/urls.py" afterPath="$PROJECT_DIR$/../Django/spider_manager/manager/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/spider_manager/spider_manager/settings.py" afterPath="$PROJECT_DIR$/../Django/spider_manager/spider_manager/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../getJpg/.idea/getJpg.iml" afterPath="$PROJECT_DIR$/../getJpg/.idea/getJpg.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/46860fd3-640c-4c9b-a30f-790e5b9bd246.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/46860fd3-640c-4c9b-a30f-790e5b9bd246.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/getMovieOnDouban.iml" afterPath="$PROJECT_DIR$/.idea/getMovieOnDouban.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/spider_report_tool/spiderstatus_report.py" afterPath="$PROJECT_DIR$/../spider/spider_report_tool/spiderstatus_report.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../myPython/.idea/myPython.iml" afterPath="$PROJECT_DIR$/../myPython/.idea/myPython.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../myPython1/.idea/myPython1.iml" afterPath="$PROJECT_DIR$/../myPython1/.idea/myPython1.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../myPython1/demo/demo06.py" afterPath="$PROJECT_DIR$/../myPython1/demo/demo06.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reptile/.idea/reptile.iml" afterPath="$PROJECT_DIR$/../reptile/.idea/reptile.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/k11/.idea/k11.iml" afterPath="$PROJECT_DIR$/../spider/k11/.idea/k11.iml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,13 +54,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$my_test_lc.coverage" NAME="my_test_lc Coverage Results" MODIFIED="1505899541682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Django/cafedecoralcn/shops" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$output.coverage" NAME="output Coverage Results" MODIFIED="1499937839219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/k11" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$demo02.coverage" NAME="demo02 Coverage Results" MODIFIED="1502243122050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../myPython1/src" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_member_path.coverage" NAME="get_member_path Coverage Results" MODIFIED="1503969244747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/member" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$demo05.coverage" NAME="demo05 Coverage Results" MODIFIED="1502781688896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../myPython1/demo" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_hotel_shops.coverage" NAME="get_hotel_shops Coverage Results" MODIFIED="1502843721226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/hotel" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_review_TestGet_review_setUp.coverage" NAME="Unittests for test_get_review.TestGet_review.setUp Coverage Results" MODIFIED="1501640443877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_tests_py.coverage" NAME="Unittests in tests.py Coverage Results" MODIFIED="1503989963431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:/Program Files/Python27/Scripts/HelloWorld/polls" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_tests_py.coverage" NAME="Unittests in tests.py Coverage Results" MODIFIED="1505530444093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Django/cafedecoralcn/shops" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_attraction_review.coverage" NAME="get_attraction_review Coverage Results" MODIFIED="1503637556792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/attraction" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_member.coverage" NAME="get_member Coverage Results" MODIFIED="1503631003675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/member" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_ips_TestGet_ips_test_ip_proxy.coverage" NAME="Unittests for test_get_ips.TestGet_ips.test_ip_proxy Coverage Results" MODIFIED="1501811851659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
@@ -100,6 +95,7 @@
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_member_mark_py.coverage" NAME="Unittests in member_mark.py Coverage Results" MODIFIED="1502869523877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/test_package/member" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_shopping_review.coverage" NAME="get_shopping_review Coverage Results" MODIFIED="1503538339939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/shopping" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_food_review.coverage" NAME="get_food_review Coverage Results" MODIFIED="1503467274386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/food" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$my_test.coverage" NAME="my_test Coverage Results" MODIFIED="1505810077045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Django/cafedecoralcn/shops" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1501207004603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/tianyancha" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_review_TestGet_review_test_get_review.coverage" NAME="Unittests for test_get_review.TestGet_review.test_get_review Coverage Results" MODIFIED="1501663533429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_get_ips_py.coverage" NAME="Unittests in test_get_ips.py Coverage Results" MODIFIED="1501556373204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
@@ -119,7 +115,7 @@
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1502241196259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/IPProxyPool-master/test" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_food_list.coverage" NAME="get_food_list Coverage Results" MODIFIED="1503369668952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/food" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_ips_TestGet_ips_test_get_ip_from_IPProxyPool.coverage" NAME="Unittests for test_get_ips.TestGet_ips.test_get_ip_from_IPProxyPool Coverage Results" MODIFIED="1502258436978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$demo06.coverage" NAME="demo06 Coverage Results" MODIFIED="1505181476312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../myPython1/demo" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$demo06.coverage" NAME="demo06 Coverage Results" MODIFIED="1505809570090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../myPython1/demo" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_get_member_py.coverage" NAME="Unittests in test_get_member.py Coverage Results" MODIFIED="1502875074680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/test_package/member" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$demo03.coverage" NAME="demo03 Coverage Results" MODIFIED="1501637735472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../myPython1/demo" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_downloadPage_TestDownloadPage_test_downloadPage.coverage" NAME="Unittests for test_downloadPage.TestDownloadPage.test_downloadPage Coverage Results" MODIFIED="1501641732444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
@@ -135,10 +131,11 @@
     <SUITE FILE_PATH="coverage/getMovieOnDouban$IPProxy.coverage" NAME="IPProxy Coverage Results" MODIFIED="1502261493687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/IPProxyPool-master" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$ip_proxy.coverage" NAME="ip_proxy Coverage Results" MODIFIED="1501210132662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$dao__1_.coverage" NAME="dao (1) Coverage Results" MODIFIED="1504837904614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Django/spider_manager/manager" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$cafedecoralcn.coverage" NAME="cafedecoralcn Coverage Results" MODIFIED="1505461202278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Django/cafedecoralcn" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$cafedecoralcn.coverage" NAME="cafedecoralcn Coverage Results" MODIFIED="1505705419361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Django/cafedecoralcn" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_attraction_py.coverage" NAME="Unittests in test_attraction.py Coverage Results" MODIFIED="1502089652501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_attraction_list.coverage" NAME="get_attraction_list Coverage Results" MODIFIED="1503026892470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/attraction" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_shopping_shop.coverage" NAME="get_shopping_shop Coverage Results" MODIFIED="1503534705664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/shopping" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$my_test__1_.coverage" NAME="my_test (1) Coverage Results" MODIFIED="1505704432133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Django/cafedecoralcn/users" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1500597763556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/k11" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_downloadPage_py.coverage" NAME="Unittests in test_downloadPage.py Coverage Results" MODIFIED="1501641526882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_main_py.coverage" NAME="Unittests in test_main.py Coverage Results" MODIFIED="1502074064524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
@@ -161,7 +158,7 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="spider_manager@localhost" />
+        <option name="myItemId" value="@202.110.49.146:3355" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -171,11 +168,11 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="spider_manager@localhost" />
+        <option name="myItemId" value="@202.110.49.146:3355" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="spider_manager" />
+        <option name="myItemId" value="cafedecoral_analysis" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -185,37 +182,15 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="spider_manager@localhost" />
+        <option name="myItemId" value="@202.110.49.146:3355" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="spider_manager" />
+        <option name="myItemId" value="cafedecoral_analysis" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="spider_manager@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="spider_manager" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="manager_spider_num" />
+        <option name="myItemId" value="shops_dpshop" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -224,111 +199,119 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="getMovieOnDouban" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/urls.py">
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="34" column="47" lean-forward="true" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/templates/reviews/index.html">
+      <file leaf-file-name="shops.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/shops/js/shops.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding>
-                <element signature="e#83#115#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-              <folding>
-                <element signature="e#24#63#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-              <folding>
-                <element signature="e#24#63#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Django/spider_manager/manager/templates/manager/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="2673">
+              <caret line="99" column="45" lean-forward="false" selection-start-line="99" selection-start-column="45" selection-end-line="99" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="service.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/service.py">
+        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/service.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reviews.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/static/reviews/js/reviews.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="service.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../Django/spider_manager/manager/service.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1188">
-              <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+            <state relative-caret-position="616">
+              <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="92" selection-end-column="8" />
               <folding>
                 <element signature="e#83#122#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="service.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Django/spider_manager/manager/service.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="539">
+              <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/my_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-297">
+              <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+              <folding>
+                <element signature="e#84#105#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my_test_lc.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/my_test_lc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding>
+                <element signature="e#84#108#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dao.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/dao.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="83" column="26" lean-forward="true" selection-start-line="83" selection-start-column="15" selection-end-line="83" selection-end-column="26" />
+              <folding>
+                <marker date="1505897479539" expanded="true" signature="1051:1291" ph="select id,sh... view_shop_relation" />
+                <marker date="1505897479539" expanded="true" signature="1494:1563" ph="SELECT shopI... shops_dpshop" />
+                <marker date="1505897479539" expanded="true" signature="1776:1812" ph="SELECT shopI... or_shops" />
+                <marker date="1505897479539" expanded="true" signature="1833:1865" ph="SELECT shopI... dp_shops" />
+                <marker date="1505897479539" expanded="true" signature="1887:1919" ph="SELECT shopI... mfw_shops" />
+                <marker date="1505897479539" expanded="true" signature="1940:1977" ph="SELECT shopI... ta_shops" />
+                <marker date="1505897479539" expanded="true" signature="3166:3206" ph="SELECT shopI... or_shops" />
+                <marker date="1505897479539" expanded="true" signature="3227:3259" ph="SELECT shopI... dp_shops" />
+                <marker date="1505897479539" expanded="true" signature="3281:3314" ph="SELECT shopI... mfw_shops" />
+                <marker date="1505897479539" expanded="true" signature="3335:3367" ph="SELECT shopI... ta_shops" />
+                <marker date="1505897479539" expanded="true" signature="4268:4319" ph="INSERT INTO shop_id... " />
+                <marker date="1505897479539" expanded="true" signature="4809:4868" ph="SELECT shopI... or_shops" />
+                <marker date="1505897479539" expanded="true" signature="4889:4938" ph="SELECT shopI... dp_shops" />
+                <marker date="1505897479539" expanded="true" signature="4960:5008" ph="SELECT shopI... mfw_shops" />
+                <marker date="1505897479539" expanded="true" signature="5029:5081" ph="SELECT shopI... ta_shops" />
+                <marker date="1505897479539" expanded="true" signature="5473:5596" ph="INSERT INTO shop_relation... " />
+                <marker date="1505897479539" expanded="true" signature="5863:5950" ph="SELECT shopI... shop_relation" />
+                <marker date="1505897479539" expanded="true" signature="6145:6212" ph="SELECT shopI... shop_relation" />
+                <marker date="1505897479539" expanded="true" signature="6418:6486" ph="SELECT shopI... shop_relation" />
+                <marker date="1505897479539" expanded="true" signature="6697:6756" ph="UPDATE shop_... " />
+                <marker date="1505897479539" expanded="true" signature="7353:7433" ph="UPDATE shop_... " />
+                <marker date="1505897479539" expanded="true" signature="7602:7762" ph="UPDATE shop_... " />
+                <marker date="1505897479539" expanded="true" signature="7778:7940" ph="UPDATE shop_... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dao_lc.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/dao_lc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+              <folding>
+                <marker date="1505900592148" expanded="true" signature="1052:1312" ph="SELECT id,sh... view_shop_relation" />
+                <marker date="1505900592148" expanded="true" signature="1529:1576" ph="SELECT star shops_dpshop" />
               </folding>
             </state>
           </provider>
@@ -348,12 +331,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>male</find>
-      <find>len</find>
-      <find>rep</find>
-      <find>away</find>
-      <find>re</find>
-      <find>item-site</find>
       <find>reviews</find>
       <find>6528</find>
       <find>,</find>
@@ -378,10 +355,14 @@
       <find>T3</find>
       <find>manager_spider_num</find>
       <find>date</find>
+      <find>D</find>
+      <find>Date</find>
+      <find>tel</find>
+      <find>name</find>
+      <find>= []</find>
+      <find>executemany</find>
     </findStrings>
     <replaceStrings>
-      <replace>s_total</replace>
-      <replace>room</replace>
       <replace>review</replace>
       <replace>= res[]\n</replace>
       <replace>'%s'</replace>
@@ -396,7 +377,6 @@
       <replace>_new_hotel_review</replace>
       <replace>= []</replace>
       <replace>= '%s'</replace>
-      <replace>.append()</replace>
       <replace>hotel_shop</replace>
       <replace>gender</replace>
       <replace>='%s'</replace>
@@ -410,6 +390,9 @@
       <replace>Spider</replace>
       <replace>service</replace>
       <replace>users</replace>
+      <replace>name</replace>
+      <replace>addr</replace>
+      <replace>.append()</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -418,23 +401,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../Django/spider_manager/spider_manager/urls.py" />
-        <option value="$PROJECT_DIR$/../Django/spider_manager/spider_manager/__init__.py" />
-        <option value="C:/Program Files/Python27/Scripts/HelloWorld/polls/models.py" />
-        <option value="$PROJECT_DIR$/../Django/spider_manager/templates/admin/base_site.html" />
-        <option value="$PROJECT_DIR$/../Django/spider_manager/manager/static/polls/style.css" />
-        <option value="$PROJECT_DIR$/../Django/spider_manager/manager/static/manager/style.css" />
-        <option value="$PROJECT_DIR$/../Django/spider_manager/manager/views.py" />
-        <option value="$PROJECT_DIR$/../Django/spider_manager/manager/migrations/0001_initial.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fbdecb6b-5290-49b1-90d1-5dcae4ec1475/console.sql" />
-        <option value="$PROJECT_DIR$/../spider/dianping_hk/dao.py" />
-        <option value="$PROJECT_DIR$/../spider/dianping_hk/main.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a19dd8f8-6f41-47f8-b143-86881fceb14e/console.sql" />
-        <option value="$PROJECT_DIR$/../Django/spider_manager/manager/static/manager/js/base.js" />
         <option value="$PROJECT_DIR$/../spider/spider_report_tool/base_dao.py" />
         <option value="$PROJECT_DIR$/../Django/spider_manager/manager/models.py" />
         <option value="$PROJECT_DIR$/../Django/spider_manager/manager/admin.py" />
-        <option value="$PROJECT_DIR$/../myPython1/demo/demo06.py" />
         <option value="$PROJECT_DIR$/../spider/spider_report_tool/dao.py" />
         <option value="$PROJECT_DIR$/../Django/spider_manager/manager/dao_test.py" />
         <option value="$PROJECT_DIR$/../spider/spider_report_tool/spiderstatus_report.py" />
@@ -444,19 +413,15 @@
         <option value="$PROJECT_DIR$/../Django/spider_manager/manager/urls.py" />
         <option value="$PROJECT_DIR$/../Django/spider_manager/manager/static/manager/js/manager.js" />
         <option value="$PROJECT_DIR$/../Django/spider_manager/manager/templates/manager/index.html" />
-        <option value="$PROJECT_DIR$/../Django/spider_manager/manager/service.py" />
         <option value="$PROJECT_DIR$/../Django/spider_manager/manager/dao.py" />
         <option value="$PROJECT_DIR$/../Django/spider_manager/spider_manager/settings.py" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/urls.py" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/urls.py" />
-        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/service.py" />
-        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/dao.py" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/static/manager/js/base.js" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/static/manager/js/users.js" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/manager/js/base.js" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/shops/js/base.js" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/templates/manager/index.html" />
-        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/templates/users/index.html" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/templates/users/index.html" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/templates/reviews/index.html" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/__init__.py" />
@@ -464,11 +429,29 @@
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/__init__.py" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/cafedecoralcn/settings.py" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/cafedecoralcn/urls.py" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/service.py" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/tests.py" />
+        <option value="dbschema:/cfe404e8/8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76/cafedecoral_data" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/models.py" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/my_test.py" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/urls.py" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/views.py" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/views.py" />
-        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/urls.py" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/views.py" />
-        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/service.py" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/users.js" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/templates/users/index.html" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/base.js" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/dao.py" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/dao.py" />
+        <option value="$PROJECT_DIR$/../Django/spider_manager/manager/service.py" />
+        <option value="$PROJECT_DIR$/../myPython1/demo/demo06.py" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/service.py" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/my_test.py" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/dao.py" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/service.py" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/my_test_lc.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76/console.sql" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/dao_lc.py" />
       </list>
     </option>
   </component>
@@ -479,10 +462,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="150" />
+    <option name="y" value="29" />
+    <option name="width" value="1591" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -524,21 +507,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spider_manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="getMovieOnDouban" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spider_manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
+              <option name="myItemId" value="cafedecoralcn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -551,6 +520,10 @@
               <option name="myItemId" value="cafedecoralcn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shops" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -559,9 +532,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="SQL Resolution Scopes" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Django/cafedecoralcn/manage.py" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/cafedecoralcn-dev/cafedecoralcn" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="SearchEverywhereHistoryKey" value="country&#9;null&#9;null&#10;query_time&#9;null&#9;null&#10;dianping_hotel_hk_liuchao&#9;null&#9;null" />
@@ -569,8 +542,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Liuchao\PycharmProjects\pythonproject\Django\cafedecoralcn\reviews" />
       <recent name="D:\Liuchao\PycharmProjects\pythonproject\Django\cafedecoralcn\shops" />
+      <recent name="D:\Liuchao\PycharmProjects\pythonproject\Django\cafedecoralcn\reviews" />
       <recent name="D:\Liuchao\PycharmProjects\pythonproject\Django\cafedecoralcn\users" />
       <recent name="D:\Liuchao\PycharmProjects\pythonproject\Django\spider_manager\manager" />
       <recent name="D:\Liuchao\PycharmProjects\pythonproject\spider\spider_report_tool" />
@@ -588,40 +561,56 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cafedecoralcn">
-    <configuration default="false" name="dao (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.my_test_lc">
+    <configuration default="false" name="Unittests in tests.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Django/cafedecoralcn/shops" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="getMovieOnDouban" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/../Django/cafedecoralcn/shops/tests.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="my_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Program Files\Python27\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Django/spider_manager/manager" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Django/cafedecoralcn/shops" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="spider_manager" />
+      <module name="cafedecoralcn" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Django/spider_manager/manager/dao.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/my_test.py" />
       <option name="PARAMETERS" value="runserver" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="service" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="my_test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Program Files\Python27\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Django/spider_manager/manager" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Django/cafedecoralcn/users" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="spider_manager" />
+      <module name="cafedecoralcn" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Django/spider_manager/manager/service.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Django/cafedecoralcn/users/my_test.py" />
       <option name="PARAMETERS" value="runserver" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -646,39 +635,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="spiderstatus_report" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="my_test_lc" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Program Files\Python27\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../spider/spider_report_tool" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Django/cafedecoralcn/shops" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="spider" />
+      <module name="cafedecoralcn" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../spider/spider_report_tool/spiderstatus_report.py" />
-      <option name="PARAMETERS" value="runserver" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="dao_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Program Files\Python27\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Django/spider_manager/manager" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="spider_manager" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Django/spider_manager/manager/dao_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/my_test_lc.py" />
       <option name="PARAMETERS" value="runserver" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -921,19 +891,19 @@
       <item index="0" class="java.lang.String" itemvalue="Django server.spider_manager" />
       <item index="1" class="java.lang.String" itemvalue="Python.debug" />
       <item index="2" class="java.lang.String" itemvalue="Python.cafedecoralcn" />
-      <item index="3" class="java.lang.String" itemvalue="Python.dao (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python.service" />
-      <item index="5" class="java.lang.String" itemvalue="Python.demo06" />
-      <item index="6" class="java.lang.String" itemvalue="Python.spiderstatus_report" />
-      <item index="7" class="java.lang.String" itemvalue="Python.dao_test" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in tests.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python.my_test" />
+      <item index="5" class="java.lang.String" itemvalue="Python.my_test (1)" />
+      <item index="6" class="java.lang.String" itemvalue="Python.demo06" />
+      <item index="7" class="java.lang.String" itemvalue="Python.my_test_lc" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.spiderstatus_report" />
-        <item index="1" class="java.lang.String" itemvalue="Python.dao_test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.service" />
-        <item index="3" class="java.lang.String" itemvalue="Python.demo06" />
-        <item index="4" class="java.lang.String" itemvalue="Python.dao (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.my_test_lc" />
+        <item index="1" class="java.lang.String" itemvalue="Python.my_test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.demo06" />
+        <item index="3" class="java.lang.String" itemvalue="Python.my_test (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in tests.py" />
       </list>
     </recent_temporary>
   </component>
@@ -957,27 +927,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test__manager - 2017.09.06 at 09h 48m 06s.xml">
-      <configuration name="Test: manager" configurationId="DjangoTestsConfigurationType" />
-    </history-entry>
-    <history-entry file="Unittests_in_base_dao_py - 2017.08.25 at 14h 38m 15s.xml">
-      <configuration name="Unittests in base_dao.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_base_dao_py - 2017.08.25 at 14h 44m 40s.xml">
-      <configuration name="Unittests in base_dao.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_attraction_review_py - 2017.08.21 at 10h 50m 20s.xml">
-      <configuration name="Unittests in test_attraction_review.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_attraction_review_py - 2017.08.21 at 10h 53m 51s.xml">
-      <configuration name="Unittests in test_attraction_review.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_attraction_review_py - 2017.08.21 at 10h 55m 14s.xml">
-      <configuration name="Unittests in test_attraction_review.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_attraction_review_py - 2017.08.21 at 10h 55m 40s.xml">
-      <configuration name="Unittests in test_attraction_review.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_attraction_review_py - 2017.08.21 at 12h 47m 15s.xml">
       <configuration name="Unittests in test_attraction_review.py" configurationId="tests" />
     </history-entry>
@@ -985,6 +934,27 @@
       <configuration name="Unittests in tests.py" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_tests_py - 2017.08.29 at 14h 59m 24s.xml">
+      <configuration name="Unittests in tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests_py - 2017.09.16 at 09h 47m 08s.xml">
+      <configuration name="Unittests in tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests_py - 2017.09.16 at 09h 47m 40s.xml">
+      <configuration name="Unittests in tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests_py - 2017.09.16 at 09h 48m 04s.xml">
+      <configuration name="Unittests in tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests_py - 2017.09.16 at 09h 52m 44s.xml">
+      <configuration name="Unittests in tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests_py - 2017.09.16 at 09h 53m 17s.xml">
+      <configuration name="Unittests in tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests_py - 2017.09.16 at 10h 53m 47s.xml">
+      <configuration name="Unittests in tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests_py - 2017.09.16 at 10h 54m 05s.xml">
       <configuration name="Unittests in tests.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -998,26 +968,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="150" y="29" width="1591" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15831557" sideWeight="0.495671" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32575756" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50541127" sideWeight="0.5053305" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34141546" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33480176" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40151516" sideWeight="0.4946695" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1938326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50541127" sideWeight="0.5053305" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24229075" sideWeight="0.4946695" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5822511" sideWeight="0.5042644" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33480176" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24229075" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3006608" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12344873" sideWeight="0.495671" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16287425" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24339207" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15191898" sideWeight="0.504329" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30506608" sideWeight="0.49573562" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4438326" sideWeight="0.49573562" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15151516" sideWeight="0.504329" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273961" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49025974" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3225108" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1062,6 +1032,17 @@
               </option>
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$/../Django/cafedecoralcn" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
               </option>
               <option name="COLUMN_ORDER">
                 <list>
@@ -1768,11 +1749,6 @@
           <option name="timeStamp" value="525" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../myPython1/demo/demo06.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="526" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/mafengwo/test_package/hotel/test_get_room.py</url>
           <line>23</line>
           <option name="timeStamp" value="530" />
@@ -2278,16 +2254,6 @@
           <option name="timeStamp" value="701" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../myPython1/demo/demo06.py</url>
-          <line>29</line>
-          <option name="timeStamp" value="704" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../myPython1/demo/demo06.py</url>
-          <line>45</line>
-          <option name="timeStamp" value="705" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../Django/spider_manager/manager/service.py</url>
           <line>234</line>
           <option name="timeStamp" value="707" />
@@ -2437,6 +2403,41 @@
           <line>28</line>
           <option name="timeStamp" value="747" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Django/cafedecoralcn/users/my_test.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="761" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Django/cafedecoralcn/users/service.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="762" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/my_test.py</url>
+          <line>251</line>
+          <option name="timeStamp" value="768" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/my_test.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="769" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/my_test.py</url>
+          <line>274</line>
+          <option name="timeStamp" value="788" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/my_test_lc.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="793" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/my_test_lc.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="794" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -2448,7 +2449,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="748" />
+      <option name="time" value="795" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="tests">
@@ -2462,40 +2463,457 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/46860fd3-640c-4c9b-a30f-790e5b9bd246/console.sql">
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/member/get_member.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="67" column="11" lean-forward="true" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+        <state relative-caret-position="-2">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files/Python27/Scripts/HelloWorld/polls/apps.py">
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/member/dao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-810">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1503969497408" expanded="true" signature="406:533" ph="SELECT DISTI... missing_value" />
+            <marker date="1503969497408" expanded="true" signature="770:847" ph="UPDATE missi... " />
+            <marker date="1503969497408" expanded="true" signature="819:846" ph="SELECT membe... member" />
+            <marker date="1503969497408" expanded="true" signature="1156:1357" ph="INSERT INTO member_fix... " />
+            <marker date="1503969497408" expanded="true" signature="1725:1858" ph="SELECT membe... member" />
+            <marker date="1503969497408" expanded="true" signature="2095:2242" ph="INSERT INTO member_path... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python27/Lib/site-packages/django/db/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python27/Lib/site-packages/django/db/models/fields/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4512">
+          <caret line="1137" column="10" lean-forward="false" selection-start-line="1137" selection-start-column="6" selection-end-line="1137" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76/cafedecoral_data.mfw_members">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76/cafedecoral_analysis.reviews_dpreview">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76/cafedecoral_data.shop_id">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76/cafedecoral_data.dp_shops_tel">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76/cafedecoral_data.mfw_shops_tel">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76/cafedecoral_data.ta_shops_tel">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/cafedecoralcn/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="135" column="79" lean-forward="false" selection-start-line="135" selection-start-column="79" selection-end-line="135" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99">
+          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="89" column="44" lean-forward="false" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/templates/users/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/spider_manager/manager/static/manager/js/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/static/reviews/js/reviews.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/apps.py">
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/static/reviews/js/base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="19" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/apps.py">
+    <entry file="file://C:/Program Files/Python27/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="194" column="0" lean-forward="true" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/base.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="17" />
+          <caret line="4" column="47" lean-forward="true" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/dao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/dao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76/cafedecoral_data.or_shops_tel">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76/cafedecoral_data.mfw_shops">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76/cafedecoral_data.ta_shops">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76/cafedecoral_data.dp_shops">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76/cafedecoral_data.tripadvisor_shops">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76/cafedecoral_data.or_shops">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76/cafedecoral_data.shop_relation">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../myPython1/demo/demo06.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="48" column="24" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="32" column="43" lean-forward="false" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+          <folding>
+            <element signature="e#83#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/my_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76/cafedecoral_analysis.shop_relation">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/shops/js/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="47" lean-forward="true" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/shops/js/shops.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2673">
+          <caret line="99" column="45" lean-forward="false" selection-start-line="99" selection-start-column="45" selection-end-line="99" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/spider_manager/manager/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="37" column="44" lean-forward="true" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="92" selection-end-column="8" />
+          <folding>
+            <element signature="e#83#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76/cafedecoral_analysis.shops_dpshop">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="34" column="47" lean-forward="true" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/dao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="83" column="26" lean-forward="true" selection-start-line="83" selection-start-column="15" selection-end-line="83" selection-end-column="26" />
+          <folding>
+            <marker date="1505897479539" expanded="true" signature="1051:1291" ph="select id,sh... view_shop_relation" />
+            <marker date="1505897479539" expanded="true" signature="1494:1563" ph="SELECT shopI... shops_dpshop" />
+            <marker date="1505897479539" expanded="true" signature="1776:1812" ph="SELECT shopI... or_shops" />
+            <marker date="1505897479539" expanded="true" signature="1833:1865" ph="SELECT shopI... dp_shops" />
+            <marker date="1505897479539" expanded="true" signature="1887:1919" ph="SELECT shopI... mfw_shops" />
+            <marker date="1505897479539" expanded="true" signature="1940:1977" ph="SELECT shopI... ta_shops" />
+            <marker date="1505897479539" expanded="true" signature="3166:3206" ph="SELECT shopI... or_shops" />
+            <marker date="1505897479539" expanded="true" signature="3227:3259" ph="SELECT shopI... dp_shops" />
+            <marker date="1505897479539" expanded="true" signature="3281:3314" ph="SELECT shopI... mfw_shops" />
+            <marker date="1505897479539" expanded="true" signature="3335:3367" ph="SELECT shopI... ta_shops" />
+            <marker date="1505897479539" expanded="true" signature="4268:4319" ph="INSERT INTO shop_id... " />
+            <marker date="1505897479539" expanded="true" signature="4809:4868" ph="SELECT shopI... or_shops" />
+            <marker date="1505897479539" expanded="true" signature="4889:4938" ph="SELECT shopI... dp_shops" />
+            <marker date="1505897479539" expanded="true" signature="4960:5008" ph="SELECT shopI... mfw_shops" />
+            <marker date="1505897479539" expanded="true" signature="5029:5081" ph="SELECT shopI... ta_shops" />
+            <marker date="1505897479539" expanded="true" signature="5473:5596" ph="INSERT INTO shop_relation... " />
+            <marker date="1505897479539" expanded="true" signature="5863:5950" ph="SELECT shopI... shop_relation" />
+            <marker date="1505897479539" expanded="true" signature="6145:6212" ph="SELECT shopI... shop_relation" />
+            <marker date="1505897479539" expanded="true" signature="6418:6486" ph="SELECT shopI... shop_relation" />
+            <marker date="1505897479539" expanded="true" signature="6697:6756" ph="UPDATE shop_... " />
+            <marker date="1505897479539" expanded="true" signature="7353:7433" ph="UPDATE shop_... " />
+            <marker date="1505897479539" expanded="true" signature="7602:7762" ph="UPDATE shop_... " />
+            <marker date="1505897479539" expanded="true" signature="7778:7940" ph="UPDATE shop_... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Django/spider_manager/manager/dao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="262">
+          <caret line="88" column="26" lean-forward="false" selection-start-line="88" selection-start-column="15" selection-end-line="88" selection-end-column="26" />
           <folding>
-            <element signature="e#84#98#0" expanded="true" />
             <marker date="1505380297801" expanded="true" signature="573:734" ph="SELECT * FRO... manager_spider" />
             <marker date="1505380297801" expanded="true" signature="658:733" ph="SELECT DISTI... manager_spiderstatus" />
             <marker date="1505380297801" expanded="true" signature="936:1011" ph="SELECT * FRO... manager_spider" />
@@ -2516,361 +2934,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/dao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/dao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/dao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/shops/js/shops.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/shops/js/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="47" lean-forward="true" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="47" lean-forward="true" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/templates/users/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/templates/shops/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python27/Scripts/HelloWorld/HelloWorld/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/spider_manager/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/spider_manager/spider_manager/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/spider_manager/spider_manager/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4003">
-          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/spider_manager/spider_manager/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python27/Scripts/HelloWorld/HelloWorld/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python27/Scripts/HelloWorld/HelloWorld/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python27/Scripts/HelloWorld/polls/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python27/Scripts/HelloWorld/polls/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/spider_manager/manager/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/cafedecoralcn/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="130" column="32" lean-forward="true" selection-start-line="130" selection-start-column="32" selection-end-line="130" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/spider_manager/manager/static/manager/js/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/spider_manager/manager/static/manager/js/manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="132" column="17" lean-forward="false" selection-start-line="132" selection-start-column="17" selection-end-line="132" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/static/reviews/js/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/spider_manager/spider_manager/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/cafedecoralcn/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-          <folding>
-            <element signature="e#647#688#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/spider_manager/manager/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/spider_manager/manager/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="40" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#63#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/templates/reviews/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python27/Lib/site-packages/django/views/generic/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/spider_manager/manager/templates/manager/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/static/reviews/js/reviews.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#83#115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Django/spider_manager/manager/service.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1188">
-          <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+        <state relative-caret-position="539">
+          <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/dao_lc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
           <folding>
-            <element signature="e#83#122#0" expanded="true" />
+            <marker date="1505900592148" expanded="true" signature="1052:1312" ph="SELECT id,sh... view_shop_relation" />
+            <marker date="1505900592148" expanded="true" signature="1529:1576" ph="SELECT star shops_dpshop" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/my_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-297">
+          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <folding>
+            <element signature="e#84#105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/my_test_lc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#84#108#0" expanded="true" />
           </folding>
         </state>
       </provider>

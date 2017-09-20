@@ -16,5 +16,9 @@ app_name = "reviews"
 urlpatterns = [url(r'^$', views.IndexView.as_view(), name='index'),
 
                 url(r'^ajax/$', service.ajax, name='ajax'),
-
+               url(r'^get_dp_reviewNum/$',service.get_dp_reviewNum,name='get_dp_reviewNum'),
+               url(r'^get_ta_reviewNum/$',service.get_ta_reviewNum,name='get_ta_reviewNum'),
+               url(r'^get_or_reviewNum/$',service.get_or_reviewNum,name='get_or_reviewNum'),
+               url(r'^get_mfw_reviewNum/$',service.get_mfw_reviewNum,name='get_mfw_reviewNum'),
+               url(r'^get_all_id/$',service.get_all_id,name='get_all_id'),
                ]

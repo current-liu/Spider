@@ -34,3 +34,58 @@ def ajax(request):
     # a = ["123", "456"]
 
     return JsonResponse(r)
+
+def get_or_reviewNum(request):
+    id = request.GET.get(get_all_id().o_r)
+    res = dao.get_or_reviewNum(id)
+    num = res[0][0]
+    d = {"num":num}
+    j = JsonResponse(d, safe=False)
+    return j
+
+def get_dp_reviewNum(request):
+    id = request.GET.get("id")
+    res = dao.get_dp_reviewNum(id)
+    num = res[0][0]
+    d = {"num":num}
+    j = JsonResponse(d, safe=False)
+    return j
+
+def get_ta_reviewNum(request):
+    id = request.GET.get("id")
+    res = dao.get_ta_reviewNum(id)
+    num = res[0][0]
+    d = {"num":num}
+    j = JsonResponse(d, safe=False)
+    return j
+
+def get_mfw_reviewNum(request):
+    id = request.GET.get("id")
+    res = dao.get_mfw_reviewNum(id)
+    num = res[0][0]
+    d = {"num":num}
+    j = JsonResponse(d, safe=False)
+    return j
+
+def get_all_id(request):
+    id = request.GET.get("id")
+    res = dao.get_all_id(id)
+    o_r = res[0][0]
+    mfw = res[0][1]
+    td = res[0][2]
+    dp = res[0][3]
+    or_num = dao.get_or_reviewNum(o_r)
+    mfw_num = dao.get_mfw_reviewNum(mfw)
+    td_num = dao.get_ta_reviewNum(td)
+    dp_num = dao.get_dp_reviewNum(dp)
+    o = or_num[0][0]
+    m = mfw_num[0][0]
+    t = td_num[0][0]
+    d = dp_num[0][0]
+    w = {"o":o,"m":m,"t":t,"d":d}
+    j = JsonResponse(w,safe=False)
+    return j
+
+
+
+

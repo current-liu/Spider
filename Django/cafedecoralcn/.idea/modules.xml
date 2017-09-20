@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/cafedecoralcn.iml" filepath="$PROJECT_DIR$/.idea/cafedecoralcn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../spider_manager/.idea/spider_manager.iml" filepath="$PROJECT_DIR$/../../spider_manager/.idea/spider_manager.iml" />
+      <module fileurl="file://C:\Users\Administrator\PycharmProjects\dajiale\cafedecoralcn\spider_manager\.idea\spider_manager.iml" filepath="C:\Users\Administrator\PycharmProjects\dajiale\cafedecoralcn\spider_manager\.idea\spider_manager.iml" />
     </modules>
   </component>
 </project>

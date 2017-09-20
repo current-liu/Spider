@@ -152,7 +152,7 @@ def get_error_spider_on_date(request):
 
 def get_spider_on_day_every_hour(request):
     # TODO按hour查会出错
-    # TODO 按状态，按类别还没加
+    # TODO按状态，按类别还没加
     date = str(request.GET.get("date"))
     date_str = date.split("-")
     year = date_str[0]
@@ -346,7 +346,7 @@ def get_spider_num_group_by_date(request):
     type_ = str(request.GET.get("type"))
     if type_ != 'None':
         type_str = " AND t.type =" + type_
-    # TODO 不传type时  查所有
+    # TODO不传type时  查所有
     spiders_1 = dao.get_spider_num_group_by_date(1, type_str)
     spiders_3 = dao.get_spider_num_group_by_date(3, type_str)
     spiders_num = dao.select_spider_num_up_to_date()

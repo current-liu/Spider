@@ -31,7 +31,7 @@
       <user-name>root</user-name>
       <introspection-schemas>*:spider_manager</introspection-schemas>
     </data-source>
-    <data-source name="spider_manager@localhost" uuid="46860fd3-640c-4c9b-a30f-790e5b9bd246">
+    <data-source name="@localhost" uuid="46860fd3-640c-4c9b-a30f-790e5b9bd246">
       <database-info product="MySQL" version="5.7.17-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
@@ -40,6 +40,16 @@
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
       <introspection-schemas>*:spider_manager</introspection-schemas>
+    </data-source>
+    <data-source name="@202.110.49.146:3355" uuid="8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76">
+      <database-info product="MySQL" version="5.7.17" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>*:cafedecoral_analysis,cafedecoral_data</introspection-schemas>
     </data-source>
   </component>
 </project>
