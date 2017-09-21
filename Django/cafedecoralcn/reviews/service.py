@@ -35,57 +35,66 @@ def ajax(request):
 
     return JsonResponse(r)
 
-def get_or_reviewNum(request):
-    id = request.GET.get(get_all_id().o_r)
-    res = dao.get_or_reviewNum(id)
-    num = res[0][0]
-    d = {"num":num}
-    j = JsonResponse(d, safe=False)
-    return j
 
-def get_dp_reviewNum(request):
-    id = request.GET.get("id")
-    res = dao.get_dp_reviewNum(id)
-    num = res[0][0]
-    d = {"num":num}
-    j = JsonResponse(d, safe=False)
-    return j
-
-def get_ta_reviewNum(request):
-    id = request.GET.get("id")
-    res = dao.get_ta_reviewNum(id)
-    num = res[0][0]
-    d = {"num":num}
-    j = JsonResponse(d, safe=False)
-    return j
-
-def get_mfw_reviewNum(request):
-    id = request.GET.get("id")
-    res = dao.get_mfw_reviewNum(id)
-    num = res[0][0]
-    d = {"num":num}
-    j = JsonResponse(d, safe=False)
-    return j
+# def get_or_reviewNum(request):
+#     id = request.GET.get(get_all_id().o_r)
+#     res = dao.get_or_reviewNum(id)
+#     num = res[0][0]
+#     d = {"num":num}
+#     j = JsonResponse(d, safe=False)
+#     return j
+#
+# def get_dp_reviewNum(request):
+#     id = request.GET.get("id")
+#     res = dao.get_dp_reviewNum(id)
+#     num = res[0][0]
+#     d = {"num":num}
+#     j = JsonResponse(d, safe=False)
+#     return j
+#
+# def get_ta_reviewNum(request):
+#     id = request.GET.get("id")
+#     res = dao.get_ta_reviewNum(id)
+#     num = res[0][0]
+#     d = {"num":num}
+#     j = JsonResponse(d, safe=False)
+#     return j
+#
+# def get_mfw_reviewNum(request):
+#     id = request.GET.get("id")
+#     res = dao.get_mfw_reviewNum(id)
+#     num = res[0][0]
+#     d = {"num":num}
+#     j = JsonResponse(d, safe=False)
+#     return j
 
 def get_all_id(request):
     id = request.GET.get("id")
     res = dao.get_all_id(id)
-    o_r = res[0][0]
-    mfw = res[0][1]
-    td = res[0][2]
-    dp = res[0][3]
-    or_num = dao.get_or_reviewNum(o_r)
-    mfw_num = dao.get_mfw_reviewNum(mfw)
-    td_num = dao.get_ta_reviewNum(td)
-    dp_num = dao.get_dp_reviewNum(dp)
-    o = or_num[0][0]
-    m = mfw_num[0][0]
-    t = td_num[0][0]
-    d = dp_num[0][0]
-    w = {"o":o,"m":m,"t":t,"d":d}
-    j = JsonResponse(w,safe=False)
+    o_r = res[0][1]
+    if o_r is None:
+        o = 0
+    else:
+        or_num = dao.get_or_reviewNum(o_r)
+        o = or_num[0][0]
+    mfw = res[0][2]
+    if mfw is None:
+        m = 0
+    else:
+        mfw_num = dao.get_mfw_reviewNum(mfw)
+        m = mfw_num[0][0]
+    td = res[0][3]
+    if td is None:
+        t = 0
+    else:
+        td_num = dao.get_ta_reviewNum(td)
+        t = td_num[0][0]
+    dp = res[0][4]
+    if dp is None:
+        d = 0
+    else:
+        dp_num = dao.get_dp_reviewNum(dp)
+        d = dp_num[0][0]
+    w = {"o": o, "m": m, "t": t, "d": d}
+    j = JsonResponse(w, safe=False)
     return j
-
-
-
-

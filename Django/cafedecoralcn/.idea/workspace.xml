@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c609c0eb-4d61-4482-8989-dd7c19756878" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reviews/dao.py" afterPath="$PROJECT_DIR$/reviews/dao.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reviews/service.py" afterPath="$PROJECT_DIR$/reviews/service.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reviews/static/reviews/js/reviews.js" afterPath="$PROJECT_DIR$/reviews/static/reviews/js/reviews.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reviews/templates/reviews/index.html" afterPath="$PROJECT_DIR$/reviews/templates/reviews/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reviews/urls.py" afterPath="$PROJECT_DIR$/reviews/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shops/dao.py" afterPath="$PROJECT_DIR$/shops/dao.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shops/service.py" afterPath="$PROJECT_DIR$/shops/service.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shops/static/shops/js/shops.js" afterPath="$PROJECT_DIR$/shops/static/shops/js/shops.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shops/templates/shops/index.html" afterPath="$PROJECT_DIR$/shops/templates/shops/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shops/urls.py" afterPath="$PROJECT_DIR$/shops/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,9 +17,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/cafedecoralcn$dao__1_.coverage" NAME="dao (1) Coverage Results" MODIFIED="1505955004291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reviews" />
     <SUITE FILE_PATH="coverage/cafedecoralcn$my_test.coverage" NAME="my_test Coverage Results" MODIFIED="1505812283276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shops" />
     <SUITE FILE_PATH="coverage/cafedecoralcn$dao.coverage" NAME="dao Coverage Results" MODIFIED="1505802996045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shops" />
-    <SUITE FILE_PATH="coverage/cafedecoralcn$cafe.coverage" NAME="cafe Coverage Results" MODIFIED="1505900457250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cafedecoralcn$service__1_.coverage" NAME="service (1) Coverage Results" MODIFIED="1505956661213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reviews" />
+    <SUITE FILE_PATH="coverage/cafedecoralcn$cafe.coverage" NAME="cafe Coverage Results" MODIFIED="1505981962526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cafedecoralcn$service.coverage" NAME="service Coverage Results" MODIFIED="1505803020326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shops" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
@@ -27,68 +30,97 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/static/users/js/users.js">
+      <file leaf-file-name="service.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shops/service.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1357">
-              <caret line="143" column="51" lean-forward="true" selection-start-line="143" selection-start-column="51" selection-end-line="143" selection-end-column="51" />
+            <state relative-caret-position="715">
+              <caret line="179" column="0" lean-forward="true" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dao.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dao.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/reviews/dao.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+            <state relative-caret-position="462">
+              <caret line="95" column="10" lean-forward="false" selection-start-line="95" selection-start-column="10" selection-end-line="95" selection-end-column="10" />
               <folding>
-                <marker date="1505898167571" expanded="true" signature="1049:1107" ph="SELECT COUNT... reviews_orreview" />
-                <marker date="1505898167571" expanded="true" signature="1049:1109" ph="SELECT COUNT... reviews_orreview" />
-                <marker date="1505898167571" expanded="true" signature="1322:1382" ph="SELECT COUNT... reviews_dpreview" />
-                <marker date="1505898167571" expanded="true" signature="1595:1655" ph="SELECT COUNT... reviews_tareview" />
-                <marker date="1505898167571" expanded="true" signature="1869:1930" ph="SELECT COUNT... reviews_mfwreview" />
-                <marker date="1505898167571" expanded="true" signature="2137:2202" ph="SELECT id, o... view_shop_relation" />
+                <marker date="1505982992647" expanded="true" signature="1122:1180" ph="SELECT COUNT... reviews_orreview" />
+                <marker date="1505982992647" expanded="true" signature="1122:1182" ph="SELECT COUNT... reviews_orreview" />
+                <marker date="1505982992647" expanded="true" signature="1395:1455" ph="SELECT COUNT... reviews_dpreview" />
+                <marker date="1505982992647" expanded="true" signature="1668:1728" ph="SELECT COUNT... reviews_tareview" />
+                <marker date="1505982992647" expanded="true" signature="1942:2003" ph="SELECT COUNT... reviews_mfwreview" />
+                <marker date="1505982992647" expanded="true" signature="2210:2275" ph="SELECT id, o... view_shop_relation" />
+                <marker date="1505982992647" expanded="true" signature="2486:2608" ph="select favor... users_ormember" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="dao.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/users/dao.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="161" selection-end-column="18" />
+              <folding>
+                <marker date="1505971367621" expanded="true" signature="1122:1193" ph="SELECT COUNT... reviews_dpreview" />
+                <marker date="1505971367621" expanded="true" signature="1406:1477" ph="SELECT COUNT... reviews_tareview" />
+                <marker date="1505971367621" expanded="true" signature="1690:1761" ph="SELECT COUNT... reviews_orreview" />
+                <marker date="1505971367621" expanded="true" signature="1975:2047" ph="SELECT COUNT... reviews_mfwreview" />
+                <marker date="1505971367621" expanded="true" signature="2257:2392" ph="select COUNT... users_dpmember" />
+                <marker date="1505971367621" expanded="true" signature="2604:2739" ph="select COUNT... users_dpmember" />
+                <marker date="1505971367621" expanded="true" signature="3551:3691" ph="select COUNT... users_mfwmember" />
+                <marker date="1505971367621" expanded="true" signature="3904:4046" ph="select COUNT... users_mfwmember" />
+                <marker date="1505971367621" expanded="true" signature="4261:4382" ph="select favor... users_ormember" />
+                <marker date="1505971367621" expanded="true" signature="4595:4750" ph="select locat... users_ormember" />
+                <marker date="1505971367621" expanded="true" signature="4962:5099" ph="select locat... users_dpmember" />
+                <marker date="1505971367621" expanded="true" signature="4962:5116" ph="select locat... users_dpmember" />
+                <marker date="1505971367621" expanded="true" signature="5328:5465" ph="select locat... users_tamember" />
+                <marker date="1505971367621" expanded="true" signature="5328:5482" ph="select locat... users_tamember" />
+                <marker date="1505971367621" expanded="true" signature="5695:5834" ph="select locat... users_mfwmember" />
+                <marker date="1505971367621" expanded="true" signature="5695:5851" ph="select locat... users_mfwmember" />
+                <marker date="1505971367621" expanded="true" signature="6058:6123" ph="SELECT id, o... view_shop_relation" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="service.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/users/service.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="533">
+              <caret line="125" column="9" lean-forward="true" selection-start-line="125" selection-start-column="9" selection-end-line="125" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reviews/urls.py">
+        <entry file="file://$PROJECT_DIR$/shops/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="483">
-              <caret line="22" column="74" lean-forward="true" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
+              <caret line="22" column="42" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shops.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shops/static/shops/js/shops.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="487">
+              <caret line="136" column="24" lean-forward="true" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reviews/templates/reviews/index.html">
+        <entry file="file://$PROJECT_DIR$/shops/templates/shops/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="20" column="65" lean-forward="true" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reviews.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reviews/static/reviews/js/reviews.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="93" column="9" lean-forward="false" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="service.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/reviews/service.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="78" column="37" lean-forward="true" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
+            <state relative-caret-position="483">
+              <caret line="21" column="92" lean-forward="true" selection-start-line="21" selection-start-column="92" selection-end-line="21" selection-end-column="92" />
               <folding />
             </state>
           </provider>
@@ -104,21 +136,21 @@
       <list>
         <option value="$PROJECT_DIR$/../spider_manager/manager/models.py" />
         <option value="$PROJECT_DIR$/shops/my_test.py" />
-        <option value="$PROJECT_DIR$/shops/templates/shops/index.html" />
-        <option value="$PROJECT_DIR$/shops/static/shops/js/shops.js" />
-        <option value="$PROJECT_DIR$/shops/urls.py" />
-        <option value="$PROJECT_DIR$/users/dao.py" />
-        <option value="$PROJECT_DIR$/users/urls.py" />
+        <option value="$PROJECT_DIR$/reviews/templates/reviews/index.html" />
+        <option value="$PROJECT_DIR$/reviews/urls.py" />
+        <option value="$PROJECT_DIR$/reviews/static/reviews/js/reviews.js" />
+        <option value="$PROJECT_DIR$/reviews/service.py" />
         <option value="$PROJECT_DIR$/users/templates/users/index.html" />
+        <option value="$PROJECT_DIR$/users/urls.py" />
+        <option value="$PROJECT_DIR$/users/dao.py" />
         <option value="$PROJECT_DIR$/users/service.py" />
         <option value="$PROJECT_DIR$/users/static/users/js/users.js" />
         <option value="$PROJECT_DIR$/shops/dao.py" />
+        <option value="$PROJECT_DIR$/shops/urls.py" />
+        <option value="$PROJECT_DIR$/shops/templates/shops/index.html" />
+        <option value="$PROJECT_DIR$/shops/static/shops/js/shops.js" />
         <option value="$PROJECT_DIR$/shops/service.py" />
         <option value="$PROJECT_DIR$/reviews/dao.py" />
-        <option value="$PROJECT_DIR$/reviews/urls.py" />
-        <option value="$PROJECT_DIR$/reviews/templates/reviews/index.html" />
-        <option value="$PROJECT_DIR$/reviews/static/reviews/js/reviews.js" />
-        <option value="$PROJECT_DIR$/reviews/service.py" />
       </list>
     </option>
   </component>
@@ -152,6 +184,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -160,16 +193,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spider_manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cafedecoralcn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="cafedecoralcn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -184,7 +207,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shops" />
+              <option name="myItemId" value="users" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -195,46 +218,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cafedecoralcn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reviews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cafedecoralcn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cafedecoralcn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reviews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cafedecoralcn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cafedecoralcn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reviews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -244,7 +227,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -325,6 +307,44 @@
       <module name="cafedecoralcn" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shops/dao.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="service (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/reviews" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="cafedecoralcn" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reviews/service.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="dao (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/reviews" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="cafedecoralcn" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reviews/dao.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -497,17 +517,21 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.cafe" />
       <item index="1" class="java.lang.String" itemvalue="Python.my_test" />
       <item index="2" class="java.lang.String" itemvalue="Python.service" />
       <item index="3" class="java.lang.String" itemvalue="Python.dao" />
+      <item index="4" class="java.lang.String" itemvalue="Python.service (1)" />
+      <item index="5" class="java.lang.String" itemvalue="Python.dao (1)" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.my_test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.service" />
-        <item index="2" class="java.lang.String" itemvalue="Python.dao" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.service (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.dao (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.my_test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.service" />
+        <item index="4" class="java.lang.String" itemvalue="Python.dao" />
       </list>
     </recent_temporary>
   </component>
@@ -525,25 +549,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.114605546" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11673774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64788735" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12026002" sideWeight="0.5063966" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43770313" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.032502707" sideWeight="0.4936034" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32394367" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31744313" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -555,18 +579,18 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64788735" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.052004334" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14978679" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13542795" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11567164" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10292524" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31744313" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -585,97 +609,11 @@
           <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="54" />
+      <option name="time" value="90" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/shops/my_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2553">
-          <caret line="112" column="28" lean-forward="false" selection-start-line="112" selection-start-column="28" selection-end-line="112" selection-end-column="28" />
-          <folding>
-            <element signature="e#84#105#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shops/templates/shops/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="62" lean-forward="false" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shops/static/shops/js/shops.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3151">
-          <caret line="137" column="26" lean-forward="true" selection-start-line="137" selection-start-column="26" selection-end-line="137" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shops/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="22" column="98" lean-forward="true" selection-start-line="22" selection-start-column="98" selection-end-line="22" selection-end-column="98" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shops/dao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="50" column="62" lean-forward="false" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="62" />
-          <folding>
-            <marker date="1505896352149" expanded="true" signature="1047:1287" ph="SELECT id,sh... view_shop_relation" />
-            <marker date="1505896352149" expanded="true" signature="1489:1558" ph="SELECT shopI... shops_dpshop" />
-            <marker date="1505896352149" expanded="true" signature="1772:1808" ph="SELECT shopI... or_shops" />
-            <marker date="1505896352149" expanded="true" signature="1829:1861" ph="SELECT shopI... dp_shops" />
-            <marker date="1505896352149" expanded="true" signature="1883:1915" ph="SELECT shopI... mfw_shops" />
-            <marker date="1505896352149" expanded="true" signature="1936:1973" ph="SELECT shopI... ta_shops" />
-            <marker date="1505896352149" expanded="true" signature="3154:3194" ph="SELECT shopI... or_shops" />
-            <marker date="1505896352149" expanded="true" signature="3215:3247" ph="SELECT shopI... dp_shops" />
-            <marker date="1505896352149" expanded="true" signature="3269:3302" ph="SELECT shopI... mfw_shops" />
-            <marker date="1505896352149" expanded="true" signature="3323:3355" ph="SELECT shopI... ta_shops" />
-            <marker date="1505896352149" expanded="true" signature="4252:4303" ph="INSERT INTO shop_id... " />
-            <marker date="1505896352149" expanded="true" signature="4794:4853" ph="SELECT shopI... or_shops" />
-            <marker date="1505896352149" expanded="true" signature="4874:4923" ph="SELECT shopI... dp_shops" />
-            <marker date="1505896352149" expanded="true" signature="4945:4993" ph="SELECT shopI... mfw_shops" />
-            <marker date="1505896352149" expanded="true" signature="5014:5066" ph="SELECT shopI... ta_shops" />
-            <marker date="1505896352149" expanded="true" signature="5458:5581" ph="INSERT INTO shop_relation... " />
-            <marker date="1505896352149" expanded="true" signature="5848:5935" ph="SELECT shopI... shop_relation" />
-            <marker date="1505896352149" expanded="true" signature="6130:6197" ph="SELECT shopI... shop_relation" />
-            <marker date="1505896352149" expanded="true" signature="6403:6471" ph="SELECT shopI... shop_relation" />
-            <marker date="1505896352149" expanded="true" signature="6685:6744" ph="UPDATE shop_... " />
-            <marker date="1505896352149" expanded="true" signature="7337:7417" ph="UPDATE shop_... " />
-            <marker date="1505896352149" expanded="true" signature="7586:7746" ph="UPDATE shop_... " />
-            <marker date="1505896352149" expanded="true" signature="7762:7924" ph="UPDATE shop_... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shops/service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1679">
-          <caret line="87" column="22" lean-forward="true" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
-          <folding>
-            <element signature="e#83#122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shops/service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="45" column="47" lean-forward="false" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
-          <folding>
-            <element signature="e#83#122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shops/templates/shops/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -696,7 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="17" column="59" lean-forward="true" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -712,31 +649,23 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1505888313943" expanded="true" signature="1049:1117" ph="SELECT COUNT... reviews_dpreview" />
-            <marker date="1505888313943" expanded="true" signature="1049:1120" ph="SELECT COUNT... reviews_dpreview" />
-            <marker date="1505888313943" expanded="true" signature="1333:1401" ph="SELECT COUNT... reviews_tareview" />
-            <marker date="1505888313943" expanded="true" signature="1333:1404" ph="SELECT COUNT... reviews_tareview" />
-            <marker date="1505888313943" expanded="true" signature="1617:1686" ph="SELECT COUNT... reviews_mfwreview" />
-            <marker date="1505888313943" expanded="true" signature="1617:1688" ph="SELECT COUNT... reviews_orreview" />
-            <marker date="1505888313943" expanded="true" signature="1902:1972" ph="SELECT COUNT... reviews_mfwreview" />
-            <marker date="1505888313943" expanded="true" signature="1902:1974" ph="SELECT COUNT... reviews_mfwreview" />
-            <marker date="1505888313943" expanded="true" signature="2184:2319" ph="select COUNT... users_dpmember" />
-            <marker date="1505888313943" expanded="true" signature="2254:2316" ph="SELECT DISTI... reviews_dpreview" />
-            <marker date="1505888313943" expanded="true" signature="2531:2666" ph="select COUNT... users_dpmember" />
-            <marker date="1505888313943" expanded="true" signature="2601:2663" ph="SELECT DISTI... reviews_dpreview" />
-            <marker date="1505888313943" expanded="true" signature="3478:3618" ph="select COUNT... users_mfwmember" />
-            <marker date="1505888313943" expanded="true" signature="3552:3615" ph="SELECT DISTI... reviews_mfwreview" />
-            <marker date="1505888313943" expanded="true" signature="3831:3973" ph="select COUNT... users_mfwmember" />
-            <marker date="1505888313943" expanded="true" signature="3907:3972" ph="SELECT DISTI... reviews_mfwreview" />
-            <marker date="1505888313943" expanded="true" signature="4188:4309" ph="select favor... users_ormember" />
-            <marker date="1505888313943" expanded="true" signature="4522:4643" ph="select locat... users_ormember" />
-            <marker date="1505888313943" expanded="true" signature="4578:4642" ph="SELECT DISTI... reviews_orreview" />
-            <marker date="1505888313943" expanded="true" signature="4855:4976" ph="select locat... users_dpmember" />
-            <marker date="1505888313943" expanded="true" signature="4911:4975" ph="SELECT DISTI... reviews_dpreview" />
-            <marker date="1505888313943" expanded="true" signature="5188:5309" ph="select locat... users_tamember" />
-            <marker date="1505888313943" expanded="true" signature="5244:5308" ph="SELECT DISTI... reviews_tareview" />
-            <marker date="1505888313943" expanded="true" signature="5522:5645" ph="select locat... users_mfwmember" />
-            <marker date="1505888313943" expanded="true" signature="5579:5644" ph="SELECT DISTI... reviews_mfwreview" />
+            <marker date="1505971367621" expanded="true" signature="1122:1193" ph="SELECT COUNT... reviews_dpreview" />
+            <marker date="1505971367621" expanded="true" signature="1406:1477" ph="SELECT COUNT... reviews_tareview" />
+            <marker date="1505971367621" expanded="true" signature="1690:1761" ph="SELECT COUNT... reviews_orreview" />
+            <marker date="1505971367621" expanded="true" signature="1975:2047" ph="SELECT COUNT... reviews_mfwreview" />
+            <marker date="1505971367621" expanded="true" signature="2257:2392" ph="select COUNT... users_dpmember" />
+            <marker date="1505971367621" expanded="true" signature="2604:2739" ph="select COUNT... users_dpmember" />
+            <marker date="1505971367621" expanded="true" signature="3551:3691" ph="select COUNT... users_mfwmember" />
+            <marker date="1505971367621" expanded="true" signature="3904:4046" ph="select COUNT... users_mfwmember" />
+            <marker date="1505971367621" expanded="true" signature="4261:4382" ph="select favor... users_ormember" />
+            <marker date="1505971367621" expanded="true" signature="4595:4750" ph="select locat... users_ormember" />
+            <marker date="1505971367621" expanded="true" signature="4962:5099" ph="select locat... users_dpmember" />
+            <marker date="1505971367621" expanded="true" signature="4962:5116" ph="select locat... users_dpmember" />
+            <marker date="1505971367621" expanded="true" signature="5328:5465" ph="select locat... users_tamember" />
+            <marker date="1505971367621" expanded="true" signature="5328:5482" ph="select locat... users_tamember" />
+            <marker date="1505971367621" expanded="true" signature="5695:5834" ph="select locat... users_mfwmember" />
+            <marker date="1505971367621" expanded="true" signature="5695:5851" ph="select locat... users_mfwmember" />
+            <marker date="1505971367621" expanded="true" signature="6058:6123" ph="SELECT id, o... view_shop_relation" />
           </folding>
         </state>
       </provider>
@@ -753,31 +682,23 @@
         <state relative-caret-position="368">
           <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="37" />
           <folding>
-            <marker date="1505888313943" expanded="true" signature="1049:1117" ph="SELECT COUNT... reviews_dpreview" />
-            <marker date="1505888313943" expanded="true" signature="1049:1120" ph="SELECT COUNT... reviews_dpreview" />
-            <marker date="1505888313943" expanded="true" signature="1333:1401" ph="SELECT COUNT... reviews_tareview" />
-            <marker date="1505888313943" expanded="true" signature="1333:1404" ph="SELECT COUNT... reviews_tareview" />
-            <marker date="1505888313943" expanded="true" signature="1617:1686" ph="SELECT COUNT... reviews_mfwreview" />
-            <marker date="1505888313943" expanded="true" signature="1617:1688" ph="SELECT COUNT... reviews_orreview" />
-            <marker date="1505888313943" expanded="true" signature="1902:1972" ph="SELECT COUNT... reviews_mfwreview" />
-            <marker date="1505888313943" expanded="true" signature="1902:1974" ph="SELECT COUNT... reviews_mfwreview" />
-            <marker date="1505888313943" expanded="true" signature="2184:2319" ph="select COUNT... users_dpmember" />
-            <marker date="1505888313943" expanded="true" signature="2254:2316" ph="SELECT DISTI... reviews_dpreview" />
-            <marker date="1505888313943" expanded="true" signature="2531:2666" ph="select COUNT... users_dpmember" />
-            <marker date="1505888313943" expanded="true" signature="2601:2663" ph="SELECT DISTI... reviews_dpreview" />
-            <marker date="1505888313943" expanded="true" signature="3478:3618" ph="select COUNT... users_mfwmember" />
-            <marker date="1505888313943" expanded="true" signature="3552:3615" ph="SELECT DISTI... reviews_mfwreview" />
-            <marker date="1505888313943" expanded="true" signature="3831:3973" ph="select COUNT... users_mfwmember" />
-            <marker date="1505888313943" expanded="true" signature="3907:3972" ph="SELECT DISTI... reviews_mfwreview" />
-            <marker date="1505888313943" expanded="true" signature="4188:4309" ph="select favor... users_ormember" />
-            <marker date="1505888313943" expanded="true" signature="4522:4643" ph="select locat... users_ormember" />
-            <marker date="1505888313943" expanded="true" signature="4578:4642" ph="SELECT DISTI... reviews_orreview" />
-            <marker date="1505888313943" expanded="true" signature="4855:4976" ph="select locat... users_dpmember" />
-            <marker date="1505888313943" expanded="true" signature="4911:4975" ph="SELECT DISTI... reviews_dpreview" />
-            <marker date="1505888313943" expanded="true" signature="5188:5309" ph="select locat... users_tamember" />
-            <marker date="1505888313943" expanded="true" signature="5244:5308" ph="SELECT DISTI... reviews_tareview" />
-            <marker date="1505888313943" expanded="true" signature="5522:5645" ph="select locat... users_mfwmember" />
-            <marker date="1505888313943" expanded="true" signature="5579:5644" ph="SELECT DISTI... reviews_mfwreview" />
+            <marker date="1505971367621" expanded="true" signature="1122:1193" ph="SELECT COUNT... reviews_dpreview" />
+            <marker date="1505971367621" expanded="true" signature="1406:1477" ph="SELECT COUNT... reviews_tareview" />
+            <marker date="1505971367621" expanded="true" signature="1690:1761" ph="SELECT COUNT... reviews_orreview" />
+            <marker date="1505971367621" expanded="true" signature="1975:2047" ph="SELECT COUNT... reviews_mfwreview" />
+            <marker date="1505971367621" expanded="true" signature="2257:2392" ph="select COUNT... users_dpmember" />
+            <marker date="1505971367621" expanded="true" signature="2604:2739" ph="select COUNT... users_dpmember" />
+            <marker date="1505971367621" expanded="true" signature="3551:3691" ph="select COUNT... users_mfwmember" />
+            <marker date="1505971367621" expanded="true" signature="3904:4046" ph="select COUNT... users_mfwmember" />
+            <marker date="1505971367621" expanded="true" signature="4261:4382" ph="select favor... users_ormember" />
+            <marker date="1505971367621" expanded="true" signature="4595:4750" ph="select locat... users_ormember" />
+            <marker date="1505971367621" expanded="true" signature="4962:5099" ph="select locat... users_dpmember" />
+            <marker date="1505971367621" expanded="true" signature="4962:5116" ph="select locat... users_dpmember" />
+            <marker date="1505971367621" expanded="true" signature="5328:5465" ph="select locat... users_tamember" />
+            <marker date="1505971367621" expanded="true" signature="5328:5482" ph="select locat... users_tamember" />
+            <marker date="1505971367621" expanded="true" signature="5695:5834" ph="select locat... users_mfwmember" />
+            <marker date="1505971367621" expanded="true" signature="5695:5851" ph="select locat... users_mfwmember" />
+            <marker date="1505971367621" expanded="true" signature="6058:6123" ph="SELECT id, o... view_shop_relation" />
           </folding>
         </state>
       </provider>
@@ -818,7 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -829,18 +749,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shops/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/django/http/response.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
           <caret line="318" column="27" lean-forward="true" selection-start-line="318" selection-start-column="27" selection-end-line="318" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -851,27 +763,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1210">
-          <caret line="199" column="0" lean-forward="true" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/exception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1596">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/pymysql/cursors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -903,7 +798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,15 +805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shops/static/shops/js/shops.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -927,182 +812,251 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shops/templates/shops/index.html">
+    <entry file="file://$PROJECT_DIR$/../../spider_manager/manager/dao_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-621">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/templates/users/index.html">
+    <entry file="file://C:/Python27/Lib/site-packages/django/utils/deprecation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="52" lean-forward="true" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
-          <folding />
+        <state relative-caret-position="450">
+          <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/urls.py">
+    <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/exception.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="87" lean-forward="true" selection-start-line="22" selection-start-column="87" selection-end-line="22" selection-end-column="87" />
-          <folding>
-            <element signature="e#83#115#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="203">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/dao.py">
+    <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="47" column="18" lean-forward="false" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="18" />
-          <folding>
-            <marker date="1505888313943" expanded="true" signature="1049:1117" ph="SELECT COUNT... reviews_dpreview" />
-            <marker date="1505888313943" expanded="true" signature="1049:1120" ph="SELECT COUNT... reviews_dpreview" />
-            <marker date="1505888313943" expanded="true" signature="1333:1401" ph="SELECT COUNT... reviews_tareview" />
-            <marker date="1505888313943" expanded="true" signature="1333:1404" ph="SELECT COUNT... reviews_tareview" />
-            <marker date="1505888313943" expanded="true" signature="1617:1686" ph="SELECT COUNT... reviews_mfwreview" />
-            <marker date="1505888313943" expanded="true" signature="1617:1688" ph="SELECT COUNT... reviews_orreview" />
-            <marker date="1505888313943" expanded="true" signature="1902:1972" ph="SELECT COUNT... reviews_mfwreview" />
-            <marker date="1505888313943" expanded="true" signature="1902:1974" ph="SELECT COUNT... reviews_mfwreview" />
-            <marker date="1505888313943" expanded="true" signature="2184:2319" ph="select COUNT... users_dpmember" />
-            <marker date="1505888313943" expanded="true" signature="2254:2316" ph="SELECT DISTI... reviews_dpreview" />
-            <marker date="1505888313943" expanded="true" signature="2531:2666" ph="select COUNT... users_dpmember" />
-            <marker date="1505888313943" expanded="true" signature="2601:2663" ph="SELECT DISTI... reviews_dpreview" />
-            <marker date="1505888313943" expanded="true" signature="3478:3618" ph="select COUNT... users_mfwmember" />
-            <marker date="1505888313943" expanded="true" signature="3552:3615" ph="SELECT DISTI... reviews_mfwreview" />
-            <marker date="1505888313943" expanded="true" signature="3831:3973" ph="select COUNT... users_mfwmember" />
-            <marker date="1505888313943" expanded="true" signature="3907:3972" ph="SELECT DISTI... reviews_mfwreview" />
-            <marker date="1505888313943" expanded="true" signature="4188:4309" ph="select favor... users_ormember" />
-            <marker date="1505888313943" expanded="true" signature="4522:4643" ph="select locat... users_ormember" />
-            <marker date="1505888313943" expanded="true" signature="4578:4642" ph="SELECT DISTI... reviews_orreview" />
-            <marker date="1505888313943" expanded="true" signature="4855:4976" ph="select locat... users_dpmember" />
-            <marker date="1505888313943" expanded="true" signature="4911:4975" ph="SELECT DISTI... reviews_dpreview" />
-            <marker date="1505888313943" expanded="true" signature="5188:5309" ph="select locat... users_tamember" />
-            <marker date="1505888313943" expanded="true" signature="5244:5308" ph="SELECT DISTI... reviews_tareview" />
-            <marker date="1505888313943" expanded="true" signature="5522:5645" ph="select locat... users_mfwmember" />
-            <marker date="1505888313943" expanded="true" signature="5579:5644" ph="SELECT DISTI... reviews_mfwreview" />
-          </folding>
+        <state relative-caret-position="193">
+          <caret line="218" column="0" lean-forward="false" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/service.py">
+    <entry file="file://C:/Python27/Lib/site-packages/pymysql/connections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
-          <caret line="154" column="43" lean-forward="true" selection-start-line="154" selection-start-column="43" selection-end-line="154" selection-end-column="43" />
-          <folding>
-            <element signature="e#83#122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shops/service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="87" column="12" lean-forward="true" selection-start-line="73" selection-start-column="4" selection-end-line="87" selection-end-column="12" />
-          <folding>
-            <element signature="e#83#122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shops/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reviews/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="22" column="74" lean-forward="true" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
-          <folding />
+        <state relative-caret-position="-2975">
+          <caret line="936" column="0" lean-forward="false" selection-start-line="936" selection-start-column="0" selection-end-line="936" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reviews/templates/reviews/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="65" lean-forward="true" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
-          <folding />
+        <state relative-caret-position="437">
+          <caret line="19" column="83" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="19" selection-end-column="83" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shops/dao.py">
+    <entry file="file://$PROJECT_DIR$/users/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1587">
-          <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-          <folding>
-            <marker date="1505896352149" expanded="true" signature="1047:1287" ph="SELECT id,sh... view_shop_relation" />
-            <marker date="1505896352149" expanded="true" signature="1489:1558" ph="SELECT shopI... shops_dpshop" />
-            <marker date="1505896352149" expanded="true" signature="1772:1808" ph="SELECT shopI... or_shops" />
-            <marker date="1505896352149" expanded="true" signature="1829:1861" ph="SELECT shopI... dp_shops" />
-            <marker date="1505896352149" expanded="true" signature="1883:1915" ph="SELECT shopI... mfw_shops" />
-            <marker date="1505896352149" expanded="true" signature="1936:1973" ph="SELECT shopI... ta_shops" />
-            <marker date="1505896352149" expanded="true" signature="3154:3194" ph="SELECT shopI... or_shops" />
-            <marker date="1505896352149" expanded="true" signature="3215:3247" ph="SELECT shopI... dp_shops" />
-            <marker date="1505896352149" expanded="true" signature="3269:3302" ph="SELECT shopI... mfw_shops" />
-            <marker date="1505896352149" expanded="true" signature="3323:3355" ph="SELECT shopI... ta_shops" />
-            <marker date="1505896352149" expanded="true" signature="4252:4303" ph="INSERT INTO shop_id... " />
-            <marker date="1505896352149" expanded="true" signature="4794:4853" ph="SELECT shopI... or_shops" />
-            <marker date="1505896352149" expanded="true" signature="4874:4923" ph="SELECT shopI... dp_shops" />
-            <marker date="1505896352149" expanded="true" signature="4945:4993" ph="SELECT shopI... mfw_shops" />
-            <marker date="1505896352149" expanded="true" signature="5014:5066" ph="SELECT shopI... ta_shops" />
-            <marker date="1505896352149" expanded="true" signature="5458:5581" ph="INSERT INTO shop_relation... " />
-            <marker date="1505896352149" expanded="true" signature="5848:5935" ph="SELECT shopI... shop_relation" />
-            <marker date="1505896352149" expanded="true" signature="6130:6197" ph="SELECT shopI... shop_relation" />
-            <marker date="1505896352149" expanded="true" signature="6403:6471" ph="SELECT shopI... shop_relation" />
-            <marker date="1505896352149" expanded="true" signature="6685:6744" ph="UPDATE shop_... " />
-            <marker date="1505896352149" expanded="true" signature="7337:7417" ph="UPDATE shop_... " />
-            <marker date="1505896352149" expanded="true" signature="7586:7746" ph="UPDATE shop_... " />
-            <marker date="1505896352149" expanded="true" signature="7762:7924" ph="UPDATE shop_... " />
-          </folding>
+        <state relative-caret-position="437">
+          <caret line="20" column="98" lean-forward="false" selection-start-line="20" selection-start-column="98" selection-end-line="20" selection-end-column="98" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/static/users/js/users.js">
+    <entry file="file://$PROJECT_DIR$/reviews/service.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1357">
-          <caret line="143" column="51" lean-forward="true" selection-start-line="143" selection-start-column="51" selection-end-line="143" selection-end-column="51" />
+        <state relative-caret-position="339">
+          <caret line="66" column="37" lean-forward="true" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cafedecoralcn/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reviews/static/reviews/js/reviews.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="93" column="9" lean-forward="false" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
+        <state relative-caret-position="345">
+          <caret line="90" column="9" lean-forward="true" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviews/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="21" column="97" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/templates/users/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="68" lean-forward="false" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/static/users/js/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1794">
+          <caret line="78" column="9" lean-forward="false" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shops/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shops/my_test_lc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-345">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shops/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shops/templates/shops/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="92" lean-forward="true" selection-start-line="21" selection-start-column="92" selection-end-line="21" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shops/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="22" column="42" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shops/dao_lc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="979">
+          <caret line="73" column="18" lean-forward="false" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+          <folding>
+            <marker date="1505979769130" expanded="true" signature="1124:1384" ph="SELECT id,sh... view_shop_relation" />
+            <marker date="1505979769130" expanded="true" signature="1594:1646" ph="SELECT star shops_missing_valueshop" />
+            <marker date="1505979769130" expanded="true" signature="1863:1936" ph="SELECT star,... shops_dpshop" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shops/static/shops/js/shops.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="136" column="24" lean-forward="true" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="125" column="9" lean-forward="true" selection-start-line="125" selection-start-column="9" selection-end-line="125" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/dao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="161" selection-end-column="18" />
+          <folding>
+            <marker date="1505971367621" expanded="true" signature="1122:1193" ph="SELECT COUNT... reviews_dpreview" />
+            <marker date="1505971367621" expanded="true" signature="1406:1477" ph="SELECT COUNT... reviews_tareview" />
+            <marker date="1505971367621" expanded="true" signature="1690:1761" ph="SELECT COUNT... reviews_orreview" />
+            <marker date="1505971367621" expanded="true" signature="1975:2047" ph="SELECT COUNT... reviews_mfwreview" />
+            <marker date="1505971367621" expanded="true" signature="2257:2392" ph="select COUNT... users_dpmember" />
+            <marker date="1505971367621" expanded="true" signature="2604:2739" ph="select COUNT... users_dpmember" />
+            <marker date="1505971367621" expanded="true" signature="3551:3691" ph="select COUNT... users_mfwmember" />
+            <marker date="1505971367621" expanded="true" signature="3904:4046" ph="select COUNT... users_mfwmember" />
+            <marker date="1505971367621" expanded="true" signature="4261:4382" ph="select favor... users_ormember" />
+            <marker date="1505971367621" expanded="true" signature="4595:4750" ph="select locat... users_ormember" />
+            <marker date="1505971367621" expanded="true" signature="4962:5099" ph="select locat... users_dpmember" />
+            <marker date="1505971367621" expanded="true" signature="4962:5116" ph="select locat... users_dpmember" />
+            <marker date="1505971367621" expanded="true" signature="5328:5465" ph="select locat... users_tamember" />
+            <marker date="1505971367621" expanded="true" signature="5328:5482" ph="select locat... users_tamember" />
+            <marker date="1505971367621" expanded="true" signature="5695:5834" ph="select locat... users_mfwmember" />
+            <marker date="1505971367621" expanded="true" signature="5695:5851" ph="select locat... users_mfwmember" />
+            <marker date="1505971367621" expanded="true" signature="6058:6123" ph="SELECT id, o... view_shop_relation" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shops/dao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="54" column="93" lean-forward="true" selection-start-line="54" selection-start-column="93" selection-end-line="54" selection-end-column="93" />
+          <folding>
+            <marker date="1505981632551" expanded="true" signature="1124:1364" ph="SELECT id,sh... view_shop_relation" />
+            <marker date="1505981632551" expanded="true" signature="1574:1650" ph="SELECT id,sh... view_shop_relation" />
+            <marker date="1505981632551" expanded="true" signature="1872:1908" ph="SELECT shopI... or_shops" />
+            <marker date="1505981632551" expanded="true" signature="1929:1961" ph="SELECT shopI... dp_shops" />
+            <marker date="1505981632551" expanded="true" signature="1983:2015" ph="SELECT shopI... mfw_shops" />
+            <marker date="1505981632551" expanded="true" signature="2036:2073" ph="SELECT shopI... ta_shops" />
+            <marker date="1505981632551" expanded="true" signature="3262:3302" ph="SELECT shopI... or_shops" />
+            <marker date="1505981632551" expanded="true" signature="3323:3355" ph="SELECT shopI... dp_shops" />
+            <marker date="1505981632551" expanded="true" signature="3377:3410" ph="SELECT shopI... mfw_shops" />
+            <marker date="1505981632551" expanded="true" signature="3431:3463" ph="SELECT shopI... ta_shops" />
+            <marker date="1505981632551" expanded="true" signature="4364:4415" ph="INSERT INTO shop_id... " />
+            <marker date="1505981632551" expanded="true" signature="4905:4964" ph="SELECT shopI... or_shops" />
+            <marker date="1505981632551" expanded="true" signature="4985:5034" ph="SELECT shopI... dp_shops" />
+            <marker date="1505981632551" expanded="true" signature="5056:5104" ph="SELECT shopI... mfw_shops" />
+            <marker date="1505981632551" expanded="true" signature="5125:5177" ph="SELECT shopI... ta_shops" />
+            <marker date="1505981632551" expanded="true" signature="5569:5692" ph="INSERT INTO shop_relation... " />
+            <marker date="1505981632551" expanded="true" signature="5959:6046" ph="SELECT shopI... shop_relation" />
+            <marker date="1505981632551" expanded="true" signature="6241:6308" ph="SELECT shopI... shop_relation" />
+            <marker date="1505981632551" expanded="true" signature="6514:6582" ph="SELECT shopI... shop_relation" />
+            <marker date="1505981632551" expanded="true" signature="6793:6852" ph="UPDATE shop_... " />
+            <marker date="1505981632551" expanded="true" signature="7449:7529" ph="UPDATE shop_... " />
+            <marker date="1505981632551" expanded="true" signature="7698:7858" ph="UPDATE shop_... " />
+            <marker date="1505981632551" expanded="true" signature="7874:8036" ph="UPDATE shop_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shops/service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="179" column="0" lean-forward="true" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reviews/dao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        <state relative-caret-position="462">
+          <caret line="95" column="10" lean-forward="false" selection-start-line="95" selection-start-column="10" selection-end-line="95" selection-end-column="10" />
           <folding>
-            <marker date="1505898167571" expanded="true" signature="1049:1107" ph="SELECT COUNT... reviews_orreview" />
-            <marker date="1505898167571" expanded="true" signature="1049:1109" ph="SELECT COUNT... reviews_orreview" />
-            <marker date="1505898167571" expanded="true" signature="1322:1382" ph="SELECT COUNT... reviews_dpreview" />
-            <marker date="1505898167571" expanded="true" signature="1595:1655" ph="SELECT COUNT... reviews_tareview" />
-            <marker date="1505898167571" expanded="true" signature="1869:1930" ph="SELECT COUNT... reviews_mfwreview" />
-            <marker date="1505898167571" expanded="true" signature="2137:2202" ph="SELECT id, o... view_shop_relation" />
+            <marker date="1505982992647" expanded="true" signature="1122:1180" ph="SELECT COUNT... reviews_orreview" />
+            <marker date="1505982992647" expanded="true" signature="1122:1182" ph="SELECT COUNT... reviews_orreview" />
+            <marker date="1505982992647" expanded="true" signature="1395:1455" ph="SELECT COUNT... reviews_dpreview" />
+            <marker date="1505982992647" expanded="true" signature="1668:1728" ph="SELECT COUNT... reviews_tareview" />
+            <marker date="1505982992647" expanded="true" signature="1942:2003" ph="SELECT COUNT... reviews_mfwreview" />
+            <marker date="1505982992647" expanded="true" signature="2210:2275" ph="SELECT id, o... view_shop_relation" />
+            <marker date="1505982992647" expanded="true" signature="2486:2608" ph="select favor... users_ormember" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reviews/service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="78" column="37" lean-forward="true" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>

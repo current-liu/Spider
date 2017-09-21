@@ -9,7 +9,7 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <introspection-schemas>*:kst_mafengwo,spider_manager</introspection-schemas>
+      <introspection-schemas>*:cafedecoral_analysis,kst_mafengwo,spider_manager</introspection-schemas>
     </data-source>
     <data-source name="@192.168.1.225" uuid="a72f78be-4071-4d77-9a00-c967d1574099">
       <database-info product="MySQL" version="5.7.17" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">

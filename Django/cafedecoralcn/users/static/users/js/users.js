@@ -21,156 +21,12 @@ function fun(){
 
 
 
-function get_or_memberNum() {
-    n = 5247
-    $.ajax({
-        url: schema_url + '/get_or_memberNum',
-        type: 'GET',
-        data:{"id" : n},
-        dataTpye: "json",
-        success: function (res) {
-            console.log(res)
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            console.log(XMLHttpRequest.status);
-            console.log(XMLHttpRequest.readyState);
-            console.log(textStatus);
-        }
-    })
-}
-
-function get_dp_memberNum() {
-    n = 2643376
-    $.ajax({
-        url: schema_url + '/get_dp_memberNum',
-        type: 'GET',
-        data:{"id" : n},
-        dataTpye: "json",
-        success: function (res) {
-            console.log(res)
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            console.log(XMLHttpRequest.status);
-            console.log(XMLHttpRequest.readyState);
-            console.log(textStatus);
-        }
-    })
-}
-
-function get_ta_memberNum() {
-    n = 5292664
-    $.ajax({
-        url: schema_url + '/get_ta_memberNum',
-        type: 'GET',
-        data:{"id" : n},
-        dataTpye: "json",
-        success: function (res) {
-            console.log(res)
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            console.log(XMLHttpRequest.status);
-            console.log(XMLHttpRequest.readyState);
-            console.log(textStatus);
-        }
-    })
-}
-
-function get_mfw_memberNum() {
-    n = 669
-    $.ajax({
-        url: schema_url + '/get_mfw_memberNum',
-        type: 'GET',
-        data:{"id" : n},
-        dataTpye: "json",
-        success: function (res) {
-            console.log(res)
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            console.log(XMLHttpRequest.status);
-            console.log(XMLHttpRequest.readyState);
-            console.log(textStatus);
-        }
-    })
-}
-
-function get_dp_womemNum() {
-    n = 2643376
-    $.ajax({
-        url: schema_url + '/get_dp_womemNum',
-        type: 'GET',
-        data:{"id" : n},
-        dataTpye: "json",
-        success: function (res) {
-            console.log(res)
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            console.log(XMLHttpRequest.status);
-            console.log(XMLHttpRequest.readyState);
-            console.log(textStatus);
-        }
-    })
-}
-
-function get_dp_memNum() {
-    n = 2643376
-    $.ajax({
-        url: schema_url + '/get_dp_memNum',
-        type: 'GET',
-        data:{"id" : n},
-        dataTpye: "json",
-        success: function (res) {
-            console.log(res)
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            console.log(XMLHttpRequest.status);
-            console.log(XMLHttpRequest.readyState);
-            console.log(textStatus);
-        }
-    })
-}
-
-function get_mfw_memNum() {
-    n = 669
-    $.ajax({
-        url: schema_url + '/get_mfw_memNum',
-        type: 'GET',
-        data:{"id" : n},
-        dataTpye: "json",
-        success: function (res) {
-            console.log(res)
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            console.log(XMLHttpRequest.status);
-            console.log(XMLHttpRequest.readyState);
-            console.log(textStatus);
-        }
-    })
-}
-
-function get_mfw_womemNum() {
-    n = 669
-    $.ajax({
-        url: schema_url + '/get_mfw_womemNum',
-        type: 'GET',
-        data:{"id" : n},
-        dataTpye: "json",
-        success: function (res) {
-            console.log(res)
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            console.log(XMLHttpRequest.status);
-            console.log(XMLHttpRequest.readyState);
-            console.log(textStatus);
-        }
-    })
-}
-
 function get_or_favorite() {
-    n = 1
+    n = 6
     $.ajax({
         url: schema_url + '/get_or_favorite',
         type: 'GET',
-        data:{"star" : n},
+        data:{"id" : n},
         dataTpye: "json",
         success: function (res) {
             console.log(res)
@@ -184,11 +40,11 @@ function get_or_favorite() {
 }
 
 function get_or_location() {
-    n = 1
+    n = 6
     $.ajax({
         url: schema_url + '/get_or_location',
         type: 'GET',
-        data:{"star" : n},
+        data:{"id" : n},
         dataTpye: "json",
         success: function (res) {
             console.log(res)
@@ -202,11 +58,11 @@ function get_or_location() {
 }
 
 function get_dp_location() {
-    n = 1
+    n = 6
     $.ajax({
         url: schema_url + '/get_dp_location',
         type: 'GET',
-        data:{"star" : n},
+        data:{"id" : n},
         dataTpye: "json",
         success: function (res) {
             console.log(res)
@@ -220,11 +76,11 @@ function get_dp_location() {
 }
 
 function get_ta_location() {
-    n = 1
+    n = 6
     $.ajax({
         url: schema_url + '/get_ta_location',
         type: 'GET',
-        data:{"star" : n},
+        data:{"id" : n},
         dataTpye: "json",
         success: function (res) {
             console.log(res)
@@ -238,11 +94,45 @@ function get_ta_location() {
 }
 
 function get_mfw_location() {
-    n = 1
+    n = 6
     $.ajax({
         url: schema_url + '/get_mfw_location',
         type: 'GET',
-        data:{"star" : n},
+        data:{"id" : n},
+        dataTpye: "json",
+        success: function (res) {
+            console.log(res)
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+    })
+}
+function get_all_memberNum() {
+    n = 6
+    $.ajax({
+        url: schema_url + '/get_all_memberNum',
+        type: 'GET',
+        data:{"id" : n},
+        dataTpye: "json",
+        success: function (res) {
+            console.log(res)
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+    })
+}
+function get_all_sex() {
+    n = 27
+    $.ajax({
+        url: schema_url + '/get_all_sex',
+        type: 'GET',
+        data:{"id" : n},
         dataTpye: "json",
         success: function (res) {
             console.log(res)

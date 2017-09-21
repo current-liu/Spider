@@ -9,17 +9,18 @@ import pymysql
 import re
 import sys
 import traceback
+from cafedecoralcn import config
 
 reload(sys)
 sys.setdefaultencoding("utf8")
 
 # config = {'host': '202.110.49.146', 'port': 3355, 'user': 'root', 'password': 'keystone', 'db': 'cafedecoral_data',
 #     'charset': 'utf8mb4', 'cursorclass': pymysql.cursors.DictCursor, }
-config = {'host': '202.110.49.146', 'port': 3355, 'user': 'root', 'password': 'keystone', 'db': 'cafedecoral_data',
+config_146 = {'host': '202.110.49.146', 'port': 3355, 'user': 'root', 'password': 'keystone', 'db': 'cafedecoral_data',
           'charset': 'utf8mb4'}
 # cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
 
-db = pymysql.connect(**config)
+db = pymysql.connect(**config_146)
 cursor = db.cursor()
 cursor.execute("select version()")
 data = cursor.fetchone()
@@ -28,8 +29,9 @@ print data
 __author__ = 'Administrator'
 __version__ = '1.0'
 
-conf = {'host': '202.110.49.146', 'port': 3355, 'user': 'root', 'password': 'keystone', 'db': 'cafedecoral_analysis',
-        'charset': 'utf8mb4'}
+# conf = {'host': '202.110.49.146', 'port': 3355, 'user': 'root', 'password': 'keystone', 'db': 'cafedecoral_analysis',
+#         'charset': 'utf8mb4'}
+conf = config.DB_CONFIG_166
 # cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
 
 conn = pymysql.connect(**conf)
@@ -49,10 +51,10 @@ FROM view_shop_relation"""
     return results
 
 
-def selete_shop_all_star():
-    sql = """SELECT shopId,name,star,taste,environment,service  FROM  shops_dpshop"""
+def selete_shop_all_info(shop_id):
+    sql = """SELECT id,shopName,shopAddr,shopTelFix FROM view_shop_relation where id = %s """
     try:
-        curs.execute(sql)
+        curs.execute(sql,shop_id)
         results = curs.fetchall()
         print results
     except BaseException, e:

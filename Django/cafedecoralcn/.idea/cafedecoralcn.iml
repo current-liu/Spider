@@ -6,5 +6,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="spider_manager" />
     <orderEntry type="module" module-name="spider_manager" />
+    <orderEntry type="module" module-name="spider_manager" />
   </component>
 </module>

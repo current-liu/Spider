@@ -111,3 +111,39 @@ function selete_shop_all() {
         }
     })
 }
+
+function get_all_shop_appraise() {
+
+    $.ajax({
+        url: schema_url + '/get_all_shop_appraise',
+        type: 'GET',
+        data:{"area" : 1},
+        dataTpye: "json",
+        success: function (res) {
+            console.log(res)
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+    })
+}
+
+function selete_shop_all_info() {
+    n = 6
+    $.ajax({
+        url: schema_url + '/selete_shop_all_info',
+        type: 'GET',
+        data:{"id" : n},
+        dataTpye: "json",
+        success: function (res) {
+            console.log(res)
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+    })
+}

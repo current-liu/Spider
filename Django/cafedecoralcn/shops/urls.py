@@ -20,5 +20,7 @@ urlpatterns = [url(r'^$', views.IndexView.as_view(), name='index'),
                 url(r'^get_dp_shops/$', service.get_dp_shops, name='get_dp_shops'),
                 url(r'get_dp_star/$',service.get_dp_star ,name='get_dp_star'),
                 url(r'selete_shop_all_star/$',service.selete_shop_all_star ,name='selete_shop_all_star'),
+                url(r'selete_shop_all_info/$',service.selete_shop_all_info, name='selete_shop_all_info'),
+                url(r'get_all_shop_appraise/$',service.get_all_shop_appraise ,name='get_all_shop_appraise'),
 
                ]

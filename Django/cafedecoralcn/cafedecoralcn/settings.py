@@ -25,7 +25,7 @@ SECRET_KEY = 'zjco%11g9p7tq8-our$uu1e!&%=m%y_90lycy7)jfdso$o*l2l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.151', '192.168.1.150', '192.168.1.152', '127.0.0.1']
+ALLOWED_HOSTS = ['192.168.1.151', '192.168.1.150', '192.168.1.152', '127.0.0.1', '192.168.1.225']
 
 
 # Application definition
@@ -123,12 +123,18 @@ WSGI_APPLICATION = 'cafedecoralcn.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {'ENGINE': 'django.db.backends.mysql',
+    #             'NAME': 'cafedecoral_analysis',
+    #             'USER': 'root',
+    #             'PASSWORD': 'keystone',
+    #             'HOST': '202.110.49.146',
+    #             'PORT': '3355'},
     'default': {'ENGINE': 'django.db.backends.mysql',
                 'NAME': 'cafedecoral_analysis',
                 'USER': 'root',
                 'PASSWORD': 'keystone',
-                'HOST': '202.110.49.146',
-                'PORT': '3355'},
+                'HOST': '192.168.1.166',
+                'PORT': '3306'},
 }
 
 

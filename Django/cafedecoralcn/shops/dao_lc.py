@@ -9,17 +9,18 @@ import pymysql
 import re
 import sys
 import traceback
+from cafedecoralcn import config
 
 reload(sys)
 sys.setdefaultencoding("utf8")
 
 # config = {'host': '202.110.49.146', 'port': 3355, 'user': 'root', 'password': 'keystone', 'db': 'cafedecoral_data',
 #     'charset': 'utf8mb4', 'cursorclass': pymysql.cursors.DictCursor, }
-config = {'host': '202.110.49.146', 'port': 3355, 'user': 'root', 'password': 'keystone', 'db': 'cafedecoral_data',
+config_146 = {'host': '202.110.49.146', 'port': 3355, 'user': 'root', 'password': 'keystone', 'db': 'cafedecoral_data',
           'charset': 'utf8mb4'}
 # cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
 
-db = pymysql.connect(**config)
+db = pymysql.connect(**config_146)
 cursor = db.cursor()
 cursor.execute("select version()")
 data = cursor.fetchone()
@@ -28,10 +29,10 @@ print data
 __author__ = 'Administrator'
 __version__ = '1.0'
 
-conf = {'host': '202.110.49.146', 'port': 3355, 'user': 'root', 'password': 'keystone', 'db': 'cafedecoral_analysis',
-        'charset': 'utf8mb4'}
+# conf = {'host': '202.110.49.146', 'port': 3355, 'user': 'root', 'password': 'keystone', 'db': 'cafedecoral_analysis',
+#         'charset': 'utf8mb4'}
+conf = config.DB_CONFIG_166
 # cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
-
 conn = pymysql.connect(**conf)
 curs = conn.cursor()
 
@@ -49,10 +50,22 @@ def get_all_shop_ids():
     return results
 
 
-def get_shop_info_from_pla(pla, id_list):
-    sql = """SELECT star FROM shops_dpshop WHERE shopId = %s"""
+def get_shop_star_from_pla(pla, id):
+    sql = "SELECT star FROM shops_"+pla+"shop WHERE shopId = %s"
     try:
-        curs.execute(sql, id_list)
+        curs.execute(sql, id)
+        results = curs.fetchall()
+        print results
+    except BaseException, e:
+        print e
+
+    return results
+
+
+def get_shop_star_and_more_from_dp(id):
+    sql = """SELECT star,taste,environment,service FROM shops_dpshop WHERE shopId = %s"""
+    try:
+        curs.execute(sql, id)
         results = curs.fetchall()
         print results
     except BaseException, e:
