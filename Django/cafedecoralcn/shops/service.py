@@ -192,11 +192,33 @@ def get_star_and_more_by_id(r):
 
 def selete_shop_all_info(request):
     id = request.GET.get("id")
+    # id = r[0]
+    # print id
+    # name = r[1]
+    # # 大陆
+    # dp = r[2]
+    # mfw = r[4]
+    #
+    # # 香港
+    # o_r = r[3]
+    # ta = r[5]
+
+    idd_list = dao.get_all_id(id)
+    idd = idd_list[0]
+    dp =idd[4]
+    o_r =idd[1]
+    mfw =idd[2]
+    ta = idd[3]
     res_list = dao.selete_shop_all_info(id)
     res = res_list[0]
     name = res[1]
     addr = res[2]
     tel = res[3]
-    d = {"name": name, "addr": addr, "tel": tel}
+
+    id_list = [id, "", dp, o_r, mfw, ta]
+    shop_appraise = get_star_and_more_by_id(id_list)
+    star = shop_appraise["star_all"]
+
+    d = {"name": name, "addr": addr, "tel": tel, "star": star}
     j = JsonResponse(d, safe=False)
     return j

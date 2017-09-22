@@ -275,3 +275,14 @@ def up_repeat_mark_to_10():
     except BaseException, e:
         print e
         db.rollback()
+
+def get_all_id(shop_id):
+    sql = """SELECT id, o_r , mfw,ta, dp FROM view_shop_relation where id = %s"""
+    try:
+        curs.execute(sql, shop_id)
+        results = curs.fetchall()
+        print results
+    except BaseException, e:
+        print e
+
+    return results

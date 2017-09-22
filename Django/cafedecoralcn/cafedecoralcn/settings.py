@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -25,7 +27,7 @@ SECRET_KEY = 'zjco%11g9p7tq8-our$uu1e!&%=m%y_90lycy7)jfdso$o*l2l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.151', '192.168.1.150', '192.168.1.152', '127.0.0.1', '192.168.1.225']
+ALLOWED_HOSTS = ['192.168.1.151', '192.168.1.150', '192.168.1.152', '127.0.0.1', '192.168.1.225', '202.110.49.146']
 
 
 # Application definition
@@ -175,3 +177,4 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')

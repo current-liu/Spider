@@ -107,3 +107,90 @@ function get_all_id() {
         }
     })
 }
+
+function get_ta_review() {
+    n = 6
+    $.ajax({
+        url: schema_url + '/get_ta_review',
+        type: 'GET',
+        data:{"id" : n},
+        dataTpye: "json",
+        success: function (res) {
+            console.log(res)
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+    })
+}
+function get_or_review() {
+    n = 6
+    $.ajax({
+        url: schema_url + '/get_or_review',
+        type: 'GET',
+        data:{"id" : n},
+        dataTpye: "json",
+        success: function (res) {
+            console.log(res)
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+    })
+}
+function get_dp_review() {
+    n = 6
+    $.ajax({
+        url: schema_url + '/get_dp_review',
+        type: 'GET',
+        data:{"id" : n},
+        dataTpye: "json",
+        success: function (res) {
+            console.log(res)
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+    })
+}
+function get_mfw_review() {
+    n = 6
+    $.ajax({
+        url: schema_url + '/get_mfw_review',
+        type: 'GET',
+        data:{"id" : n},
+        dataTpye: "json",
+        success: function (res) {
+            console.log(res)
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+    })
+}
+
+function get_all_reviewNum() {
+    n = 6
+    $.ajax({
+        url: schema_url + '/get_all_reviewNum',
+        type: 'GET',
+        data:{"id" : n},
+        dataTpye: "json",
+        success: function (res) {
+            console.log(res)
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+    })
+}
