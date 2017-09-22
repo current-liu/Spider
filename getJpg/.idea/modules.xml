@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../baidu_spider/baidu_spider.iml" filepath="$PROJECT_DIR$/../baidu_spider/baidu_spider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Django/cafedecoralcn/.idea/cafedecoralcn.iml" filepath="$PROJECT_DIR$/../Django/cafedecoralcn/.idea/cafedecoralcn.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/getJpg.iml" filepath="$PROJECT_DIR$/.idea/getJpg.iml" />
       <module fileurl="file://$PROJECT_DIR$/../getMovieOnDouban/.idea/getMovieOnDouban.iml" filepath="$PROJECT_DIR$/../getMovieOnDouban/.idea/getMovieOnDouban.iml" />
       <module fileurl="file://$PROJECT_DIR$/../gooseeker-master/.idea/gooseeker-master.iml" filepath="$PROJECT_DIR$/../gooseeker-master/.idea/gooseeker-master.iml" />
