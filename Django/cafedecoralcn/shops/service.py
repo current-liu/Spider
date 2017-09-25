@@ -143,7 +143,8 @@ def get_star_and_more_by_id(r):
 
     star_list_main = []
     if mfw != 0:
-        star_mfw = float(dao_lc.get_shop_star_from_pla("mfw", mfw)[0][0])
+        star_mfw_str = dao_lc.get_shop_star_from_pla("mfw", mfw)
+        star_mfw = float(star_mfw_str[0][0])
         if star_mfw > 0:
             star_list_main.append(star_mfw)
 

@@ -194,3 +194,73 @@ function get_all_reviewNum() {
         }
     })
 }
+
+function get_or_review_info() {
+    n = 6
+    $.ajax({
+        url: schema_url + '/get_or_review_info',
+        type: 'GET',
+        data:{"id" : n},
+        dataTpye: "json",
+        success: function (res) {
+            console.log(res)
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+    })
+}
+function get_ta_review_info() {
+    n = 6
+    $.ajax({
+        url: schema_url + '/get_ta_review_info',
+        type: 'GET',
+        data:{"id" : n},
+        dataTpye: "json",
+        success: function (res) {
+            console.log(res)
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+    })
+}
+
+function get_dp_review_info() {
+    n = 6
+    $.ajax({
+        url: schema_url + '/get_dp_review_info',
+        type: 'GET',
+        data:{"id" : n},
+        dataTpye: "json",
+        success: function (res) {
+            console.log(res)
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+    })
+}
+function get_mfw_review_info() {
+    n = 6
+    $.ajax({
+        url: schema_url + '/get_mfw_review_info',
+        type: 'GET',
+        data:{"id" : n},
+        dataTpye: "json",
+        success: function (res) {
+            console.log(res)
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+    })
+}

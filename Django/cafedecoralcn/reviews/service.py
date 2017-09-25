@@ -308,3 +308,118 @@ def get_all_reviewNum(request):
     j = JsonResponse(favorite_list, safe=False)
     return j
 
+def get_ta_review_info(request):
+    id = request.GET.get("id")
+    res = dao.get_all_id(id)
+    ta = res[0][3]
+    shop_list = []
+    if ta is None:
+        d = {"name": 0, "title": 0, "content": 0, "time": 0, "pic": 0, "star": 0}
+        shop_list.append({"shop": d})
+        j = JsonResponse(shop_list, safe=False)
+        return j
+    else:
+        res_list = dao.get_ta_review_info(ta)
+        length = res_list.__len__()
+        for i in range(0, length):
+            res = res_list[i]
+            name = res[1]
+            title = res[2]
+            content = res[3]
+            time = res[4]
+            pic = res[6]
+            star = res[5]
+            d = {"name": name, "title": title, "content": content, "time": time,"pic": pic, "star": star}
+            shop_list.append({"shop": d})
+        j = JsonResponse(shop_list, safe=False)
+        return j
+
+def get_or_review_info(request):
+    id = request.GET.get("id")
+    res = dao.get_all_id(id)
+    ta = res[0][1]
+    shop_list = []
+    if ta is None:
+        d = {"name": 0, "title": 0, "content": 0, "time": 0, "taste": 0, "environment": 0,
+             "service": 0, "pic": 0, "star": 0}
+        shop_list.append({"shop": d})
+        j = JsonResponse(shop_list, safe=False)
+        return j
+    else:
+        res_list = dao.get_or_review_info(ta)
+        length = res_list.__len__()
+        for i in range(0, length):
+            res = res_list[i]
+            name = res[0]
+            title = res[2]
+            content = res[3]
+            time = res[4]
+            taste = res[5]
+            environment = res[6]
+            service = res[7]
+            health = res [8]
+            pic = res[9]
+            star = (taste+environment+service+health)/4
+            d = {"name":name,"title":title,"content":content,"time":time,"taste":taste,"environment":environment,"service":service,"pic":pic,"star":star}
+            shop_list.append({"shop": d})
+        j = JsonResponse(shop_list, safe=False)
+        return j
+
+def get_dp_review_info(request):
+    id = request.GET.get("id")
+    res = dao.get_all_id(id)
+    ta = res[0][4]
+    shop_list = []
+    if ta is None:
+        d = {"name": 0,  "content": 0, "time": 0, "taste": 0,
+             "environment": 0, "likes": 0, "pic": 0, "star": 0, "reply": 0}
+        shop_list.append({"shop": d})
+        j = JsonResponse(shop_list, safe=False)
+        return j
+    else:
+        res_list = dao.get_dp_review_info(ta)
+        length = res_list.__len__()
+        for i in range(0, length):
+            res = res_list[i]
+            name = res[0]
+            content = res[2]
+            time = res[3]
+            taste = res[4]
+            environment = res[5]
+            likes = res[6]
+            reply = res[7]
+            pic = res[8]
+            star = (taste + environment) / 2
+            d = {"name": name,  "content": content, "time": time, "taste": taste,
+                 "environment": environment, "likes": likes, "pic": pic, "star": star,"reply":reply}
+            shop_list.append({"shop": d})
+        j = JsonResponse(shop_list, safe=False)
+        return j
+
+def get_mfw_review_info(request):
+    id = request.GET.get("id")
+    res = dao.get_all_id(id)
+    ta = res[0][2]
+    shop_list = []
+    if ta is None:
+        d = {"name": 0, "content": 0, "time": 0,
+             "likes": 0, "pic": 0, "star": 0}
+        shop_list.append({"shop": d})
+        j = JsonResponse(shop_list, safe=False)
+        return j
+    else:
+        res_list = dao.get_mfw_review_info(ta)
+        length = res_list.__len__()
+        for i in range(0, length):
+            res = res_list[i]
+            name = res[1]
+            content = res[2]
+            time = res[3]
+            likes = res[5]
+            pic = res[6]
+            star = res[4]
+            d = {"name": name, "content": content, "time": time,
+                "likes": likes, "pic": pic, "star": star}
+            shop_list.append({"shop": d})
+        j = JsonResponse(shop_list, safe=False)
+        return j

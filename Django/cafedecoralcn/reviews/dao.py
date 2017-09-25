@@ -180,3 +180,50 @@ def get_ta_month_review(shop_id):
         print e
 
     return results
+
+def get_or_review_info(shop_id):
+    sql = """select memberName,memberId,title,content,time,taste,environment,services,health,pic from view_orreview where memberId IN  (SELECT DISTINCT memberId from reviews_orreview where shopId = %s)"""
+    try:
+        curs.execute(sql,shop_id)
+        results = curs.fetchall()
+        print results
+    except BaseException, e:
+        print e
+
+    return results
+
+def get_dp_review_info(shop_id):
+    sql = """select memberId,name,content,time,taste,environment,likes,reply,pic from view_dpreview where memberId IN (SELECT DISTINCT memberId from reviews_dpreview where shopId = %s)"""
+    try:
+        curs.execute(sql,shop_id)
+        results = curs.fetchall()
+        print results
+    except BaseException, e:
+        print e
+
+    return results
+
+
+def get_ta_review_info(shop_id):
+    sql = """select memberId,memberName,title,content,time,star,pic from view_tareview where memberId IN (SELECT DISTINCT memberId from reviews_tareview where shopId = %s)"""
+    try:
+        curs.execute(sql,shop_id)
+        results = curs.fetchall()
+        print results
+    except BaseException, e:
+        print e
+
+    return results
+
+
+def get_mfw_review_info(shop_id):
+    sql = """select memberId,name,content,time,star,likes,pic from view_mfwreview where memberId IN (SELECT DISTINCT memberId from reviews_mfwreview where shopId = %s)"""
+    try:
+        curs.execute(sql,shop_id)
+        results = curs.fetchall()
+        print results
+    except BaseException, e:
+        print e
+
+    return results
+

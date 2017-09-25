@@ -26,4 +26,8 @@ urlpatterns = [url(r'^$', views.IndexView.as_view(), name='index'),
                url(r'^get_dp_review/$',service.get_dp_review,name='get_dp_review'),
                url(r'^get_mfw_review/$',service.get_mfw_review,name='get_mfw_review'),
                url(r'^get_all_reviewNum/$',service.get_all_reviewNum,name='get_all_reviewNum'),
+               url(r'get_or_review_info/$', service.get_or_review_info, name='get_or_review_info'),
+               url(r'get_ta_review_info/$', service.get_ta_review_info, name='get_ta_review_info'),
+               url(r'get_dp_review_info/$', service.get_dp_review_info, name='get_dp_review_info'),
+               url(r'get_mfw_review_info/$', service.get_mfw_review_info, name='get_mfw_review_info'),
                ]
