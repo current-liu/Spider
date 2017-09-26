@@ -29,38 +29,11 @@ print data
 __author__ = 'Administrator'
 __version__ = '1.0'
 
-# conf = {'host': '202.110.49.146', 'port': 3355, 'user': 'root', 'password': 'keystone', 'db': 'cafedecoral_analysis',
-#         'charset': 'utf8mb4'}
-conf = config.DB_CONFIG_166
-# cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
 
+conf = config.DB_CONFIG
+# cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
 conn = pymysql.connect(**conf)
 curs = conn.cursor()
-
-
-def selete_shop_all():
-    sql = """SELECT id,shopName,(CASE WHEN o_r IS NOT NULL THEN 1 ELSE 0 END) o_r ,(CASE WHEN mfw IS NOT NULL THEN 1 ELSE 0 END) mfw,(CASE WHEN ta IS NOT NULL THEN 1 ELSE 0 END) ta, (CASE WHEN dp IS NOT NULL THEN 1 ELSE 0 END) dp
-FROM view_shop_relation"""
-    try:
-        curs.execute(sql)
-        results = curs.fetchall()
-        print results
-    except BaseException, e:
-        print e
-
-    return results
-
-
-def selete_shop_all_info(shop_id):
-    sql = """SELECT id,shopName,shopAddr,shopTelFix FROM view_shop_relation where id = %s """
-    try:
-        curs.execute(sql,shop_id)
-        results = curs.fetchall()
-        print results
-    except BaseException, e:
-        print e
-
-    return results
 
 
 def selete_shops_id_tel(platform):
@@ -276,10 +249,38 @@ def up_repeat_mark_to_10():
         print e
         db.rollback()
 
+########################################################################################## 以上为处理原始数据
+
+
 def get_all_id(shop_id):
     sql = """SELECT id, o_r , mfw,ta, dp FROM view_shop_relation where id = %s"""
     try:
         curs.execute(sql, shop_id)
+        results = curs.fetchall()
+        print results
+    except BaseException, e:
+        print e
+
+    return results
+
+
+def selete_shop_all():
+    sql = """SELECT id,shopName,(CASE WHEN o_r IS NOT NULL THEN 1 ELSE 0 END) o_r ,(CASE WHEN mfw IS NOT NULL THEN 1 ELSE 0 END) mfw,(CASE WHEN ta IS NOT NULL THEN 1 ELSE 0 END) ta, (CASE WHEN dp IS NOT NULL THEN 1 ELSE 0 END) dp
+FROM view_shop_relation"""
+    try:
+        curs.execute(sql)
+        results = curs.fetchall()
+        print results
+    except BaseException, e:
+        print e
+
+    return results
+
+
+def selete_shop_all_info(shop_id):
+    sql = """SELECT id,shopName,shopAddr,shopTelFix FROM view_shop_relation where id = %s """
+    try:
+        curs.execute(sql,shop_id)
         results = curs.fetchall()
         print results
     except BaseException, e:

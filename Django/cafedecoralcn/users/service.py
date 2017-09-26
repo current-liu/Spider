@@ -46,8 +46,8 @@ def get_or_location(request):
     if o_r is None:
         location = 0
         num = 0
-        d = {"location": location, "num": num}
-        shop_list.append({"shop": d})
+        d = {"value":num,"name": location}
+        shop_list.append(d)
         j = JsonResponse(shop_list, safe=False)
         return j
     else:
@@ -57,8 +57,8 @@ def get_or_location(request):
             res = res_list[i]
             location = res[0]
             num  = res[1]
-            d = {"location": location,"num":num}
-            shop_list.append({"shop": d})
+            d = {"value":num,"name": location}
+            shop_list.append(d)
         j = JsonResponse(shop_list, safe=False)
         return j
 
@@ -71,8 +71,8 @@ def get_dp_location(request):
     if dp is None:
         location = 0
         num = 0
-        d = {"location": location, "num": num}
-        shop_list.append({"shop": d})
+        d = {"value":num,"name": location}
+        shop_list.append(d)
         j = JsonResponse(shop_list, safe=False)
         return j
     else:
@@ -82,8 +82,8 @@ def get_dp_location(request):
             res = res_list[i]
             location = res[0]
             num  = res[1]
-            d = {"location": location,"num":num}
-            shop_list.append({"shop": d})
+            d = {"value":num,"name": location}
+            shop_list.append(d)
         j = JsonResponse(shop_list, safe=False)
         return j
 
@@ -96,8 +96,8 @@ def get_ta_location(request):
     if ta is None:
         location = 0
         num = 0
-        d = {"location": location, "num": num}
-        shop_list.append({"shop": d})
+        d = {"value":num,"name": location}
+        shop_list.append(d)
         j = JsonResponse(shop_list, safe=False)
         return j
     else:
@@ -107,8 +107,8 @@ def get_ta_location(request):
             res = res_list[i]
             location = res[0]
             num  = res[1]
-            d = {"location": location,"num":num}
-            shop_list.append({"shop": d})
+            d = {"value":num,"name": location}
+            shop_list.append(d)
         j = JsonResponse(shop_list, safe=False)
         return j
 
@@ -121,8 +121,8 @@ def get_mfw_location(request):
     if mfw is None:
         location = 0
         num = 0
-        d = {"location": location, "num": num}
-        shop_list.append({"shop": d})
+        d = {"value":num,"name": location}
+        shop_list.append(d)
         j = JsonResponse(shop_list, safe=False)
         return j
     else:
@@ -132,8 +132,8 @@ def get_mfw_location(request):
             res = res_list[i]
             location = res[0]
             num  = res[1]
-            d = {"location": location,"num":num}
-            shop_list.append({"shop": d})
+            d = {"value":num,"name": location}
+            shop_list.append(d)
         j = JsonResponse(shop_list, safe=False)
         return j
 

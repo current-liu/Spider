@@ -90,6 +90,7 @@ def update_spider_num(date):
         db.commit()
     except BaseException, e:
         print e
+        db.rollback()
 
 
 def select_spider_num_up_to_date():
