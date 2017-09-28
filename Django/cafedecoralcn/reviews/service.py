@@ -75,25 +75,25 @@ def get_all_id(request):
     id = request.GET.get("id")
     res = dao.get_all_id(id)
     o_r = res[0][1]
-    if o_r is None:
+    if o_r == 0:
         o = 0
     else:
         or_num = dao.get_or_reviewNum(o_r)
         o = or_num[0][0]
     mfw = res[0][2]
-    if mfw is None:
+    if mfw == 0:
         m = 0
     else:
         mfw_num = dao.get_mfw_reviewNum(mfw)
         m = mfw_num[0][0]
     td = res[0][3]
-    if td is None:
+    if td == 0:
         t = 0
     else:
         td_num = dao.get_ta_reviewNum(td)
         t = td_num[0][0]
     dp = res[0][4]
-    if dp is None:
+    if dp == 0:
         d = 0
     else:
         dp_num = dao.get_dp_reviewNum(dp)
@@ -108,7 +108,7 @@ def get_ta_review(request):
     id = request.GET.get("id")
     res = dao.get_all_id(id)
     ta = res[0][3]
-    if ta is None:
+    if ta == 0:
         f = 0
         d = {"f": f}
         j = JsonResponse(d, safe=False)
@@ -143,7 +143,7 @@ def get_or_review(request):
     id = request.GET.get("id")
     res = dao.get_all_id(id)
     ta = res[0][1]
-    if ta is None:
+    if ta == 0:
         f = 0
         d = {"f": f}
         j = JsonResponse(d, safe=False)
@@ -178,7 +178,7 @@ def get_dp_review(request):
     id = request.GET.get("id")
     res = dao.get_all_id(id)
     ta = res[0][4]
-    if ta is None:
+    if ta == 0:
         f = 0
         d = {"f": f}
         j = JsonResponse(d, safe=False)
@@ -213,7 +213,7 @@ def get_mfw_review(request):
     id = request.GET.get("id")
     res = dao.get_all_id(id)
     ta = res[0][2]
-    if ta is None:
+    if ta == 0:
         f = 0
         d = {"f": f}
         j = JsonResponse(d, safe=False)
@@ -249,9 +249,9 @@ def get_all_reviewNum(request):
     res = dao.get_all_id(id)
     o_r = res[0][1]
     or_list = []
-    if o_r is None:
+    if o_r == 0:
         or_month = 0
-        or_list = {or_month}
+        or_list = [or_month]
     else:
         or_num = dao.get_or_month_review(o_r)
         for i in range(0, or_num.__len__()):
@@ -259,9 +259,9 @@ def get_all_reviewNum(request):
             or_list.append(or_month)
     mfw = res[0][2]
     mfw_list = []
-    if mfw is None:
+    if mfw == 0:
         mfw_month = 0
-        mfw_list = { mfw_month}
+        mfw_list = [mfw_month]
     else:
         mfw_num = dao.get_mfw_month_review(mfw)
         for i in range(0, mfw_num.__len__()):
@@ -269,9 +269,9 @@ def get_all_reviewNum(request):
             mfw_list.append(mfw_month)
     ta = res[0][3]
     ta_list = []
-    if ta is None:
+    if ta == 0:
         ta_month = 0
-        ta_list = {ta_month}
+        ta_list = [ta_month]
     else:
         ta_num = dao.get_ta_month_review(ta)
         for i in range(0, ta_num.__len__()):
@@ -279,9 +279,9 @@ def get_all_reviewNum(request):
             ta_list.append(ta_month)
     dp = res[0][4]
     dp_list = []
-    if dp is None:
+    if dp == 0:
         dp_month = 0
-        dp_list = {dp_month}
+        dp_list = [dp_month]
     else:
         dp_num = dao.get_dp_month_review(dp)
         for i in range(0, dp_num.__len__()):
@@ -291,6 +291,8 @@ def get_all_reviewNum(request):
     fav_stat = {}
     for i in range(0, all_list.__len__()):
         x = all_list[i]
+        if x == 0:
+            continue
         try:
             n = fav_stat[x]
             fav_stat[x] = n + 1
@@ -313,7 +315,7 @@ def get_ta_review_info(request):
     res = dao.get_all_id(id)
     ta = res[0][3]
     shop_list = []
-    if ta is None:
+    if ta == 0:
         d = {"name": 0, "title": 0, "content": 0, "time": 0, "pic": 0, "star": 0}
         shop_list.append({"shop": d})
         j = JsonResponse(shop_list, safe=False)
@@ -339,7 +341,7 @@ def get_or_review_info(request):
     res = dao.get_all_id(id)
     ta = res[0][1]
     shop_list = []
-    if ta is None:
+    if ta == 0:
         d = {"name": 0, "title": 0, "content": 0, "time": 0, "taste": 0, "environment": 0,
              "service": 0, "pic": 0, "star": 0}
         shop_list.append({"shop": d})
@@ -370,7 +372,7 @@ def get_dp_review_info(request):
     res = dao.get_all_id(id)
     ta = res[0][4]
     shop_list = []
-    if ta is None:
+    if ta == 0:
         d = {"name": 0,  "content": 0, "time": 0, "taste": 0,
              "environment": 0, "likes": 0, "pic": 0, "star": 0, "reply": 0}
         shop_list.append({"shop": d})
@@ -401,7 +403,7 @@ def get_mfw_review_info(request):
     res = dao.get_all_id(id)
     ta = res[0][2]
     shop_list = []
-    if ta is None:
+    if ta == 0:
         d = {"name": 0, "content": 0, "time": 0,
              "likes": 0, "pic": 0, "star": 0}
         shop_list.append({"shop": d})

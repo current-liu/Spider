@@ -14,13 +14,9 @@ from cafedecoralcn import config
 reload(sys)
 sys.setdefaultencoding("utf8")
 
-# config = {'host': '202.110.49.146', 'port': 3355, 'user': 'root', 'password': 'keystone', 'db': 'cafedecoral_data',
-#     'charset': 'utf8mb4', 'cursorclass': pymysql.cursors.DictCursor, }
-config_146 = {'host': '202.110.49.146', 'port': 3355, 'user': 'root', 'password': 'keystone', 'db': 'cafedecoral_data',
-          'charset': 'utf8mb4'}
-# cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
 
-db = pymysql.connect(**config_146)
+config_cafedecoral_data = config.DB_CONFIG_cafedecoral_data
+db = pymysql.connect(**config_cafedecoral_data)
 cursor = db.cursor()
 cursor.execute("select version()")
 data = cursor.fetchone()
@@ -30,7 +26,7 @@ __author__ = 'Administrator'
 __version__ = '1.0'
 
 
-conf = config.DB_CONFIG
+conf = config.DB_CONFIG_cafedecoral_analysis
 # cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
 conn = pymysql.connect(**conf)
 curs = conn.cursor()
@@ -253,7 +249,10 @@ def up_repeat_mark_to_10():
 
 
 def get_all_id(shop_id):
-    sql = """SELECT id, o_r , mfw,ta, dp FROM view_shop_relation where id = %s"""
+    """没有的平台，id返回0"""
+    # sql = """SELECT id, o_r , mfw,ta, dp FROM view_shop_relation where id = %s"""
+    sql = """SELECT id,(CASE WHEN o_r IS NOT NULL THEN o_r ELSE 0 END) o_r ,(CASE WHEN mfw IS NOT NULL THEN mfw ELSE 0 END) mfw,(CASE WHEN ta IS NOT NULL THEN ta ELSE 0 END) ta, (CASE WHEN dp IS NOT NULL THEN dp ELSE 0 END) dp
+                      FROM view_shop_relation where id = %s"""
     try:
         curs.execute(sql, shop_id)
         results = curs.fetchall()
@@ -279,6 +278,50 @@ FROM view_shop_relation"""
 
 def selete_shop_all_info(shop_id):
     sql = """SELECT id,shopName,shopAddr,shopTelFix FROM view_shop_relation where id = %s """
+    try:
+        curs.execute(sql,shop_id)
+        results = curs.fetchall()
+        print results
+    except BaseException, e:
+        print e
+
+    return results
+
+def selete_dp_pic(shop_id):
+    sql = """SELECT pic FROM shops_dpshop where shopId = %s """
+    try:
+        curs.execute(sql,shop_id)
+        results = curs.fetchall()
+        print results
+    except BaseException, e:
+        print e
+
+    return results
+
+def selete_ta_pic(shop_id):
+    sql = """SELECT pic FROM shops_tashop where shopId = %s """
+    try:
+        curs.execute(sql,shop_id)
+        results = curs.fetchall()
+        print results
+    except BaseException, e:
+        print e
+
+    return results
+
+def selete_or_pic(shop_id):
+    sql = """SELECT pic FROM shops_orshop where shopId = %s """
+    try:
+        curs.execute(sql,shop_id)
+        results = curs.fetchall()
+        print results
+    except BaseException, e:
+        print e
+
+    return results
+
+def selete_mfw_pic(shop_id):
+    sql = """SELECT pic FROM shops_mfwshop where shopId = %s """
     try:
         curs.execute(sql,shop_id)
         results = curs.fetchall()

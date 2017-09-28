@@ -20,7 +20,7 @@ __author__ = 'Administrator'
 __version__ = '1.0'
 
 if __name__ == '__main__':
-    # 中断时当前member需要手动处理
+    # 中断时当前member需要手动处理当前正在爬的id，可将当前id的相关记录全部删除，重新启动
     # TODO给member_path.memberId 建索引
     # 主键为id，判断重复的后面需完善。可以在更新时，查询之前的足迹的最后时间，带入paser逻辑
     action.get_member_path()

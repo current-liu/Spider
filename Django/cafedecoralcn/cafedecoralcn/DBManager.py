@@ -9,7 +9,7 @@ Created on 2017/9/26 0026 上午 9:21
 import pymysql
 from DBUtils.PooledDB import PooledDB
 # 自定义的配置文件，主要包含DB的一些基本配置
-from config import DB_CONFIG
+from config import DB_CONFIG_cafedecoral_analysis
 
 
 __author__ = 'liuchao'
@@ -20,7 +20,7 @@ __version__ = '1.0'
 class DbManager(object):
     def __init__(self):
 
-        self._pool = PooledDB(pymysql, mincached=0, maxcached=10, maxshared=10, maxusage=10000, **DB_CONFIG)
+        self._pool = PooledDB(pymysql, mincached=0, maxcached=10, maxshared=10, maxusage=10000, **DB_CONFIG_cafedecoral_analysis)
 
     def getConn(self):
         return self._pool.connection()

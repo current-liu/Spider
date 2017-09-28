@@ -10,7 +10,8 @@ import traceback
 reload(sys)
 sys.setdefaultencoding("utf8")
 
-db = pymysql.connect("192.168.1.166", "root", "keystone", "k11data", charset="utf8mb4")
+# 之前数据在k11data中，为了规整起见，进行了迁移
+db = pymysql.connect("192.168.1.166", "root", "keystone", "kst_dianping", charset="utf8mb4")
 cursor = db.cursor()
 cursor.execute("select version()")
 data = cursor.fetchone()

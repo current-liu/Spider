@@ -119,17 +119,19 @@ def get_all_shop_appraise(request):
     return j
 
 
-def get_star_and_more_by_id(r):
-    id = r[0]
+def get_star_and_more_by_id(shop_ids_in_4_pla):
+    """没有的平台，id应传入0"""
+
+    id = shop_ids_in_4_pla[0]
     print id
-    name = r[1]
+    name = shop_ids_in_4_pla[1]
     # 大陆
-    dp = r[2]
-    mfw = r[4]
+    dp = shop_ids_in_4_pla[2]
+    mfw = shop_ids_in_4_pla[4]
 
     # 香港
-    o_r = r[3]
-    ta = r[5]
+    o_r = shop_ids_in_4_pla[3]
+    ta = shop_ids_in_4_pla[5]
 
     star_list_hk = []
     if o_r != 0:
@@ -221,6 +223,23 @@ def selete_shop_all_info(request):
     shop_appraise = get_star_and_more_by_id(id_list)
     star = shop_appraise["star_all"]
 
-    d = {"name": name, "addr": addr, "tel": tel, "star": star}
+
+    if o_r != 0:
+        picture = dao.selete_or_pic(o_r)
+        pic = picture[0][0]
+    elif mfw != 0:
+        picture = dao.selete_mfw_pic(mfw)
+        pic = picture[0][0]
+    elif ta != 0:
+        picture = dao.selete_ta_pic(ta)
+        pic = picture[0][0]
+    elif dp != 0:
+        picture = dao.selete_dp_pic(dp)
+        pic = picture[0][0]
+    else:
+        pic = -1
+
+
+    d = {"name": name, "addr": addr, "tel": tel, "star": star, "pic":pic}
     j = JsonResponse(d, safe=False)
     return j

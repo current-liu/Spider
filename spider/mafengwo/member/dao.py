@@ -15,11 +15,11 @@ db = base_dao.db
 
 def select_member_id_not_in_member(table):
     """查询不在表member中的member_id"""
-    # TODO member_fix
+    # TODOmember_fix
 
     results = []
     try:
-        sql = """SELECT DISTINCT %s.memberId FROM %s LEFT JOIN member_fix ON %s.memberId = member_fix.memberId WHERE member_fix.memberId IS NULL""" % (
+        sql = """SELECT DISTINCT %s.memberId FROM %s LEFT JOIN member ON %s.memberId = member.memberId WHERE member.memberId IS NULL""" % (
             table, table, table)
         cursor.execute(sql)
         results = cursor.fetchall()
@@ -41,10 +41,10 @@ def update_member_mark(table, value):
 
 
 def insert_member(pic, name, gender, vip, duo, zhi, level, loc, profile, follow, fans, contribution, review, member_id):
-    # TODO member_fix
+
 
     try:
-        sql = """INSERT INTO member_fix (pic, name, sex, vip, duo, zhiluren, location, level, follows, fans, review, profile, contribution, memberId) 
+        sql = """INSERT INTO member (pic, name, sex, vip, duo, zhiluren, location, level, follows, fans, review, profile, contribution, memberId) 
                   VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
 
         cursor.execute(sql, (

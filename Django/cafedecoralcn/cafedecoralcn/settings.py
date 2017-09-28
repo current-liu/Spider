@@ -128,18 +128,24 @@ WSGI_APPLICATION = 'cafedecoralcn.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
-    'default': {'ENGINE': 'django.db.backends.mysql',
-                'NAME': 'cafedecoral_analysis',
-                'USER': 'root',
-                'PASSWORD': 'keystone',
-                'HOST': '202.110.49.146',
-                'PORT': '3355'},
+    # 'default': {'ENGINE': 'django.db.backends.mysql',
+    #             'NAME': 'cafedecoral_analysis',
+    #             'USER': 'root',
+    #             'PASSWORD': 'keystone',
+    #             'HOST': '202.110.49.146',
+    #             'PORT': '3355'},
     # 'default': {'ENGINE': 'django.db.backends.mysql',
     #             'NAME': 'cafedecoral_analysis',
     #             'USER': 'root',
     #             'PASSWORD': 'keystone',
     #             'HOST': '192.168.1.166',
     #             'PORT': '3306'},
+    'default': {'ENGINE': 'django.db.backends.mysql',
+                'NAME': 'cafedecoral_analysis',
+                'USER': 'root',
+                'PASSWORD': 'Sz@860213',
+                'HOST': '202.110.49.146',
+                'PORT': '3306'},
 }
 
 

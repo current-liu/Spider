@@ -55,7 +55,7 @@ def get_or_location(request):
         length = res_list.__len__()
         for i in range(0, length):
             res = res_list[i]
-            location = res[0]
+            location = res[0].replace(" ","")
             num  = res[1]
             d = {"value":num,"name": location}
             shop_list.append(d)
