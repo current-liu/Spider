@@ -126,7 +126,7 @@ def get_ta_review(request):
         fd = nltk.FreqDist(text1)
         keys = fd.keys()
         item = fd.iteritems()
-        print ' '.join(keys)
+        # print ' '.join(keys)
         dicts = dict(item)
         sort_dict = sorted(dicts.iteritems(), key=lambda d: d[1], reverse=True)
         k_v = []
@@ -161,7 +161,7 @@ def get_or_review(request):
         fd = nltk.FreqDist(text1)
         keys = fd.keys()
         item = fd.iteritems()
-        print ' '.join(keys)
+        # print ' '.join(keys)
         dicts = dict(item)
         sort_dict = sorted(dicts.iteritems(), key=lambda d: d[1], reverse=True)
         k_v = []
@@ -196,7 +196,7 @@ def get_dp_review(request):
         fd = nltk.FreqDist(text1)
         keys = fd.keys()
         item = fd.iteritems()
-        print ' '.join(keys)
+        # print ' '.join(keys)
         dicts = dict(item)
         sort_dict = sorted(dicts.iteritems(), key=lambda d: d[1], reverse=True)
         k_v = []
@@ -231,7 +231,7 @@ def get_mfw_review(request):
         fd = nltk.FreqDist(text1)
         keys = fd.keys()
         item = fd.iteritems()
-        print ' '.join(keys)
+        # print ' '.join(keys)
         dicts = dict(item)
         sort_dict = sorted(dicts.iteritems(), key=lambda d: d[1], reverse=True)
         k_v = []

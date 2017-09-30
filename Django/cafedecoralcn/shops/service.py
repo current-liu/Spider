@@ -29,7 +29,7 @@ __version__ = '1.0'
 def ajax(request):
     # pdb.set_trace()
     n = request.GET.get("id")
-    print n
+    # print n
     ret = {'status': True, 'error': "null"}
     l = [1, 2, 3, 4, 5]
     r = {"l": n}
