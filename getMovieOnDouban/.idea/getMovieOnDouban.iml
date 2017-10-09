@@ -15,6 +15,7 @@
     <orderEntry type="module" module-name="HelloWorld" />
     <orderEntry type="module" module-name="spider_manager" />
     <orderEntry type="module" module-name="cafedecoralcn" />
+    <orderEntry type="module" module-name="maxims" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

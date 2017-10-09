@@ -95,6 +95,14 @@ def get_food_review():
     table = "food_shop"
     sql_ = "WHERE shopId not in (select shopId from food_review)"
     shops = base_dao.select_shopid_and_reviewnum(table, sql_)
+
+    # food_list = []
+    # food_list.append((5505826, 5))
+    # food_list.append((5424842, 11))
+    # food_list.append((11779133, 9))
+    # food_list.append((11745680, 9))
+    # shops = food_list
+
     for shop in shops:
         try:
             shop_id = shop[0]
