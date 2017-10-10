@@ -30,6 +30,23 @@ def select_member_id_not_in_member(table):
     return results
 
 
+def select_member_id_not_in_member_in_shop(table, shop_id):
+    """查询指定店铺，不在表member中的member_id"""
+    # TODOmember_fix
+
+    results = []
+    try:
+        sql = """SELECT DISTINCT %s.memberId FROM %s LEFT JOIN member ON %s.memberId = member.memberId WHERE %s.shopId = %s AND member.memberId IS NULL""" % (
+            table, table, table, table, shop_id)
+        cursor.execute(sql)
+        results = cursor.fetchall()
+
+    except BaseException, e:
+        print e
+
+    return results
+
+
 def update_member_mark(table, value):
     try:
         sql = """UPDATE %s SET memberMark = %s WHERE memberId in (SELECT memberId FROM member) """ % (table, value)

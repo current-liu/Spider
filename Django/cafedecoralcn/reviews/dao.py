@@ -32,11 +32,11 @@ __version__ = '1.0'
 
 # conf = {'host': '202.110.49.146', 'port': 3355, 'user': 'root', 'password': 'keystone', 'db': 'cafedecoral_analysis',
 #     'charset': 'utf8mb4'}
-conf = config.DB_CONFIG_cafedecoral_analysis
+# conf = config.DB_CONFIG_cafedecoral_analysis
 # cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
-
-conn = pymysql.connect(**conf)
-curs = conn.cursor()
+#
+# conn = pymysql.connect(**conf)
+# curs = conn.cursor()
 
 
 def get_or_reviewNum(shop_id):

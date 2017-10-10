@@ -101,6 +101,7 @@ def get_food_review():
     # food_list.append((5424842, 11))
     # food_list.append((11779133, 9))
     # food_list.append((11745680, 9))
+    (5505826,5424842,11779133,11745680)
     # shops = food_list
 
     for shop in shops:

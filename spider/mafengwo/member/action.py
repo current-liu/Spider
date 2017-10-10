@@ -32,6 +32,14 @@ def get_member(table):
 
     try:
         member_ids = dao.select_member_id_not_in_member(table)
+
+        # 查询指定店铺的新增mmeber
+        # shop_ids = [5505826, 5424842, 11779133, 11745680]
+        # member_ids = ()
+        # for shop_id in shop_ids:
+        #     members = dao.select_member_id_not_in_member_in_shop(table, shop_id)
+        #     member_ids += members
+
         print "%d members to update this time in %s" % (member_ids.__len__(), table)
         # member_ids = [(17212115,)]
         for member in member_ids:

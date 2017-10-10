@@ -128,9 +128,45 @@ function get_all_memberNum() {
     })
 }
 function get_all_sex() {
-    n = 27
+    n = 6
     $.ajax({
         url: schema_url + '/get_all_sex',
+        type: 'GET',
+        data:{"id" : n},
+        dataTpye: "json",
+        success: function (res) {
+            console.log(res)
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+    })
+}
+
+function get_dp_province() {
+    n = 6
+    $.ajax({
+        url: schema_url + '/get_dp_province',
+        type: 'GET',
+        data:{"id" : n},
+        dataTpye: "json",
+        success: function (res) {
+            console.log(res)
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+    })
+}
+
+function get_mfw_province() {
+    n = 6
+    $.ajax({
+        url: schema_url + '/get_mfw_province',
         type: 'GET',
         data:{"id" : n},
         dataTpye: "json",

@@ -26,4 +26,6 @@ urlpatterns = [url(r'^$', views.IndexView.as_view(), name='index'),
                url(r'get_mfw_location/$', service.get_mfw_location, name='get_mfw_location'),
                url(r'get_all_memberNum/$',service.get_all_memberNum, name='get_all_memberNum'),
                url(r'get_all_sex/$',service.get_all_sex, name='get_all_sex'),
+               url(r'get_dp_province/$', service.get_dp_province, name='get_dp_province'),
+               url(r'get_mfw_province/$', service.get_mfw_province, name='get_mfw_province'),
                ]

@@ -131,7 +131,7 @@ function get_all_shop_appraise() {
 }
 
 function selete_shop_all_info() {
-    n = 12
+    n = 6
     $.ajax({
         url: schema_url + '/selete_shop_all_info',
         type: 'GET',

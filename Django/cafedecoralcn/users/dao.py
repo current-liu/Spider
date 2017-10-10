@@ -5,11 +5,11 @@ Created on 2017/8/11 0011 上午 11:23
 
 base Info
 """
-import pymysql
+# import pymysql
 import re
 import sys
 import traceback
-from cafedecoralcn import config
+# from cafedecoralcn import config
 from cafedecoralcn import DBManager
 
 reload(sys)
@@ -33,79 +33,85 @@ __version__ = '1.0'
 # conf = {'host': '202.110.49.146', 'port': 3355, 'user': 'root', 'password': 'keystone', 'db': 'cafedecoral_analysis',
 #     'charset': 'utf8mb4'}
 # cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
-conf = config.DB_CONFIG_cafedecoral_analysis
-conn = pymysql.connect(**conf)
-curs = conn.cursor()
+# conf = config.DB_CONFIG_cafedecoral_analysis
+# conn = pymysql.connect(**conf)
+# curs = conn.cursor()
 
 
 def get_dp_memberNum(shop_id):
     sql = """SELECT COUNT(DISTINCT memberId) FROM reviews_dpreview WHERE shopId = %s"""
-    try:
-        curs.execute(sql, shop_id)
-        results = curs.fetchall()
-        print results
-    except BaseException, e:
-        print e
+    # try:
+    #     curs.execute(sql, shop_id)
+    #     results = curs.fetchall()
+    #     print results
+    # except BaseException, e:
+    #     print e
+    results = DBManager.queryAll(sql, shop_id)
 
     return results
 
 
 def get_ta_memberNum(shop_id):
     sql = """SELECT COUNT(DISTINCT memberId) FROM reviews_tareview WHERE shopId = %s"""
-    try:
-        curs.execute(sql, shop_id)
-        results = curs.fetchall()
-        print results
-    except BaseException, e:
-        print e
+    # try:
+    #     curs.execute(sql, shop_id)
+    #     results = curs.fetchall()
+    #     print results
+    # except BaseException, e:
+    #     print e
+    results = DBManager.queryAll(sql, shop_id)
 
     return results
 
 
 def get_or_memberNum(shop_id):
     sql = """SELECT COUNT(DISTINCT memberId) FROM reviews_orreview WHERE shopId = %s"""
-    try:
-        curs.execute(sql, shop_id)
-        results = curs.fetchall()
-        print results
-    except BaseException, e:
-        print e
+    # try:
+    #     curs.execute(sql, shop_id)
+    #     results = curs.fetchall()
+    #     print results
+    # except BaseException, e:
+    #     print e
+    results = DBManager.queryAll(sql, shop_id)
 
     return results
 
 
 def get_mfw_memberNum(shop_id):
     sql = """SELECT COUNT(DISTINCT memberId) FROM reviews_mfwreview WHERE shopId = %s"""
-    try:
-        curs.execute(sql, shop_id)
-        results = curs.fetchall()
-        print results
-    except BaseException, e:
-        print e
+    # try:
+    #     curs.execute(sql, shop_id)
+    #     results = curs.fetchall()
+    #     print results
+    # except BaseException, e:
+    #     print e
+    results = DBManager.queryAll(sql, shop_id)
 
     return results
 
 
 def get_dp_memNum(shop_id):
     sql = """SELECT COUNT(sex) FROM users_dpmember WHERE sex="男" AND memberId IN  (SELECT DISTINCT memberId FROM reviews_dpreview WHERE shopId = %s)"""
-    try:
-        curs.execute(sql, shop_id)
-        results = curs.fetchall()
-        print results
-    except BaseException, e:
-        print e
+    # try:
+    #     curs.execute(sql, shop_id)
+    #     results = curs.fetchall()
+    #     print results
+    # except BaseException, e:
+    #     print e
+    results = DBManager.queryAll(sql, shop_id)
 
     return results
 
 
 def get_dp_womemNum(shop_id):
     sql = """SELECT COUNT(sex) FROM users_dpmember WHERE sex="女" AND memberId IN  (SELECT DISTINCT memberId FROM reviews_dpreview WHERE shopId = %s)"""
-    try:
-        curs.execute(sql, shop_id)
-        results = curs.fetchall()
-        print results
-    except BaseException, e:
-        print e
+    # try:
+    #     curs.execute(sql, shop_id)
+    #     results = curs.fetchall()
+    #     print results
+    # except BaseException, e:
+    #     print e
+    results = DBManager.queryAll(sql, shop_id)
 
     return results
 
@@ -183,6 +189,28 @@ def get_or_location(shop_id):
 
 def get_dp_location(shop_id):
     sql = """SELECT location,COUNT(location) FROM users_dpmember WHERE memberId IN  (SELECT DISTINCT memberId FROM reviews_dpreview WHERE shopId = %s)GROUP BY location"""
+    # try:
+    #     curs.execute(sql, shop_id)
+    #     results = curs.fetchall()
+    #     print results
+    # except BaseException, e:
+    #     print e
+    results = DBManager.queryAll(sql, shop_id)
+    return results
+
+def get_dp_province(shop_id):
+    sql = """SELECT privince,COUNT(privince) FROM view_dpcity WHERE memberId IN  (SELECT DISTINCT memberId FROM reviews_dpreview WHERE shopId = %s)GROUP BY privince"""
+    # try:
+    #     curs.execute(sql, shop_id)
+    #     results = curs.fetchall()
+    #     print results
+    # except BaseException, e:
+    #     print e
+    results = DBManager.queryAll(sql, shop_id)
+    return results
+
+def get_mfw_province(shop_id):
+    sql = """SELECT privince,COUNT(privince) FROM view_mfwcity WHERE memberId IN  (SELECT DISTINCT memberId FROM reviews_mfwreview WHERE shopId = %s)GROUP BY privince"""
     # try:
     #     curs.execute(sql, shop_id)
     #     results = curs.fetchall()

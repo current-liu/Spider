@@ -8,18 +8,9 @@ base Info
 
 from __future__ import unicode_literals
 from django.http import HttpResponse, JsonResponse
-from django.db.models import QuerySet, Count
-from django.shortcuts import render
-from django.http import HttpResponse, JsonResponse
-from django.views import generic
 from django.core import serializers
-import datetime
-import json
-import dao, dao_lc
-from django.utils import timezone
-from django.core.serializers.json import DjangoJSONEncoder
-from django.db.models.functions import TruncYear, TruncMonth, TruncDay, TruncHour
-import calendar
+
+import dao
 from .models import DpShop, TaShop, OrShop, MfwShop
 
 __author__ = 'liuchao'
@@ -67,7 +58,7 @@ def selete_shop_all_star(request):
 
 
 def selete_shop_all(request):
-    res_list = dao.selete_shop_all()
+    res_list = dao.select_shop_all()
     length = res_list.__len__()
     shop_list = []
     for i in range(0, length):
@@ -87,7 +78,7 @@ def selete_shop_all(request):
 def get_all_shop_appraise(request):
     # 0:全部;1：大陆；2:香港
     area = str(request.GET.get("area"))
-    res = dao_lc.get_all_shop_ids()
+    res = dao.get_all_shop_ids()
     shop_appraise_list = []
     for r in res:
         shop_appraise = get_star_and_more_by_id(r)
@@ -135,18 +126,18 @@ def get_star_and_more_by_id(shop_ids_in_4_pla):
 
     star_list_hk = []
     if o_r != 0:
-        star_or_str = dao_lc.get_shop_star_from_pla("or", o_r)[0][0]
+        star_or_str = dao.get_shop_star_from_pla("or", o_r)[0][0]
         star_or = float(star_or_str)
         if star_or > 0:
             star_list_hk.append(star_or)
     if ta != 0:
-        star_ta = float(dao_lc.get_shop_star_from_pla("ta", ta)[0][0])
+        star_ta = float(dao.get_shop_star_from_pla("ta", ta)[0][0])
         if star_ta > 0:
             star_list_hk.append(star_ta)
 
     star_list_main = []
     if mfw != 0:
-        star_mfw_str = dao_lc.get_shop_star_from_pla("mfw", mfw)
+        star_mfw_str = dao.get_shop_star_from_pla("mfw", mfw)
         star_mfw = float(star_mfw_str[0][0])
         if star_mfw > 0:
             star_list_main.append(star_mfw)
@@ -155,7 +146,7 @@ def get_star_and_more_by_id(shop_ids_in_4_pla):
     environment = -1
     service = -1
     if dp != 0:
-        dp_star_and_more = dao_lc.get_shop_star_and_more_from_dp(dp)[0]
+        dp_star_and_more = dao.get_shop_star_and_more_from_dp(dp)[0]
         star_dp = float(dp_star_and_more[0])
         taste = dp_star_and_more[1]
         environment = dp_star_and_more[2]
@@ -213,7 +204,7 @@ def selete_shop_all_info(request):
     o_r =idd[1]
     mfw =idd[2]
     ta = idd[3]
-    res_list = dao.selete_shop_all_info(id)
+    res_list = dao.select_shop_all_info(id)
     res = res_list[0]
     name = res[1]
     addr = res[2]
@@ -225,16 +216,16 @@ def selete_shop_all_info(request):
 
 
     if o_r != 0:
-        picture = dao.selete_or_pic(o_r)
+        picture = dao.select_or_pic(o_r)
         pic = picture[0][0]
     elif mfw != 0:
-        picture = dao.selete_mfw_pic(mfw)
+        picture = dao.select_mfw_pic(mfw)
         pic = picture[0][0]
     elif ta != 0:
-        picture = dao.selete_ta_pic(ta)
+        picture = dao.select_ta_pic(ta)
         pic = picture[0][0]
     elif dp != 0:
-        picture = dao.selete_dp_pic(dp)
+        picture = dao.select_dp_pic(dp)
         pic = picture[0][0]
     else:
         pic = -1

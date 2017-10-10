@@ -2,119 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb965f97-59ad-41fd-95d5-487c6bc2a174" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/reviews/static/reviews/images/background.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/shops/static/shops/images/background.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/users/static/users/images/background.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/reviews/static/reviews/images/background.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/shops/static/shops/images/background.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/users/static/users/images/background.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/.idea/maxims.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/maxims/DBManager.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/maxims/config.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/maxims/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/reviews/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/reviews/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/reviews/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/reviews/dao.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/reviews/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/reviews/service.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/reviews/static/reviews/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/reviews/static/reviews/js/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/reviews/static/reviews/js/jquery-3.2.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/reviews/static/reviews/js/reviews.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/reviews/templates/reviews/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/reviews/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/reviews/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/reviews/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/shops/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/shops/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/shops/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/shops/dao.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/shops/dao_lc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/shops/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/shops/my_test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/shops/service.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/shops/static/shops/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/shops/static/shops/js/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/shops/static/shops/js/jquery-3.2.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/shops/static/shops/js/shops.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/shops/templates/shops/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/shops/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/shops/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/shops/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/users/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/users/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/users/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/users/dao.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/users/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/users/my_test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/users/service.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/users/static/users/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/users/static/users/js/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/users/static/users/js/jquery-3.2.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/users/static/users/js/users.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/users/templates/users/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/users/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/users/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/users/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/DBManager.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/config.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/reviews/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/reviews/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/reviews/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/reviews/dao.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/reviews/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/reviews/service.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/reviews/static/reviews/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/reviews/static/reviews/js/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/reviews/static/reviews/js/jquery-3.2.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/reviews/static/reviews/js/reviews.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/reviews/templates/reviews/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/reviews/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/reviews/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/reviews/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/shops/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/shops/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/shops/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/shops/dao.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/shops/dao_lc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/shops/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/shops/my_test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/shops/service.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/shops/static/shops/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/shops/static/shops/js/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/shops/static/shops/js/jquery-3.2.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/shops/static/shops/js/shops.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/shops/templates/shops/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/shops/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/shops/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/shops/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/users/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/users/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/users/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/users/dao.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/users/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/users/my_test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/users/service.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/users/static/users/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/users/static/users/js/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/users/static/users/js/jquery-3.2.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/users/static/users/js/users.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/users/templates/users/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/users/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/users/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../spider/dianping_hk/cmd/users/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Django/maxims/reviews/templates/my_test.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Django/maxims/shops/dao_lc.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/a19dd8f8-6f41-47f8-b143-86881fceb14e/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/a19dd8f8-6f41-47f8-b143-86881fceb14e/_metadata_/metadata" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/a19dd8f8-6f41-47f8-b143-86881fceb14e/_metadata_/metadata.keystream" afterPath="$PROJECT_DIR$/.idea/dataSources/a19dd8f8-6f41-47f8-b143-86881fceb14e/_metadata_/metadata.keystream" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/a19dd8f8-6f41-47f8-b143-86881fceb14e/_metadata_/metadata.keystream.len" afterPath="$PROJECT_DIR$/.idea/dataSources/a19dd8f8-6f41-47f8-b143-86881fceb14e/_metadata_/metadata.keystream.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/a19dd8f8-6f41-47f8-b143-86881fceb14e/_metadata_/metadata.len" afterPath="$PROJECT_DIR$/.idea/dataSources/a19dd8f8-6f41-47f8-b143-86881fceb14e/_metadata_/metadata.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/a19dd8f8-6f41-47f8-b143-86881fceb14e/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/a19dd8f8-6f41-47f8-b143-86881fceb14e/_metadata_/metadata.values.at" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/a19dd8f8-6f41-47f8-b143-86881fceb14e/_metadata_/metadata_i" afterPath="$PROJECT_DIR$/.idea/dataSources/a19dd8f8-6f41-47f8-b143-86881fceb14e/_metadata_/metadata_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/a19dd8f8-6f41-47f8-b143-86881fceb14e/_src_/schema/cafedecoral_analysis.zip" afterPath="$PROJECT_DIR$/.idea/dataSources/a19dd8f8-6f41-47f8-b143-86881fceb14e/_src_/schema/cafedecoral_analysis.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler" afterPath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler2" afterPath="$PROJECT_DIR$/../reptile/HKstar1/facebookCrawler2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/getMovieOnDouban.iml" afterPath="$PROJECT_DIR$/.idea/getMovieOnDouban.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/dao.py" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/dao.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/static/reviews/js/base.js" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/static/reviews/js/base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/dao.py" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/dao.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/shops/js/base.js" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/shops/js/base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/static/reviews/js/base.js" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/static/reviews/js/base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/static/reviews/js/reviews.js" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/static/reviews/js/reviews.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/static/shops/js/base.js" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/static/shops/js/base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/static/shops/js/shops.js" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/static/shops/js/shops.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/static/users/js/base.js" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/static/users/js/base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/static/users/js/users.js" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/static/users/js/users.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/users/dao.py" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/dao.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/users/service.py" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/service.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/base.js" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/users.js" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/users.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/users/templates/users/index.html" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/templates/users/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/cafedecoralcn/users/urls.py" afterPath="$PROJECT_DIR$/../Django/cafedecoralcn/users/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/maxims/maxims/config.py" afterPath="$PROJECT_DIR$/../Django/maxims/maxims/config.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/maxims/maxims/settings.py" afterPath="$PROJECT_DIR$/../Django/maxims/maxims/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/maxims/maxims/urls.py" afterPath="$PROJECT_DIR$/../Django/maxims/maxims/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/maxims/reviews/dao.py" afterPath="$PROJECT_DIR$/../Django/maxims/reviews/dao.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/maxims/reviews/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/../Django/maxims/reviews/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/maxims/reviews/static/reviews/js/reviews.js" afterPath="$PROJECT_DIR$/../Django/maxims/reviews/static/reviews/js/reviews.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/maxims/shops/dao.py" afterPath="$PROJECT_DIR$/../Django/maxims/shops/dao.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/maxims/shops/my_test.py" afterPath="$PROJECT_DIR$/../Django/maxims/shops/my_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/maxims/shops/service.py" afterPath="$PROJECT_DIR$/../Django/maxims/shops/service.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/maxims/shops/static/shops/js/shops.js" afterPath="$PROJECT_DIR$/../Django/maxims/shops/static/shops/js/shops.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/maxims/users/__init__.py" afterPath="$PROJECT_DIR$/../Django/maxims/users/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/maxims/users/dao.py" afterPath="$PROJECT_DIR$/../Django/maxims/users/dao.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/maxims/users/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/../Django/maxims/users/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/maxims/users/service.py" afterPath="$PROJECT_DIR$/../Django/maxims/users/service.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/maxims/users/static/users/js/users.js" afterPath="$PROJECT_DIR$/../Django/maxims/users/static/users/js/users.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/maxims/users/templates/users/index.html" afterPath="$PROJECT_DIR$/../Django/maxims/users/templates/users/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Django/maxims/users/urls.py" afterPath="$PROJECT_DIR$/../Django/maxims/users/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/a19dd8f8-6f41-47f8-b143-86881fceb14e.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/a19dd8f8-6f41-47f8-b143-86881fceb14e.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/fbdecb6b-5290-49b1-90d1-5dcae4ec1475.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/fbdecb6b-5290-49b1-90d1-5dcae4ec1475.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/food/action.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/food/action.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/member/action.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/member/action.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/member/dao.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/member/dao.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../spider/mafengwo/member/get_member.py" afterPath="$PROJECT_DIR$/../spider/mafengwo/member/get_member.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -134,7 +74,7 @@
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_tests_py.coverage" NAME="Unittests in tests.py Coverage Results" MODIFIED="1505530444093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Django/cafedecoralcn/shops" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$demo08.coverage" NAME="demo08 Coverage Results" MODIFIED="1506392408884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../myPython1/src" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_attraction_review.coverage" NAME="get_attraction_review Coverage Results" MODIFIED="1503637556792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/attraction" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$get_member.coverage" NAME="get_member Coverage Results" MODIFIED="1503631003675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/member" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$get_member.coverage" NAME="get_member Coverage Results" MODIFIED="1507598088569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/member" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_ips_TestGet_ips_test_ip_proxy.coverage" NAME="Unittests for test_get_ips.TestGet_ips.test_ip_proxy Coverage Results" MODIFIED="1501811851659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_base_dao_py.coverage" NAME="Unittests in base_dao.py Coverage Results" MODIFIED="1503644424641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_attraction_review_py.coverage" NAME="Unittests in test_attraction_review.py Coverage Results" MODIFIED="1503290813440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/test_package/attraction" />
@@ -157,7 +97,7 @@
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_hotel_rooms.coverage" NAME="get_hotel_rooms Coverage Results" MODIFIED="1503640148653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/hotel" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_room_TestGet_room_test_checkindate.coverage" NAME="Unittests for test_get_room.TestGet_room.test_checkindate Coverage Results" MODIFIED="1500869840004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$config.coverage" NAME="config Coverage Results" MODIFIED="1502243143006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/IPProxyPool-master" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$maxims.coverage" NAME="maxims Coverage Results" MODIFIED="1507540266872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Django/maxims" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$maxims.coverage" NAME="maxims Coverage Results" MODIFIED="1507625055462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Django/maxims" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_room_TestGet_room.coverage" NAME="Unittests for test_get_room.TestGet_room Coverage Results" MODIFIED="1501483409023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$demo04.coverage" NAME="demo04 Coverage Results" MODIFIED="1501720917457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../myPython1/demo" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_get_room_py.coverage" NAME="Unittests in test_get_room.py Coverage Results" MODIFIED="1502959935818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/test_package/hotel" />
@@ -166,8 +106,8 @@
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_hotel_list.coverage" NAME="get_hotel_list Coverage Results" MODIFIED="1502423792127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/hotel" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_member_mark_py.coverage" NAME="Unittests in member_mark.py Coverage Results" MODIFIED="1502869523877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/test_package/member" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_shopping_review.coverage" NAME="get_shopping_review Coverage Results" MODIFIED="1503538339939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/shopping" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$my_test.coverage" NAME="my_test Coverage Results" MODIFIED="1505810077045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Django/cafedecoralcn/shops" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_food_review.coverage" NAME="get_food_review Coverage Results" MODIFIED="1507533627883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/food" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$my_test.coverage" NAME="my_test Coverage Results" MODIFIED="1507616287019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Django/maxims/shops" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1501207004603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/tianyancha" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_for_test_get_review_TestGet_review_test_get_review.coverage" NAME="Unittests for test_get_review.TestGet_review.test_get_review Coverage Results" MODIFIED="1501663533429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_get_ips_py.coverage" NAME="Unittests in test_get_ips.py Coverage Results" MODIFIED="1501556373204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
@@ -203,7 +143,7 @@
     <SUITE FILE_PATH="coverage/getMovieOnDouban$IPProxy.coverage" NAME="IPProxy Coverage Results" MODIFIED="1502261493687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/IPProxyPool-master" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$ip_proxy.coverage" NAME="ip_proxy Coverage Results" MODIFIED="1501210132662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$dao__1_.coverage" NAME="dao (1) Coverage Results" MODIFIED="1504837904614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Django/spider_manager/manager" />
-    <SUITE FILE_PATH="coverage/getMovieOnDouban$cafedecoralcn.coverage" NAME="cafedecoralcn Coverage Results" MODIFIED="1507538557068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Django/cafedecoralcn" />
+    <SUITE FILE_PATH="coverage/getMovieOnDouban$cafedecoralcn.coverage" NAME="cafedecoralcn Coverage Results" MODIFIED="1507623421363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Django/cafedecoralcn" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$Unittests_in_test_attraction_py.coverage" NAME="Unittests in test_attraction.py Coverage Results" MODIFIED="1502089652501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/dianping_hotel_hk" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_attraction_list.coverage" NAME="get_attraction_list Coverage Results" MODIFIED="1503026892470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/attraction" />
     <SUITE FILE_PATH="coverage/getMovieOnDouban$get_shopping_shop.coverage" NAME="get_shopping_shop Coverage Results" MODIFIED="1503534705664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../spider/mafengwo/shopping" />
@@ -230,7 +170,7 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="@192.168.1.166" />
+        <option name="myItemId" value="@202.110.49.146:3381" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -240,11 +180,11 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="@192.168.1.166" />
+        <option name="myItemId" value="@202.110.49.146:3381" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="cafedecoral_analysis" />
+        <option name="myItemId" value="maxims_analysis" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -254,11 +194,11 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="@192.168.1.166" />
+        <option name="myItemId" value="@202.110.49.146:3381" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="cafedecoral_analysis" />
+        <option name="myItemId" value="maxims_analysis" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
@@ -276,80 +216,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../Django/maxims/maxims/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="32" column="54" lean-forward="true" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Django/maxims/maxims/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="132" column="37" lean-forward="false" selection-start-line="132" selection-start-column="37" selection-end-line="132" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Django/maxims/reviews/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-              <folding>
-                <element signature="e#250#758#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dao.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Django/maxims/reviews/dao.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1507537131055" expanded="true" signature="400:460" ph="SELECT COUNT... reviews_orreview" />
-                <marker date="1507537131055" expanded="true" signature="732:792" ph="SELECT COUNT... reviews_dpreview" />
-                <marker date="1507537131055" expanded="true" signature="1064:1124" ph="SELECT COUNT... reviews_tareview" />
-                <marker date="1507537131055" expanded="true" signature="1397:1458" ph="SELECT COUNT... reviews_mfwreview" />
-                <marker date="1507537131055" expanded="true" signature="1746:2019" ph="SELECT id,(C... view_shop_relation" />
-                <marker date="1507537131055" expanded="true" signature="2289:2411" ph="select conte... reviews_orreview" />
-                <marker date="1507537131055" expanded="true" signature="2346:2410" ph="SELECT DISTI... reviews_orreview" />
-                <marker date="1507537131055" expanded="true" signature="2682:2806" ph="select conte... reviews_mfwreview" />
-                <marker date="1507537131055" expanded="true" signature="2740:2805" ph="SELECT DISTI... reviews_mfwreview" />
-                <marker date="1507537131055" expanded="true" signature="3076:3198" ph="select conte... reviews_dpreview" />
-                <marker date="1507537131055" expanded="true" signature="3133:3197" ph="SELECT DISTI... reviews_dpreview" />
-                <marker date="1507537131055" expanded="true" signature="3468:3590" ph="select conte... reviews_tareview" />
-                <marker date="1507537131055" expanded="true" signature="3525:3589" ph="SELECT DISTI... reviews_tareview" />
-                <marker date="1507537131055" expanded="true" signature="3866:3993" ph="select LEFT(... reviews_orreview" />
-                <marker date="1507537131055" expanded="true" signature="3928:3992" ph="SELECT DISTI... reviews_orreview" />
-                <marker date="1507537131055" expanded="true" signature="4270:4399" ph="select LEFT(... reviews_mfwreview" />
-                <marker date="1507537131055" expanded="true" signature="4333:4398" ph="SELECT DISTI... reviews_mfwreview" />
-                <marker date="1507537131055" expanded="true" signature="4675:4802" ph="select LEFT(... reviews_dpreview" />
-                <marker date="1507537131055" expanded="true" signature="4737:4801" ph="SELECT DISTI... reviews_dpreview" />
-                <marker date="1507537131055" expanded="true" signature="5078:5205" ph="select LEFT(... reviews_tareview" />
-                <marker date="1507537131055" expanded="true" signature="5140:5204" ph="SELECT DISTI... reviews_tareview" />
-                <marker date="1507537131055" expanded="true" signature="5480:5668" ph="select membe... view_orreview" />
-                <marker date="1507537131055" expanded="true" signature="5603:5667" ph="SELECT DISTI... reviews_orreview" />
-                <marker date="1507537131055" expanded="true" signature="5942:6113" ph="select membe... view_dpreview" />
-                <marker date="1507537131055" expanded="true" signature="6048:6112" ph="SELECT DISTI... reviews_dpreview" />
-                <marker date="1507537131055" expanded="true" signature="6387:6545" ph="select membe... view_tareview" />
-                <marker date="1507537131055" expanded="true" signature="6480:6544" ph="SELECT DISTI... reviews_tareview" />
-                <marker date="1507537131055" expanded="true" signature="6820:6974" ph="select membe... view_mfwreview" />
-                <marker date="1507537131055" expanded="true" signature="6908:6973" ph="SELECT DISTI... reviews_mfwreview" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/cafedecoralcn/__init__.py">
+      <file leaf-file-name="service.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Django/maxims/users/service.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -358,11 +226,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/cafedecoralcn/config.py">
+      <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Django/maxims/users/static/users/js/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="837">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="331">
+              <caret line="166" column="8" lean-forward="false" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -371,38 +239,58 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/cafedecoralcn/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
-              <caret line="120" column="6" lean-forward="true" selection-start-line="108" selection-start-column="4" selection-end-line="120" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spider/dianping_hk/cmd/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="673">
+              <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Django/spider_manager/spider_manager/settings.py">
+        <entry file="file://$PROJECT_DIR$/../Django/maxims/maxims/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="130" column="7" lean-forward="false" selection-start-line="127" selection-start-column="4" selection-end-line="130" selection-end-column="7" />
+            <state relative-caret-position="4725">
+              <caret line="175" column="46" lean-forward="false" selection-start-line="175" selection-start-column="46" selection-end-line="175" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/__init__.py">
+      <file leaf-file-name="base.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/static/reviews/js/base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="81">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="6" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/shops/js/base.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/base.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reviews.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/static/reviews/js/reviews.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -422,10 +310,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hotel</find>
-      <find>attraction</find>
-      <find>succ</find>
-      <find>food</find>
       <find>msg</find>
       <find>_j_poilist</find>
       <find>'%s'</find>
@@ -450,12 +334,14 @@
       <find>member_fix</find>
       <find>is None</find>
       <find>appr</find>
-      <find>cafedecoral</find>
       <find>cafedecoralcn</find>
+      <find>dao_lc</find>
+      <find>update_repeat_mark_to_0</find>
+      <find>get_shopid_tel_from_shop_relation</find>
+      <find>db</find>
+      <find>cafedecoral</find>
     </findStrings>
     <replaceStrings>
-      <replace>d</replace>
-      <replace>,</replace>
       <replace>?</replace>
       <replace>s</replace>
       <replace>.append(</replace>
@@ -483,6 +369,8 @@
       <replace>.append()</replace>
       <replace>member</replace>
       <replace>== 0</replace>
+      <replace>dao</replace>
+      <replace>conn</replace>
       <replace>maxims</replace>
     </replaceStrings>
   </component>
@@ -492,18 +380,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/views.py" />
-        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/views.py" />
-        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/templates/users/index.html" />
-        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/base.js" />
-        <option value="$PROJECT_DIR$/../Django/spider_manager/manager/service.py" />
-        <option value="$PROJECT_DIR$/../myPython1/demo/demo06.py" />
-        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/my_test.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8d2f3256-ff7e-4db7-9dd9-d5c525c6cf76/console.sql" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/models.py" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/my_test_lc.py" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/urls.py" />
-        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/shops/js/base.js" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/templates/shops/index.html" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/my_test.py" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/users.js" />
@@ -517,32 +396,41 @@
         <option value="$PROJECT_DIR$/../Django/spider_manager/manager/dao.py" />
         <option value="$PROJECT_DIR$/../myPython1/src/DBManager.py" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/dao_lc.py" />
-        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/dao.py" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/cafedecoralcn/DBManager.py" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/cafedecoralcn/settings.py" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/cafedecoralcn/config.py" />
         <option value="$PROJECT_DIR$/../spider/mafengwo/member/get_member_path.py" />
         <option value="$PROJECT_DIR$/../spider/mafengwo/shopping/get_shopping_review.py" />
-        <option value="$PROJECT_DIR$/../spider/mafengwo/member/dao.py" />
-        <option value="$PROJECT_DIR$/../spider/mafengwo/member/get_member.py" />
         <option value="$PROJECT_DIR$/../spider/dianping_hk/dao.py" />
-        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/dao.py" />
-        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/dao.py" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/service.py" />
         <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/service.py" />
-        <option value="$PROJECT_DIR$/../spider/mafengwo/food/action.py" />
         <option value="$PROJECT_DIR$/../Django/maxims/reviews/static/reviews/js/reviews.js" />
-        <option value="$PROJECT_DIR$/../Django/maxims/maxims/config.py" />
-        <option value="$PROJECT_DIR$/../Django/maxims/reviews/dao.py" />
-        <option value="$PROJECT_DIR$/../Django/maxims/shops/dao.py" />
         <option value="$PROJECT_DIR$/../Django/maxims/shops/dao_lc.py" />
         <option value="$PROJECT_DIR$/../Django/maxims/shops/my_test_lc.py" />
-        <option value="$PROJECT_DIR$/../Django/maxims/shops/my_test.py" />
         <option value="$PROJECT_DIR$/../Django/maxims/users/urls.py" />
-        <option value="$PROJECT_DIR$/../Django/maxims/users/dao.py" />
         <option value="$PROJECT_DIR$/../Django/maxims/users/__init__.py" />
         <option value="$PROJECT_DIR$/../Django/maxims/maxims/DBManager.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/member/dao.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/member/get_member.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/member/action.py" />
+        <option value="$PROJECT_DIR$/../Django/maxims/shops/service.py" />
+        <option value="$PROJECT_DIR$/../spider/mafengwo/food/action.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fe29391e-4a59-499f-93c6-e3be12b68054/console.sql" />
+        <option value="$PROJECT_DIR$/../Django/maxims/maxims/config.py" />
+        <option value="$PROJECT_DIR$/../Django/maxims/shops/my_test.py" />
+        <option value="$PROJECT_DIR$/../Django/maxims/maxims/urls.py" />
+        <option value="$PROJECT_DIR$/../Django/maxims/shops/static/shops/js/shops.js" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/dao.py" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/dao.py" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/dao.py" />
+        <option value="$PROJECT_DIR$/../Django/maxims/shops/dao.py" />
+        <option value="$PROJECT_DIR$/../Django/maxims/reviews/dao.py" />
+        <option value="$PROJECT_DIR$/../Django/maxims/users/dao.py" />
+        <option value="$PROJECT_DIR$/../Django/maxims/users/static/users/js/users.js" />
         <option value="$PROJECT_DIR$/../Django/maxims/maxims/settings.py" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/reviews/static/reviews/js/base.js" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/shops/js/base.js" />
+        <option value="$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/base.js" />
       </list>
     </option>
   </component>
@@ -553,8 +441,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1920" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="y" value="2" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -596,14 +486,76 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="maxims" />
+              <option name="myItemId" value="cafedecoralcn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="getMovieOnDouban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cafedecoralcn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reviews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="getMovieOnDouban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cafedecoralcn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reviews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reviews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="getMovieOnDouban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cafedecoralcn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reviews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reviews" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -618,10 +570,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Liuchao\PycharmProjects\pythonproject\Django\maxims" />
+      <recent name="D:\Liuchao\PycharmProjects\pythonproject\Django\maxims\shops" />
       <recent name="D:\Liuchao\PycharmProjects\pythonproject\spider\dianping_hk\cmd" />
       <recent name="D:\Liuchao\PycharmProjects\pythonproject\Django\maxims\maxims" />
       <recent name="D:\Liuchao\PycharmProjects\pythonproject\Django\cafedecoralcn\cafedecoralcn" />
-      <recent name="D:\Liuchao\PycharmProjects\pythonproject\myPython1\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -637,25 +589,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.maxims">
-    <configuration default="false" name="my_test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Program Files\Python27\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Django/cafedecoralcn/users" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="cafedecoralcn" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Django/cafedecoralcn/users/my_test.py" />
-      <option name="PARAMETERS" value="runserver" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="demo06" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -670,25 +603,6 @@
       <module name="myPython1" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../myPython1/demo/demo06.py" />
-      <option name="PARAMETERS" value="runserver" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="my_test_lc" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Program Files\Python27\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Django/cafedecoralcn/shops" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="cafedecoralcn" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Django/cafedecoralcn/shops/my_test_lc.py" />
       <option name="PARAMETERS" value="runserver" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -727,6 +641,44 @@
       <module name="spider" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../spider/mafengwo/food/get_food_review.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="get_member" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Program Files\Python27\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../spider/mafengwo/member" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="spider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../spider/mafengwo/member/get_member.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="my_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Program Files\Python27\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Django/maxims/shops" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="maxims" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Django/maxims/shops/my_test.py" />
       <option name="PARAMETERS" value="runserver" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -989,19 +941,19 @@
       <item index="1" class="java.lang.String" itemvalue="Python.debug" />
       <item index="2" class="java.lang.String" itemvalue="Python.cafedecoralcn" />
       <item index="3" class="java.lang.String" itemvalue="Python.maxims" />
-      <item index="4" class="java.lang.String" itemvalue="Python.my_test (1)" />
-      <item index="5" class="java.lang.String" itemvalue="Python.demo06" />
-      <item index="6" class="java.lang.String" itemvalue="Python.my_test_lc" />
-      <item index="7" class="java.lang.String" itemvalue="Python.demo08" />
-      <item index="8" class="java.lang.String" itemvalue="Python.get_food_review" />
+      <item index="4" class="java.lang.String" itemvalue="Python.demo06" />
+      <item index="5" class="java.lang.String" itemvalue="Python.demo08" />
+      <item index="6" class="java.lang.String" itemvalue="Python.get_food_review" />
+      <item index="7" class="java.lang.String" itemvalue="Python.get_member" />
+      <item index="8" class="java.lang.String" itemvalue="Python.my_test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.get_food_review" />
-        <item index="1" class="java.lang.String" itemvalue="Python.demo06" />
-        <item index="2" class="java.lang.String" itemvalue="Python.demo08" />
-        <item index="3" class="java.lang.String" itemvalue="Python.my_test (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.my_test_lc" />
+        <item index="0" class="java.lang.String" itemvalue="Python.my_test" />
+        <item index="1" class="java.lang.String" itemvalue="Python.get_member" />
+        <item index="2" class="java.lang.String" itemvalue="Python.get_food_review" />
+        <item index="3" class="java.lang.String" itemvalue="Python.demo06" />
+        <item index="4" class="java.lang.String" itemvalue="Python.demo08" />
       </list>
     </recent_temporary>
   </component>
@@ -1066,27 +1018,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1040" extended-state="1" />
+    <frame x="-8" y="2" width="1936" height="1056" extended-state="1" />
+    <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17324094" sideWeight="0.495671" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37229437" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50541127" sideWeight="0.5053305" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4788889" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5822511" sideWeight="0.5042644" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33480176" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39867842" sideWeight="0.4946695" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54735684" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16989248" sideWeight="0.495671" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23027718" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3215859" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42099568" sideWeight="0.4946695" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5465368" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15088105" sideWeight="0.504329" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.59030837" sideWeight="0.49573562" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3982684" sideWeight="0.49573562" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273961" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3006608" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29978356" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32142857" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1782,12 +1735,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/mafengwo/member/action.py</url>
-          <line>70</line>
+          <line>78</line>
           <option name="timeStamp" value="513" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/mafengwo/member/action.py</url>
-          <line>50</line>
+          <line>58</line>
           <option name="timeStamp" value="514" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1827,17 +1780,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/mafengwo/member/dao.py</url>
-          <line>37</line>
+          <line>54</line>
           <option name="timeStamp" value="522" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/mafengwo/member/action.py</url>
-          <line>67</line>
+          <line>75</line>
           <option name="timeStamp" value="523" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/mafengwo/member/action.py</url>
-          <line>65</line>
+          <line>73</line>
           <option name="timeStamp" value="524" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1977,17 +1930,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/mafengwo/food/action.py</url>
-          <line>105</line>
+          <line>106</line>
           <option name="timeStamp" value="585" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/mafengwo/food/action.py</url>
-          <line>136</line>
+          <line>137</line>
           <option name="timeStamp" value="587" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/mafengwo/food/action.py</url>
-          <line>137</line>
+          <line>138</line>
           <option name="timeStamp" value="588" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -2067,7 +2020,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/mafengwo/food/action.py</url>
-          <line>123</line>
+          <line>124</line>
           <option name="timeStamp" value="604" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -2142,12 +2095,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/mafengwo/member/action.py</url>
-          <line>34</line>
+          <line>42</line>
           <option name="timeStamp" value="622" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/mafengwo/member/action.py</url>
-          <line>36</line>
+          <line>44</line>
           <option name="timeStamp" value="623" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -2157,7 +2110,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/mafengwo/member/action.py</url>
-          <line>82</line>
+          <line>90</line>
           <option name="timeStamp" value="635" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -2167,12 +2120,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/mafengwo/member/action.py</url>
-          <line>93</line>
+          <line>101</line>
           <option name="timeStamp" value="637" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/mafengwo/member/action.py</url>
-          <line>112</line>
+          <line>120</line>
           <option name="timeStamp" value="638" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -2217,17 +2170,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/mafengwo/member/dao.py</url>
-          <line>83</line>
+          <line>100</line>
           <option name="timeStamp" value="648" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/mafengwo/member/dao.py</url>
-          <line>85</line>
+          <line>102</line>
           <option name="timeStamp" value="649" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../spider/mafengwo/member/action.py</url>
-          <line>87</line>
+          <line>95</line>
           <option name="timeStamp" value="650" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -2530,6 +2483,26 @@
           <line>12</line>
           <option name="timeStamp" value="817" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Django/maxims/shops/dao.py</url>
+          <line>111</line>
+          <option name="timeStamp" value="847" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Django/maxims/shops/dao.py</url>
+          <line>108</line>
+          <option name="timeStamp" value="848" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Django/maxims/shops/my_test.py</url>
+          <line>173</line>
+          <option name="timeStamp" value="849" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Django/maxims/shops/my_test.py</url>
+          <line>187</line>
+          <option name="timeStamp" value="851" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/shops/js/shops.js</url>
           <line>126</line>
@@ -2546,7 +2519,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="846" />
+      <option name="time" value="853" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="tests">
@@ -2561,246 +2534,365 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../spider/dianping_hk/dao.py">
+    <entry file="file://$PROJECT_DIR$/../Django/maxims/reviews/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        <state relative-caret-position="216">
+          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/member/dao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
           <folding>
-            <marker date="1506584664059" expanded="true" signature="476:685" ph="INSERT INTO hotel_shop_list... " />
-            <marker date="1506584664059" expanded="true" signature="927:977" ph="SELECT id FR... hotel_shop_list" />
-            <marker date="1506584664059" expanded="true" signature="1253:1395" ph="SELECT id FR... hotel_shop_list" />
-            <marker date="1506584664059" expanded="true" signature="1341:1394" ph="SELECT shopI... hotel_room" />
-            <marker date="1506584664059" expanded="true" signature="1648:1701" ph="SELECT shopI... missing_value" />
-            <marker date="1506584664059" expanded="true" signature="1970:2044" ph="SELECT shopI... hotel_shops" />
-            <marker date="1506584664059" expanded="true" signature="2347:2587" ph="INSERT INTO hotel_shops... " />
-            <marker date="1506584664059" expanded="true" signature="2444:2587" ph="SELECT id,na... hotel_shop_list" />
-            <marker date="1506584664059" expanded="true" signature="2556:2586" ph="SELECT shopI... hotel_shops" />
-            <marker date="1506584664059" expanded="true" signature="2949:3138" ph="UPDATE hotel... " />
-            <marker date="1506584664059" expanded="true" signature="4293:4490" ph="INSERT INTO hotel_room... " />
-            <marker date="1506584664059" expanded="true" signature="5347:5581" ph="INSERT INTO hotel_review... " />
-            <marker date="1506584664059" expanded="true" signature="5754:5965" ph="INSERT INTO hotel_review... " />
-            <marker date="1506584664059" expanded="true" signature="5987:6237" ph="INSERT INTO hotel_review... " />
-            <marker date="1506584664059" expanded="true" signature="6983:7052" ph="INSERT INTO hotel_new_review_url... " />
-            <marker date="1506584664059" expanded="true" signature="7825:7867" ph="SELECT revie... hotel_new_review_url" />
-            <marker date="1506584664059" expanded="true" signature="8324:8411" ph="INSERT INTO ip... " />
-            <marker date="1506584664059" expanded="true" signature="8628:8706" ph="SELECT Ipadd... ip" />
-            <marker date="1506584664059" expanded="true" signature="9010:9100" ph="INSERT INTO attraction_shops... " />
-            <marker date="1506584664059" expanded="true" signature="9390:9594" ph="UPDATE attra... " />
-            <marker date="1506584664059" expanded="true" signature="10237:10292" ph="SELECT shopI... attraction_shops" />
-            <marker date="1506584664059" expanded="true" signature="11083:11318" ph="INSERT INTO attraction_review... " />
+            <marker date="1507598088323" expanded="true" signature="405:520" ph="SELECT DISTI... missing_value" />
+            <marker date="1507598088323" expanded="true" signature="856:990" ph="SELECT DISTI... missing_value" />
+            <marker date="1507598088323" expanded="true" signature="1243:1320" ph="UPDATE missi... " />
+            <marker date="1507598088323" expanded="true" signature="1292:1319" ph="SELECT membe... member" />
+            <marker date="1507598088323" expanded="true" signature="1608:1805" ph="INSERT INTO member... " />
+            <marker date="1507598088323" expanded="true" signature="2173:2306" ph="SELECT membe... member" />
+            <marker date="1507598088323" expanded="true" signature="2543:2690" ph="INSERT INTO member_path... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files/Python27/Lib/site-packages/django/utils/functional.py">
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/member/get_member.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="657">
+          <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files/Python27/Lib/site-packages/django/core/handlers/wsgi.py">
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/member/action.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5481">
-          <caret line="219" column="0" lean-forward="false" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
+        <state relative-caret-position="552">
+          <caret line="42" column="84" lean-forward="true" selection-start-line="42" selection-start-column="84" selection-end-line="42" selection-end-column="84" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files/Python27/Lib/site-packages/django/utils/deprecation.py">
+    <entry file="file://$PROJECT_DIR$/../Django/maxims/shops/dao_lc.py" />
+    <entry file="file://$PROJECT_DIR$/../Django/maxims/shops/service.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3753">
-          <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+        <state relative-caret-position="324">
+          <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files/Python27/Lib/site-packages/django/core/handlers/base.py">
+    <entry file="file://$PROJECT_DIR$/../Django/maxims/users/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4509">
-          <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files/Python27/Lib/site-packages/django/contrib/admin/sites.py">
+    <entry file="file://$PROJECT_DIR$/../Django/maxims/users/my_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="278" column="8" lean-forward="false" selection-start-line="278" selection-start-column="8" selection-end-line="278" selection-end-column="8" />
+        <state relative-caret-position="-72">
+          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/dao_lc.py">
+    <entry file="file://$PROJECT_DIR$/../Django/maxims/shops/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python27/Lib/site-packages/django/core/handlers/exception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/cafedecoralcn/DBManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="22" column="108" lean-forward="false" selection-start-line="22" selection-start-column="108" selection-end-line="22" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/dao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="258" column="21" lean-forward="false" selection-start-line="258" selection-start-column="21" selection-end-line="258" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/dao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="99" column="46" lean-forward="false" selection-start-line="99" selection-start-column="46" selection-end-line="99" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/cafedecoralcn/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="148" column="39" lean-forward="false" selection-start-line="148" selection-start-column="39" selection-end-line="148" selection-end-column="39" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../spider/mafengwo/food/get_food_review.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
-          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/a19dd8f8-6f41-47f8-b143-86881fceb14e/cafedecoral_analysis.auth_group">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../spider/mafengwo/food/action.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="103" column="23" lean-forward="false" selection-start-line="103" selection-start-column="23" selection-end-line="103" selection-end-column="23" />
+        <state relative-caret-position="2511">
+          <caret line="103" column="4" lean-forward="false" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/.gitignore">
+    <entry file="file://$PROJECT_DIR$/../spider/mafengwo/food/get_food_shop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/fe29391e-4a59-499f-93c6-e3be12b68054/maxims_analysis.shops_mfwshop">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/fe29391e-4a59-499f-93c6-e3be12b68054/maxims_analysis.mfw_reviews">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/fe29391e-4a59-499f-93c6-e3be12b68054/maxims_analysis.users_mfwmember">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fe29391e-4a59-499f-93c6-e3be12b68054/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="84" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cfe404e8/a19dd8f8-6f41-47f8-b143-86881fceb14e/cafedecoral_analysis.city">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/reviews/static/reviews/js/reviews.js" />
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/shops/templates/shops/index.html" />
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/shops/static/shops/js/shops.js" />
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/cafedecoralcn/test.py">
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/service.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/shops/dao.py" />
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/shops/dao_lc.py" />
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/shops/my_test_lc.py" />
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/shops/service.py" />
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/dao.py">
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/my_test_lc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-704">
+          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/maxims/maxims/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="22" column="72" lean-forward="false" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python27/Lib/site-packages/pymysql/cursors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/dao_lc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/my_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="192" column="22" lean-forward="false" selection-start-line="192" selection-start-column="22" selection-end-line="192" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/maxims/maxims/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/maxims/shops/static/shops/js/shops.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="133" column="9" lean-forward="false" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-162">
-          <caret line="35" column="44" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/users/views.py" />
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/users/urls.py" />
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/users/tests.py" />
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/users/service.py" />
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/users/my_test.py" />
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/users/models.py" />
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/users/dao.py" />
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/users/apps.py" />
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/users/admin.py" />
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/reviews/templates/my_test.py" />
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/users/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/maxims/DBManager.py">
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/cafedecoralcn/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        <state relative-caret-position="459">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/dao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/dao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/cafedecoralcn/DBManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2781">
+          <caret line="106" column="4" lean-forward="false" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="4" />
           <folding>
-            <element signature="e#81#95#0" expanded="true" />
-            <marker date="1507538501830" expanded="true" signature="2602:2644" ph="SELECT * FRO... myt_link_list" />
-            <marker date="1507538501830" expanded="true" signature="2687:2723" ph="SELECT * FRO... myt_link_list" />
+            <marker date="1506478190608" expanded="true" signature="2612:2654" ph="SELECT * FRO... myt_link_list" />
+            <marker date="1506478190608" expanded="true" signature="2697:2733" ph="SELECT * FRO... myt_link_list" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/shops/my_test.py" />
-    <entry file="file://$PROJECT_DIR$/../spider/dianping_hk/cmd/reviews/dao.py">
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/static/admin/js/vendor/jquery/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        <state relative-caret-position="20925">
+          <caret line="775" column="31" lean-forward="false" selection-start-line="775" selection-start-column="31" selection-end-line="775" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/static/admin/js/admin/DateTimeShortcuts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6048">
+          <caret line="224" column="97" lean-forward="false" selection-start-line="224" selection-start-column="97" selection-end-line="224" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/maxims/shops/dao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
           <folding>
-            <marker date="1507537131055" expanded="true" signature="400:460" ph="SELECT COUNT... reviews_orreview" />
+            <element signature="e#85#95#0" expanded="false" />
+            <marker date="1507623963394" expanded="true" signature="499:772" ph="SELECT id,(C... view_shop_relation" />
+            <marker date="1507623963394" expanded="true" signature="881:1135" ph="SELECT id,sh... view_shop_relation" />
+            <marker date="1507623963394" expanded="true" signature="1246:1322" ph="SELECT id,sh... view_shop_relation" />
+            <marker date="1507623963394" expanded="true" signature="1436:1482" ph="SELECT pic F... shops_dpshop" />
+            <marker date="1507623963394" expanded="true" signature="1596:1642" ph="SELECT pic F... shops_tashop" />
+            <marker date="1507623963394" expanded="true" signature="1756:1802" ph="SELECT pic F... shops_orshop" />
+            <marker date="1507623963394" expanded="true" signature="1917:1964" ph="SELECT pic F... shops_mfwshop" />
+            <marker date="1507623963394" expanded="true" signature="2074:2334" ph="SELECT id,sh... view_shop_relation" />
+            <marker date="1507623963394" expanded="true" signature="2451:2507" ph="SELECT star shops_missing_valueshop" />
+            <marker date="1507623963394" expanded="true" signature="2636:2709" ph="SELECT star,... shops_dpshop" />
+            <marker date="1507623963394" expanded="true" signature="2950:3009" ph="SELECT shopI... or_shops" />
+            <marker date="1507623963394" expanded="true" signature="3030:3079" ph="SELECT shopI... dp_shops" />
+            <marker date="1507623963394" expanded="true" signature="3101:3149" ph="SELECT shopI... mfw_shops" />
+            <marker date="1507623963394" expanded="true" signature="3170:3222" ph="SELECT shopI... ta_shops" />
+            <marker date="1507623963394" expanded="true" signature="3531:3654" ph="INSERT INTO shop_relation... " />
+            <marker date="1507623963394" expanded="true" signature="3842:3922" ph="UPDATE shop_... " />
+            <marker date="1507623963394" expanded="true" signature="4106:4193" ph="SELECT shopI... shop_relation" />
+            <marker date="1507623963394" expanded="true" signature="4384:4451" ph="SELECT shopI... shop_relation" />
+            <marker date="1507623963394" expanded="true" signature="4653:4721" ph="SELECT shopI... shop_relation" />
+            <marker date="1507623963394" expanded="true" signature="4928:4987" ph="UPDATE shop_... " />
+            <marker date="1507623963394" expanded="true" signature="5588:5668" ph="UPDATE shop_... " />
+            <marker date="1507623963394" expanded="true" signature="5839:5999" ph="UPDATE shop_... " />
+            <marker date="1507623963394" expanded="true" signature="6015:6177" ph="UPDATE shop_... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/cafedecoralcn/__init__.py">
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/dao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="6939">
+          <caret line="261" column="46" lean-forward="false" selection-start-line="261" selection-start-column="46" selection-end-line="261" selection-end-column="46" />
+          <folding>
+            <element signature="e#84#98#0" expanded="false" />
+            <marker date="1507623421317" expanded="true" signature="687:723" ph="SELECT shopI... or_shops" />
+            <marker date="1507623421317" expanded="true" signature="744:776" ph="SELECT shopI... dp_shops" />
+            <marker date="1507623421317" expanded="true" signature="798:830" ph="SELECT shopI... mfw_shops" />
+            <marker date="1507623421317" expanded="true" signature="851:888" ph="SELECT shopI... ta_shops" />
+            <marker date="1507623421317" expanded="true" signature="2077:2117" ph="SELECT shopI... or_shops" />
+            <marker date="1507623421317" expanded="true" signature="2138:2170" ph="SELECT shopI... dp_shops" />
+            <marker date="1507623421317" expanded="true" signature="2192:2225" ph="SELECT shopI... mfw_shops" />
+            <marker date="1507623421317" expanded="true" signature="2246:2278" ph="SELECT shopI... ta_shops" />
+            <marker date="1507623421317" expanded="true" signature="3179:3230" ph="INSERT INTO shop_id... " />
+            <marker date="1507623421317" expanded="true" signature="3720:3779" ph="SELECT shopI... or_shops" />
+            <marker date="1507623421317" expanded="true" signature="3800:3849" ph="SELECT shopI... dp_shops" />
+            <marker date="1507623421317" expanded="true" signature="3871:3919" ph="SELECT shopI... mfw_shops" />
+            <marker date="1507623421317" expanded="true" signature="3940:3992" ph="SELECT shopI... ta_shops" />
+            <marker date="1507623421317" expanded="true" signature="4384:4507" ph="INSERT INTO shop_relation... " />
+            <marker date="1507623421317" expanded="true" signature="4774:4861" ph="SELECT shopI... shop_relation" />
+            <marker date="1507623421317" expanded="true" signature="5056:5123" ph="SELECT shopI... shop_relation" />
+            <marker date="1507623421317" expanded="true" signature="5329:5397" ph="SELECT shopI... shop_relation" />
+            <marker date="1507623421317" expanded="true" signature="5608:5667" ph="UPDATE shop_... " />
+            <marker date="1507623421317" expanded="true" signature="6264:6344" ph="UPDATE shop_... " />
+            <marker date="1507623421317" expanded="true" signature="6513:6673" ph="UPDATE shop_... " />
+            <marker date="1507623421317" expanded="true" signature="6689:6851" ph="UPDATE shop_... " />
+            <marker date="1507623421317" expanded="true" signature="7256:7529" ph="SELECT id,(C... view_shop_relation" />
+            <marker date="1507623421317" expanded="true" signature="7794:8048" ph="SELECT id,sh... view_shop_relation" />
+            <marker date="1507623421317" expanded="true" signature="8307:8383" ph="SELECT id,sh... view_shop_relation" />
+            <marker date="1507623421317" expanded="true" signature="8652:8698" ph="SELECT pic F... shops_dpshop" />
+            <marker date="1507623421317" expanded="true" signature="8967:9013" ph="SELECT pic F... shops_tashop" />
+            <marker date="1507623421317" expanded="true" signature="9282:9328" ph="SELECT pic F... shops_orshop" />
+            <marker date="1507623421317" expanded="true" signature="9598:9645" ph="SELECT pic F... shops_mfwshop" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/cafedecoralcn/config.py">
+    <entry file="file://$PROJECT_DIR$/../Django/maxims/shops/my_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="5751">
+          <caret line="213" column="30" lean-forward="false" selection-start-line="213" selection-start-column="30" selection-end-line="213" selection-end-column="30" />
+          <folding>
+            <element signature="e#84#105#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spider/dianping_hk/cmd/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/spider_manager/spider_manager/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="130" column="7" lean-forward="false" selection-start-line="127" selection-start-column="4" selection-end-line="130" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/config.py">
+    <entry file="file://$PROJECT_DIR$/../Django/maxims/users/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2810,72 +2902,164 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../Django/maxims/reviews/dao.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3213">
+          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding>
+            <element signature="e#85#95#0" expanded="false" />
+            <marker date="1507624692890" expanded="true" signature="282:342" ph="SELECT COUNT... reviews_orreview" />
+            <marker date="1507624692890" expanded="true" signature="458:518" ph="SELECT COUNT... reviews_dpreview" />
+            <marker date="1507624692890" expanded="true" signature="634:694" ph="SELECT COUNT... reviews_tareview" />
+            <marker date="1507624692890" expanded="true" signature="811:872" ph="SELECT COUNT... reviews_mfwreview" />
+            <marker date="1507624692890" expanded="true" signature="1004:1277" ph="SELECT id,(C... view_shop_relation" />
+            <marker date="1507624692890" expanded="true" signature="1390:1512" ph="select conte... reviews_orreview" />
+            <marker date="1507624692890" expanded="true" signature="1447:1511" ph="SELECT DISTI... reviews_orreview" />
+            <marker date="1507624692890" expanded="true" signature="1626:1750" ph="select conte... reviews_mfwreview" />
+            <marker date="1507624692890" expanded="true" signature="1684:1749" ph="SELECT DISTI... reviews_mfwreview" />
+            <marker date="1507624692890" expanded="true" signature="1863:1985" ph="select conte... reviews_dpreview" />
+            <marker date="1507624692890" expanded="true" signature="1920:1984" ph="SELECT DISTI... reviews_dpreview" />
+            <marker date="1507624692890" expanded="true" signature="2098:2220" ph="select conte... reviews_tareview" />
+            <marker date="1507624692890" expanded="true" signature="2155:2219" ph="SELECT DISTI... reviews_tareview" />
+            <marker date="1507624692890" expanded="true" signature="2339:2466" ph="select LEFT(... reviews_orreview" />
+            <marker date="1507624692890" expanded="true" signature="2401:2465" ph="SELECT DISTI... reviews_orreview" />
+            <marker date="1507624692890" expanded="true" signature="2586:2715" ph="select LEFT(... reviews_mfwreview" />
+            <marker date="1507624692890" expanded="true" signature="2649:2714" ph="SELECT DISTI... reviews_mfwreview" />
+            <marker date="1507624692890" expanded="true" signature="2834:2961" ph="select LEFT(... reviews_dpreview" />
+            <marker date="1507624692890" expanded="true" signature="2896:2960" ph="SELECT DISTI... reviews_dpreview" />
+            <marker date="1507624692890" expanded="true" signature="3080:3207" ph="select LEFT(... reviews_tareview" />
+            <marker date="1507624692890" expanded="true" signature="3142:3206" ph="SELECT DISTI... reviews_tareview" />
+            <marker date="1507624692890" expanded="true" signature="3325:3513" ph="select membe... view_orreview" />
+            <marker date="1507624692890" expanded="true" signature="3448:3512" ph="SELECT DISTI... reviews_orreview" />
+            <marker date="1507624692890" expanded="true" signature="3631:3802" ph="select membe... view_dpreview" />
+            <marker date="1507624692890" expanded="true" signature="3737:3801" ph="SELECT DISTI... reviews_dpreview" />
+            <marker date="1507624692890" expanded="true" signature="3920:4078" ph="select membe... view_tareview" />
+            <marker date="1507624692890" expanded="true" signature="4013:4077" ph="SELECT DISTI... reviews_tareview" />
+            <marker date="1507624692890" expanded="true" signature="4197:4351" ph="select membe... view_mfwreview" />
+            <marker date="1507624692890" expanded="true" signature="4285:4350" ph="SELECT DISTI... reviews_mfwreview" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/maxims/users/dao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#85#95#0" expanded="false" />
+            <marker date="1507624692848" expanded="true" signature="282:353" ph="SELECT COUNT... reviews_dpreview" />
+            <marker date="1507624692848" expanded="true" signature="469:540" ph="SELECT COUNT... reviews_tareview" />
+            <marker date="1507624692848" expanded="true" signature="656:727" ph="SELECT COUNT... reviews_orreview" />
+            <marker date="1507624692848" expanded="true" signature="844:916" ph="SELECT COUNT... reviews_mfwreview" />
+            <marker date="1507624692848" expanded="true" signature="1029:1164" ph="SELECT COUNT... users_dpmember" />
+            <marker date="1507624692848" expanded="true" signature="1099:1163" ph="SELECT DISTI... reviews_dpreview" />
+            <marker date="1507624692848" expanded="true" signature="1279:1414" ph="SELECT COUNT... users_dpmember" />
+            <marker date="1507624692848" expanded="true" signature="1349:1413" ph="SELECT DISTI... reviews_dpreview" />
+            <marker date="1507624692848" expanded="true" signature="1528:1668" ph="SELECT COUNT... users_mfwmember" />
+            <marker date="1507624692848" expanded="true" signature="1602:1667" ph="SELECT DISTI... reviews_mfwreview" />
+            <marker date="1507624692848" expanded="true" signature="1784:1926" ph="SELECT COUNT... users_mfwmember" />
+            <marker date="1507624692848" expanded="true" signature="1860:1925" ph="SELECT DISTI... reviews_mfwreview" />
+            <marker date="1507624692848" expanded="true" signature="2041:2162" ph="SELECT favor... users_ormember" />
+            <marker date="1507624692848" expanded="true" signature="2097:2161" ph="SELECT DISTI... reviews_orreview" />
+            <marker date="1507624692848" expanded="true" signature="2277:2432" ph="SELECT locat... users_ormember" />
+            <marker date="1507624692848" expanded="true" signature="2349:2413" ph="SELECT DISTI... reviews_orreview" />
+            <marker date="1507624692848" expanded="true" signature="2547:2701" ph="SELECT locat... users_dpmember" />
+            <marker date="1507624692848" expanded="true" signature="2619:2683" ph="SELECT DISTI... reviews_dpreview" />
+            <marker date="1507624692848" expanded="true" signature="2815:2966" ph="SELECT privi... view_dpcity" />
+            <marker date="1507624692848" expanded="true" signature="2884:2948" ph="SELECT DISTI... reviews_dpreview" />
+            <marker date="1507624692848" expanded="true" signature="3081:3234" ph="SELECT privi... view_mfwcity" />
+            <marker date="1507624692848" expanded="true" signature="3151:3216" ph="SELECT DISTI... reviews_mfwreview" />
+            <marker date="1507624692848" expanded="true" signature="3349:3503" ph="SELECT locat... users_tamember" />
+            <marker date="1507624692848" expanded="true" signature="3421:3485" ph="SELECT DISTI... reviews_tareview" />
+            <marker date="1507624692848" expanded="true" signature="3619:3775" ph="SELECT locat... users_mfwmember" />
+            <marker date="1507624692848" expanded="true" signature="3692:3757" ph="SELECT DISTI... reviews_mfwreview" />
+            <marker date="1507624692848" expanded="true" signature="3885:3950" ph="SELECT id, o... view_shop_relation" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/maxims/users/service.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1507537131055" expanded="true" signature="400:460" ph="SELECT COUNT... reviews_orreview" />
-            <marker date="1507537131055" expanded="true" signature="732:792" ph="SELECT COUNT... reviews_dpreview" />
-            <marker date="1507537131055" expanded="true" signature="1064:1124" ph="SELECT COUNT... reviews_tareview" />
-            <marker date="1507537131055" expanded="true" signature="1397:1458" ph="SELECT COUNT... reviews_mfwreview" />
-            <marker date="1507537131055" expanded="true" signature="1746:2019" ph="SELECT id,(C... view_shop_relation" />
-            <marker date="1507537131055" expanded="true" signature="2289:2411" ph="select conte... reviews_orreview" />
-            <marker date="1507537131055" expanded="true" signature="2346:2410" ph="SELECT DISTI... reviews_orreview" />
-            <marker date="1507537131055" expanded="true" signature="2682:2806" ph="select conte... reviews_mfwreview" />
-            <marker date="1507537131055" expanded="true" signature="2740:2805" ph="SELECT DISTI... reviews_mfwreview" />
-            <marker date="1507537131055" expanded="true" signature="3076:3198" ph="select conte... reviews_dpreview" />
-            <marker date="1507537131055" expanded="true" signature="3133:3197" ph="SELECT DISTI... reviews_dpreview" />
-            <marker date="1507537131055" expanded="true" signature="3468:3590" ph="select conte... reviews_tareview" />
-            <marker date="1507537131055" expanded="true" signature="3525:3589" ph="SELECT DISTI... reviews_tareview" />
-            <marker date="1507537131055" expanded="true" signature="3866:3993" ph="select LEFT(... reviews_orreview" />
-            <marker date="1507537131055" expanded="true" signature="3928:3992" ph="SELECT DISTI... reviews_orreview" />
-            <marker date="1507537131055" expanded="true" signature="4270:4399" ph="select LEFT(... reviews_mfwreview" />
-            <marker date="1507537131055" expanded="true" signature="4333:4398" ph="SELECT DISTI... reviews_mfwreview" />
-            <marker date="1507537131055" expanded="true" signature="4675:4802" ph="select LEFT(... reviews_dpreview" />
-            <marker date="1507537131055" expanded="true" signature="4737:4801" ph="SELECT DISTI... reviews_dpreview" />
-            <marker date="1507537131055" expanded="true" signature="5078:5205" ph="select LEFT(... reviews_tareview" />
-            <marker date="1507537131055" expanded="true" signature="5140:5204" ph="SELECT DISTI... reviews_tareview" />
-            <marker date="1507537131055" expanded="true" signature="5480:5668" ph="select membe... view_orreview" />
-            <marker date="1507537131055" expanded="true" signature="5603:5667" ph="SELECT DISTI... reviews_orreview" />
-            <marker date="1507537131055" expanded="true" signature="5942:6113" ph="select membe... view_dpreview" />
-            <marker date="1507537131055" expanded="true" signature="6048:6112" ph="SELECT DISTI... reviews_dpreview" />
-            <marker date="1507537131055" expanded="true" signature="6387:6545" ph="select membe... view_tareview" />
-            <marker date="1507537131055" expanded="true" signature="6480:6544" ph="SELECT DISTI... reviews_tareview" />
-            <marker date="1507537131055" expanded="true" signature="6820:6974" ph="select membe... view_mfwreview" />
-            <marker date="1507537131055" expanded="true" signature="6908:6973" ph="SELECT DISTI... reviews_mfwreview" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/maxims/users/static/users/js/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="166" column="8" lean-forward="false" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/cafedecoralcn/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="120" column="6" lean-forward="true" selection-start-line="108" selection-start-column="4" selection-end-line="120" selection-end-column="6" />
+        <state relative-caret-position="673">
+          <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="18" column="59" lean-forward="true" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Django/maxims/maxims/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="132" column="37" lean-forward="false" selection-start-line="132" selection-start-column="37" selection-end-line="132" selection-end-column="37" />
+        <state relative-caret-position="4725">
+          <caret line="175" column="46" lean-forward="false" selection-start-line="175" selection-start-column="46" selection-end-line="175" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/reviews/models.py">
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/static/users/js/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="e#250#758#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="297">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Django/maxims/maxims/config.py">
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/static/shops/js/shops.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="32" column="54" lean-forward="true" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
+        <state relative-caret-position="405">
+          <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/static/reviews/js/reviews.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/reviews/static/reviews/js/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="6" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/shops/static/shops/js/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Django/cafedecoralcn/users/static/users/js/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
           <folding />
         </state>
       </provider>

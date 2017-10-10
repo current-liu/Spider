@@ -46,7 +46,7 @@ def get_or_location(request):
     if o_r is None:
         location = 0
         num = 0
-        d = {"value":num,"name": location}
+        d = {"name": location,"value":num}
         shop_list.append(d)
         j = JsonResponse(shop_list, safe=False)
         return j
@@ -57,7 +57,7 @@ def get_or_location(request):
             res = res_list[i]
             location = res[0].replace(" ","")
             num  = res[1]
-            d = {"value":num,"name": location}
+            d = {"name": location,"value":num}
             shop_list.append(d)
         j = JsonResponse(shop_list, safe=False)
         return j
@@ -71,7 +71,7 @@ def get_dp_location(request):
     if dp is None:
         location = 0
         num = 0
-        d = {"value":num,"name": location}
+        d = {"name": location,"value":num}
         shop_list.append(d)
         j = JsonResponse(shop_list, safe=False)
         return j
@@ -82,7 +82,7 @@ def get_dp_location(request):
             res = res_list[i]
             location = res[0]
             num  = res[1]
-            d = {"value":num,"name": location}
+            d = {"name": location,"value":num}
             shop_list.append(d)
         j = JsonResponse(shop_list, safe=False)
         return j
@@ -96,7 +96,7 @@ def get_ta_location(request):
     if ta is None:
         location = 0
         num = 0
-        d = {"value":num,"name": location}
+        d = {"name": location,"value":num}
         shop_list.append(d)
         j = JsonResponse(shop_list, safe=False)
         return j
@@ -107,7 +107,7 @@ def get_ta_location(request):
             res = res_list[i]
             location = res[0]
             num  = res[1]
-            d = {"value":num,"name": location}
+            d = {"name": location,"value":num}
             shop_list.append(d)
         j = JsonResponse(shop_list, safe=False)
         return j
@@ -121,7 +121,7 @@ def get_mfw_location(request):
     if mfw is None:
         location = 0
         num = 0
-        d = {"value":num,"name": location}
+        d = {"name": location,"value":num}
         shop_list.append(d)
         j = JsonResponse(shop_list, safe=False)
         return j
@@ -132,7 +132,7 @@ def get_mfw_location(request):
             res = res_list[i]
             location = res[0]
             num  = res[1]
-            d = {"value":num,"name": location}
+            d = {"name": location,"value":num}
             shop_list.append(d)
         j = JsonResponse(shop_list, safe=False)
         return j
@@ -235,4 +235,52 @@ def get_or_favorite(request):
             d = {"k": key, "v": value}
             favorite_list.append(d)
         j = JsonResponse(favorite_list, safe=False)
+        return j
+
+def get_dp_province(request):
+    id = request.GET.get("id")
+    res = dao.get_all_id(id)
+    shop_list = []
+    dp = res[0][4]
+    if dp is None:
+        location = 0
+        num = 0
+        d = {"name": location,"value":num}
+        shop_list.append(d)
+        j = JsonResponse(shop_list, safe=False)
+        return j
+    else:
+        res_list = dao.get_dp_province(dp)
+        length = res_list.__len__()
+        for i in range(0, length):
+            res = res_list[i]
+            location = res[0]
+            num  = res[1]
+            d = {"name": location,"value":num}
+            shop_list.append(d)
+        j = JsonResponse(shop_list, safe=False)
+        return j
+
+def get_mfw_province(request):
+    id = request.GET.get("id")
+    res = dao.get_all_id(id)
+    shop_list = []
+    mfw = res[0][2]
+    if mfw is None:
+        location = 0
+        num = 0
+        d = {"name": location,"value":num}
+        shop_list.append(d)
+        j = JsonResponse(shop_list, safe=False)
+        return j
+    else:
+        res_list = dao.get_mfw_province(mfw)
+        length = res_list.__len__()
+        for i in range(0, length):
+            res = res_list[i]
+            location = res[0]
+            num  = res[1]
+            d = {"name": location,"value":num}
+            shop_list.append(d)
+        j = JsonResponse(shop_list, safe=False)
         return j
