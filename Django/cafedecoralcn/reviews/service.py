@@ -134,7 +134,7 @@ def get_ta_review(request):
             k = sort_dict[i][0]
             v = sort_dict[i][1]
             k_v.append({"k": k, "v": v})
-        print sort_dict
+        # print sort_dict
 
     j = JsonResponse(k_v, safe=False)
     return j
@@ -169,7 +169,8 @@ def get_or_review(request):
             k = sort_dict[i][0]
             v = sort_dict[i][1]
             k_v.append({"k": k, "v": v})
-        print sort_dict
+
+        # print sort_dict
 
     j = JsonResponse(k_v, safe=False)
     return j
@@ -204,7 +205,7 @@ def get_dp_review(request):
             k = sort_dict[i][0]
             v = sort_dict[i][1]
             k_v.append({"k": k, "v": v})
-        print sort_dict
+        # print sort_dict
 
     j = JsonResponse(k_v, safe=False)
     return j
@@ -239,7 +240,7 @@ def get_mfw_review(request):
             k = sort_dict[i][0]
             v = sort_dict[i][1]
             k_v.append({"k": k, "v": v})
-        print sort_dict
+        # print sort_dict
 
     j = JsonResponse(k_v, safe=False)
     return j

@@ -137,7 +137,7 @@ def get_hotel_room():
             try:
                 urls = room_url_list.get_new_url()
                 index += 1
-                s = urls.split("sCheckIn")[0].split("iPoiId=")[1]
+                s = urls.split("mddid")[0].split("poi_id=")[1]
                 shopId = int(re.sub(r'\D', "", s))
                 print "crawling_room num.'%s' shopId: '%s'" % (index, shopId)
                 url_list = urls.split(" ")
@@ -200,12 +200,18 @@ def init_room_url_list():
     for shop_id in shop_id_list:
         i = str(shop_id)
         shop_id_str = re.sub(r'\D', "", i)
+        # "http://server.mafengwo.cn/hotel/ajax.php?sJsonCallBack=jQuery18109789543989958343_1502861850903&sAction=getRealPrice&iMddId=10189&iPoiId=36273&sOta=youyu_pkg&sCheckIn=2017-08-19&sCheckOut=2017-08-20&iAdultsNum=2&iChildrenNum=0&sChildrenAge=&_=1502862132197"
         str1 = "http://server.mafengwo.cn/hotel/ajax.php?sJsonCallBack=jQuery18109789543989958343_1502861850903&sAction=getRealPrice&iMddId=10189&iPoiId="
         str2 = "&sOta=youyu_pkg&sCheckIn="
         str3 = "&sCheckOut="
         str4 = "&iAdultsNum=2&iChildrenNum=0&sChildrenAge=&_=1502862132197"
 
-        # "http://server.mafengwo.cn/hotel/ajax.php?sJsonCallBack=jQuery18109789543989958343_1502861850903&sAction=getRealPrice&iMddId=10189&iPoiId=36273&sOta=youyu_pkg&sCheckIn=2017-08-19&sCheckOut=2017-08-20&iAdultsNum=2&iChildrenNum=0&sChildrenAge=&_=1502862132197"
+
+        "http://www.mafengwo.cn/hotel/ajax_remote/price?poi_id=36273&mddid=10189&ota=youyu_pkg&check_in=2017-11-21&check_out=2017-11-22&adults_num=2&children_num=0&children_age=&platform=www"
+        str1 = "http://www.mafengwo.cn/hotel/ajax_remote/price?poi_id="
+        str2 = "&mddid=10189&ota=youyu_pkg&check_in="
+        str3 = "&check_out="
+        str4 = "&adults_num=2&children_num=0&children_age=&platform=www"
         u0 = str1 + shop_id_str + str2 + checkinDate_0 + str3 + checkoutDate_0 + str4
         u1 = str1 + shop_id_str + str2 + checkinDate_1 + str3 + checkoutDate_1 + str4
         u2 = str1 + shop_id_str + str2 + checkinDate_2 + str3 + checkoutDate_2 + str4

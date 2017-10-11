@@ -242,8 +242,10 @@ def get_room(doc_list):
     room_name = "-1"
     for doc in doc_list:
         try:
-            room = json.loads(doc.split("(")[1].split(")")[0])
-            price = room['msg']['list']["youyu_pkg"]
+            # doc = '{"data":{"list":{"youyu_pkg":1308},"room_name":"\u8c6a\u534e\u7279\u5927\u53f7\u5e8a\u95f4 - \u4e0d\u9000\u6b3e","pay_type":1,"confirm_type":2,"is_no_charge":"","sub_ota":"booking","youyu_ota_id":7,"ori_list":{"youyu_pkg":1308},"roomplan_num":3,"nday":1,"lowest":1308}}'
+            # room = json.loads(doc.split("(")[1].split(")")[0])
+            room = json.loads(doc)
+            price = room['data']['list']["youyu_pkg"]
         except BaseException, e:
             print e
             print "获取酒店房型详情失败"
@@ -254,9 +256,13 @@ def get_room(doc_list):
             else:
                 print "成功获取房型"
                 if room_name == "-1":
-                    room_name = room['msg']['room_name']
+                    room_name = room['data']['room_name']
 
         room_infos.append(price)
 
     room_infos.append(room_name)
     return room_infos
+
+
+if __name__ == '__main__':
+    get_room([1,2])
