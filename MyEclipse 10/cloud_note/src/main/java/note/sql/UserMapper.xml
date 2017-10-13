@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="note.dao.UserDao">
+
+<select id="findByName" parameterType="string"
+resultType="note.entity.User">
+	select * from cn_user where cn_user_name=#{n}
+</select>
+
+<select id="regist" parameterType="note.entity.User">
+	
+	<!-- 返回主键值 --><!-- 不能用啊aaaaaa -->
+	<!-- <selectkey keyProperty="cn_user_id" resultType="string">
+		SELECT cn_user_seq.nextval FROM dual
+	</selectkey> -->
+	
+	INSERT INTO cn_user 
+	VALUES 
+	(cn_user_seq.nextval,#{cn_user_name},#{cn_user_password},null,#{cn_user_nick})
+</select>
+
+<select id="findById" parameterType="string"
+resultType="note.entity.User">
+	select * from cn_user where cn_user_id=#{id}
+</select>
+
+</mapper>

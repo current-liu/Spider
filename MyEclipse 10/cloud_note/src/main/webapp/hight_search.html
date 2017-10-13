@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="scripts/base.js"></script>
+		<script type="text/javascript" src="scripts/jquery.min.js"></script>
+		
+		<script type="text/javascript" src="scripts/note.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#searchBtn").click(hightSearch);
+	})
+</script>
+</head>
+<body>
+	
+	title:<input type="text" id="title">
+	status:<select id="status">
+				<option value="0">all</option>
+				<option value="1">normal</option>
+				<option value="2">deleted</option>
+				<option value="3">shared</option>
+			</select>
+	<br/>
+	start date:<input type="text" id="begin">
+	end date:<input type="text" id="end">
+	<input type="button" value="search" id="searchBtn">
+	<hr/>
+	result list
+	<ul id="hightSearch_list" class="contacts-list">
+		<!-- ajax loadNoteBooks();-->
+	</ul>
+</body>
+</html>

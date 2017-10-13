@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="note.dao.AssociationDao">
+
+<!-- 根据用户ID提取cn_user信息及相关cn_notebook信息 -->
+<select id="findUser" parameterType="string" resultMap="userMap">
+	SELECT * FROM cn_user
+	WHERE
+	cn_user_id=#{userId}
+</select>
+<resultMap type="note.entity.User" id="userMap">
+	<!-- User自有属性默认按名称匹配 -->
+	<id property="cn_user_id" column="cn_user_id"/>
+	<!-- 定义关联属性books如何加载 -->
+	<collection property="books" 
+		javaType="java.util.List"
+		ofType="note.entity.NoteBook"
+		select="findBooks"
+		column="cn_user_id">	
+	</collection>
+</resultMap>
+
+<select id="findBooks" parameterType="string" resultType="note.entity.NoteBook">
+	SELECT * FROM cn_notebook
+	WHERE
+	cn_user_id=#{userId}
+</select>
+
+<select id="findAll" resultMap="userMap1">
+	SELECT *
+	FROM cn_user u
+	LEFT OUTER JOIN cn_notebook b
+	ON (u.cn_user_id=b.cn_user_id)
+</select>
+<resultMap type="note.entity.User" id="userMap1">
+	<id property="cn_user_id" column="cn_user_id"/>
+	<result property="cn_user_name" column="cn_user_name"/>
+	<!-- 指定关联属性加载 -->
+	<collection property="books"
+			javaType="java.util.List"
+			ofType="note.entity.NoteBook">
+		<id property="cn_notebook_id" column="cn_notebook_id"/>		
+		<result property="cn_notebook_name" column="cn_notebook_name"/>
+	</collection>
+</resultMap>
+
+<select id="findAllBooks" resultMap="bookMap">
+	SELECT * 
+	FROM cn_notebook b
+	JOIN cn_user u
+	ON (b.cn_user_id=u.cn_user_id)
+</select>
+<resultMap type="note.entity.NoteBook" id="bookMap">
+	<id property="cn_notebook_id" column="cn_notebook_id"/>		
+	<result property="cn_notebook_name" column="cn_notebook_name"/>
+	<!-- 指定关联属性加载 -->
+	<association property="user" javaType="note.entity.User">
+		<id property="cn_user_id" column="cn_user_id"/>
+		<result property="cn_user_name" column="cn_user_name"/>
+	</association>
+	
+</resultMap>
+</mapper>
