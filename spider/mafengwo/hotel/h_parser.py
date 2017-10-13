@@ -248,13 +248,13 @@ def get_room(doc_list):
             price = room['data']['list']["youyu_pkg"]
         except BaseException, e:
             print e
-            print "获取酒店房型详情失败"
+            print "fail to get info about hotel room"
             price = "-1"
         else:
             if (price == 0):
-                print "房型信息为空"
+                print "info about hotel room is empty"
             else:
-                print "成功获取房型"
+                print "get hotel room info successfully"
                 if room_name == "-1":
                     room_name = room['data']['room_name']
 

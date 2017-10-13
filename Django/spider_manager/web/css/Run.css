@@ -1,0 +1,98 @@
+aside .list li .main{
+	width:100%;height:750px;
+	padding-left: 40px;
+	border:solid 1px #e4e4e4;
+}
+aside .list li .main>div{
+	width:1024px;height:650px;
+	margin:0 auto;
+}
+aside .list li .main p{
+	width:100%;height:50px;
+	font-size: 20px;font-weight: 600;
+	background: #1ABC9C;
+	line-height: 50px;
+	padding-left: 20px;
+}
+
+
+/*page*/
+body{font-family: 'Open Sans', sans-serif;cursor:default;}
+a{text-decoration:none;color:#000;}
+.page,#demoContent{
+    list-style: none;
+}
+.page>li{
+    float: left;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.page .pageItem{
+    border: solid thin #DDDDDD;
+    margin: 5px;
+}
+.page .pageItemActive{
+    border: solid thin #0099FF;
+    margin: 5px;
+    background-color: #0099FF;
+    color:white;
+}
+.page .pageItem:hover{
+    border: solid thin #0099FF;
+    background-color: #0099FF;
+    color:white;
+}
+.page .pageItemDisable{
+    border: solid thin #DDDDDD;
+    margin: 5px;
+    background-color: #DDDDDD;
+}
+
+#demoContent li{
+	float:left;
+	width:100%;height:50px;
+	border-bottom: solid 1px #dae3e9;
+}
+#demoContent li:nth-child(1){
+	border-top: solid 1px #dae3e9;
+}
+#demoContent li:hover{background:#f5fafc;opacity: 0.8;}
+#demoContent li p{display:none;}
+#demoContent li:nth-child(1):hover{background:none;opacity: 1;}
+#demoContent li span{
+	float:left;
+	font-size:16px;color:#855E42;
+	text-align: center;line-height:50px;
+}
+#demoContent li span a{color:#855E42;}
+#demoContent li span:nth-child(1){width:17%;cursor: pointer;}
+#demoContent li span:nth-child(2){
+	width:20%;font-size:12px;
+	overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/
+}
+#demoContent li span:nth-child(3){
+	width:15%;font-size:12px;
+	overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/
+}
+#demoContent li span:nth-child(4){width:8%;}
+#demoContent li span:nth-child(5){width:20%;font-size:12px;}
+#demoContent li span:nth-child(6){width:5%;}
+#demoContent li span:nth-child(7){width:15%;font-size:12px;}
+#demoContent li:nth-child(1) span{
+	line-height:30px;color:#000;
+	position:relative;font-weight: bold;
+	font-size:18px;
+}
+#demoContent li:nth-child(1) span:after{
+	content:"";
+	width:2px;height:10px;
+	background:#dae3e9;
+	position: absolute;top:0;right:0;
+}
+#demoContent li:nth-child(1) span:nth-child(8):after{
+	display: none;
+}

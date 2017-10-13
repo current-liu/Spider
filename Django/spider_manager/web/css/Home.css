@@ -1,0 +1,114 @@
+section{height:1332px;}
+aside .list li .main{
+	border: solid 1px #e4e4e4;
+}
+aside .list li .main dl{
+	width:100%;height:125px;
+	margin:0 auto;padding:20px 0;
+	border-bottom: solid 1px #e1e1e1;
+}
+aside .list li .main dd{
+	width:21%;height:80px;
+	float: left;color: #fff;
+	margin-left:20px;
+	padding-left:8px;
+	line-height: 80px;
+	cursor: pointer;position: relative;
+}
+aside .list li .main dd .icon{
+	float: left;
+	width:16%;height:80px;
+	position: relative;
+}
+aside .list li .main dd p{
+	float: left;font-size: 20px;font-weight: 600;margin-left: 10px;position: relative;
+}
+aside .list li .main dd:nth-child(1){
+	background: #d4726f;
+}
+aside .list li .main dd:nth-child(2){
+	background: #6e7d88;
+}
+aside .list li .main dd:nth-child(3){
+	background: #91bdc2;
+}
+aside .list li .main dd:nth-child(4){
+	background: #e1a894;
+}
+
+aside .list li .main dd .topline{
+    width: 0;
+    height: 1px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    background: #000;
+}
+aside .list li .main dd .rightline{
+    width: 1px;
+    height: 0;
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    background: #000;
+}
+aside .list li .main dd .bottomline{
+    width: 0;
+    height: 1px;
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    background: #000;
+}
+aside .list li .main dd .leftline{
+    width: 1px;
+    height: 0;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    background: #000;
+}
+aside .list li .main .content .title{
+	width:800px;
+	padding: 10px;
+	margin:0 auto;
+}
+aside .list li .main .content .select{
+	width:800px;
+	padding: 10px;
+	margin:0 auto;
+}
+aside .list li .main .content .select select{
+	padding:3px 10px;
+}
+aside .list li .main .content .content-top{
+	width:800px;height:500px;
+	padding: 20px 0 40px 20px;
+	margin:0 auto;
+}
+aside .list li .main .content>div:nth-child(4){
+	width:60%;height:540px;
+	float: left;
+}
+aside .list li .main .content>div:nth-child(5){
+	width:38%;height:540px;
+	float: left;
+}
+aside .list li .main .content .content-middle{
+	width:700px;
+	height:540px;
+	padding-top: 20px;margin:0 auto;
+	border-right:solid 1px #e1e1e1;
+}
+aside .list li .main .content .content-right{
+	width:496px;
+	height:540px;
+	padding-top: 20px;
+	border-left:solid 1px #e1e1e1;
+}
+aside .list li .main .content span{
+	display: block;
+	width:100%;height:50px;
+	line-height:50px;
+	font-size: 24px;font-weight: 700;
+}

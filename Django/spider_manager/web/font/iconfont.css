@@ -1,0 +1,41 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1503967897095'); /* IE9*/
+  src: url('iconfont.eot?t=1503967897095#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1503967897095') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1503967897095') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1503967897095#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-quanbu:before { content: "\344d"; }
+
+.icon-box:before { content: "\e6cb"; }
+
+.icon-process:before { content: "\e6ce"; }
+
+.icon-cuowu:before { content: "\e637"; }
+
+.icon-quanbu1:before { content: "\e613"; }
+
+.icon-zanting:before { content: "\e619"; }
+
+.icon-quanbu2:before { content: "\e628"; }
+
+.icon-biaoge:before { content: "\e6b1"; }
+
+.icon-icons64x6479:before { content: "\e605"; }
+
+.icon-yunhangzhong:before { content: "\e6b4"; }
+
+.icon-bars-h:before { content: "\e652"; }
+
+.icon-bars-v:before { content: "\e653"; }
+
