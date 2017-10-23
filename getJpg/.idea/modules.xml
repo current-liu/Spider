@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Scrapy/.idea/Scrapy.iml" filepath="$PROJECT_DIR$/../Scrapy/.idea/Scrapy.iml" />
       <module fileurl="file://$PROJECT_DIR$/../baidu_spider/baidu_spider.iml" filepath="$PROJECT_DIR$/../baidu_spider/baidu_spider.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Django/cafedecoralcn/.idea/cafedecoralcn.iml" filepath="$PROJECT_DIR$/../Django/cafedecoralcn/.idea/cafedecoralcn.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/getJpg.iml" filepath="$PROJECT_DIR$/.idea/getJpg.iml" />
