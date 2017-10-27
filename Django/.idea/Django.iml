@@ -8,6 +8,7 @@
     <orderEntry type="module" module-name="Scrapy" />
     <orderEntry type="module" module-name="spider" />
     <orderEntry type="module" module-name="pandas" />
+    <orderEntry type="module" module-name="pydata-book" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_FOLDERS">
